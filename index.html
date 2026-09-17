@@ -58,6 +58,7 @@
     border:1px dashed var(--border); border-radius:var(--radius); margin-bottom:6px; font-size:13px; color:var(--text-secondary); }
   footer { max-width:720px; margin:24px auto 0; padding:0 16px; font-size:12px; color:var(--text-secondary); text-align:center; line-height:1.7; }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
 
@@ -94,7 +95,13 @@
 </header>
 
 <main>
-  <div id="result-count"><span id="result-count-text"></span><button id="clear-filter-btn">필터 초기화</button></div>
+  <div id="result-count">
+    <span id="result-count-text"></span>
+    <span style="display:flex; gap:10px; align-items:center;">
+      <button id="export-excel-btn" class="ghost-btn" style="font-size:12px; padding:5px 10px;">엑셀로 내보내기</button>
+      <button id="clear-filter-btn">필터 초기화</button>
+    </span>
+  </div>
   <div id="results"><div class="empty-state">불러오는 중...</div></div>
   <div id="zero-wrap"></div>
 </main>
@@ -126,6 +133,7 @@
   let activeWatchKeyword = null;
   let currentItems = [];
   let availableDates = [];
+  let lastFiltered = [];
 
   function loadWatch() {
     try { const r = localStorage.getItem(STORAGE_KEY); if (r) return JSON.parse(r); } catch (e) {}
@@ -225,6 +233,7 @@
     const filtered = currentItems.filter(r =>
       (!mf || r.agency === mf) && (!q || matchesKeyword(r, q))
     );
+    lastFiltered = filtered;
     $('total-count').textContent = currentItems.length;
     resultCountTextEl.textContent = (q||mf) ? `${filtered.length}건 검색됨` : `전체 ${filtered.length}건`;
     clearFilterBtn.style.display = (q||mf) ? 'inline' : 'none';
@@ -233,7 +242,7 @@
       <a class="card" href="${escapeHtml(r.link)}" target="_blank" rel="noopener">
         <div class="card-top"><span class="badge">${escapeHtml(r.agency)}</span><span class="card-date">${escapeHtml(r.date)}</span></div>
         <p class="card-title">${highlight(r.title, q)}</p>
-        <p class="card-summary">${highlight(r.summary || '(요약 없음 — 클릭해서 원문 확인)', q)}</p>
+        ${r.summary ? `<p class="card-summary">${highlight(r.summary, q)}</p>` : ''}
       </a>`).join('') : '<div class="empty-state">검색 결과가 없습니다.</div>';
 
     const have = new Set(currentItems.map(r => r.agency));
@@ -255,6 +264,23 @@
   });
   ministrySelect.addEventListener('change', render);
   clearFilterBtn.addEventListener('click', () => { searchInput.value=''; ministrySelect.value=''; activeWatchKeyword=null; render(); });
+
+  $('export-excel-btn').addEventListener('click', () => {
+    if (!lastFiltered.length) { alert('내보낼 데이터가 없습니다.'); return; }
+    const rows = lastFiltered.map(r => ({
+      '날짜': r.date,
+      '기관': r.agency,
+      '제목': r.title,
+      '요약': r.summary || '',
+      '링크': r.link,
+    }));
+    const ws = XLSX.utils.json_to_sheet(rows);
+    ws['!cols'] = [{ wch: 12 }, { wch: 14 }, { wch: 50 }, { wch: 60 }, { wch: 45 }];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, '보도자료');
+    const dateLabel = $('date-label').textContent || 'export';
+    XLSX.writeFile(wb, `보도자료_${dateLabel}.xlsx`);
+  });
 
   function shiftDate(str, days) {
     const [y,m,d] = str.split('-').map(Number);
