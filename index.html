@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>중앙부처 보도자료 큐레이션</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --card-bg: #ffffff; --border: #e2e4e8;
+    --text-primary: #1a1a1a; --text-secondary: #6b7280;
+    --accent: #2563eb; --accent-bg: #eff6ff; --highlight-bg: #fef08a; --danger: #dc2626;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+    background:var(--bg); color:var(--text-primary); line-height:1.6; padding:0 0 60px; }
+  header { background:var(--card-bg); border-bottom:1px solid var(--border); padding:20px 16px; position:sticky; top:0; z-index:10; }
+  .header-inner { max-width:720px; margin:0 auto; }
+  h1 { font-size:19px; font-weight:600; margin:0 0 4px; }
+  .meta { font-size:12.5px; color:var(--text-secondary); margin-bottom:14px; }
+  .date-bar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+  .date-bar input[type="date"] { padding:9px 12px; border:1px solid var(--border); border-radius:var(--radius); font-size:15px; }
+  .nav-btn, .ghost-btn { padding:9px 12px; border:1px solid var(--border); background:var(--card-bg);
+    border-radius:var(--radius); font-size:14px; cursor:pointer; }
+  .nav-btn:hover, .ghost-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .watch-panel { background:var(--accent-bg); border:1px solid #bfdbfe; border-radius:var(--radius); padding:12px 14px; margin-bottom:14px; }
+  .watch-panel-title { font-size:13px; font-weight:600; color:var(--text-secondary); margin:0 0 8px; }
+  .watch-tags { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+  .watch-tag { display:inline-flex; align-items:center; gap:6px; background:white; border:1px solid var(--border);
+    border-radius:999px; padding:5px 6px 5px 12px; font-size:13px; cursor:pointer; }
+  .watch-tag.active { background:var(--accent); border-color:var(--accent); color:white; }
+  .watch-tag .count { font-weight:700; background:var(--accent-bg); color:var(--accent); border-radius:999px; padding:1px 7px; font-size:12px; }
+  .watch-tag.active .count { background:rgba(255,255,255,0.25); color:white; }
+  .watch-tag-remove { color:var(--text-secondary); font-size:15px; padding:2px 4px; border-radius:50%; }
+  .watch-tag-remove:hover { background:#fee2e2; color:var(--danger); }
+  .watch-add { display:flex; gap:6px; }
+  .watch-add input { flex:1; padding:7px 10px; border:1px solid var(--border); border-radius:var(--radius); font-size:13px; }
+  .watch-add button, .primary-btn { padding:7px 14px; border:none; background:var(--accent); color:white;
+    border-radius:var(--radius); font-size:13px; font-weight:500; cursor:pointer; white-space:nowrap; }
+  .controls { display:flex; gap:8px; flex-wrap:wrap; }
+  #search-input { flex:1; min-width:160px; padding:10px 14px; border:1px solid var(--border); border-radius:var(--radius); font-size:15px; }
+  #ministry-select { padding:10px 12px; border:1px solid var(--border); border-radius:var(--radius); font-size:14px; background:white; }
+  main { max-width:720px; margin:0 auto; padding:16px; }
+  #result-count { font-size:13px; color:var(--text-secondary); margin:4px 4px 12px; display:flex; justify-content:space-between; }
+  #clear-filter-btn { font-size:12px; color:var(--accent); background:none; border:none; cursor:pointer; text-decoration:underline; display:none; }
+  .card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); padding:16px 18px;
+    margin-bottom:12px; text-decoration:none; color:inherit; display:block; }
+  .card:hover { box-shadow:0 2px 8px rgba(0,0,0,0.06); border-color:var(--accent); }
+  .card-top { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+  .badge { font-size:12px; font-weight:600; color:var(--accent); background:var(--accent-bg); padding:3px 10px; border-radius:999px; }
+  .card-date { font-size:12px; color:var(--text-secondary); }
+  .card-title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .card-summary { font-size:14px; color:var(--text-secondary); margin:0; }
+  mark { background:var(--highlight-bg); border-radius:2px; }
+  .empty-state, .error-state { text-align:center; padding:48px 20px; color:var(--text-secondary); font-size:14px; }
+  .error-state { border:1px dashed var(--danger); border-radius:var(--radius); color:var(--danger); background:#fff5f5; }
+  .zero-row { display:flex; justify-content:space-between; padding:9px 14px; background:var(--card-bg);
+    border:1px dashed var(--border); border-radius:var(--radius); margin-bottom:6px; font-size:13px; color:var(--text-secondary); }
+  footer { max-width:720px; margin:24px auto 0; padding:0 16px; font-size:12px; color:var(--text-secondary); text-align:center; line-height:1.7; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>중앙부처 보도자료 큐레이션</h1>
+    <div class="meta">
+      <span id="date-label">-</span> · 총 <strong id="total-count">0</strong>건 ·
+      감시 대상 <strong id="agency-count">0</strong>곳 ·
+      수집 시각 <span id="collected-at">-</span>
+    </div>
+
+    <div class="date-bar">
+      <button class="nav-btn" id="prev-day">‹</button>
+      <input type="date" id="date-input">
+      <button class="nav-btn" id="next-day">›</button>
+      <button class="ghost-btn" id="today-btn">오늘</button>
+    </div>
+
+    <div class="watch-panel">
+      <p class="watch-panel-title">관심 키워드 감시</p>
+      <div id="watch-tags" class="watch-tags"></div>
+      <div class="watch-add">
+        <input type="text" id="watch-input" placeholder="키워드 추가 후 Enter">
+        <button id="watch-add-btn">추가</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="키워드 검색">
+      <select id="ministry-select"><option value="">전체 부처</option></select>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="result-count"><span id="result-count-text"></span><button id="clear-filter-btn">필터 초기화</button></div>
+  <div id="results"><div class="empty-state">불러오는 중...</div></div>
+  <div id="zero-wrap"></div>
+</main>
+
+<footer>
+  이 페이지는 매일 자동 수집된 data/latest.json을 읽어옵니다 (GitHub Actions 기준 KST 09:10 갱신).<br>
+  <strong>주의:</strong> 이 파일을 컴퓨터에서 그냥 더블클릭해서 열면(file:// 방식) 브라우저 보안 정책상
+  데이터 파일을 읽지 못합니다. GitHub Pages 등 웹 서버에 올려서 http(s)://로 접속해야 정상 작동합니다.<br>
+  관심 키워드는 이 브라우저에만 저장됩니다.
+</footer>
+
+<script>
+  const AGENCIES = [
+    "대통령실","국무조정실","재정경제부","교육부","과학기술정보통신부","외교부","통일부",
+    "법무부","국방부","행정안전부","국가보훈부","문화체육관광부","농림축산식품부","산업통상부",
+    "보건복지부","기후에너지환경부","고용노동부","성평등가족부","국토교통부","해양수산부",
+    "중소벤처기업부","국가데이터처","인사혁신처","법제처","식품의약품안전처"
+  ];
+  const STORAGE_KEY = 'pr_watch_keywords_v1';
+  const DEFAULT_KEYWORDS = ["저작권", "AI", "예산"];
+
+  const $ = id => document.getElementById(id);
+  const dateInput = $('date-input'), searchInput = $('search-input'), ministrySelect = $('ministry-select');
+  const resultsEl = $('results'), resultCountTextEl = $('result-count-text'), clearFilterBtn = $('clear-filter-btn');
+  const watchTagsEl = $('watch-tags'), watchInput = $('watch-input');
+  const zeroWrap = $('zero-wrap');
+
+  let watchKeywords = loadWatch();
+  let activeWatchKeyword = null;
+  let currentItems = [];
+  let availableDates = [];
+
+  function loadWatch() {
+    try { const r = localStorage.getItem(STORAGE_KEY); if (r) return JSON.parse(r); } catch (e) {}
+    return DEFAULT_KEYWORDS.slice();
+  }
+  function saveWatch() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(watchKeywords)); } catch (e) {} }
+  function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+  function highlight(text, q) {
+    const e = escapeHtml(text);
+    if (!q) return e;
+    return e.replace(new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')','gi'), '<mark>$1</mark>');
+  }
+
+  AGENCIES.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = a; ministrySelect.appendChild(o); });
+  $('agency-count').textContent = AGENCIES.length;
+
+  async function fetchJson(path) {
+    const res = await fetch(path, { cache: 'no-store' });
+    if (!res.ok) throw new Error(path + ' 응답 오류: ' + res.status);
+    return res.json();
+  }
+
+  async function loadDatesList() {
+    try { availableDates = await fetchJson('data/dates.json'); }
+    catch (e) { availableDates = []; }
+  }
+
+  async function loadForDate(dateStr) {
+    resultsEl.innerHTML = '<div class="empty-state">불러오는 중...</div>';
+    try {
+      let payload;
+      if (!dateStr || (availableDates.length && dateStr === availableDates[0])) {
+        payload = await fetchJson('data/latest.json');
+        dateStr = payload.date;
+        dateInput.value = dateStr;
+      } else {
+        const items = await fetchJson(`data/${dateStr}.json`);
+        payload = { date: dateStr, collected_at: null, items };
+      }
+      currentItems = payload.items || [];
+      $('collected-at').textContent = payload.collected_at
+        ? new Date(payload.collected_at).toLocaleString('ko-KR') : '-';
+      $('date-label').textContent = dateStr;
+      updateUrlDate(dateStr);
+      render();
+    } catch (e) {
+      resultsEl.innerHTML = `<div class="error-state">
+        <p><strong>${escapeHtml(dateStr || '이 날짜')}</strong> 데이터를 불러오지 못했습니다.</p>
+        <p>파일을 웹 서버(GitHub Pages 등)에 올려서 http(s)://로 접속했는지,<br>
+        해당 날짜의 수집이 아직 실행되지 않았는지 확인해 주세요.</p>
+        <p style="font-size:12px;">(${escapeHtml(String(e.message || e))})</p>
+      </div>`;
+      $('total-count').textContent = '0';
+    }
+  }
+
+  function renderWatchTags() {
+    watchTagsEl.innerHTML = watchKeywords.map(kw => {
+      const c = currentItems.filter(r => matchesKeyword(r, kw)).length;
+      return `<span class="watch-tag${activeWatchKeyword===kw?' active':''}" data-kw="${escapeHtml(kw)}">
+        <span>${escapeHtml(kw)}</span><span class="count">${c}</span>
+        <span class="watch-tag-remove" data-remove="${escapeHtml(kw)}">✕</span></span>`;
+    }).join('');
+    watchTagsEl.querySelectorAll('.watch-tag').forEach(el => {
+      el.addEventListener('click', e => {
+        if (e.target.classList.contains('watch-tag-remove')) return;
+        const kw = el.dataset.kw;
+        activeWatchKeyword = (activeWatchKeyword === kw) ? null : kw;
+        searchInput.value = activeWatchKeyword || '';
+        render();
+      });
+    });
+    watchTagsEl.querySelectorAll('.watch-tag-remove').forEach(el => {
+      el.addEventListener('click', e => {
+        e.stopPropagation();
+        watchKeywords = watchKeywords.filter(k => k !== el.dataset.remove);
+        saveWatch();
+        if (activeWatchKeyword === el.dataset.remove) { activeWatchKeyword = null; searchInput.value=''; }
+        render();
+      });
+    });
+  }
+  function matchesKeyword(r, kw) {
+    return (r.title||'').includes(kw) || (r.summary||'').includes(kw) || (r.agency||'').includes(kw);
+  }
+
+  $('watch-add-btn').addEventListener('click', () => {
+    const v = watchInput.value.trim();
+    if (v && !watchKeywords.includes(v)) { watchKeywords.push(v); saveWatch(); }
+    watchInput.value = ''; render();
+  });
+  watchInput.addEventListener('keydown', e => { if (e.key === 'Enter') $('watch-add-btn').click(); });
+
+  function render() {
+    const q = searchInput.value.trim();
+    const mf = ministrySelect.value;
+    const filtered = currentItems.filter(r =>
+      (!mf || r.agency === mf) && (!q || matchesKeyword(r, q))
+    );
+    $('total-count').textContent = currentItems.length;
+    resultCountTextEl.textContent = (q||mf) ? `${filtered.length}건 검색됨` : `전체 ${filtered.length}건`;
+    clearFilterBtn.style.display = (q||mf) ? 'inline' : 'none';
+
+    resultsEl.innerHTML = filtered.length ? filtered.map(r => `
+      <a class="card" href="${escapeHtml(r.link)}" target="_blank" rel="noopener">
+        <div class="card-top"><span class="badge">${escapeHtml(r.agency)}</span><span class="card-date">${escapeHtml(r.date)}</span></div>
+        <p class="card-title">${highlight(r.title, q)}</p>
+        <p class="card-summary">${highlight(r.summary || '(요약 없음 — 클릭해서 원문 확인)', q)}</p>
+      </a>`).join('') : '<div class="empty-state">검색 결과가 없습니다.</div>';
+
+    const have = new Set(currentItems.map(r => r.agency));
+    const zero = AGENCIES.filter(a => !have.has(a) && (!mf || mf === a));
+    zeroWrap.innerHTML = (!mf && zero.length === 0) ? '' : `
+      <details style="margin-top:16px;">
+        <summary style="cursor:pointer;font-size:13px;color:var(--text-secondary);font-weight:600;">
+          자료 없는 기관 (${zero.length}곳)
+        </summary>
+        ${zero.map(a => `<div class="zero-row"><span>${escapeHtml(a)}</span><span>0건</span></div>`).join('')}
+      </details>`;
+
+    renderWatchTags();
+  }
+
+  searchInput.addEventListener('input', () => {
+    if (activeWatchKeyword && searchInput.value.trim() !== activeWatchKeyword) activeWatchKeyword = null;
+    render();
+  });
+  ministrySelect.addEventListener('change', render);
+  clearFilterBtn.addEventListener('click', () => { searchInput.value=''; ministrySelect.value=''; activeWatchKeyword=null; render(); });
+
+  function shiftDate(str, days) {
+    const [y,m,d] = str.split('-').map(Number);
+    const dt = new Date(y, m-1, d); dt.setDate(dt.getDate()+days);
+    return dt.getFullYear()+'-'+String(dt.getMonth()+1).padStart(2,'0')+'-'+String(dt.getDate()).padStart(2,'0');
+  }
+  dateInput.addEventListener('change', () => loadForDate(dateInput.value));
+  $('prev-day').addEventListener('click', () => { dateInput.value = shiftDate(dateInput.value, -1); loadForDate(dateInput.value); });
+  $('next-day').addEventListener('click', () => { dateInput.value = shiftDate(dateInput.value, 1); loadForDate(dateInput.value); });
+  $('today-btn').addEventListener('click', () => loadForDate(null));
+
+  function parseDateFromQuery() {
+    const raw = new URLSearchParams(location.search).get('date');
+    if (!raw) return null;
+    // 20260917 형태와 2026-09-17 형태 둘 다 지원
+    const m8 = raw.match(/^(\d{4})(\d{2})(\d{2})$/);
+    if (m8) return `${m8[1]}-${m8[2]}-${m8[3]}`;
+    const m10 = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (m10) return raw;
+    return null;
+  }
+
+  function updateUrlDate(dateStr) {
+    const url = new URL(location.href);
+    url.searchParams.set('date', dateStr.replace(/-/g, ''));
+    history.replaceState(null, '', url);
+  }
+
+  (async function init() {
+    await loadDatesList();
+    const qDate = parseDateFromQuery();
+    await loadForDate(qDate);
+  })();
+</script>
+</body>
+</html>
