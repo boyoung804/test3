@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "collected_at": "2026-09-18T14:57:32.613697+09:00",
+  "collected_at": "2026-09-18T15:22:15.949649+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,22 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-18",
+      "agency": "국토교통부",
+      "title": "가덕도신공항 사업추진협의체 출범, 정부-지방정부-사업시행자 협력 체계 가동 가덕도신공항 사업추진협의체 출범, 정부-지방정부-사업시행자 협력 체계 가동 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782432",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-18",
+      "agency": "행정안전부",
+      "title": "한성숙 총리, \"철저한 준비와 반복적인 훈련이 국민의 생명과 안전 지키는 길\" - 한성숙 국무총리, 2026년 을지연습 사후강평회의 주재",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782434",
+      "unverified": false
+    },
     {
       "date": "2026-09-18",
       "agency": "외교부",
