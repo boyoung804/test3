@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "collected_at": "2026-09-18T12:58:26.460744+09:00",
+  "collected_at": "2026-09-18T13:18:12.006974+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,14 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-18",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 인도네시아와 할랄 인증 협력 강화...K-푸드·K-뷰티 수출지원 식약처, 인도네시아와 할랄 인증 협력 강화...K-푸드·K-뷰티 수출지원",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782413",
+      "unverified": false
+    },
     {
       "date": "2026-09-18",
       "agency": "통일부",
