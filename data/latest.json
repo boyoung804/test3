@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "collected_at": "2026-09-18T18:20:17.657428+09:00",
+  "collected_at": "2026-09-18T18:35:11.945433+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-18",
+      "agency": "산업통상부",
+      "title": "(참고자료)코스타리카, 디지털경제동반자협정 가입 발효 코스타리카, 디지털경제동반자협정 가입 발효- 중남미 전자상거래 및 디지털 비즈니스 등 우리 기업의 진출 기반 확대 기대 - 산업통상부(장관:김정관)는 코스타리카의 디지털경제동반자협정(Digital Economy Partnership Agreement, 이하 DEPA*) 가입이 발효됨에 따라, 코스타리카가",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782480",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-18",
+      "agency": "산업통상부",
+      "title": "(참고자료)10차 최고가격 동결, 중동정세 불안으로 민생경제 보호 10차 최고가격 동결,중동정세 불안으로부터 민생경제 보호- 리터당 휘발유 1,784원, 경유 1,773원, 등유 1,380원, -- 19일(토) 00시부터 4주간 적용, 중동상황에 따른 조정가능성 열어둬 - 산업통상부(장관 김정관, 이하 산업부)는 9월 19일(토) 00시부터 향후 4주간 적",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782479",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-18",
+      "agency": "보건복지부",
+      "title": "명절에도 복지 위기 신호 놓치지 않는다 명절에도 복지 위기 신호 놓치지 않는다- 현수엽 제1차관, 복지 위기가구 방문 -- 지방정부 복지 사각지대 발굴 현황 파악과 현장 복지 담당자 애로사항 청취 -",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782477",
+      "unverified": false
+    },
     {
       "date": "2026-09-18",
       "agency": "국무조정실",
