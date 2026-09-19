@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-19",
-  "collected_at": "2026-09-19T23:56:43.550970+09:00",
+  "date": "2026-09-20",
+  "collected_at": "2026-09-20T00:14:40.531654+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,38 +28,5 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": [
-    {
-      "date": "2026-09-19",
-      "agency": "농림축산식품부",
-      "title": "인천광역시 강화군 소재 소(牛) 농장 예찰 검사에서 구제역 확진 구제역 중앙사고수습본부(본부장 송미령 농림축산식품부장관, 이하 '중수본')는 9월 19일(토) 인천 강화 소재한 소(牛) 농장(53마리 사육)에 대한 예찰 검사에서 구제역이 확인되어 방역관리를 강화한다고 밝혔다.",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782489",
-      "unverified": false
-    },
-    {
-      "date": "2026-09-19",
-      "agency": "외교부",
-      "title": "조현 장관, 미국 방문 계기 존 햄리 CSIS 명예소장 면담(9.18.) 미국 워싱턴 D.C.를 방문 중인 조현 외교부 장관은 9.18.(금) 오후(현지 시간) 존 햄리(John Hamre) 전략국제문제연구소(CSIS) 명예소장과 빅터 차 (Victor Cha) 한국 석좌를 면담하고, 한미관계와 한반도 문제 등에 관해 의견을 교환하였다.",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782488",
-      "unverified": false
-    },
-    {
-      "date": "2026-09-19",
-      "agency": "고용노동부",
-      "title": "2026 제48회 중국 상하이 국제기능올림픽대회 국가대표 선수단 출국 - 9월 22일부터 중국 상하이에서 개최되는 대회에 산업기계 등 50개 직종 56명 참가- 출국 행사에 김영훈 고용노동부 장관, 이용우 더불어민주당 국회의원 참석해 선수단 격려",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782487",
-      "unverified": false
-    },
-    {
-      "date": "2026-09-19",
-      "agency": "외교부",
-      "title": "한미 외교장관회담(9.18.) 결과 미국을 방문 중인 조현 외교부 장관은 9.18.(금) 오전 워싱턴 D.C.에서 마르코 루비오(Marco Rubio) 美 국무장관과 한미 외교장관회담을 개최하고, △한미관계 △한반도 문제 △지역 및 글로벌 정세 등에 대해 폭넓게 의견을 교환하였다.",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782486",
-      "unverified": false
-    }
-  ]
+  "items": []
 }
