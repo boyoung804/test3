@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "collected_at": "2026-09-21T07:34:13.745833+09:00",
+  "collected_at": "2026-09-21T07:47:07.925221+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,14 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-21",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 유황 훈증 처리된 중국산 죽순",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782574",
+      "unverified": false
+    },
     {
       "date": "2026-09-21",
       "agency": "국방부",
