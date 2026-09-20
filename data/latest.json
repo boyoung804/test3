@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "collected_at": "2026-09-21T06:25:32.060337+09:00",
+  "collected_at": "2026-09-21T06:39:32.561146+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,22 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-09-21",
+      "agency": "국방부",
+      "title": "국방부-강원특별자치도 접경지역 5개군, 제13차 상생발전협의회 개최 국방부-강원특별자치도 접경지역 5개군, 제13차 상생발전협의회 개최□ 국방부와 강원특별자치도는 9월 18일(금) 춘천시 강원특별자치도 산림과학연구원에서 '제13차 국방부-강원특별자치도 접경지역* 상생발전협의회'를 개최하였습니다. * 접경지역 5개군 : 철원군, 화천군, 양구군, 인제군, 고",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782573",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "국방부",
+      "title": "제29차 한미 통합국방협의체(KIDD) 회의 결과 제29차 한미 통합국방협의체(KIDD) 회의 결과□ 대한민국 국방부와 미합중국 전쟁부는 2026년 9월 16일부터 18일까지부산에서 제29차 한미 통합국방협의체(KIDD : Korea-U.S. Integrated Defense Dialogue, 이하 KIDD) 회의를 개최했습니다.□ 이번 회의는 대한민국 국",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782572",
+      "unverified": false
+    }
+  ]
 }
