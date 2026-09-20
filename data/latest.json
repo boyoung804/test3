@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "collected_at": "2026-09-20T10:50:56.866271+09:00",
+  "collected_at": "2026-09-20T11:04:48.792537+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,78 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-20",
+      "agency": "국토교통부",
+      "title": "청년·고령자·양육가구 등",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782518",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "국토교통부",
+      "title": "철도여행 2개월 전부터 준비하세요 철도여행 2개월 전부터 준비하세요 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782517",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "국토교통부",
+      "title": "추석 연휴 교통혼잡 해소에 총력... 정부 합동 특별교통대책을 시행합니다 추석 연휴 교통혼잡 해소에 총력... 정부 합동 특별교통대책을 시행합니다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782516",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "국토교통부",
+      "title": "안전운전 배달 종사자 보험료",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782515",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "해양수산부",
+      "title": "해양수산부, 추석 명절 전 고수온 피해 어가에 재난 지원금 137억 원 신속 지원한다 해양수산부, 추석 명절 전 고수온 피해 어가에 재난 지원금 137억 원 신속 지원한다 - 338개 어가 재난 지원금 지급 및 상환 연기, 이자 감면 등 간접 지원 추진",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782514",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "해양수산부",
+      "title": "해양 수도권에 해양 사물인터넷 구축한다 해양 수도권에 해양 사물인터넷 구축한다 - 11.30.까지 시범사업 협업기관 모집…통신비 무료, 맞춤형 단말기 개발 지원",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782513",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "해양수산부",
+      "title": "해수부, 추석 연휴에도 안전하고 막힘없는 항만서비스 제공한다 해수부, 추석 연휴에도 안전하고 막힘없는 항만서비스 제공한다 - 9.24~9.27, 2026년 '추석 연휴 항만 운영 특별대책' 시행",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782512",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "농림축산식품부",
+      "title": "농식품부, 여름철 폭염, 우박 등 피해농가에 추석 명절 전 재해복구비 지원 농림축산식품부(장관 송미령, 이하 '농식품부')는 지난 7~8월 폭염·가뭄(이하 '폭염·가뭄 피해')과 8월 31일 우박·강풍 피해(이하 '우박·강풍 피해')를 입은 농업인들에게 재해복구비 및 금융 지원을 실시한다고 밝혔다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782511",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-20",
+      "agency": "농림축산식품부",
+      "title": "한우, 카타르 수출길 열렸다... 뼈 없는 냉장·냉동 쇠고기 수출 가능 농림축산식품부(장관 송미령, 이하 '농식품부')는 카타르 공공보건부와 뼈 없는(Boneless) 쇠고기 수출을 위한 위생 조건과 검역증명서 서식에 대한 협의를 완료했다고 밝혔다. 이에 따라 국내 수출업체는 양국이 협의한 위생 조건과 카타르 측이 인정하는 할랄 요건을 충족한 쇠고기를 카타",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782510",
+      "unverified": false
+    },
     {
       "date": "2026-09-20",
       "agency": "과학기술정보통신부",
