@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "collected_at": "2026-09-21T08:16:16.548759+09:00",
+  "collected_at": "2026-09-21T08:29:16.677893+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,54 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-21",
+      "agency": "문화체육관광부",
+      "title": "생성형 인공지능 활용 음악의 저작권 신탁·분배 기준 논의 생성형 인공지능 활용 음악의 저작권 신탁·분배 기준 논의 관련 보도자료 내용입니다. 자세한 사항은 붙임파일([0921]문체부보도자료-인공지능 활용 음악의 신탁 기준 마련을 위한 토론회 개최.pdf)을 참고하시기 바랍니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782580",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "문화체육관광부",
+      "title": "밀라노·파리에서 한복의 새로운 가능성 연다 밀라노·파리에서 한복의 새로운 가능성 연다 관련 보도자료 내용입니다. 자세한 사항은 붙임파일([0921]문체부보도자료-2026 한복 해외거점 프로모션 개최.pdf)을 참고하시기 바랍니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782579",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "산업통상부",
+      "title": "지방에 3,918억원 투자 확정... 새 일자리 429개 생긴다 지방에 3,918억원 투자 확정...새 일자리 429개 생긴다'26년 제3차 지방투자촉진보조금 심의위원회 개최- 10개 지방투자기업에 816억원(국비 560억원) 지원 결정 산업통상부(장관 김정관, 이하 산업부)는 올해 제3차(7~9월) 지방투자촉진보조금 심의(9.16일) 결과, 지방정부가 신",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782581",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, '화장품 GMP 전문가 양성 교육' 실시 [보도참고] 식약처, '화장품 GMP 전문가 양성 교육' 실시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782578",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 추석 명절 건강한 식생활을 위한 식품안전나라 '한입 퀴즈' 이벤트 개최 (보도참고) 추석 명절 건강한 식생활을 위한 식품안전나라 '한입 퀴즈' 이벤트 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782577",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 추석 명절 안전한 장보기·음식 보관 수칙 안내 식약처, 추석 명절 안전한 장보기·음식 보관 수칙 안내",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782576",
+      "unverified": false
+    },
     {
       "date": "2026-09-21",
       "agency": "중소벤처기업부",
