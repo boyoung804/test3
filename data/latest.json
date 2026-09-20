@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "collected_at": "2026-09-20T09:53:09.063975+09:00",
+  "collected_at": "2026-09-20T10:07:44.846790+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,14 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-20",
+      "agency": "과학기술정보통신부",
+      "title": "구혁채 과기정통부 제1차관, 「Nobel Prize Dialogue Seoul 2026」 참석 - 노벨상 수상자들과 인공지능 시대 과학기술의 미래에 대한 의견 교환 - 우수 과학기술 인재의 성장과 창의·도전적 연구환경 조성 방향 논의",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782509",
+      "unverified": false
+    },
     {
       "date": "2026-09-20",
       "agency": "보건복지부",
