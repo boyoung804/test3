@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "collected_at": "2026-09-21T17:13:21.457059+09:00",
+  "collected_at": "2026-09-21T17:31:57.402669+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,14 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-21",
+      "agency": "산업통상부",
+      "title": "(참고자료)통상교섭본부장,",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782751",
+      "unverified": false
+    },
     {
       "date": "2026-09-21",
       "agency": "농림축산식품부",
