@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T07:46:02.304021+09:00",
+  "collected_at": "2026-09-22T07:57:19.879823+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,14 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "중소벤처기업부",
+      "title": "중기부, 온라인플랫폼 입점",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782794",
+      "unverified": false
+    },
     {
       "date": "2026-09-22",
       "agency": "기후에너지환경부",
