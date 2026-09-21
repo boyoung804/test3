@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "collected_at": "2026-09-21T16:02:51.142179+09:00",
+  "collected_at": "2026-09-21T16:24:04.592564+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,54 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-21",
+      "agency": "과학기술정보통신부",
+      "title": "배경훈 부총리, 추석 맞이",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782733",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "국무조정실",
+      "title": "[보도참고자료] 후쿠시마 오염수 방류 관련 브리핑(334차) 오염수 방류 대응 전반- 브리퍼 : 국무조정실 김영수 국무1차장 - 1. 인사말씀 □ 국무조정실 국무1차장입니다. 2. 오염수 23차 방류 종료 □ 도쿄전력은 지난 8월 31일부터 시작된 오염수 23차 방류를 9월 18일 금요일 오후 12시 09분경 종료하였습니다.□ 이번 23차 방류 기간에는 총",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782734",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "산업통상부",
+      "title": "\"우리 공장, 무엇부터 AI로 바꿀까?\" CEO가 먼저 이끄는 제조 현장 M.AX \"우리 공장, 무엇부터 AI로 바꿀까\"CEO가 먼저 이끄는 제조 현장 M.AX산업부, 산단 기업 CEO 50여 명과 ｢M.AX CEO 해커톤｣ 개최설비고장 등 제조 현장 애로를 AX 프로젝트로 구체화 산업통상부(장관 김정관, 이하 산업부)는 9월 21일(월) 세종 코트야드 메",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782735",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "국토교통부",
+      "title": "\"두텁고 촘촘한 주거복지 실현을 위한 「주거안정플랜」\" \"두텁고 촘촘한 주거복지 실현을 위한 「주거안정플랜」\" 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782726",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "행정안전부",
+      "title": "추석 앞두고 경북 산불 피해지역 이재민 주거 안전 챙긴다 - 재난안전관리본부장, 경북 의성군 임시조립주택 단지 찾아 시설안전 현장점검- 산불·호우 피해 주민 위로하고 생활 불편사항 청취 및 안전관리 당부",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782732",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "해양수산부",
+      "title": "(참고) 후쿠시마 오염수 방류 대응 브리핑(334차, 서면) 오염수 방류 대응 전반- 브리퍼 : 국무조정실 김영수 국무1차장 - 1. 인사말씀 □ 국무조정실 국무1차장입니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782725",
+      "unverified": false
+    },
     {
       "date": "2026-09-21",
       "agency": "고용노동부",
