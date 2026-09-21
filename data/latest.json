@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "collected_at": "2026-09-21T10:57:10.905530+09:00",
+  "collected_at": "2026-09-21T11:16:34.515799+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,22 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-21",
+      "agency": "해양수산부",
+      "title": "추석 명절, 연안여객선과 함께 안전하고 편안한 귀성·귀경길 되세요! 추석 명절, 연안여객선과 함께 안전하고 편안한 귀성·귀경길 되세요! - 해수부, 9.23.(수)~27.(일) '추석 연휴 연안여객선 특별 교통 대책' 시행",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782647",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-21",
+      "agency": "농림축산식품부",
+      "title": "햅쌀 출하 시기 양곡 부정유통",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782646",
+      "unverified": false
+    },
     {
       "date": "2026-09-21",
       "agency": "법제처",
