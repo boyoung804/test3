@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T15:22:59.850980+09:00",
+  "collected_at": "2026-09-22T15:42:46.264855+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "고용노동부",
+      "title": "(참고) 외국인 어업 노동자 소화기 분사 사건, 즉시 수시감독 착수",
+      "summary": "고용노동부는 9.19.(토) 전남광주통합특별시 고흥군 소재 선원 주거시설에서 발생한 외국인 노동자 대상 소화기 분사 사건의 조속한 해결과 엄정한 대응을 위해 해당 사업장 및 사",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782942",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "고용노동부",
+      "title": "(참고) 외국인 어업 노동자 소화기 분사 사건, 즉시 수시감독 착수",
+      "summary": "고용노동부는 9.19.(토) 전남광주통합특별시 고흥군 소재 선원 주거시설에서 발생한 외국인 노동자 대상 소화기 분사 사건의 조속한 해결과 엄정한 대응을 위해 해당 사업장 및 사",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782941",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "법제처",
+      "title": "법제처, 인신매매 피해자의 권익 보호 강화를 위해 현장의 목소리를 듣다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782943",
+      "unverified": true
+    },
     {
       "date": "2026-09-22",
       "agency": "국토교통부",
