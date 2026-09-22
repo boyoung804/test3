@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "collected_at": "2026-09-23T07:52:54.413478+09:00",
+  "collected_at": "2026-09-23T08:06:55.780274+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,22 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-23",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 혁신 의료제품 상담사례 공개로 제품화 지원",
+      "summary": "[보도참고] 식약처, 혁신 의료제품 상담사례 공개로 제품화 지원",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783028",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "식품의약품안전처",
+      "title": "추석 성수식품 일제점검 결과 위반업체 150곳 적발&middot;조치",
+      "summary": "추석 성수식품 일제점검 결과 위반업체 150곳 적발·조치",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783027",
+      "unverified": false
+    },
     {
       "date": "2026-09-23",
       "agency": "국토교통부",
