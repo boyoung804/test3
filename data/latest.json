@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T13:58:34.922268+09:00",
+  "collected_at": "2026-09-22T14:17:23.420102+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "과학기술정보통신부",
+      "title": "도전성 중심 과제평가 패러다임 대전환 등 ʼ26년도 국가R&D 제도개선 설명회 개최",
+      "summary": "- 산·학·연 연구자 대상, 「2026년도 국가연구개발 행정제도개선(안)」 설명회 개최 - 대형과제 연구수당 편중을 막는 개인별 상한 신설 등 주요내용 설명 및   현장 의견",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782912",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "기후에너지환경부",
+      "title": "이호현 기후부 제2차관, 추석 연휴 경부하기 전력 수급 사전 점검 나선다",
+      "summary": "▷한국전력거래소 중부본부 방문하여 전력계통 불안정 요인, 대응체계 등 사전 점검기후에너지환경부(장관 김성환) 9월 22일 오후 이호현 제2차관이 추석 연휴 기간 안정적인 전력계",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782917",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "기후에너지환경부",
+      "title": "폐자동차 구동모터 속 희토류, 순환이용 체계 구축 착수",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782918",
+      "unverified": true
+    },
     {
       "date": "2026-09-22",
       "agency": "외교부",
