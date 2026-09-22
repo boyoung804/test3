@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "collected_at": "2026-09-23T05:56:25.067342+09:00",
+  "collected_at": "2026-09-23T06:13:51.770151+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,22 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-09-23",
+      "agency": "국토교통부",
+      "title": "철도역은 편리하게, 이동은 더 촘촘하게 …코레일 자회사 통합",
+      "summary": "철도역은 편리하게, 이동은 더 촘촘하게 …코레일 자회사 통합 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783024",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "기후에너지환경부",
+      "title": "생활화학제품 2,213개 안전성 조사… 해외직구 향&middot;도색&middot;접착 제품에 부적합 집중",
+      "summary": "▷국내 유통 제품 31개, 해외직구 제품 189개 판매 차단·행정처분 등 신속 조치▷해외직구 인센스·아로마오일, 자동차 보수용 페인트, 미용접착제 등에 부적합 집중기후에너지환경",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783025",
+      "unverified": false
+    }
+  ]
 }
