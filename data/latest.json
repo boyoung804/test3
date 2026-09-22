@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T14:57:57.054303+09:00",
+  "collected_at": "2026-09-22T15:22:59.850980+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,38 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "국토교통부",
+      "title": "[참고] 무안국제공항 활주로 포장 보수&middot;보강 추진",
+      "summary": "[참고] 무안국제공항 활주로 포장 보수·보강 추진 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782938",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "보건복지부",
+      "title": "정은경 장관, 첨단재생의료 치료 1호 현장 찾아 환자 격려",
+      "summary": "정은경 장관, 첨단재생의료 치료 1호 현장 찾아 환자 격려 - 여의도성모병원 방문, 치료 추진경과 점검 및 환자 면담 등 진행 -  보건복지부(장관 정은경)는 9월 22일(화)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782931",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "기후에너지환경부",
+      "title": "에너지저장장치(ESS) 중앙계약시장 개설, 1,180MW 입찰 공고",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782937",
+      "unverified": true
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "국무조정실",
+      "title": "[보도자료] 정부출연연구기관 유공 포상 수여식",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782928",
+      "unverified": true
+    },
     {
       "date": "2026-09-22",
       "agency": "보건복지부",
