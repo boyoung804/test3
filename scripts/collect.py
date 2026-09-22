@@ -64,6 +64,34 @@ MAX_PAGES = 15          # 한 번 실행에서 넘겨볼 최대 페이지 수 (�
 REQUEST_DELAY_SEC = 0.6  # 요청 간 최소 대기시간 (서버 부담 완화)
 EARLY_STOP_ON_SEEN = True  # 이미 저장된 기사를 만나면 그 즉시 스캔 중단 (증분 수집 최적화)
 
+# korea.kr이 본문 요약 없이 접근성용으로 붙이는 상투적 안내문구.
+# 목록 링크의 title/aria-label에 "{제목} 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을
+# 참고하시기 바랍니다." 형태로 섞여 들어와, 제목 파싱이 깨지는 원인이 된다.
+_BOILERPLATE_SUFFIX_RE = re.compile(
+    r"\s*관련\s*보도자료(?:\s*내용입니다)?\.?\s*자세한\s*내용은\s*첨부파일을\s*참고하시기\s*바랍니다\.?\s*$"
+)
+
+
+def clean_title(raw: str) -> str:
+    """목록에서 뽑은 원시 텍스트에서 상투적 안내문구를 제거하고,
+    제목이 그대로 두 번 반복 삽입된 경우(접근성 텍스트 중복) 한 번만 남긴다."""
+    core = _BOILERPLATE_SUFFIX_RE.sub("", raw).strip()
+
+    n = len(core)
+    if n >= 4:
+        # "제목 제목" (공백 하나 사이) 형태의 정확한 중복 탐지
+        half = n // 2
+        first, second = core[:half].strip(), core[half + (n % 2):].strip()
+        if first and first == second:
+            core = first
+        else:
+            # 공백 2칸 이상으로 구분된 반복 패턴도 확인 (기존 방식과의 호환)
+            parts = re.split(r"\s{2,}", core)
+            if len(parts) >= 2 and parts[0].strip() == parts[1].strip():
+                core = parts[0].strip()
+
+    return core.strip()
+
 
 def today_str():
     return datetime.now(KST).strftime("%Y-%m-%d")
@@ -98,9 +126,18 @@ def parse_items(html: str):
         date_raw, agency = date_agency.groups()
         date_iso = date_raw.replace(".", "-")
 
-        # 제목은 텍스트 맨 앞부분 (사이트가 title을 반복 삽입하는 경우가 있어 정리)
-        title = text.split(date_raw)[0].strip()
-        title = re.split(r"\s{2,}", title)[0][:200] if title else text[:200]
+        # 제목 추출: korea.kr 목록 항목은 보통 <strong>(또는 <b>) 태그로 "진짜 제목"을
+        # 감싸고, 그 바로 뒤에 제목이 다시 한 번 반복되며 본문 미리보기나 상투적
+        # 안내문구("...관련 보도자료 내용입니다...")가 공백 없이 이어 붙는 구조다.
+        # 굵은 글씨 태그의 텍스트가 있으면 그걸 신뢰할 수 있는 제목으로 우선 사용하고,
+        # 없는 경우에만 기존 방식(전체 텍스트에서 추출 + 정리)으로 대체한다.
+        strong_el = a.find(["strong", "b"])
+        if strong_el and strong_el.get_text(strip=True):
+            title = strong_el.get_text(" ", strip=True)
+        else:
+            title = text.split(date_raw)[0].strip()
+            title = clean_title(title) if title else text[:200]
+        title = title[:200]
 
         items.append({
             "date": date_iso,
