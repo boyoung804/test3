@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T09:54:24.632566+09:00",
+  "collected_at": "2026-09-22T10:09:46.676862+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "국가보훈부",
+      "title": "국가보훈부， 맞춤형 통계서비스 나만의 보훈통계 누리집에서 제공 260922 보도자료(국가보훈부， 맞춤형 통계서비스 나만의 보훈통계 누리집에서 제공)",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782833",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "고용노동부",
+      "title": "구직자 절박함을 이용하는 거짓 구인광고, 끝까지 책임지겠습니다 「직업안정법」 하위법령 입법예고(9.22.~11.2.)- 거짓 구인광고 게재 전 차단·게재 후 즉시 삭제 명령 체계 마련 - 고용노동부(장관 김영훈)는 「직업안정법」 하위법령 일부 개정령안을 9월 22일부터 40일간 입법예고 한다. 2026년 12월 10일 시행예정인「직업안정법」에서 위임한 사항",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782832",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "국토교통부",
+      "title": "올해 추석 연휴 4일간",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782838",
+      "unverified": false
+    },
     {
       "date": "2026-09-22",
       "agency": "중소벤처기업부",
