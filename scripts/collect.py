@@ -97,6 +97,60 @@ def today_str():
     return datetime.now(KST).strftime("%Y-%m-%d")
 
 
+# 상세 페이지의 meta description 끝에 붙는 사이트명 꼬리표
+# (예: "... - 정책브리핑 | 브리핑룸 | 대한민국 정책브리핑")
+_DETAIL_DESC_SUFFIX_RE = re.compile(r"\s*-\s*정책브리핑\s*\|.*$")
+
+
+def fetch_detail_meta(link: str):
+    """상세 페이지(pressReleaseView.do)를 열어 og:title/og:description에서
+    신뢰할 수 있는 제목과 요약을 가져온다. 목록 페이지 텍스트를 정규식으로
+    잘라내는 것보다 훨씬 안정적이다 (사이트 쪽 목록 마크업이 바뀌어도 영향 없음).
+    실패하면 None을 반환하고, 호출한 쪽에서 목록 기반 제목을 그대로 쓴다."""
+    try:
+        resp = requests.get(link, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"[경고] 상세 페이지 요청 실패 ({link}): {e}", file=sys.stderr)
+        return None
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    title = None
+    og_title = soup.find("meta", attrs={"property": "og:title"})
+    if og_title and og_title.get("content", "").strip():
+        title = og_title["content"].strip()
+    if not title:
+        h1 = soup.find("h1")
+        if h1 and h1.get_text(strip=True):
+            title = h1.get_text(" ", strip=True)
+    if not title:
+        return None
+
+    summary = ""
+    og_desc = soup.find("meta", attrs={"property": "og:description"})
+    if og_desc and og_desc.get("content", "").strip():
+        summary = _DETAIL_DESC_SUFFIX_RE.sub("", og_desc["content"].strip()).strip()
+
+    return {"title": title[:200], "summary": summary[:500]}
+
+
+def enrich_with_detail(items):
+    """새로 발견된 항목마다 상세 페이지를 열어 제목/요약을 보강한다.
+    이미 알고 있던(known_links) 항목은 여기 들어오지 않으므로, 5분 간격
+    실행 기준으로도 보통 몇 건 안 되는 추가 요청만 발생한다."""
+    for it in items:
+        detail = fetch_detail_meta(it["link"])
+        if detail:
+            it["title"] = detail["title"]
+            if detail["summary"]:
+                it["summary"] = detail["summary"]
+        else:
+            it["unverified"] = True  # 상세 조회 실패: 목록 기반 제목이라는 표시
+        time.sleep(REQUEST_DELAY_SEC)
+    return items
+
+
 def fetch_page(page_index: int) -> str:
     """목록 페이지 HTML을 가져온다. pageIndex 파라미터로 페이지 이동을 시도한다."""
     params = {"pageIndex": page_index}
@@ -223,6 +277,10 @@ def main():
     print(f"[수집 시작] {target_date} (기존 저장 {len(existing_items)}건, known_links={len(known_links)})")
     new_items = collect_for_date(target_date, known_links=known_links)
     print(f"[신규 발견] {len(new_items)}건 (감시 대상 {len(AGENCIES)}개 기관 기준)")
+
+    if new_items:
+        print(f"[상세 페이지 보강] 신규 {len(new_items)}건의 정확한 제목/요약 조회 중...")
+        new_items = enrich_with_detail(new_items)
 
     # 새 기사를 앞쪽(최신순)에 붙이고, 링크 기준으로 중복 제거.
     merged = []
