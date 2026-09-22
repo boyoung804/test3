@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T14:46:58.298409+09:00",
+  "collected_at": "2026-09-22T14:57:57.054303+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "보건복지부",
+      "title": "추석 명절 전 취약계층 자활지원 현장 방문",
+      "summary": "추석 명절 전 취약계층 자활지원 현장 방문 - 진영주 사회복지정책실장, 서울강서지역자활센터 찾아 자활참여자·종사자 격려 -  보건복지부 진영주 사회복지정책실장은 9월 22일(화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782927",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "보건복지부",
+      "title": "아동학대 현장 대응력 높인다",
+      "summary": "아동학대 현장 대응력 높인다 - 보건복지부·경찰청, 「아동학대 대응 정기 협의체 제3차 회의」 개최 - 보건복지부(장관 정은경)는 9월 22일(화) 14시, 9월 2일 발표한",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782926",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "고용노동부",
+      "title": "인공지능(AI) 시대 청년 일자리,  새로운 해법을 함께 찾는다",
+      "summary": "- 고용노동부·대한상의 인력개발사업단, 「인공지능(AI) 시대, 청년 일자리 포럼」 공동 개최 - 기업·사회적기업의 일경험·창업 등 청년 일자리 창출 방안 논의  고용노동부(장",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782925",
+      "unverified": false
+    },
     {
       "date": "2026-09-22",
       "agency": "과학기술정보통신부",
