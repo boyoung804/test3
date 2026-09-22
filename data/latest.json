@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T22:58:45.281270+09:00",
+  "collected_at": "2026-09-22T23:18:40.337509+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,14 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "외교부",
+      "title": "유엔총회 고위급회기 계기 한-UAE 외교장관회담(9.21.) 개최",
+      "summary": "조현 외교장관은9.21.(월)제81회 유엔총회 고위급회기 계기에압둘라빈 자이드 알-나흐얀(Abdullahbin Zayed Al-Nahyan)아랍에미리트연합국(UAE)외교장관과",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783017",
+      "unverified": false
+    },
     {
       "date": "2026-09-22",
       "agency": "고용노동부",
