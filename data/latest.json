@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "collected_at": "2026-09-22T16:59:32.500105+09:00",
+  "collected_at": "2026-09-22T17:20:29.638580+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,38 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-22",
+      "agency": "해양수산부",
+      "title": "서해 북방한계선(NLL) 이남 해역 중국 불법 어구 집중 철거",
+      "summary": "서해 북방한계선(NLL) 이남 해역 중국 불법 어구 집중 철거 - 중국 불법 통발(2,450개)?자망(20㎞) 등 불법 어구 철거, 꽃게 3.1톤 방류 해양수산부(장관 황종우)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782973",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 벤조피렌 초과 검출된 '들기름' 회수 조치",
+      "summary": "[보도참고] 벤조피렌 초과 검출된 '들기름' 회수 조치",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782968",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "행정안전부",
+      "title": "복합위기시대 정부정책에 '사회적 가치' 입힌다 행정안전부, 정책 포럼 개최",
+      "summary": "- 9월 22일, '사회적 가치 확산과 제도화를 위한 정책 포럼' 개최- 주요국 법·제도 사례 공유 및 전문가 토론 거쳐 실효성 있는 법·제도적 기반 마련 도모- 「사회적가치기",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782971",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-22",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 잔류농약 기준 초과 검출된 '냉동자숙이집트콩' 회수 조치",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782967",
+      "unverified": true
+    },
     {
       "date": "2026-09-22",
       "agency": "국방부",
