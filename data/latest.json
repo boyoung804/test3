@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "collected_at": "2026-09-23T09:41:35.007310+09:00",
+  "collected_at": "2026-09-23T09:56:33.445429+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,22 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-23",
+      "agency": "고용노동부",
+      "title": "MCN(Multi Channel Network) 산업 노동자 권익 보호를 위한 기획감독 착수",
+      "summary": "- 서울지역 MCN 주요 사업장 5개사 노동관계법 전반 기획감독 실시 고용노동부(장관 김영훈)는 9.28(월)부터 유튜브, 틱톡, 인스타그램 등에서 활동하는 크리에이터(crea",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783045",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "국방부",
+      "title": "국방부, 영화 &lt;실미도&gt; 안내자막 수정",
+      "summary": "국방부, 영화 실미도 안내자막 수정 □ 국방부는 실미도 희생자 유족회의 요청에 따라 영화 실미도에 포함된 안내자막의 오류를 확인하고, 지난 7월 영화 배급사 ㈜씨제이이엔엠(CJ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783044",
+      "unverified": false
+    },
     {
       "date": "2026-09-23",
       "agency": "산업통상부",
