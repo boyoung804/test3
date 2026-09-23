@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "collected_at": "2026-09-23T12:59:43.375158+09:00",
+  "collected_at": "2026-09-23T13:20:14.723136+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-23",
+      "agency": "산업통상부",
+      "title": "'26년 8월 주요 유통업체 매출 동향",
+      "summary": "'26년 8월 주요 유통업체 매출 동향 - 전체 매출 7.7% 증가, 오프라인 5.4%, 온라인 9.3% 상승   산업통상부(장관 김정관)는 '26년 8월 주요 유통업체(오프라",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783107",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "보건복지부",
+      "title": "추석 앞두고 학대피해아동 보호 최일선 종사자 격려 및 현장의견 청취",
+      "summary": "추석 앞두고 학대피해아동 보호 최일선 종사자 격려 및 현장의견 청취 - 현수엽 제1차관, 세종특별자치시 아동보호전문기관 현장 방문 - - '아동학대 예방 및 대응 보완 대책'",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783104",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "보건복지부",
+      "title": "정은경 보건복지부 장관, 서울의료원 응급의료 현장 방문",
+      "summary": "정은경 보건복지부 장관, 서울의료원 응급의료 현장 방문 - 추석 연휴 대비 응급의료체계 점검 및 현장 직원 격려 -  정은경 보건복지부 장관은 9월 23일(수) 오전 10시 3",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783103",
+      "unverified": false
+    },
     {
       "date": "2026-09-23",
       "agency": "보건복지부",
