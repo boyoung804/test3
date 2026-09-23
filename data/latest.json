@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "collected_at": "2026-09-23T11:13:09.952426+09:00",
+  "collected_at": "2026-09-23T11:30:26.225585+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,38 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-23",
+      "agency": "국토교통부",
+      "title": "[참고] 「외국인 부동산 거래」 더 촘촘히 들여다본다",
+      "summary": "[참고] 「외국인 부동산 거래」 더 촘촘히 들여다본다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783080",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "행정안전부",
+      "title": "행정안전부, 국민과 함께 '에스컬레이터 안전 이용 문화' 정착 나선다",
+      "summary": "- '모두의 토론회'에서 신속한 이동보다 안전한 이용에 국민적 공감대 형성- 3대 안전 수칙 생활화·이용 환경 개선 등 후속 조치 추진행정안전부(장관 윤호중)는 지난 8월 29",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783085",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "산업통상부",
+      "title": "(참고자료)원유 수급 안정화 및 중동 의존도 완화를 위해 다변화 원유 수입부과금 환급 확대",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783081",
+      "unverified": true
+    },
+    {
+      "date": "2026-09-23",
+      "agency": "외교부",
+      "title": "유엔총회 계기 한-콩고공화국 외교장관회담(9.22.) 결과",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783075",
+      "unverified": true
+    },
     {
       "date": "2026-09-23",
       "agency": "보건복지부",
