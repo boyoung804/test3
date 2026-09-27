@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "collected_at": "2026-09-27T11:00:53.415569+09:00",
+  "collected_at": "2026-09-27T11:21:12.316170+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,46 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-09-27",
+      "agency": "국토교통부",
+      "title": "도시의 오늘과 미래를 한눈에 … 29일부터 도시&middot;지역혁신 박람회",
+      "summary": "도시의 오늘과 미래를 한눈에 … 29일부터 도시·지역혁신 박람회 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783194",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-27",
+      "agency": "해양수산부",
+      "title": "우리나라가 제안한 '선상탄소포집장치(OCCS) 임시안전지침', 국제해사기구(IMO) 기본안 채택",
+      "summary": "우리나라가 제안한 '선상탄소포집장치(OCCS) 임시안전지침', 국제해사기구(IMO) 기본안 채택 - 2029년 IMO 최종 승인을 목표로 국제 탈탄소 및 해사 안전 기술 표준화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783193",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-27",
+      "agency": "해양수산부",
+      "title": "기후변화 가속화에 대비해 양식수산물 재해보험 개편 추진",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783192",
+      "unverified": true
+    },
+    {
+      "date": "2026-09-27",
+      "agency": "해양수산부",
+      "title": "해양수산부, 해양수산 건설공사 특별 관리 대상 사업 하반기 현장점검 실시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783191",
+      "unverified": true
+    },
+    {
+      "date": "2026-09-27",
+      "agency": "해양수산부",
+      "title": "연안 선박 신규 건조 지원으로 바닷길은 안전하게, 연안 물류 경쟁력은 탄탄하게!",
+      "summary": "연안 선박 신규 건조 지원으로 바닷길은 안전하게, 연안 물류 경쟁력은 탄탄하게! - 9.28~10.16, '2026년 제3차 연안 선박 현대화 펀드' 지원 대상자 공모  해양수",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783190",
+      "unverified": false
+    }
+  ]
 }
