@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-09-27",
+    "agency": "행정안전부",
+    "title": "인공지능(AI)으로 만드는 안전한 일상, 재난안전 분야 인공지능 전환 본격 시동",
+    "summary": "- 범정부 재난안전 인공지능 전환(AX) 종합계획 수립 및 데이터 구축 착수- 3개 지방정부 대상 「AI 기반 집중호우·태풍 대응 서비스」 시범 구축       행정안전부(장관",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783201",
+    "unverified": false
+  },
+  {
+    "date": "2026-09-27",
+    "agency": "행정안전부",
+    "title": "AI로 재난안전 업무 혁신, 우수사례 찾는다",
+    "summary": "- 행정안전부, 실제 업무에 적용해 효과를 거둔 AI 활용 사례 발굴·확산- 중앙부처·지방정부 공무원 대상 11월 10일까지 접수, 최종 4점 시상     행정안전부(장관 윤호",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783199",
+    "unverified": false
+  },
+  {
+    "date": "2026-09-27",
+    "agency": "기후에너지환경부",
+    "title": "전기재해 예방 및 안전관리 강화… 전기안전관리 실태 조사",
+    "summary": "▷전국 500곳 사업장 대상으로 전기안전관리 실태 확인기후에너지환경부(장관 김성환)는 전기재해 예방 및 안전관리 강화를 위해 전국 500여 곳의 사업장을 대상으로 전기안전관리업",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783197",
+    "unverified": false
+  },
+  {
+    "date": "2026-09-27",
+    "agency": "기후에너지환경부",
+    "title": "한-타지키스탄 태양광 국제개발협력(ODA) 사업 준공식 개최",
+    "summary": "",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783196",
+    "unverified": true
+  },
+  {
+    "date": "2026-09-27",
     "agency": "과학기술정보통신부",
     "title": "과기정통부, 맞춤형 안전 지원으로 반도체 연구 든든히 뒷받침… 올해 시범 3곳&middot;내년 22곳 점검",
     "summary": "- 반도체 연구실에서 반드시 확인해야 하는 '자체 안전 점검표(체크리스트)' 보급, 신축 연구실엔 설계 단계부터 전문가 자문 지원- 화학물질 안전원과 손잡고 사고 예방부터 조사",
