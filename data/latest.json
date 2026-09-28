@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "collected_at": "2026-09-29T08:02:10.079929+09:00",
+  "collected_at": "2026-09-29T08:21:09.192160+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,39 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-29",
+      "agency": "문화체육관광부",
+      "title": "'2026 아이치-나고야 하계아시안게임' 대한민국 선수단의 뜨거운 여정 응원",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783387",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[아시안게임] 대통령, 아시안게임 개막에 \"韓선수단 힘찬도전 응원\" | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260919052400001"
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "문화체육관광부",
+      "title": "멕시코 방송, '케이-컬처의 힘'과  '대체 불가 케이-인공지능' 조명",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783386",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "식품의약품안전처",
+      "title": "식약처, '마약류 회색지대, 어떻게 발견하고 개입할 것인가' 주제로 세미나 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783384",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-09-29",
       "agency": "국토교통부",
