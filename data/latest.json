@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "collected_at": "2026-09-28T15:59:46.876016+09:00",
+  "collected_at": "2026-09-28T16:21:55.437996+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,22 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-28",
+      "agency": "보건복지부",
+      "title": "부처별 흩어진 복지사업 점검해 빈틈없는 사회안전망 모색",
+      "summary": "부처별 흩어진 복지사업 점검해 빈틈없는 사회안전망 모색 - 현수엽 제1차관 주재 미래대응 사회안전망 혁신 추진단 첫 회의 개최 - - 기준 중위소득 활용 복지사업 종합 점검,",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783348",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-28",
+      "agency": "국가데이터처",
+      "title": "「국가데이터기본법」 관련 데이터전문가 자문회의 개최",
+      "summary": "「국가데이터기본법」관련데이터전문가자문회의개최-국가데이터생태계활성화방안을위한의견공유※자세한내용은첨부파일을참고바랍니다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783345",
+      "unverified": false
+    },
     {
       "date": "2026-09-28",
       "agency": "고용노동부",
