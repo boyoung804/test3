@@ -12,6 +12,12 @@ GitHub Actions에서 5분마다 자동 실행됩니다 (.github/workflows/daily-
 4. data/YYYY-MM-DD.json 으로 저장하고, data/latest.json 도 같이 갱신한다.
 5. data/dates.json 에 "지금까지 수집된 날짜 목록"을 갱신한다.
 
+매체 매칭 (연합뉴스/뉴시스/뉴스1):
+- 새로 발견된 기사마다 DuckDuckGo 사이트 한정 검색(site:도메인)으로 제목을 검색해서,
+  연합뉴스(yna.co.kr) > 뉴시스(newsis.com) > 뉴스1(news1.kr) 우선순위로 가장 먼저
+  매칭되는 실제 보도 기사를 찾는다. API 키나 별도 가입이 필요 없다.
+- 매칭 실패 시 media_* 필드는 빈 문자열로 남고, 나머지 데이터는 그대로 저장된다.
+
 5분 간격 관련 주의:
 - 매 실행마다 여전히 최대 MAX_PAGES 페이지까지 훑지만, 이미 저장된 기사를 만나는
   페이지에서 조기 종료하므로(EARLY_STOP_ON_SEEN) 실제 요청 수는 대부분 1~2페이지로 끝난다.
@@ -34,6 +40,7 @@ import sys
 import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from urllib.parse import urlparse, parse_qs, unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -93,61 +100,230 @@ def clean_title(raw: str) -> str:
     return core.strip()
 
 
-def today_str():
-    return datetime.now(KST).strftime("%Y-%m-%d")
+def _consume_common_prefix(text: str, prefix: str):
+    """공백을 무시하고 text가 prefix로 시작하는 만큼 소비한다.
+    (소비한 text 위치, 일치한 글자 수, prefix의 공백 제외 글자 수)를 반환."""
+    i = j = matched = 0
+    n, m = len(text), len(prefix)
+    while i < n and j < m:
+        if text[i].isspace():
+            i += 1
+            continue
+        if prefix[j].isspace():
+            j += 1
+            continue
+        if text[i] != prefix[j]:
+            break
+        i += 1
+        j += 1
+        matched += 1
+    total = sum(1 for c in prefix if not c.isspace())
+    return i, matched, total
 
 
-# 상세 페이지의 meta description 끝에 붙는 사이트명 꼬리표
-# (예: "... - 정책브리핑 | 브리핑룸 | 대한민국 정책브리핑")
-_DETAIL_DESC_SUFFIX_RE = re.compile(r"\s*-\s*정책브리핑\s*\|.*$")
+# 요약 줄 구분: "- " 처럼 하이픈 뒤에 공백이 오는 경우 (K-배터리, 한-아세안 같은 단어 내부 하이픈은 제외)
+_BULLET_SPLIT_RE = re.compile(r"\s*[-–—]\s+")
+# 문장/구절이 끝난 것으로 볼 수 있는 어미·부호 (미리보기가 중간에 잘렸는지 판단용)
+_TERMINAL_RE = re.compile(
+    r"(다|함|음|임|됨|등|예정|계획|개최|추진|발표|실시|마련|확대|강화|지원|운영|시행|선정|체결|출범|착수)\.?$"
+    r"|[)\]」』”’\"'.!?]$|\d\s*(건|명|개|곳|원|억|조|%|년|월|일)$"
+)
+_SUBTITLE_CHROME = ("이전다음기사", "정책 NOW", "오늘의 멀티미디어", "정책포커스", "하단 배너",
+                    "콘텐츠 영역", "사이트 이동경로", "사실은 이렇습니다", "공지사항", "실시간 인기뉴스")
 
 
-def fetch_detail_meta(link: str):
-    """상세 페이지(pressReleaseView.do)를 열어 og:title/og:description에서
-    신뢰할 수 있는 제목과 요약을 가져온다. 목록 페이지 텍스트를 정규식으로
-    잘라내는 것보다 훨씬 안정적이다 (사이트 쪽 목록 마크업이 바뀌어도 영향 없음).
-    실패하면 None을 반환하고, 호출한 쪽에서 목록 기반 제목을 그대로 쓴다."""
+def summarize_lines(raw: str, max_lines: int = 3, maybe_truncated: bool = True) -> str:
+    """부제/미리보기 문장을 '- ' 기준으로 나눠 최대 max_lines줄의 요약(줄바꿈 구분)으로 만든다.
+    미리보기가 중간에 잘렸을 가능성이 있으면(maybe_truncated) 마지막의 미완성 줄은 버린다."""
+    parts = [p.lstrip("▷□○▲◇※·•ㆍ ").rstrip(" -–—").strip() for p in _BULLET_SPLIT_RE.split(raw.strip())]
+    parts = [p for p in parts if p]
+    if not parts:
+        return ""
+    if maybe_truncated and len(raw.strip()) >= 90 and not _TERMINAL_RE.search(parts[-1]):
+        if len(parts) >= 2:
+            parts = parts[:-1]
+        else:
+            parts[-1] = parts[-1].rstrip(" ,·") + "…"
+    return "\n".join(parts[:max_lines])[:300]
+
+
+def extract_summary(full: str, title: str) -> str:
+    """목록 링크 텍스트(제목 + 제목 반복 + 본문 미리보기)에서 본문 미리보기만 뽑아 요약 줄로 만든다.
+    안내문구뿐이거나 너무 짧으면 빈 문자열을 반환한다."""
+    rest = full.strip()
+    for _ in range(2):
+        i, matched, total = _consume_common_prefix(rest, title)
+        if total and matched >= max(6, int(total * 0.6)):
+            rest = rest[i:].strip()
+        else:
+            break
+    rest = _BOILERPLATE_SUFFIX_RE.sub("", rest).strip()
+    if re.search(r"관련\s*보도자료\s*내용입니다", rest) or len(rest) < 15:
+        return ""
+    return summarize_lines(rest, maybe_truncated=True)
+
+
+def fetch_detail_subtitle(link: str) -> str:
+    """상세 페이지에서 제목(h1) 바로 아래 부제(h2)를 가져온다. 보도자료의 부제는
+    보통 핵심 내용을 요약한 문장들이라, 잘림 없는 요약으로 쓰기에 가장 좋다.
+    실패하거나 부제가 없으면 빈 문자열."""
     try:
         resp = requests.get(link, headers=HEADERS, timeout=15)
         resp.raise_for_status()
     except requests.RequestException as e:
-        print(f"[경고] 상세 페이지 요청 실패 ({link}): {e}", file=sys.stderr)
+        print(f"[경고] 상세 페이지(부제) 요청 실패: {e}", file=sys.stderr)
+        return ""
+    soup = BeautifulSoup(resp.text, "html.parser")
+    h1 = soup.find("h1")
+    h2 = h1.find_next("h2") if h1 else None
+    if not h2:
+        return ""
+    txt = h2.get_text("\n", strip=True)
+    if not txt or any(txt.startswith(c) for c in _SUBTITLE_CHROME):
+        return ""
+    return txt
+
+
+def _norm(t: str) -> str:
+    return re.sub(r"\s+", "", t)
+
+
+def enrich_with_summary(items):
+    """새로 발견된 항목마다 상세 페이지의 부제를 읽어 요약(최대 3줄)으로 만든다.
+    부제가 3줄 미만이면 목록 미리보기에서 뽑은 줄로 채운다. 실패하면 목록 미리보기 요약을 그대로 둔다."""
+    for it in items:
+        sub = fetch_detail_subtitle(it["link"])
+        if sub:
+            lines = summarize_lines(sub, maybe_truncated=False).split("\n")
+            for extra in (it.get("summary") or "").split("\n"):
+                if len(lines) >= 3:
+                    break
+                if extra and not any(_norm(extra) in _norm(l) or _norm(l) in _norm(extra) for l in lines):
+                    lines.append(extra)
+            it["summary"] = "\n".join(l for l in lines if l)[:300]
+        time.sleep(REQUEST_DELAY_SEC)
+    return items
+
+
+def today_str():
+    return datetime.now(KST).strftime("%Y-%m-%d")
+
+
+# 확인 대상 매체 우선순위: 연합뉴스 > 뉴시스 > 뉴스1. 도메인으로 판별한다.
+MEDIA_PRIORITY = [
+    ("연합뉴스", "yna.co.kr"),
+    ("뉴시스", "newsis.com"),
+    ("뉴스1", "news1.kr"),
+]
+
+# DuckDuckGo html 검색 전용 헤더. korea.kr용 HEADERS와 분리해 둔다
+# (일반 브라우저처럼 보이는 UA를 써야 차단 확률이 낮다).
+_SEARCH_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+    "Referer": "https://duckduckgo.com/",
+}
+
+
+def _unwrap_ddg_link(href: str) -> str:
+    """DuckDuckGo html 버전은 실제 링크를 //duckduckgo.com/l/?uddg=... 형태의
+    리다이렉트 링크로 감싸서 내려주는 경우가 있어, 그 안의 진짜 URL을 꺼낸다."""
+    if "duckduckgo.com/l/" in href:
+        parsed = urlparse(href if href.startswith("http") else "https:" + href)
+        target = parse_qs(parsed.query).get("uddg", [""])[0]
+        return unquote(target)
+    return href
+
+
+_MATCH_THRESHOLD = 0.4   # 보도자료 제목의 글자쌍이 검색결과(제목+요약문)에 이 비율 이상 들어있어야 같은 기사로 인정
+
+
+def _bigrams(text: str):
+    t = re.sub(r"[\W_]+", "", text)
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
+def _match_score(gov_title: str, result_text: str) -> float:
+    """보도자료 제목과 검색결과(기사 제목+요약문)가 얼마나 겹치는지 0~1로 계산한다."""
+    g = _bigrams(gov_title)
+    if not g:
+        return 0.0
+    return len(g & _bigrams(result_text)) / len(g)
+
+
+def _clean_query(title: str) -> str:
+    q = re.sub(r"[\[\(][^\]\)]{0,15}[\]\)]", " ", title)   # [보도자료], (참고) 같은 꼬리표 제거
+    q = re.sub(r"[「」『』“”\"'‘’]", " ", q)
+    q = re.sub(r"\s+", " ", q).strip()
+    return q[:60]
+
+
+def _search_domain(query: str, domain: str):
+    """DuckDuckGo에서 site:도메인 검색 결과를 [(제목, 링크, 요약문), ...]로 돌려준다.
+    차단/오류면 (None)을 반환해서 '결과 없음'과 구분한다."""
+    try:
+        resp = requests.get(
+            "https://html.duckduckgo.com/html/",
+            params={"q": f"{query} site:{domain}"},
+            headers=_SEARCH_HEADERS,
+            timeout=10,
+        )
+    except requests.RequestException as e:
+        print(f"    [검색오류] {domain}: {e}", file=sys.stderr)
+        return None
+    if resp.status_code != 200:
+        print(f"    [검색차단?] {domain}: HTTP {resp.status_code}", file=sys.stderr)
         return None
 
     soup = BeautifulSoup(resp.text, "html.parser")
-
-    title = None
-    og_title = soup.find("meta", attrs={"property": "og:title"})
-    if og_title and og_title.get("content", "").strip():
-        title = og_title["content"].strip()
-    if not title:
-        h1 = soup.find("h1")
-        if h1 and h1.get_text(strip=True):
-            title = h1.get_text(" ", strip=True)
-    if not title:
-        return None
-
-    summary = ""
-    og_desc = soup.find("meta", attrs={"property": "og:description"})
-    if og_desc and og_desc.get("content", "").strip():
-        summary = _DETAIL_DESC_SUFFIX_RE.sub("", og_desc["content"].strip()).strip()
-
-    return {"title": title[:200], "summary": summary[:500]}
+    out = []
+    for res in soup.select(".result"):
+        a = res.select_one("a.result__a")
+        if not a:
+            continue
+        link = _unwrap_ddg_link(a.get("href", ""))
+        if domain not in link:
+            continue
+        snip = res.select_one(".result__snippet")
+        out.append((a.get_text(" ", strip=True), link, snip.get_text(" ", strip=True) if snip else ""))
+    return out
 
 
-def enrich_with_detail(items):
-    """새로 발견된 항목마다 상세 페이지를 열어 제목/요약을 보강한다.
-    이미 알고 있던(known_links) 항목은 여기 들어오지 않으므로, 5분 간격
-    실행 기준으로도 보통 몇 건 안 되는 추가 요청만 발생한다."""
+def find_media_coverage(title: str):
+    """연합뉴스 > 뉴시스 > 뉴스1 순서로 실제 보도 기사를 찾는다.
+    각 매체마다 상위 검색결과 중 보도자료 제목과 가장 비슷한 기사를 고르고,
+    유사도가 기준(_MATCH_THRESHOLD)에 못 미치면 '이 매체엔 없음'으로 보고 다음 매체로 넘어간다."""
+    query = _clean_query(title)
+    for press_name, domain in MEDIA_PRIORITY:
+        results = _search_domain(query, domain)
+        time.sleep(1.0)  # 검색엔진 부담/차단 방지
+        if not results:
+            print(f"    - {press_name}: 검색결과 없음")
+            continue
+        best = max(results, key=lambda r: _match_score(title, r[0] + " " + r[2]))
+        score = _match_score(title, best[0] + " " + best[2])
+        print(f"    - {press_name}: 후보 {len(results)}건, 최고 유사도 {score:.2f}")
+        if score >= _MATCH_THRESHOLD:
+            return {"press": press_name, "title": best[0][:200], "link": best[1]}
+    return None
+
+
+def enrich_with_media(items):
+    """새로 발견된 항목마다 실제 보도 매체(연합뉴스/뉴시스/뉴스1) 매칭을 시도한다.
+    매칭에 실패해도 item 자체는 그대로 유지되고, 매체 관련 필드만 비워진다."""
     for it in items:
-        detail = fetch_detail_meta(it["link"])
-        if detail:
-            it["title"] = detail["title"]
-            if detail["summary"]:
-                it["summary"] = detail["summary"]
+        media = find_media_coverage(it["title"])
+        if media:
+            it["media_press"] = media["press"]
+            it["media_title"] = media["title"]
+            it["media_link"] = media["link"]
         else:
-            it["unverified"] = True  # 상세 조회 실패: 목록 기반 제목이라는 표시
-        time.sleep(REQUEST_DELAY_SEC)
+            it["media_press"] = ""
+            it["media_title"] = ""
+            it["media_link"] = ""
     return items
 
 
@@ -192,14 +368,18 @@ def parse_items(html: str):
             title = text.split(date_raw)[0].strip()
             title = clean_title(title) if title else text[:200]
         title = title[:200]
+        summary = extract_summary(text.split(date_raw)[0], title)
 
         items.append({
             "date": date_iso,
             "agency": agency,
             "title": title or "(제목 확인 필요)",
-            "summary": "",  # 상세 페이지를 별도로 열어야 본문 요약이 가능 (부하 고려해 기본은 비움)
+            "summary": summary,  # 목록의 본문 미리보기에서 추출 (없으면 빈 문자열)
             "link": f"{DETAIL_URL}?newsId={news_id}",
             "unverified": False,
+            "media_press": "",   # 연합뉴스/뉴시스/뉴스1 중 매칭된 매체명 (없으면 빈 문자열)
+            "media_title": "",   # 그 매체의 실제 기사 제목
+            "media_link": "",    # 그 매체의 실제 기사 링크
         })
     return items
 
@@ -279,8 +459,10 @@ def main():
     print(f"[신규 발견] {len(new_items)}건 (감시 대상 {len(AGENCIES)}개 기관 기준)")
 
     if new_items:
-        print(f"[상세 페이지 보강] 신규 {len(new_items)}건의 정확한 제목/요약 조회 중...")
-        new_items = enrich_with_detail(new_items)
+        print(f"[요약] 신규 {len(new_items)}건의 부제/미리보기로 요약 생성 중...")
+        new_items = enrich_with_summary(new_items)
+        print(f"[매체 매칭] 신규 {len(new_items)}건의 연합뉴스/뉴시스/뉴스1 보도 여부 확인 중...")
+        new_items = enrich_with_media(new_items)
 
     # 새 기사를 앞쪽(최신순)에 붙이고, 링크 기준으로 중복 제거.
     merged = []
