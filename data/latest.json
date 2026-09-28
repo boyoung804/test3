@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "collected_at": "2026-09-28T15:11:58.508397+09:00",
+  "collected_at": "2026-09-28T15:39:37.633940+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,22 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-28",
+      "agency": "고용노동부",
+      "title": "제48회 중국 상하이 국제기능올림픽대회 대한민국 종합 2위 달성",
+      "summary": "- 금 4개, 은 14개, 동 6개, 우수 16개 획득, 국제기능올림픽대회 조직위원회(WSI) 공식발표 4개 지표 기준 종합 2위 - 정보통신기술(Information and",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783340",
+      "unverified": false
+    },
+    {
+      "date": "2026-09-28",
+      "agency": "산업통상부",
+      "title": "(참고자료)CPTPP 가입 시 경제적 영향분석 경제성장 효과와 산업별 영향 잠정치 공개",
+      "summary": "CPTPP 가입 시 경제적 영향분석 경제성장 효과와 산업별 영향 잠정치 공개 - 협정 발효 10년 후 실질 GDP 0.38%p 증가, 협정 발효 후 15년간 연평균 국내생산 제",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783342",
+      "unverified": false
+    },
     {
       "date": "2026-09-28",
       "agency": "고용노동부",
