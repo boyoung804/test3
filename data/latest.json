@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "collected_at": "2026-09-29T06:00:15.198952+09:00",
+  "collected_at": "2026-09-29T06:20:27.834671+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,28 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-09-29",
+      "agency": "국토교통부",
+      "title": "사업에 맞는 공모방식 찾고 민간전문가 역할 넓힌다 설계공모 및 민간전문가 제도개선 토론회",
+      "summary": "29일 김진애 국가건축위원장을 좌장으로 건축계의 다양한 의견 듣고 제도개선 방안 논의",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783382",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "공공건축 설계공모 손본다…'사업담당 건축가' 신설 검토",
+      "media_link": "https://www.newsis.com/view/NISX20260928_0003805530"
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "국토교통부",
+      "title": "글로벌 철도연수과정 본격 시작, 해외사업의 가교 역할을 지속 이어간다",
+      "summary": "9월 30일 15개국 교육생 32명 환영식… K-철도 수주 협력기반 확대",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783381",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    }
+  ]
 }
