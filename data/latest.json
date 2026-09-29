@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "collected_at": "2026-09-29T17:21:02.584203+09:00",
+  "collected_at": "2026-09-29T17:38:47.667784+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-29",
+      "agency": "외교부",
+      "title": "조현 장관, 3국협력사무국(TCS) 신임 사무총장단 만나 한중일 협력 위한 역할 당부",
+      "summary": "조현 외교부 장관은 9.29.(화) 한중일 3국협력사무국(TCS) 니시오카 타쓰시(NISHIOKA Tatsushi) 사무총장, 김한규 사무차장, 리징(LI Jing) 사무차장을 접견하여 총장단의 취임(9.1.)을 축하하고 향후 한중일 3국 협력 강화를 위한 적극적인 역할을 당부했다.  ※ 한중일 3국 협력 사무국(TCS, Trilateral Cooperation Secretariat)\n(개요) 제2차 한중일 정상회의('09.10.10.) 계기 우리측 제안으로 '11년 서울에 설립, 한중일 3국 협력 심화를 위한 인적교류 사업 등을 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783523",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "신임 한중일 3국 협력사무국 사무총장단 접견하는 조현 외교부 장관 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/PYH20260929192700013"
+    },
     {
       "date": "2026-09-29",
       "agency": "국무조정실",
