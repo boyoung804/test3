@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "collected_at": "2026-09-29T14:56:10.158978+09:00",
+  "collected_at": "2026-09-29T15:19:32.206435+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,39 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-29",
+      "agency": "보건복지부",
+      "title": "「미디어, 마음을 쓰다 : 편견을 넘어 공감으로」 정신건강 보도 위한 미디어 역할 논의",
+      "summary": "보건복지부, 한국기자협회중앙정신건강복지사업지원단과 함께 2026년 정신건강 미디어 심포지엄 개최",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783490",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "과학기술정보통신부",
+      "title": "과기정통부, 대학 교육 AI 중심 전환 본격화 AI중심대학 18개교·AX대학원 15개교 출범",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783488",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "행정안전부",
+      "title": "주민이 체감하는 지역 변화 이끈다 전국 시군구 부단체장 모여 지혜 모아",
+      "summary": "자치인재원, 세종서 '국정철학·국정과제 공유 워크숍' 개최, 중앙·지방 공조 강화\n인공지능 전환과 주민 중심 지방자치 등 변화하는 행정 환경 속 지방정부의 역할 공유   행정안전부 지방자치인재개발원(원장 직무대리 박대민)은 9월 29일(화) 오후, 정부세종컨벤션센터 국제회의장에서 전국 시군구 부단체장을 대상으로 「국정철학·국정과제 공유 공동 연수(워크숍)」를 개최했다.  이번 공동 연수(워크숍)는 정부의 국정철학과 주요 국정과제에 대한 이해와 공감대를 넓히고, 중앙과 지방 간 협력을 강화하기 위해 마련됐다. 특히 지역 현안을 조정하",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783494",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-09-29",
       "agency": "국토교통부",
