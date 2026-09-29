@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "collected_at": "2026-09-29T10:56:59.581009+09:00",
+  "collected_at": "2026-09-29T11:16:47.625624+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,94 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-29",
+      "agency": "고용노동부",
+      "title": "한국산업안전보건공단, KOSHA 옴부즈만 3차 회의 개최",
+      "summary": "기업 안전보건 공시제 관련 시스템 구축 현황 점검  한국산업안전보건공단(KOSHA, 이사장 김현중, 이하 '공단')은 9월 29일 공단 서울남부지사 대회의실에서 '2026년도 KOSHA 옴부즈만 3차 회의'를 개최했다고 밝혔다.  이날 회의에는 정혜선 공단 상임감사 및 KOSHA 옴부즈만 위원 등 관계자들이 참석하여 그동안 추진해 온 제도개선 과제들의 실행력을 점검하고 향후 발전 방향을 논의했다.  KOSHA 옴부즈만은 외부 전문가의 독립적이고 객관적인 시각에서 공단 주요 사업과 민원·계약 업무 등을 감시·평가하고, 불합리한 제도나",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783439",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "안전보건공단, 기술지원규정 350건 정비 추진…신산업 위험대응 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260408070400530"
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "국토교통부",
+      "title": "철도 차량정리 작업,  위험구역 노출 줄이고 현장 안전체계 강화",
+      "summary": "화차 외부 탑승 최소화, 후방카메라·무선입환 등으로 차량 후진작업 안전 보완",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783437",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "'제2의 의왕역 사고' 없도록…철도 작업자 위험구역 노출 줄인다 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260929047900003"
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "국토교통부",
+      "title": "굴착 전 주소만 입력하면 지하시설물 바로 확인",
+      "summary": "국토부, 9월 30일부터 '지하시설물 간편 조회' 및 '전자파일형 지하공간통합지도 제공'서비스 본격 개시",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783436",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "국토교통부",
+      "title": "\"고속도로 출구 잘못 나가도 15분 내 다시 들어오면 기본요금 면제\" 10월1일 시행",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783435",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "해양수산부",
+      "title": "해운물류 분야 미래 인재들, 인공지능 기술 활용해 항만 현장 문제 해결",
+      "summary": "9.30.~11.2. 국내외 청년 대상 해운물류 AI 기술 공모전 개최\n실제 항만 현장의 목소리를 반영해 공모 주제 선정, 올해부터 해양수산부 장관상 신설   해양수산부(장관 황종우)와 울산항만공사(사장 변재영)는 항만 현장의 문제를 인공지능 기술로 해결하고, 해운물류 분야의 미래 인재를 발굴하기 위해 '항만 문제 해결을 위한 AI 기술 공모전'을 개최한다고 밝혔다.  지난해 실시한 제1회 AI 공모전에는 '울산항 입항 선박 경로 예측'을 주제로 1,210명의 미래 인재가 참여하여 AI와 해운물류에 대한 높은 관심을 보여준 바 있다",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783434",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "해양수산부",
+      "title": "추석 연휴 기간 중대 해양 사고 없이 연안여객선 안전 수송 완료",
+      "summary": "'추석 연휴 연안여객선 특별교통대책' 시행 기간에 여객선 134척, 3,970회 운항   해양수산부(장관 황종우)는 이번 '추석 연휴 연안여객선 특별교통대책' 시행 기간에 중대 해양 사고* 없이 여객 약 32만여 명과 차량 약 7만 대를 안전하게 수송했다고 밝혔다.  * 여객선 해양 사고 중 여객이 사망 또는 실종되거나 여객 5명 이상이 중상을 입은 경우  올해 특별교통대책 기간 중 여객선은 총 134척이 3,970회 운항했다. 다만, 올해는 짧은 추석 명절 연휴로 인해 여객 수송이 작년 추석 특별교통대책 기간('25.10.2.~1",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783433",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "농림축산식품부",
+      "title": "물 절감 재배기술 바탕으로 글로벌 식량안보 시장 도전",
+      "summary": "농림축산식품부(장관 송미령, 이하 '농식품부')는 농식품 분야 우수 벤처창업 기업을 발굴·홍보하기 위해 이달의 에이(A)-벤처스* 제89호 기업으로 주식회사 미드바르(대표 서충모, 이하 '미드바르')를 선정하였다.    * 농업(agriculture) 분야 '어벤저스'라는 의미로, 최고의 벤처·창업 기업을 지칭('19.5~)   '미드바르'는 세계 4대 식량작물 중 하나인 감자에 집중하는 식량안보 기술 스타트업이다. 식량작물 생산이 어려운 지역에 무병 씨감자 생산 기반을 마련하고, 이를 출발점으로 재배·가공·유통까지 이어지는 감자 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783432",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-29",
+      "agency": "과학기술정보통신부",
+      "title": "독자 AI 파운데이션 모델 프로젝트 중단 및 최상위급 AI모델 개발 관련 SPC 설립 여부 등에 대해서는 정해진 바 없음을 알려드립니다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783427",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-09-29",
       "agency": "과학기술정보통신부",
