@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "collected_at": "2026-09-29T14:41:02.628359+09:00",
+  "collected_at": "2026-09-29T14:56:10.158978+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-29",
+      "agency": "국토교통부",
+      "title": "[참고] 추석 연휴기간 총 3,075만 명 이동",
+      "summary": "5일간 특별교통대책기간(9.23.∼9.27.) 운영",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783487",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "추석 연휴에 3천503만명 이동…교통사고 사망자 작년보다 40%↓",
+      "media_link": "https://www.yna.co.kr/view/AKR20240920067700003"
+    },
     {
       "date": "2026-09-29",
       "agency": "고용노동부",
