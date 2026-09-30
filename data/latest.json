@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "collected_at": "2026-09-30T13:54:45.568681+09:00",
+  "collected_at": "2026-09-30T14:12:47.634982+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,72 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-30",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 2등급 의료기기 인증 절차 '원스톱' 시행으로 신속 시장 진출 지원",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783734",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-30",
+      "agency": "보건복지부",
+      "title": "'데이터로 더 정확하게, 건강 지키는 맞춤형 정책 설계한다' 미래 건강전략 포럼 개최",
+      "summary": "건강정책의 근거부터 건강격차, 접근성, 미래 건강위험까지 4차례에 걸쳐 논의\n9월 30일 첫 포럼에서 근거 기반 건강정책 설계 방안 집중 모색",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783735",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-30",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 소기업·연구개발자 눈높이에 맞춘 알기 쉬운 제품화 가이드 마련",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783733",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-30",
+      "agency": "과학기술정보통신부",
+      "title": "사이버 침해사고 예방·대응 전면 강화를 위한  정보통신망법·시행령, 10월 1일부터 시행",
+      "summary": "범부처 정보보호 종합대책, 법·시행령으로 제도적 뒷받침\nCISO 임원 격상, ISMS 강화인증 신설, 반복적 침해사고엔 과징금 부과",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783725",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-30",
+      "agency": "과학기술정보통신부",
+      "title": "배경훈 부총리, 「과총 창립 60주년 기념식」 참석",
+      "summary": "과학기술계의 뜻을 모으고 연결해온 과총의 60주년 발자취 조망\n과학기술로 미래를 선도하기 위한 과학기술계와 정부의 역할과 협력 강조",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783724",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-09-30",
+      "agency": "과학기술정보통신부",
+      "title": "과기정통부, 알뜰폰 활성화를 위한업계 현장 간담회 개최",
+      "summary": "「알뜰폰 활성화 방안(7.31.)」 후속조치 본격 이행 ∙설비 보유 알뜰폰 진입 제도화(부분･Full MVNO), 전파사용료 감면 확대, 고객서비스 기준 상향 등 후속 이행계획 업계 의견수렴 및 투자･혁신 독려   ▲ 알뜰폰 시장의 지속 성장을 위한 현장 목소리 청취 ∙가격 경쟁력 제고, 투자 확대, 고객서비스 및 이용자 보호 강화방안 논의 및 업계 애로사항 청취…",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783723",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-09-30",
       "agency": "식품의약품안전처",
