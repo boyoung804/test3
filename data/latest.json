@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "collected_at": "2026-09-30T18:59:26.948715+09:00",
+  "collected_at": "2026-09-30T19:21:55.300570+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-09-30",
+      "agency": "과학기술정보통신부",
+      "title": "글로벌 AI 허브 입지 선정 공청회 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783845",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "글로벌 Ai 허브 어디에?…내달 14일 입지 선정 공청회 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260930180200017"
+    },
     {
       "date": "2026-09-30",
       "agency": "국토교통부",
