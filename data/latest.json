@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "collected_at": "2026-10-01T08:00:08.235985+09:00",
+  "collected_at": "2026-10-01T08:19:49.863734+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,83 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-01",
+      "agency": "문화체육관광부",
+      "title": "올가을, 대한민국은 공연 중... 10~11월에 공연 보러 오세요",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783863",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "가을엔 공연 보러 오세요…전국서 연극·무용 등 210편 무대 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20250929052500005"
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "문화체육관광부",
+      "title": "문화 분야 사회적기업 현장 목소리 청취...  예비사회적기업 공모도 시작",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783862",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "문체부, '문화체육관광형 예비사회적기업' 공모 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/RPR20230927003000353"
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "문화체육관광부",
+      "title": "외국인 관광객, '케이-투어 패스'로  교통·관광지 이용 할인 한 번에",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783861",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 글로벌 규제조화센터, 최신 ICH 가이드라인 교육으로 현장 적용 역랑 높인다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783858",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] '25년 화장품 안전성 정보 보고 사례 발표",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783857",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "식품의약품안전처",
+      "title": "전국 어린이 6만여 명, 식생활 안전 정책에 직접 목소리 낸다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783856",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "재정경제부",
+      "title": "「\"막힌 투자는 뚫고, 현장의 애로는 풉니다\" 현장중심 기업투자·혁신 지원방안(2차)」 발표",
+      "summary": "정부는 10.1일(목) 08:00 이형일 경제부총리 주재로 개최된 비상경제본부 회의 겸 경제관계장관회의에서 관계부처 합동으로 「\"막힌 투자는 뚫고, 현장의 애로는 풉니다\" 현장중심 기업투자·혁신 지원방안(2차)」을 발표하였습니다.※ 자세한 내용은 첨부자료를 참고하여 주시기 바랍니다.문의. 재정경제부 정책조정관 정책조정총괄과 김근호 (044-215-4514)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783859",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-01",
       "agency": "기후에너지환경부",
