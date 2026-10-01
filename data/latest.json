@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "collected_at": "2026-10-01T11:24:26.191567+09:00",
+  "collected_at": "2026-10-01T11:41:50.433863+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-01",
+      "agency": "과학기술정보통신부",
+      "title": "과기정통부, 피지컬 AI 확산을 지원할 '무선전력전송 실환경 테스트베드' 본격 가동",
+      "summary": "10.1.(목) 무선전력전송 실환경 테스트베드 개소식 개최\n전기차·로봇 등에 적용되는 중·대출력 무선전력전송 기술의 실증·상용화 지원",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783921",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "피지컬 Ai 로봇도 알아서 충전…정부, 무선전력 테스트베드 가동 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20261001057200017"
+    },
     {
       "date": "2026-10-01",
       "agency": "과학기술정보통신부",
