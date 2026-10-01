@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "collected_at": "2026-10-01T11:41:50.433863+09:00",
+  "collected_at": "2026-10-01T11:57:41.152657+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-01",
+      "agency": "보건복지부",
+      "title": "국립의학전문대학원 남원 설립 확정, 2029년 개교 본격 추진",
+      "summary": "설립준비위원회 제4차 회의서 소재지 의결, 공공의료 인재 양성 기반 마련\n기반시설 전문위원회 적합성 검토 결과 반영\n2018년 이후 이어온 설립 정책 일관성 있게 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783928",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "서남대 폐교 8년…국립의전원 남원 유치 '총력' | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/MYH20260919006800038"
+    },
     {
       "date": "2026-10-01",
       "agency": "과학기술정보통신부",
