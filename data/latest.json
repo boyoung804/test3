@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "collected_at": "2026-10-01T09:30:11.171545+09:00",
+  "collected_at": "2026-10-01T09:54:47.120504+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,28 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-01",
+      "agency": "과학기술정보통신부",
+      "title": "다목적 SMR 상용 가속화를 위해 민관이 뭉친다",
+      "summary": "​\n제1차관, 선박 동력원, 고온열공급 등 다목적 SMR 활용 길 넓히기 위해           수요·공급 기업 의견 청취\n다목적 SMR 글로벌 시장 선점을 위해 10월 내 노형별 민관협의체를 구성하고   킥오프 회의 추진으로 제도개선, R&BD, SPC 논의 착수",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783874",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "한수원, 美 Smr 컨퍼런스서 스마트 넷제로 시티 소개 - 뉴스1",
+      "media_link": "https://www.news1.kr/economy/trend/5403594"
+    },
+    {
+      "date": "2026-10-01",
+      "agency": "기후에너지환경부",
+      "title": "메콩 지역 물 문제 해결을 위한 '제4차 한-메콩 국제 물포럼' 개최",
+      "summary": "메콩 5개국 정부·대사, 국제기구, 개발협력파트너, 물기업 등 200여 명 참석▷ 한-메콩 물분야 협력 강화 및 국내 물기업 해외진출 발판 마련기후에너지환경부(장관 김성환)는 10월 1일 웨스틴조선호텔(서울 중구 소재)에서 '제4차 한-메콩 국제 물포럼(MKWF*)'를 개최한다고 밝혔다. * Mekong-Korea International Water Forum이번 행사에는 금한승 기후에너지환경부 제1차관, 반기문 제8대 유엔 사무총장, 윤석대 한국수자원공사 사장을 비롯해 메콩강 유역 5개국* 정부 대표단, 각국 주한 대사, 아시아개",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783878",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-01",
       "agency": "중소벤처기업부",
