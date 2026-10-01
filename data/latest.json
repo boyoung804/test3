@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "collected_at": "2026-10-02T07:54:22.210320+09:00",
+  "collected_at": "2026-10-02T08:09:57.974240+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,50 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-02",
+      "agency": "문화체육관광부",
+      "title": "문학의 미래, 국민의 손으로... 문학진흥정책위원회 국민추천제 최초 도입",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784066",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-02",
+      "agency": "문화체육관광부",
+      "title": "한글날 제정 100주년, '2026 한글주간'으로  내 곁에 한글 되새기다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784065",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-02",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 어린이집 식중독 예방을 위한 위생점검 실시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784068",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-02",
+      "agency": "식품의약품안전처",
+      "title": "식약처 소관 법률 개정안 국회 본회의 통과",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784067",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-02",
       "agency": "과학기술정보통신부",
