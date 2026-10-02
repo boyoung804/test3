@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "collected_at": "2026-10-02T13:38:43.804665+09:00",
+  "collected_at": "2026-10-02T13:55:20.924468+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-02",
+      "agency": "국토교통부",
+      "title": "[참고] 제2용인-서울(용인~성남) 민자고속도로,  민자적격성조사 통과로 사업 본격화",
+      "summary": "용인 성복동~성남 금토동 9.6km 연결,  '31년 착공 목표",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784159",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "용인∼성남 민자고속도로 적격성조사 통과…2030년 착공 추진 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260213117500003"
+    },
     {
       "date": "2026-10-02",
       "agency": "행정안전부",
