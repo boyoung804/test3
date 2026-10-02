@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "collected_at": "2026-10-02T11:14:55.856592+09:00",
+  "collected_at": "2026-10-02T11:32:18.379199+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,28 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-02",
+      "agency": "보건복지부",
+      "title": "공적입양체계 전환 후 결연 실적 9월 기준 122명, 제3차 입양정책위원회 개최",
+      "summary": "공적입양체계 안착 및 입양인 권리보장 방안 논의\n입양인 뿌리 찾기 지원 위해 기록물 영구보존·정보공개서비스 강화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784137",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "공적 입양 절차 개선하니 결연 아동 '16명→122명'…7.6배로 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20261001177500530"
+    },
+    {
+      "date": "2026-10-02",
+      "agency": "산업통상부",
+      "title": "CPTPP 관련 제조업 분야 간담회 개최",
+      "summary": "산업부, 업계와 릴레이 간담회를 통해 현장 목소리 청취\n산업통상부(장관 김정관, 이하 산업부)는 10.2(금) 정부의 포괄적·점진적 환태평양경제동반자협정(Comprehensive and Progressive Agreement for Trans-Pacific Partnership, CPTPP)' 가입 검토 관련 업종별 영향 점검 및 의견 청취를 위한 간담회를 개최했다. 정부는 CPTPP 가입 신청 여부를 검토하는 단계에서 농림수산업계, 제조업 및 서비스 분야 등 이해관계자와 지속적으로 소통해나갈 예정인바, 이번 간담회는 제조업계 현장",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784124",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "산업부, 신산업 업계와 Cptpp 간담회…\"가입 적극 검토해야\" | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20211013166700003"
+    },
     {
       "date": "2026-10-02",
       "agency": "과학기술정보통신부",
