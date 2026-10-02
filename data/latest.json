@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "collected_at": "2026-10-02T17:45:55.691549+09:00",
+  "collected_at": "2026-10-02T18:00:46.578069+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,39 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-02",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 카드뮴 기준 초과 검출된 '기타 수산물가공품' 회수 조치",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784238",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "식약처, '카드뮴 기준 초과' 겨우살이 회수 - 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260716199700017"
+    },
+    {
+      "date": "2026-10-02",
+      "agency": "외교부",
+      "title": "위기 속 여성과 아동의 곁에, 한-UNFPA가 함께",
+      "summary": "외교부 장욱진 글로벌다자외교조정관은 10.2.(금) 제1차 유엔인구기금(UNFPA) 인도적지원 라운드테이블에 참석하였다.※ 「제1차 UNFPA 인도적지원 라운드테이블」(10.2(금)) : (참석자) 한지아 의원, 차지호 의원(영상 축사), Shoko Arakaki UNFPA 인도주의대응 국장, Asa Torkelsson UNFPA 서울사무소장, 손정미 KOICA 상임이사, 오준 세이브더칠드런 코리아 이사장(영상 축사) 등 / (프로그램) 한-UNFPA 인도적지원 협력 성과 및 주요 사례 공유 장 조정관은 개회사를 통해 글로벌 인도주",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784239",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "'간신히 목숨만 건졌어요'…남수단 여성에 손 내민 코이카-unfpa | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260324039800371"
+    },
+    {
+      "date": "2026-10-02",
+      "agency": "식품의약품안전처",
+      "title": "'26년 3분기까지 화장품 수출 111억 달러, 역대 3분기 누계 최대치 기록",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784237",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-02",
       "agency": "산업통상부",
