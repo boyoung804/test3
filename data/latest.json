@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "collected_at": "2026-10-02T11:49:01.424171+09:00",
+  "collected_at": "2026-10-02T12:01:58.844702+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-02",
+      "agency": "보건복지부",
+      "title": "제30회 노인의 날 기념식 개최",
+      "summary": "어르신들 위한 특별행사, 수상자와 가족 등 400여 명 초청\n100세 어르신 6명 청려장 전달, 노인복지 위해 헌신한 유공자에 포상·격려",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784143",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "'건강한 백세, 행복한 노후'…제30회 노인의 날 기념식 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20261002018900051"
+    },
     {
       "date": "2026-10-02",
       "agency": "국무조정실",
