@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "collected_at": "2026-10-05T08:08:48.979619+09:00",
+  "collected_at": "2026-10-05T08:26:17.875084+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,17 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-10-05",
+      "agency": "문화체육관광부",
+      "title": "아시안게임에서 최선을 다한 '팀 코리아', 뜨겁게 환영",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784260",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[아시안게임] LoL 대표팀, 평가전 전승…금빛 담금질 | 연합뉴스",
+      "media_link": "https://www.yna.co.kr/view/AKR20260921124200017"
+    }
+  ]
 }
