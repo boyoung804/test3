@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "collected_at": "2026-10-05T21:55:10.095900+09:00",
+  "collected_at": "2026-10-05T22:19:00.137627+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,28 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-05",
+      "agency": "과학기술정보통신부",
+      "title": "배경훈 부총리, 세계 과학기술 지도자들과 미래 과학기술 비전 논의",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784296",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-05",
+      "agency": "재정경제부",
+      "title": "경제현안간담회 개최",
+      "summary": "이형일 부총리 겸 재정경제부 장관은 관계부처 장관 및 청와대 정책실장 등과 함께 경제현안간담회를 개최해 주거, 일자리, 서민금융 분야 3대 핵심 사회정책 추진방안에 대해 논의하였습니다.  * 자세한 사항은 첨부파일을 참고하여 주시기 바랍니다.문의. 재정경제부 경제정책국 종합정책과 최봉석 (044-215-2711)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784295",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-05",
       "agency": "국가보훈부",
