@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "collected_at": "2026-10-05T19:59:14.918462+09:00",
+  "collected_at": "2026-10-05T20:21:36.700126+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-05",
+      "agency": "국가보훈부",
+      "title": "국민과 함께하는 2026 제대군인 주간 개최",
+      "summary": "261005 보도자료(국민과 함께하는 2026 제대군인 주간 개최)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784293",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-05",
       "agency": "문화체육관광부",
