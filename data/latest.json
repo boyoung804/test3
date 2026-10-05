@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "collected_at": "2026-10-06T07:53:35.887735+09:00",
+  "collected_at": "2026-10-06T08:08:55.547572+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,28 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-06",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식품의약품안전평가원, 고려대학교의료원과 업무협약(MOU) 체결",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784299",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
+    {
+      "date": "2026-10-06",
+      "agency": "식품의약품안전처",
+      "title": "식약처  GLP-1 계열 비만치료제 온라인 불법판매 등 점검 결과 발표",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784298",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-06",
       "agency": "국방부",
