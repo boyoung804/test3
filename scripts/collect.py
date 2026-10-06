@@ -256,8 +256,14 @@ def _naver_news_search(query: str):
     """네이버 뉴스 검색결과 웹페이지(search.naver.com)를 그대로 가져와
     [(언론사명, 기사제목, 링크, 미리보기문구), ...]로 돌려준다.
     차단/오류면 None을 반환해서 '결과 없음'과 구분한다.
-    네이버가 뉴스 검색 결과 블록 구조를 바꾸는 경우가 있어, 몇 가지 선택자를
-    순서대로 시도한다."""
+
+    네이버가 검색결과 디자인을 새 컴포넌트 체계(SDS)로 바꾸면서 class 이름이
+    전부 해시값처럼 랜덤화되어(news_tit, news_wrap 같은 예전 class는 더 이상
+    존재하지 않음) class 기반 선택자로는 결과를 하나도 못 찾는다. 대신 각
+    블록의 역할을 나타내는 data-heatmap-target 속성(".tit"=제목 링크,
+    ".prof"=언론사명 링크, ".body"=본문 미리보기 링크)은 의미 기반이라 class보다
+    안정적이라 이걸로 찾는다. (실제 네이버 검색결과 페이지 소스를 받아서 구조를
+    확인하고 검증한 선택자다.)"""
     try:
         resp = requests.get(
             "https://search.naver.com/search.naver",
@@ -273,43 +279,52 @@ def _naver_news_search(query: str):
         return None
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    blocks = soup.select("div.news_wrap") or soup.select("li.bx") or soup.select("div.news_area")
-    if not blocks:
+    # "새 창 열림" 같은 접근성 전용 안내문구가 텍스트에 섞여 들어오므로 미리 제거.
+    for span in soup.select("span.fender-ui_0cb57fb2"):
+        span.decompose()
+
+    title_anchors = soup.select('a[data-heatmap-target=".tit"]')
+    if not title_anchors:
         # 선택자가 지금 네이버 페이지 구조와 안 맞거나, 봇 탐지로 다른 페이지를 받은 경우.
         # 실제로 뭘 받았는지 다음 실행 로그에서 바로 보이도록 진단 정보를 남긴다.
         body_snippet = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))[:200]
         title_tag = soup.title.get_text(strip=True) if soup.title else "(없음)"
         print(
-            f"    [검색진단] 네이버: 결과블록 0개 / 최종URL={resp.url} / "
+            f"    [검색진단] 네이버: 제목링크 0개 / 최종URL={resp.url} / "
             f"응답길이={len(resp.text)}자 / <title>={title_tag} / 본문일부=\"{body_snippet}\"",
             file=sys.stderr,
         )
+
     out = []
-    for block in blocks:
-        title_a = (
-            block.select_one("a.news_tit")
-            or block.select_one("a.api_txt_lines.total_tit")
-            or block.find("a", attrs={"title": True})
-        )
-        if not title_a:
-            continue
-        title = title_a.get_text(" ", strip=True) or title_a.get("title", "")
+    for title_a in title_anchors:
+        title = title_a.get_text(" ", strip=True)
         link = title_a.get("href", "")
         if not title or not link:
             continue
-        press_el = (
-            block.select_one("a.info.press")
-            or block.select_one(".info_group a.info")
-            or block.select_one(".press")
-        )
-        press = press_el.get_text(" ", strip=True) if press_el else ""
-        press = press.replace("언론사 선정", "").replace("선정", "").strip()
-        desc_el = (
-            block.select_one("a.api_txt_lines.dsc_txt_wrap")
-            or block.select_one(".news_dsc")
-            or block.select_one(".dsc_txt_wrap")
-        )
-        desc = desc_el.get_text(" ", strip=True) if desc_el else ""
+
+        # 제목 링크의 조상을 위로 올라가며, 같은 항목에 속한 언론사명(.prof)과
+        # 본문 미리보기(.body) 링크를 찾는다. (제목·본문은 형제 관계, 언론사명은
+        # 그보다 위쪽 조상 아래에 있는 구조라 몇 단계 넉넉히 올라가 본다.)
+        press = ""
+        desc = ""
+        node = title_a
+        for _ in range(8):
+            node = node.parent
+            if node is None:
+                break
+            if not press:
+                for p in node.select('a[data-heatmap-target=".prof"]'):
+                    t = p.get_text(" ", strip=True)
+                    if t:
+                        press = t
+                        break
+            if not desc:
+                body_a = node.select_one('a[data-heatmap-target=".body"]')
+                if body_a:
+                    desc = body_a.get_text(" ", strip=True)
+            if press and desc:
+                break
+
         out.append((press, title, link, desc))
     return out
 
