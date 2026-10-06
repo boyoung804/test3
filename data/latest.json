@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "collected_at": "2026-10-06T15:48:32.698161+09:00",
+  "collected_at": "2026-10-06T16:05:13.699341+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-06",
+      "agency": "재정경제부",
+      "title": "2026년 11월 물가연동국고채 종목별 연동계수",
+      "summary": "입니다.        *자세한 사항은 붙임을 참고하시기 바랍니다.문의. 재정경제부 국고정책관 국채정책과 이지환 (044-215-5135)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784418",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-06",
       "agency": "과학기술정보통신부",
