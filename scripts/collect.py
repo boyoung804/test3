@@ -136,7 +136,7 @@ _SUBTITLE_CHROME = ("이전다음기사", "정책 NOW", "오늘의 멀티미디�
                     "콘텐츠 영역", "사이트 이동경로", "사실은 이렇습니다", "공지사항", "실시간 인기뉴스")
 
 
-def summarize_lines(raw: str, max_lines: int = 3, maybe_truncated: bool = True) -> str:
+def summarize_lines(raw: str, max_lines: int = 2, maybe_truncated: bool = True) -> str:
     """부제/미리보기 문장을 '- ' 기준으로 나눠 최대 max_lines줄의 요약(줄바꿈 구분)으로 만든다.
     미리보기가 중간에 잘렸을 가능성이 있으면(maybe_truncated) 마지막의 미완성 줄은 버린다."""
     parts = [p.lstrip("▷□○▲◇※·•ㆍ ").rstrip(" -–—").strip() for p in _BULLET_SPLIT_RE.split(raw.strip())]
@@ -193,14 +193,14 @@ def _norm(t: str) -> str:
 
 
 def enrich_with_summary(items):
-    """새로 발견된 항목마다 상세 페이지의 부제를 읽어 요약(최대 3줄)으로 만든다.
-    부제가 3줄 미만이면 목록 미리보기에서 뽑은 줄로 채운다. 실패하면 목록 미리보기 요약을 그대로 둔다."""
+    """새로 발견된 항목마다 상세 페이지의 부제를 읽어 요약(최대 2줄)으로 만든다.
+    부제가 2줄 미만이면 목록 미리보기에서 뽑은 줄로 채운다. 실패하면 목록 미리보기 요약을 그대로 둔다."""
     for it in items:
         sub = fetch_detail_subtitle(it["link"])
         if sub:
             lines = summarize_lines(sub, maybe_truncated=False).split("\n")
             for extra in (it.get("summary") or "").split("\n"):
-                if len(lines) >= 3:
+                if len(lines) >= 2:
                     break
                 if extra and not any(_norm(extra) in _norm(l) or _norm(l) in _norm(extra) for l in lines):
                     lines.append(extra)
