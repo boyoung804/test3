@@ -238,7 +238,7 @@ def _unwrap_ddg_link(href: str) -> str:
     return href
 
 
-_MATCH_THRESHOLD = 0.4   # 보도자료 제목의 글자쌍이 검색결과(제목+요약문)에 이 비율 이상 들어있어야 같은 기사로 인정
+_MATCH_THRESHOLD = 0.2   # 보도자료 제목의 글자쌍이 검색결과(제목+요약문)에 이 비율 이상 들어있어야 같은 기사로 인정 (너무 높이면 실제 기사도 놓침)
 
 
 def _bigrams(text: str):
@@ -258,17 +258,44 @@ def _clean_query(title: str) -> str:
     q = re.sub(r"[\[\(][^\]\)]{0,15}[\]\)]", " ", title)   # [보도자료], (참고) 같은 꼬리표 제거
     q = re.sub(r"[「」『』“”\"'‘’]", " ", q)
     q = re.sub(r"\s+", " ", q).strip()
-    return q[:60]
+    return q[:100]
+
+
+_ddg_session = None  # 프로세스당 한 번만 세션 쿠키를 받아서 재사용
+
+
+def _get_ddg_session():
+    """DuckDuckGo는 쿠키 없이(세션 시작 없이) 바로 /html/을 때리면 진짜 결과 대신
+    확인용 페이지(HTTP 202)를 돌려주는 경우가 많다. 실제 브라우저처럼 먼저
+    duckduckgo.com을 한 번 방문해서 세션 쿠키를 받아두면 통과율이 크게 올라간다."""
+    global _ddg_session
+    if _ddg_session is not None:
+        return _ddg_session
+    s = requests.Session()
+    s.headers.update(_SEARCH_HEADERS)
+    try:
+        s.get("https://duckduckgo.com/", timeout=10)
+    except requests.RequestException as e:
+        print(f"    [검색오류] 세션 초기화 실패: {e}", file=sys.stderr)
+    _ddg_session = s
+    return s
 
 
 def _search_domain(query: str, domain: str):
     """DuckDuckGo에서 site:도메인 검색 결과를 [(제목, 링크, 요약문), ...]로 돌려준다.
-    차단/오류면 (None)을 반환해서 '결과 없음'과 구분한다."""
+    차단/오류면 (None)을 반환해서 '결과 없음'과 구분한다.
+    세션 쿠키를 들고 POST로 요청하는 방식(실제 브라우저가 검색 결과 더 보기를
+    누를 때와 동일한 방식)이 GET보다 차단될 확률이 낮다."""
+    session = _get_ddg_session()
     try:
-        resp = requests.get(
+        resp = session.post(
             "https://html.duckduckgo.com/html/",
-            params={"q": f"{query} site:{domain}"},
-            headers=_SEARCH_HEADERS,
+            data={"q": f"{query} site:{domain}"},
+            headers={
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Origin": "https://html.duckduckgo.com",
+                "Referer": "https://html.duckduckgo.com/",
+            },
             timeout=10,
         )
     except requests.RequestException as e:
@@ -300,6 +327,9 @@ def find_media_coverage(title: str):
     for press_name, domain in MEDIA_PRIORITY:
         results = _search_domain(query, domain)
         time.sleep(1.0)  # 검색엔진 부담/차단 방지
+        if results is None:
+            print(f"    - {press_name}: 검색 실패(차단/오류)")
+            continue
         if not results:
             print(f"    - {press_name}: 검색결과 없음")
             continue
@@ -313,9 +343,13 @@ def find_media_coverage(title: str):
 
 def enrich_with_media(items):
     """새로 발견된 항목마다 실제 보도 매체(연합뉴스/뉴시스/뉴스1) 매칭을 시도한다.
-    매칭에 실패해도 item 자체는 그대로 유지되고, 매체 관련 필드만 비워진다."""
+    매칭에 실패해도 item 자체는 그대로 유지되고, 매체 관련 필드만 비워진다.
+    media_checked_at을 남겨서, 이후 recheck_pending_media()가 너무 자주
+    같은 항목을 재검색하지 않도록 한다."""
+    now_iso = datetime.now(KST).isoformat()
     for it in items:
         media = find_media_coverage(it["title"])
+        it["media_checked_at"] = now_iso
         if media:
             it["media_press"] = media["press"]
             it["media_title"] = media["title"]
@@ -325,6 +359,71 @@ def enrich_with_media(items):
             it["media_title"] = ""
             it["media_link"] = ""
     return items
+
+
+# 보도자료는 당일 올라와도 언론 보도는 하루이틀 늦게 나오는 경우가 많다.
+# 그래서 한 번 매칭에 실패했다고 끝내지 않고, 최근 며칠치를 주기적으로 다시 확인한다.
+RECHECK_WINDOW_DAYS = 3        # 오늘 포함, 최근 며칠치까지 재확인 대상으로 볼지
+RECHECK_MIN_INTERVAL_HOURS = 3  # 같은 항목을 다시 확인하기까지 최소 대기 시간
+RECHECK_BATCH_LIMIT = 8         # 한 번 실행(5분)에서 재확인할 최대 건수 (검색엔진 부하 제한)
+
+
+def recheck_pending_media(current_date: str) -> bool:
+    """최근 RECHECK_WINDOW_DAYS일치 데이터 파일들을 훑어서, 아직 매체 매칭이
+    안 됐고 마지막 확인 후 RECHECK_MIN_INTERVAL_HOURS시간이 지난 항목을 최대
+    RECHECK_BATCH_LIMIT건까지 다시 검색해본다. 오늘(current_date)자 파일이
+    바뀌었으면 True를 반환한다 (호출한 쪽에서 latest.json을 다시 써야 하므로)."""
+    now = datetime.now(KST)
+    base_date = datetime.strptime(current_date, "%Y-%m-%d")
+
+    day_items = {}    # date_str -> 그 날짜 파일의 items 리스트(그대로 수정해서 재사용)
+    candidates = []   # (date_str, idx)
+
+    for delta in range(RECHECK_WINDOW_DAYS):
+        d = (base_date - timedelta(days=delta)).strftime("%Y-%m-%d")
+        path = DATA_DIR / f"{d}.json"
+        items = load_json(path, [])
+        if not items:
+            continue
+        day_items[d] = items
+        for idx, it in enumerate(items):
+            if it.get("media_press"):
+                continue
+            checked_at = it.get("media_checked_at")
+            if checked_at:
+                try:
+                    last = datetime.fromisoformat(checked_at)
+                    if (now - last).total_seconds() < RECHECK_MIN_INTERVAL_HOURS * 3600:
+                        continue
+                except ValueError:
+                    pass
+            candidates.append((d, idx))
+
+    if not candidates:
+        return False
+
+    picked = candidates[:RECHECK_BATCH_LIMIT]
+    print(f"[매체 재확인] 최근 {RECHECK_WINDOW_DAYS}일치 중 아직 매칭 안 된 {len(candidates)}건 "
+          f"중 {len(picked)}건 재검색...")
+
+    touched_dates = set()
+    for d, idx in picked:
+        it = day_items[d][idx]
+        print(f"  - ({d}) {it['title'][:40]}")
+        media = find_media_coverage(it["title"])
+        it["media_checked_at"] = now.isoformat()
+        if media:
+            it["media_press"] = media["press"]
+            it["media_title"] = media["title"]
+            it["media_link"] = media["link"]
+            print(f"    -> 매칭됨: {media['press']}")
+        touched_dates.add(d)
+
+    for d in touched_dates:
+        path = DATA_DIR / f"{d}.json"
+        path.write_text(json.dumps(day_items[d], ensure_ascii=False, indent=2), encoding="utf-8")
+
+    return current_date in touched_dates
 
 
 def fetch_page(page_index: int) -> str:
@@ -506,6 +605,26 @@ def main():
     dates_path.write_text(json.dumps(dates, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("[저장 완료]", day_path, latest_path, dates_path)
+
+    # 보도자료보다 뉴스가 늦게 나오는 경우를 위해, 최근 며칠치 중 아직 매체
+    # 매칭이 안 된 항목을 이 시점에 추가로 재검색한다.
+    today_touched = recheck_pending_media(target_date)
+    if today_touched:
+        refreshed_items = load_json(day_path, items)
+        latest_path.write_text(
+            json.dumps(
+                {
+                    "date": target_date,
+                    "collected_at": datetime.now(KST).isoformat(),
+                    "agencies": AGENCIES,
+                    "items": refreshed_items,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+        print(f"[재확인 반영] {day_path}, {latest_path} 갱신 완료")
 
 
 if __name__ == "__main__":
