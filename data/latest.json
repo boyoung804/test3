@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "collected_at": "2026-10-06T09:46:34.758029+09:00",
+  "collected_at": "2026-10-06T10:03:33.613093+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,17 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-06",
+      "agency": "과학기술정보통신부",
+      "title": "「AI 주간 2026」 - AI 페스타 개최,   대한민국 AI 산업을 연결하다",
+      "summary": "10.6(화) ~ 10.8(목), 서울 코엑스에서 '2026 인공지능 주간(AI Week 2026)' 개최\n인공지능 산업 생태계를 이끄는 글로벌 비즈니스 플랫폼으로 '정책-산업-현장' 연결",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784350",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": ""
+    },
     {
       "date": "2026-10-06",
       "agency": "고용노동부",
