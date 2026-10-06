@@ -274,6 +274,16 @@ def _naver_news_search(query: str):
 
     soup = BeautifulSoup(resp.text, "html.parser")
     blocks = soup.select("div.news_wrap") or soup.select("li.bx") or soup.select("div.news_area")
+    if not blocks:
+        # 선택자가 지금 네이버 페이지 구조와 안 맞거나, 봇 탐지로 다른 페이지를 받은 경우.
+        # 실제로 뭘 받았는지 다음 실행 로그에서 바로 보이도록 진단 정보를 남긴다.
+        body_snippet = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))[:200]
+        title_tag = soup.title.get_text(strip=True) if soup.title else "(없음)"
+        print(
+            f"    [검색진단] 네이버: 결과블록 0개 / 최종URL={resp.url} / "
+            f"응답길이={len(resp.text)}자 / <title>={title_tag} / 본문일부=\"{body_snippet}\"",
+            file=sys.stderr,
+        )
     out = []
     for block in blocks:
         title_a = (
