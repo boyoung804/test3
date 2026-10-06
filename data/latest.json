@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "collected_at": "2026-10-06T18:24:13.392174+09:00",
+  "collected_at": "2026-10-06T18:44:29.975883+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-06",
+      "agency": "국무조정실",
+      "title": "[보도자료] 한성숙 국무총리, 주택공급 현장점검(위스테이 별내)",
+      "summary": "주택 신속공급과 다양한 주거모델 동시 모색\n한 총리, \"다양한 요구가 반영된 주거선택권 확대되어야\"",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784448",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-06T18:44:27.600710+09:00"
+    },
     {
       "date": "2026-10-06",
       "agency": "보건복지부",
