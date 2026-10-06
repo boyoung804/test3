@@ -261,9 +261,14 @@ def _naver_news_search(query: str):
     전부 해시값처럼 랜덤화되어(news_tit, news_wrap 같은 예전 class는 더 이상
     존재하지 않음) class 기반 선택자로는 결과를 하나도 못 찾는다. 대신 각
     블록의 역할을 나타내는 data-heatmap-target 속성(".tit"=제목 링크,
-    ".prof"=언론사명 링크, ".body"=본문 미리보기 링크)은 의미 기반이라 class보다
-    안정적이라 이걸로 찾는다. (실제 네이버 검색결과 페이지 소스를 받아서 구조를
-    확인하고 검증한 선택자다.)"""
+    ".body"=본문 미리보기 링크)은 의미 기반이라 class보다 안정적이라 이걸로 찾는다.
+
+    제목 링크 목록과 언론사명 목록은 페이지에 같은 순서로, 항목당 정확히 1개씩
+    나란히 나온다(실제 응답으로 검증함). 조상을 거슬러 올라가 "같은 블록 안"의
+    언론사명을 찾는 방식은 항목들이 얕은 공통 조상을 공유할 때 엉뚱한(이전 항목의)
+    언론사명을 집어오는 버그가 있어, 순서 기반(인덱스) 매칭으로 바꿨다. 본문
+    미리보기는 항목마다 있는 게 아니라서(이미지만 있는 항목 등) 링크 URL을 키로
+    매핑해서 가져온다."""
     try:
         resp = requests.get(
             "https://search.naver.com/search.naver",
@@ -284,6 +289,9 @@ def _naver_news_search(query: str):
         span.decompose()
 
     title_anchors = soup.select('a[data-heatmap-target=".tit"]')
+    press_spans = soup.select("span.sds-comps-profile-info-title-text")
+    body_anchors = soup.select('a[data-heatmap-target=".body"]')
+
     if not title_anchors:
         # 선택자가 지금 네이버 페이지 구조와 안 맞거나, 봇 탐지로 다른 페이지를 받은 경우.
         # 실제로 뭘 받았는지 다음 실행 로그에서 바로 보이도록 진단 정보를 남긴다.
@@ -295,36 +303,20 @@ def _naver_news_search(query: str):
             file=sys.stderr,
         )
 
+    desc_by_link = {}
+    for body_a in body_anchors:
+        href = body_a.get("href", "")
+        if href and href not in desc_by_link:
+            desc_by_link[href] = body_a.get_text(" ", strip=True)
+
     out = []
-    for title_a in title_anchors:
+    for i, title_a in enumerate(title_anchors):
         title = title_a.get_text(" ", strip=True)
         link = title_a.get("href", "")
         if not title or not link:
             continue
-
-        # 제목 링크의 조상을 위로 올라가며, 같은 항목에 속한 언론사명(.prof)과
-        # 본문 미리보기(.body) 링크를 찾는다. (제목·본문은 형제 관계, 언론사명은
-        # 그보다 위쪽 조상 아래에 있는 구조라 몇 단계 넉넉히 올라가 본다.)
-        press = ""
-        desc = ""
-        node = title_a
-        for _ in range(8):
-            node = node.parent
-            if node is None:
-                break
-            if not press:
-                for p in node.select('a[data-heatmap-target=".prof"]'):
-                    t = p.get_text(" ", strip=True)
-                    if t:
-                        press = t
-                        break
-            if not desc:
-                body_a = node.select_one('a[data-heatmap-target=".body"]')
-                if body_a:
-                    desc = body_a.get_text(" ", strip=True)
-            if press and desc:
-                break
-
+        press = press_spans[i].get_text(" ", strip=True) if i < len(press_spans) else ""
+        desc = desc_by_link.get(link, "")
         out.append((press, title, link, desc))
     return out
 
