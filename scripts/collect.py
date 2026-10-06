@@ -13,10 +13,15 @@ GitHub Actions에서 5분마다 자동 실행됩니다 (.github/workflows/daily-
 5. data/dates.json 에 "지금까지 수집된 날짜 목록"을 갱신한다.
 
 매체 매칭 (연합뉴스/뉴시스/뉴스1):
-- 새로 발견된 기사마다 DuckDuckGo 사이트 한정 검색(site:도메인)으로 제목을 검색해서,
-  연합뉴스(yna.co.kr) > 뉴시스(newsis.com) > 뉴스1(news1.kr) 우선순위로 가장 먼저
-  매칭되는 실제 보도 기사를 찾는다. API 키나 별도 가입이 필요 없다.
+- 새로 발견된 기사마다 네이버 뉴스 "검색 웹페이지"(search.naver.com, 사람이 브라우저로
+  보는 그 검색결과 페이지 그대로)를 가져와서, 거기 뜬 언론사명이 연합뉴스/뉴시스/뉴스1
+  중 하나인 결과들만 골라 제목 유사도로 가장 비슷한 기사를 고른다. 우선순위는
+  연합뉴스 > 뉴시스 > 뉴스1. 네이버 공식 Open API가 아니라 공개 검색결과 페이지를
+  읽어오는 것이라 API 키나 가입, 신용카드 등록이 전혀 필요 없다.
 - 매칭 실패 시 media_* 필드는 빈 문자열로 남고, 나머지 데이터는 그대로 저장된다.
+- 주의: 이 방식은 네이버가 검색결과 페이지의 HTML 구조를 바꾸거나, GitHub Actions의
+  공유 IP를 차단하면 똑같이 막힐 수 있다(DuckDuckGo에서 실제로 겪었던 문제). 실행 로그의
+  [검색차단?]/[검색실패] 메시지로 그런 상황인지 확인할 수 있다.
 
 5분 간격 관련 주의:
 - 매 실행마다 여전히 최대 MAX_PAGES 페이지까지 훑지만, 이미 저장된 기사를 만나는
@@ -40,7 +45,6 @@ import sys
 import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs, unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -209,36 +213,23 @@ def today_str():
     return datetime.now(KST).strftime("%Y-%m-%d")
 
 
-# 확인 대상 매체 우선순위: 연합뉴스 > 뉴시스 > 뉴스1. 도메인으로 판별한다.
-MEDIA_PRIORITY = [
-    ("연합뉴스", "yna.co.kr"),
-    ("뉴시스", "newsis.com"),
-    ("뉴스1", "news1.kr"),
-]
+# 확인 대상 매체 우선순위: 연합뉴스 > 뉴시스 > 뉴스1. 네이버 검색결과에 찍히는
+# 언론사명 문자열로 판별한다 (네이버는 보통 "연합뉴스", "뉴시스", "뉴스1"로 표기).
+MEDIA_PRIORITY = ["연합뉴스", "뉴시스", "뉴스1"]
 
-# DuckDuckGo html 검색 전용 헤더. korea.kr용 HEADERS와 분리해 둔다
-# (일반 브라우저처럼 보이는 UA를 써야 차단 확률이 낮다).
+# 네이버 뉴스 검색 "웹페이지" 요청용 헤더. API가 아니라 사람이 브라우저로 보는
+# search.naver.com 검색결과 페이지를 그대로 가져오는 것이라 키/가입이 필요 없다.
 _SEARCH_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
     ),
     "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
-    "Referer": "https://duckduckgo.com/",
+    "Referer": "https://search.naver.com/",
 }
 
 
-def _unwrap_ddg_link(href: str) -> str:
-    """DuckDuckGo html 버전은 실제 링크를 //duckduckgo.com/l/?uddg=... 형태의
-    리다이렉트 링크로 감싸서 내려주는 경우가 있어, 그 안의 진짜 URL을 꺼낸다."""
-    if "duckduckgo.com/l/" in href:
-        parsed = urlparse(href if href.startswith("http") else "https:" + href)
-        target = parse_qs(parsed.query).get("uddg", [""])[0]
-        return unquote(target)
-    return href
-
-
-_MATCH_THRESHOLD = 0.4   # 보도자료 제목의 글자쌍이 검색결과(제목+요약문)에 이 비율 이상 들어있어야 같은 기사로 인정
+_MATCH_THRESHOLD = 0.2   # 보도자료 제목의 글자쌍이 검색결과(제목+요약문)에 이 비율 이상 들어있어야 같은 기사로 인정 (너무 높이면 실제 기사도 놓침)
 
 
 def _bigrams(text: str):
@@ -258,64 +249,98 @@ def _clean_query(title: str) -> str:
     q = re.sub(r"[\[\(][^\]\)]{0,15}[\]\)]", " ", title)   # [보도자료], (참고) 같은 꼬리표 제거
     q = re.sub(r"[「」『』“”\"'‘’]", " ", q)
     q = re.sub(r"\s+", " ", q).strip()
-    return q[:60]
+    return q[:80]
 
 
-def _search_domain(query: str, domain: str):
-    """DuckDuckGo에서 site:도메인 검색 결과를 [(제목, 링크, 요약문), ...]로 돌려준다.
-    차단/오류면 (None)을 반환해서 '결과 없음'과 구분한다."""
+def _naver_news_search(query: str):
+    """네이버 뉴스 검색결과 웹페이지(search.naver.com)를 그대로 가져와
+    [(언론사명, 기사제목, 링크, 미리보기문구), ...]로 돌려준다.
+    차단/오류면 None을 반환해서 '결과 없음'과 구분한다.
+    네이버가 뉴스 검색 결과 블록 구조를 바꾸는 경우가 있어, 몇 가지 선택자를
+    순서대로 시도한다."""
     try:
         resp = requests.get(
-            "https://html.duckduckgo.com/html/",
-            params={"q": f"{query} site:{domain}"},
+            "https://search.naver.com/search.naver",
+            params={"where": "news", "query": query},
             headers=_SEARCH_HEADERS,
             timeout=10,
         )
     except requests.RequestException as e:
-        print(f"    [검색오류] {domain}: {e}", file=sys.stderr)
+        print(f"    [검색오류] 네이버: {e}", file=sys.stderr)
         return None
     if resp.status_code != 200:
-        print(f"    [검색차단?] {domain}: HTTP {resp.status_code}", file=sys.stderr)
+        print(f"    [검색차단?] 네이버: HTTP {resp.status_code}", file=sys.stderr)
         return None
 
     soup = BeautifulSoup(resp.text, "html.parser")
+    blocks = soup.select("div.news_wrap") or soup.select("li.bx") or soup.select("div.news_area")
     out = []
-    for res in soup.select(".result"):
-        a = res.select_one("a.result__a")
-        if not a:
+    for block in blocks:
+        title_a = (
+            block.select_one("a.news_tit")
+            or block.select_one("a.api_txt_lines.total_tit")
+            or block.find("a", attrs={"title": True})
+        )
+        if not title_a:
             continue
-        link = _unwrap_ddg_link(a.get("href", ""))
-        if domain not in link:
+        title = title_a.get_text(" ", strip=True) or title_a.get("title", "")
+        link = title_a.get("href", "")
+        if not title or not link:
             continue
-        snip = res.select_one(".result__snippet")
-        out.append((a.get_text(" ", strip=True), link, snip.get_text(" ", strip=True) if snip else ""))
+        press_el = (
+            block.select_one("a.info.press")
+            or block.select_one(".info_group a.info")
+            or block.select_one(".press")
+        )
+        press = press_el.get_text(" ", strip=True) if press_el else ""
+        press = press.replace("언론사 선정", "").replace("선정", "").strip()
+        desc_el = (
+            block.select_one("a.api_txt_lines.dsc_txt_wrap")
+            or block.select_one(".news_dsc")
+            or block.select_one(".dsc_txt_wrap")
+        )
+        desc = desc_el.get_text(" ", strip=True) if desc_el else ""
+        out.append((press, title, link, desc))
     return out
 
 
 def find_media_coverage(title: str):
     """연합뉴스 > 뉴시스 > 뉴스1 순서로 실제 보도 기사를 찾는다.
-    각 매체마다 상위 검색결과 중 보도자료 제목과 가장 비슷한 기사를 고르고,
-    유사도가 기준(_MATCH_THRESHOLD)에 못 미치면 '이 매체엔 없음'으로 보고 다음 매체로 넘어간다."""
+    네이버 뉴스 검색을 한 번만 호출해서(검색어 1개로 모든 언론사 결과가 같이 나오므로)
+    그 안에서 매체명으로 걸러 우선순위대로 확인하고, 제목 유사도가 기준
+    (_MATCH_THRESHOLD)에 못 미치면 '이 매체엔 없음'으로 보고 다음 매체로 넘어간다."""
     query = _clean_query(title)
-    for press_name, domain in MEDIA_PRIORITY:
-        results = _search_domain(query, domain)
-        time.sleep(1.0)  # 검색엔진 부담/차단 방지
-        if not results:
+    results = _naver_news_search(query)
+    time.sleep(1.0)  # 검색엔진 부담/차단 방지
+    if results is None:
+        print("    - 네이버 검색 실패(차단/오류)")
+        return None
+    if not results:
+        print("    - 네이버 검색결과 없음")
+        return None
+
+    for press_name in MEDIA_PRIORITY:
+        candidates = [r for r in results if press_name in r[0]]
+        if not candidates:
             print(f"    - {press_name}: 검색결과 없음")
             continue
-        best = max(results, key=lambda r: _match_score(title, r[0] + " " + r[2]))
-        score = _match_score(title, best[0] + " " + best[2])
-        print(f"    - {press_name}: 후보 {len(results)}건, 최고 유사도 {score:.2f}")
+        best = max(candidates, key=lambda r: _match_score(title, r[1] + " " + r[3]))
+        score = _match_score(title, best[1] + " " + best[3])
+        print(f"    - {press_name}: 후보 {len(candidates)}건, 최고 유사도 {score:.2f}")
         if score >= _MATCH_THRESHOLD:
-            return {"press": press_name, "title": best[0][:200], "link": best[1]}
+            return {"press": press_name, "title": best[1][:200], "link": best[2]}
     return None
 
 
 def enrich_with_media(items):
     """새로 발견된 항목마다 실제 보도 매체(연합뉴스/뉴시스/뉴스1) 매칭을 시도한다.
-    매칭에 실패해도 item 자체는 그대로 유지되고, 매체 관련 필드만 비워진다."""
+    매칭에 실패해도 item 자체는 그대로 유지되고, 매체 관련 필드만 비워진다.
+    media_checked_at을 남겨서, 이후 recheck_pending_media()가 너무 자주
+    같은 항목을 재검색하지 않도록 한다."""
+    now_iso = datetime.now(KST).isoformat()
     for it in items:
         media = find_media_coverage(it["title"])
+        it["media_checked_at"] = now_iso
         if media:
             it["media_press"] = media["press"]
             it["media_title"] = media["title"]
@@ -325,6 +350,71 @@ def enrich_with_media(items):
             it["media_title"] = ""
             it["media_link"] = ""
     return items
+
+
+# 보도자료는 당일 올라와도 언론 보도는 하루이틀 늦게 나오는 경우가 많다.
+# 그래서 한 번 매칭에 실패했다고 끝내지 않고, 최근 며칠치를 주기적으로 다시 확인한다.
+RECHECK_WINDOW_DAYS = 3        # 오늘 포함, 최근 며칠치까지 재확인 대상으로 볼지
+RECHECK_MIN_INTERVAL_HOURS = 3  # 같은 항목을 다시 확인하기까지 최소 대기 시간
+RECHECK_BATCH_LIMIT = 8         # 한 번 실행(5분)에서 재확인할 최대 건수 (검색엔진 부하 제한)
+
+
+def recheck_pending_media(current_date: str) -> bool:
+    """최근 RECHECK_WINDOW_DAYS일치 데이터 파일들을 훑어서, 아직 매체 매칭이
+    안 됐고 마지막 확인 후 RECHECK_MIN_INTERVAL_HOURS시간이 지난 항목을 최대
+    RECHECK_BATCH_LIMIT건까지 다시 검색해본다. 오늘(current_date)자 파일이
+    바뀌었으면 True를 반환한다 (호출한 쪽에서 latest.json을 다시 써야 하므로)."""
+    now = datetime.now(KST)
+    base_date = datetime.strptime(current_date, "%Y-%m-%d")
+
+    day_items = {}    # date_str -> 그 날짜 파일의 items 리스트(그대로 수정해서 재사용)
+    candidates = []   # (date_str, idx)
+
+    for delta in range(RECHECK_WINDOW_DAYS):
+        d = (base_date - timedelta(days=delta)).strftime("%Y-%m-%d")
+        path = DATA_DIR / f"{d}.json"
+        items = load_json(path, [])
+        if not items:
+            continue
+        day_items[d] = items
+        for idx, it in enumerate(items):
+            if it.get("media_press"):
+                continue
+            checked_at = it.get("media_checked_at")
+            if checked_at:
+                try:
+                    last = datetime.fromisoformat(checked_at)
+                    if (now - last).total_seconds() < RECHECK_MIN_INTERVAL_HOURS * 3600:
+                        continue
+                except ValueError:
+                    pass
+            candidates.append((d, idx))
+
+    if not candidates:
+        return False
+
+    picked = candidates[:RECHECK_BATCH_LIMIT]
+    print(f"[매체 재확인] 최근 {RECHECK_WINDOW_DAYS}일치 중 아직 매칭 안 된 {len(candidates)}건 "
+          f"중 {len(picked)}건 재검색...")
+
+    touched_dates = set()
+    for d, idx in picked:
+        it = day_items[d][idx]
+        print(f"  - ({d}) {it['title'][:40]}")
+        media = find_media_coverage(it["title"])
+        it["media_checked_at"] = now.isoformat()
+        if media:
+            it["media_press"] = media["press"]
+            it["media_title"] = media["title"]
+            it["media_link"] = media["link"]
+            print(f"    -> 매칭됨: {media['press']}")
+        touched_dates.add(d)
+
+    for d in touched_dates:
+        path = DATA_DIR / f"{d}.json"
+        path.write_text(json.dumps(day_items[d], ensure_ascii=False, indent=2), encoding="utf-8")
+
+    return current_date in touched_dates
 
 
 def fetch_page(page_index: int) -> str:
@@ -506,6 +596,26 @@ def main():
     dates_path.write_text(json.dumps(dates, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("[저장 완료]", day_path, latest_path, dates_path)
+
+    # 보도자료보다 뉴스가 늦게 나오는 경우를 위해, 최근 며칠치 중 아직 매체
+    # 매칭이 안 된 항목을 이 시점에 추가로 재검색한다.
+    today_touched = recheck_pending_media(target_date)
+    if today_touched:
+        refreshed_items = load_json(day_path, items)
+        latest_path.write_text(
+            json.dumps(
+                {
+                    "date": target_date,
+                    "collected_at": datetime.now(KST).isoformat(),
+                    "agencies": AGENCIES,
+                    "items": refreshed_items,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+        print(f"[재확인 반영] {day_path}, {latest_path} 갱신 완료")
 
 
 if __name__ == "__main__":
