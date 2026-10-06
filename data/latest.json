@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "collected_at": "2026-10-07T07:58:48.311745+09:00",
+  "collected_at": "2026-10-07T08:18:32.829915+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,42 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-07",
+      "agency": "문화체육관광부",
+      "title": "문체부, 개정 「공연법」·「국민체육진흥법」 시행 이후  최초로 암표 거래 혐의자 170명 수사 의뢰",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784452",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-07T08:18:26.834262+09:00"
+    },
+    {
+      "date": "2026-10-07",
+      "agency": "식품의약품안전처",
+      "title": "식약처, OECD 신생과학 자문그룹 회의 및 국제심포지엄 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784454",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-07T08:18:26.834262+09:00"
+    },
+    {
+      "date": "2026-10-07",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 중남미와 식품안전 신뢰 강화하고 K-푸드 교역 기반 확대",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784453",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "\" K 식품안전 , 중남미 에 전수\"…8개국 정부와 신뢰 강화",
+      "media_link": "https://www.newsis.com/view/NISX20260421_0003599580",
+      "media_checked_at": "2026-10-07T08:18:26.834262+09:00"
+    },
     {
       "date": "2026-10-07",
       "agency": "기후에너지환경부",
