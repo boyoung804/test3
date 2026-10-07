@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "collected_at": "2026-10-07T13:58:14.695427+09:00",
+  "collected_at": "2026-10-07T14:20:34.185804+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-07",
+      "agency": "과학기술정보통신부",
+      "title": "제47회 전국학생과학발명품경진대회 시상식 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784520",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[ 과학 스냅] 카오스재단, 카오스 콘서트 '인간-인간-인간' 개최",
+      "media_link": "https://www.yna.co.kr/view/AKR20260624148300017?input=1195m",
+      "media_checked_at": "2026-10-07T14:20:31.451761+09:00"
+    },
     {
       "date": "2026-10-07",
       "agency": "외교부",
