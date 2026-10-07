@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "collected_at": "2026-10-07T14:20:34.185804+09:00",
+  "collected_at": "2026-10-07T14:39:24.898968+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-07",
+      "agency": "기후에너지환경부",
+      "title": "가습기살균제 배상제도 시행, 국가 주도 배상체계 본격 가동",
+      "summary": "10월 8일 법 시행… '27년 4월 7일까지 6개월간 배상 신청 접수▷ 손해배상 소송 없이 배상 심의위원회 심의를 통해 공정하고 온전한 배상□ 정부는 2026년 10월 8일(목)부터 「가습기살균제 피해구제 및 지원을 위한 특별법」 개정에 따라 국가 주도 배상체계를 본격 시행한다고 밝혔다.ㅇ 법 시행으로 가습기살균제 피해구제제도는 국가와 사업자가 함께 책임지는 손해배상체계로 전환되며, 가습기살균제로 피해를 입은 사람은 별도의 손해배상 소송 없이 가습기살균제 배상 심의위원회(이하 '심의위원회') 심의를 통해 배상 받을 수 있게 된다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784523",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "가습기살균제 특별법 8일 시행 … 국가 주도 배상체계 본격 가동",
+      "media_link": "https://www.newsis.com/view/NISX20261007_0003817408",
+      "media_checked_at": "2026-10-07T14:39:05.399263+09:00"
+    },
     {
       "date": "2026-10-07",
       "agency": "과학기술정보통신부",
@@ -180,10 +192,10 @@
       "summary": "-원시별 'EC 53' 폭발 전후 변화를 세계 최초로 관측…초기 태양계 및 행성 형성 규명-국내 연구진이 기획·주도한 국제공동연구…천문학적 난제 해결의  결정적 단서 제공…",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784489",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "10월 과학기술인상 에 이정은 서울대 교수",
+      "media_link": "https://www.yna.co.kr/view/AKR20261007052100017?input=1195m",
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -195,7 +207,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -207,7 +219,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -216,10 +228,10 @@
       "summary": "정연두 외교전략정보본부장은 방한 중인 마시모 아파로(Massimo Aparo) 국제원자력기구(IAEA) 안전조치 사무차장을 10.7.(수) 오전 접견하였다.  정 본부장은 최근 한반도 정세와 평화공존과 공동 성장의 한반도 실현을 위한 우리 정부의 노력을 설명하고, IAEA가 올해도 사무총장 명의 보고서 발간 등을 통해 북핵 문제에 대한 국제사회의 관심을 환기하고 있는 점을 평가하였다.  아파로 사무차장은 한반도의 평화와 안정을 위한 한국의 외교적 노력을 지지한다고 하고, 북핵 문제는 IAEA의 중요한 의제라고 하면서 북한의 핵 프로",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784488",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "북핵대표, IAEA 안전조치 사무차장 접견 …북핵 협력 논의",
+      "media_link": "https://www.yna.co.kr/view/AKR20261007083400504?input=1195m",
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -231,7 +243,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -243,7 +255,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -255,7 +267,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:41.315991+09:00"
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
@@ -387,7 +399,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T11:20:57.052506+09:00"
+      "media_checked_at": "2026-10-07T14:39:07.907464+09:00"
     },
     {
       "date": "2026-10-07",
