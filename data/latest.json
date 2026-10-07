@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "collected_at": "2026-10-08T07:52:53.007674+09:00",
+  "collected_at": "2026-10-08T08:06:38.171190+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-08",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, K-뷰티 할랄 인증 세미나 및 교육 실시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784600",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "\" K-뷰티 훨훨 날도록\"… 식약처, ' 할랄 ' 세미나 연다",
+      "media_link": "https://www.newsis.com/view/NISX20260609_0003661527",
+      "media_checked_at": "2026-10-08T08:06:35.605072+09:00"
+    },
     {
       "date": "2026-10-08",
       "agency": "농림축산식품부",
