@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "collected_at": "2026-10-08T08:40:23.874143+09:00",
+  "collected_at": "2026-10-08T08:54:36.105581+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-08",
+      "agency": "과학기술정보통신부",
+      "title": "반도체가 자라는 '시작점'까지 설계… 고집적·저전력 AI 반도체 구현의 새 길",
+      "summary": "KAIST·UNIST·한양대·TDS Innovation 연구팀, 2차원 반도체의 핵생성을 원하는 위치로 제어...네이처 게재",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784602",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-08T08:54:33.296447+09:00"
+    },
     {
       "date": "2026-10-08",
       "agency": "문화체육관광부",
