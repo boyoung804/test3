@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "collected_at": "2026-10-07T10:23:34.059423+09:00",
+  "collected_at": "2026-10-07T10:43:08.000630+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-07",
+      "agency": "행정안전부",
+      "title": "5년 만의 '인구감소지역' 재지정, 지역 활력 회복을 위한 지원을 강화한다",
+      "summary": "행안부, 인구규모·인구구조·지역활력 등을 종합 분석해 92개 시·군·구 지정\n여건이 개선된 지역은 '인구활력+지역'으로 분류해 5년간 지원 연속성 확보",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784481",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-07T10:43:03.368302+09:00"
+    },
+    {
+      "date": "2026-10-07",
+      "agency": "국무조정실",
+      "title": "[보도자료] 2026 청년정책 공모전 개최",
+      "summary": "\"청년의 목소리에서 답을 찾겠습니다\"2026 청년정책 공모전 개최\n국무조정실, 10월 7일부터 30일까지 청년제안 접수 및 정책화 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784479",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "국조실, ' 청년정책 공모전 ' 개최 …1등에게 상금 100만원",
+      "media_link": "https://www.newsis.com/view/NISX20261007_0003816864",
+      "media_checked_at": "2026-10-07T10:43:03.368302+09:00"
+    },
     {
       "date": "2026-10-07",
       "agency": "행정안전부",
