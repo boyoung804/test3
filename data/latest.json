@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "collected_at": "2026-10-07T14:57:04.655094+09:00",
+  "collected_at": "2026-10-07T15:21:34.159289+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-07",
+      "agency": "국토교통부",
+      "title": "[설명] 국토교통부 산하기관(10개) 정부보안관제체계 연계를 조속히 추진하고 사이버보안을 강화하겠습니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784532",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-07T15:21:10.850567+09:00"
+    },
+    {
+      "date": "2026-10-07",
+      "agency": "국무조정실",
+      "title": "[보도자료] 가습기살균제 배상제도 시행, 국가주도 배상체계 본격 가동",
+      "summary": "가습기살균제 배상제도 시행,국가 주도 배상체계 본격 가동\n10월 8일 법 시행… '27년 4월 7일까지 6개월간 배상 신청 접수",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784531",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "가습기살균제 특별법 8일 시행 … 국가 주도 배상체계 본격 가동",
+      "media_link": "https://www.newsis.com/view/NISX20261007_0003817408",
+      "media_checked_at": "2026-10-07T15:21:10.850567+09:00"
+    },
     {
       "date": "2026-10-07",
       "agency": "기후에너지환경부",
@@ -123,7 +147,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T12:17:22.319315+09:00"
+      "media_checked_at": "2026-10-07T15:21:16.179351+09:00"
     },
     {
       "date": "2026-10-07",
@@ -135,7 +159,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-07T12:17:22.319315+09:00"
+      "media_checked_at": "2026-10-07T15:21:16.179351+09:00"
     },
     {
       "date": "2026-10-07",
