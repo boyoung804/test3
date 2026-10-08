@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "collected_at": "2026-10-08T17:15:31.927667+09:00",
+  "collected_at": "2026-10-08T17:39:05.215921+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-08",
+      "agency": "외교부",
+      "title": "주우크라이나 한국대사 소환",
+      "summary": "정부는 주우크라이나 대사를 본국으로 소환하기로 결정하였다.  정부는 양국 간 제반 현안이 원만히 해결되기를 기대하며, 이를 위해 우크라이나 측과의 협의를 지속해 나갈 것이다.  끝.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784719",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-08T17:38:48.688852+09:00"
+    },
     {
       "date": "2026-10-08",
       "agency": "농림축산식품부",
@@ -123,7 +135,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T14:21:39.134617+09:00"
+      "media_checked_at": "2026-10-08T17:38:51.205797+09:00"
     },
     {
       "date": "2026-10-08",
@@ -183,7 +195,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T14:21:39.134617+09:00"
+      "media_checked_at": "2026-10-08T17:38:51.205797+09:00"
     },
     {
       "date": "2026-10-08",
