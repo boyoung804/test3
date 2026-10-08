@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "collected_at": "2026-10-08T14:57:51.417698+09:00",
+  "collected_at": "2026-10-08T15:26:06.865397+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-08",
+      "agency": "보건복지부",
+      "title": "안전한 일터가 장애인 근로자 권리 보장한다, 학대 조기 발견 및 신속 대응 체계 구축",
+      "summary": "중앙장애인권익옹호기관-한국장애인고용공단, 학대 예방 및 권익 증진 위한 업무협약 체결",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784664",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-08T15:25:48.296921+09:00"
+    },
     {
       "date": "2026-10-08",
       "agency": "농림축산식품부",
@@ -231,7 +243,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T12:18:31.569933+09:00"
+      "media_checked_at": "2026-10-08T15:25:50.618967+09:00"
     },
     {
       "date": "2026-10-08",
@@ -339,7 +351,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T12:18:39.425628+09:00"
+      "media_checked_at": "2026-10-08T15:25:50.618967+09:00"
     },
     {
       "date": "2026-10-08",
