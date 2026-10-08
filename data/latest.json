@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "collected_at": "2026-10-08T21:29:34.279409+09:00",
+  "collected_at": "2026-10-08T21:57:15.490968+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-08",
+      "agency": "외교부",
+      "title": "외교부 공관장 인사",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784734",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "박성준 \"5년간 외교부 퇴직 공직자 취업 심사 통과율 95.3%\"",
+      "media_link": "https://www.yna.co.kr/view/AKR20260930163000001?input=1195m",
+      "media_checked_at": "2026-10-08T21:56:56.293630+09:00"
+    },
     {
       "date": "2026-10-08",
       "agency": "외교부",
@@ -195,7 +207,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T18:41:52.563551+09:00"
+      "media_checked_at": "2026-10-08T21:56:58.956602+09:00"
     },
     {
       "date": "2026-10-08",
@@ -399,7 +411,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T18:41:52.563551+09:00"
+      "media_checked_at": "2026-10-08T21:56:58.956602+09:00"
     },
     {
       "date": "2026-10-08",
@@ -507,7 +519,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T18:41:52.563551+09:00"
+      "media_checked_at": "2026-10-08T21:56:58.956602+09:00"
     },
     {
       "date": "2026-10-08",
