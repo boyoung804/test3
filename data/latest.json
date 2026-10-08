@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "collected_at": "2026-10-08T22:22:08.875423+09:00",
+  "collected_at": "2026-10-08T22:43:23.576168+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -171,7 +171,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T19:24:58.101962+09:00"
+      "media_checked_at": "2026-10-08T22:43:05.828517+09:00"
     },
     {
       "date": "2026-10-08",
@@ -180,10 +180,10 @@
       "summary": "조현 외교부 장관은 방한 중인 데이브 맥코믹(Dave McCormick) 미국 상원의원(공화, 펜실베이니아)과 10.8.(목) 조찬 면담을 갖고, 한미관계와 한반도 평화 등에 관해 의견을 교환하였다.  조 장관은 양 정상이 9.22.(화) 한미 정상회담을 통해 JFS의 충실한 이행 의지를 재확인한 만큼, 이제 양 국민이 체감할 수 있는 가시적 성과를 조속히 창출해 나갈 수 있도록 맥코믹 의원의 지속적인 관심과 지원을 당부한다고 하였다.  특히, 조 장관은 펜실베이니아주에 양국간 전략협력의 상징인 필리조선소가 위치해 있음을 상기하고,",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784670",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-08T19:24:58.101962+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "강신철· 조현 , 매코믹 美 상원의원 접견…한미 조선협력 등 논의",
+      "media_link": "http://www.yonhapnewstv.co.kr/news/AKR20261008142132UDx",
+      "media_checked_at": "2026-10-08T22:43:05.828517+09:00"
     },
     {
       "date": "2026-10-08",
@@ -195,7 +195,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T19:24:58.101962+09:00"
+      "media_checked_at": "2026-10-08T22:43:05.828517+09:00"
     },
     {
       "date": "2026-10-08",
@@ -483,7 +483,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T19:24:58.101962+09:00"
+      "media_checked_at": "2026-10-08T22:43:05.828517+09:00"
     },
     {
       "date": "2026-10-08",
@@ -567,7 +567,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-08T19:24:58.101962+09:00"
+      "media_checked_at": "2026-10-08T22:43:05.828517+09:00"
     }
   ]
 }
