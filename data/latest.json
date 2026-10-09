@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "collected_at": "2026-10-09T14:23:42.153418+09:00",
+  "collected_at": "2026-10-09T14:44:14.879131+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-09",
+      "agency": "외교부",
+      "title": "제3차 동아시아-라틴아메리카 협력포럼(FEALAC) 문화도시 네트워크 회의 개최",
+      "summary": "외교부는 경주시와 함께 10.9.(금) 경주화백컨벤션센터(HICO)에서 「제3차 동아시아-라틴아메리카 협력포럼(FEALAC)* 문화도시 네트워크 회의」를 개최하였다.  * FEALAC(Forum for East Asia-Latin America Cooperation)은 동아시아와 중남미를 잇는 유일한 정부 간 다자협의체로, 현재 동아시아 16개국과 중남미 20개국 등 36개 회원국이 참여  FEALAC 문화도시 네트워크 회의는 FEALAC 회원국 도시들이 문화 분야의 정책과 경험을 공유하고 도시 간 교류·협력 방안을 논의하는 자리로",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784741",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "동아시아 ·중남미 문화도시 15개국 경주 집결…8년 만에 협력 회의",
+      "media_link": "https://www.news1.kr/diplomacy/defense-diplomacy/6315290",
+      "media_checked_at": "2026-10-09T14:44:12.271300+09:00"
+    },
     {
       "date": "2026-10-09",
       "agency": "외교부",
