@@ -40,6 +40,7 @@ GitHub Actions에서 5분마다 자동 실행됩니다 (.github/workflows/daily-
 """
 
 import json
+import random
 import re
 import sys
 import time
@@ -219,17 +220,22 @@ MEDIA_PRIORITY = ["연합뉴스", "뉴시스", "뉴스1"]
 
 # 네이버 뉴스 검색 "웹페이지" 요청용 헤더. API가 아니라 사람이 브라우저로 보는
 # search.naver.com 검색결과 페이지를 그대로 가져오는 것이라 키/가입이 필요 없다.
+# 주의: Referer를 "https://search.naver.com/"처럼 자기 자신으로 채워서 보내면
+# (실제 브라우저는 검색창에 처음 검색어를 칠 때 이런 self-referer를 보내지 않는다)
+# 오히려 조작된 요청이라는 신호로 보여 차단(HTTP 403) 확률을 높일 수 있다.
+# 실제로 잘 동작하는 다른 네이버 검색 스크래퍼도 Referer 없이 UA/Accept-Language만
+# 보내길래 동일하게 맞췄다.
 _SEARCH_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
     ),
-    "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
-    "Referer": "https://search.naver.com/",
+    "Accept-Language": "ko-KR,ko;q=0.9",
 }
 
 
 _MATCH_THRESHOLD = 0.2   # 보도자료 제목의 글자쌍이 검색결과(제목+요약문)에 이 비율 이상 들어있어야 같은 기사로 인정 (너무 높이면 실제 기사도 놓침)
+_MATCH_TITLE_MIN = 0.08  # 제목만 비교했을 때 최소 이 정도는 겹쳐야 함 (미리보기 문구만으로 통과하는 오탐 방지용 하한선)
 
 
 def _bigrams(text: str):
@@ -252,6 +258,99 @@ def _clean_query(title: str) -> str:
     return q[:80]
 
 
+def _build_queries(title: str, agency: str, summary: str = ""):
+    """보도자료 제목 전체를 그대로 검색어로 쓰면 실제로 사람이 검색하는 방식과 달라서
+    (문장 전체 대 핵심어 몇 개) 네이버가 관련 기사를 놓치는 경우가 많다. 실제로
+    "기후에너지환경부 가습기살균제 참사 배상재원, 기후에너지환경부와 기업이 함께
+    책임진다"라는 긴 제목 그대로는 못 찾았던 연합뉴스 기사를, 사람이 쓴 "기후에너지환경부
+    가습기"라는 짧은 키워드 검색으로는 바로 찾은 사례가 있어 이렇게 바꿨다.
+
+    보도자료 제목은 보통 "[길게 수식하는 앞부분] + [핵심 결과를 나타내는 뒷부분]" 구조인데,
+    실제 언론 제목은 뒷부분(결과)만 가져다 쓰는 경우가 많다. 예: 보도자료 "고온에도 속 꽉
+    찬 배추 '청명가을' 대한민국 최고 품종 선정" vs 실제 뉴시스 제목 "올해 대한민국 최고
+    품종은…'청명가을' 등 8개 선정" — "고온에도 속 꽉 찬 배추" 같은 앞부분 수식어는 기사
+    제목에 전혀 없다.
+
+    처음엔 "따옴표(''"") 안 고유명사"만 이 "제목 끝부분"을 끌어오는 조건으로 삼았는데,
+    실제로는 "AI의 위로가 사람을 대신할 수 없습니다 「정신건강 목적 생성형 AI 이용
+    가이드라인 발표」"처럼 전각괄호(「」『』)로 핵심 결과 어구를 감싸는 제목도 많고,
+    아예 괄호/따옴표가 하나도 없는 제목도 많다. 따옴표 유무와 상관없이 "제목 끝부분
+    (핵심 결과 어구)"은 항상 유용한 검색어라, 이제 따옴표가 있든 없든 매번 시도한다.
+
+    0순위: 기관명 + 요약문(summary) 속 따옴표/전각괄호 안 사업명(있으면) — 제목이 "반려동물과의
+    마지막 동행까지 함께합니다"처럼 감성적인 문구라 핵심 사업명이 제목에 아예 없고 본문
+    요약에만 "「펫로스 심리지원 프로그램」"처럼 박혀있는 경우가 실제로 있었다. 기사 제목은
+    보통 이런 "진짜 사업명"을 쓰지, 보도자료의 홍보성 제목을 그대로 쓰지 않는다.
+    1순위: 기관명 + 제목 속 따옴표/전각괄호 안 고유명사(있으면) + 제목 끝부분
+    2순위: 기관명 + 제목 끝부분(마지막 5단어 안팎) — 따옴표/괄호가 없어도 항상 시도.
+    3순위: 기관명 + 제목의 첫 구절(쉼표·콜론·가운뎃점 앞부분) — 사람이 검색하는 방식과 비슷.
+    4순위: 정제된 전체 제목 — 앞선 시도로 못 찾았을 때 보강용으로 그대로 둔다.
+    최대 3개 검색어로 제한해 요청 수가 지나치게 늘지 않게 한다(우선순위 순으로 3개 채움)."""
+    # 원문(제목/요약문)에서 따옴표나 전각괄호로 묶인 고유명사(사업명·브랜드명 등)를 뽑는다.
+    # _clean_query는 이 문자들을 전부 지워버리므로, 지우기 전 원문에서 뽑아야 한다.
+    # 길이 상한을 20자에서 40자로 늘렸다: "데이터 기반 연근해어업 관리 체계 혁신 방안"처럼
+    # 정책/사업명이 20자를 넘는 경우가 실제로 있어서, 20자로 제한하면 이런 핵심 문구가
+    # 통째로 추출 대상에서 빠지는 문제가 있었다.
+    #
+    # 괄호/따옴표 종류를 섞어서 매칭하면(예: 여는 ' 과 닫는 」를 한 쌍으로 착각) 전혀
+    # 엉뚱한 범위가 뽑히는 버그가 있었다(외교부 사례: "...재구성(...)'이라는 주제로
+    # 「제8차 한-아세안..." 에서 '...'가 길어서(40자 넘음) 매칭 실패하자, 그 닫는 '를
+    # 엉뚱하게 뒤에 나오는 「...」의 여는 따옴표로 착각해 "이라는 주제로 「제8차..."처럼
+    # 짝이 안 맞는 텍스트를 뽑아버렸다). 그래서 종류별로 짝을 맞춰 따로 매칭한다.
+    _QUOTE_PAIRS = [("'", "'"), ('"', '"'), ("‘", "’"), ("“", "”"), ("「", "」"), ("『", "』")]
+
+    def _extract_quoted(text: str):
+        text = text or ""
+        matches = []  # (start, end, content)
+        for open_c, close_c in _QUOTE_PAIRS:
+            pat = re.escape(open_c) + f"([^{re.escape(open_c)}{re.escape(close_c)}]{{2,40}})" + re.escape(close_c)
+            for m in re.finditer(pat, text):
+                # "(이하 '농식품부')", "(이하, '시범사업')"처럼 공식 문서에서 흔한
+                # "약칭 정의"용 따옴표는 진짜 사업명이 아니라 그냥 줄임말 정의라서
+                # 검색어로 뽑으면 오히려 핵심어가 희석된다(실제로 "농어촌 기본소득
+                # 시범사업" 대신 "시범사업"만 뽑혀서 검색어가 너무 뭉툭해진 사례가
+                # 있었다). 바로 앞에 "이하"가 붙은 따옴표는 제외한다.
+                if re.search(r"이하[,\s]*$", text[:m.start()]):
+                    continue
+                matches.append((m.start(), m.end(), m.group(1)))
+        matches.sort(key=lambda t: t[0])
+        return [content for _, _, content in matches]
+
+    quoted_title = _extract_quoted(title)
+    quoted_summary = _extract_quoted(summary or "")
+
+    clean = _clean_query(title)
+    words = clean.split()
+    tail = " ".join(words[-5:]) if len(words) > 5 else clean
+    first_clause = re.split(r"[,:·]", clean)[0].strip()
+
+    queries = []
+
+    def add(*parts: str):
+        seen_words = set()
+        out_words = []
+        for part in parts:
+            for w in part.split():
+                if w not in seen_words:
+                    seen_words.add(w)
+                    out_words.append(w)
+        q = " ".join(out_words)[:80]
+        if q and q not in queries:
+            queries.append(q)
+
+    if quoted_summary:
+        add(agency, " ".join(quoted_summary))
+    if len(queries) < 3 and quoted_title:
+        add(agency, " ".join(quoted_title), tail)
+    if len(queries) < 3 and tail:
+        add(agency, tail)
+    if len(queries) < 3 and agency and first_clause:
+        add(agency, first_clause)
+    if len(queries) < 3:
+        add(clean)
+    return queries[:3] or [clean]
+
+
 def _naver_news_search(query: str):
     """네이버 뉴스 검색결과 웹페이지(search.naver.com)를 그대로 가져와
     [(언론사명, 기사제목, 링크, 미리보기문구), ...]로 돌려준다.
@@ -272,6 +371,12 @@ def _naver_news_search(query: str):
     try:
         resp = requests.get(
             "https://search.naver.com/search.naver",
+            # sort=1(최신순)을 한 번 시도했었는데, 추가한 직후부터 전혀 무관한 여러
+            # 검색어에서 동시에 제목링크 0개가 떴다(실제로 존재할 법한 "외교부 제8차
+            # 한-아세안 싱크탱크 전략대화" 같은 공식 행사명까지 0건). sort=1이 걸린
+            # 결과 페이지는 관련도순(기본값)과 다른 템플릿을 내려줄 가능성이 있어
+            # (아래 선택자가 그 템플릿엔 안 맞을 수 있음), 원인이 분명해질 때까지는
+            # 안전하게 기본 정렬(관련도순)로 되돌린다.
             params={"where": "news", "query": query},
             headers=_SEARCH_HEADERS,
             timeout=10,
@@ -288,18 +393,30 @@ def _naver_news_search(query: str):
     for span in soup.select("span.fender-ui_0cb57fb2"):
         span.decompose()
 
-    title_anchors = soup.select('a[data-heatmap-target=".tit"]')
-    press_spans = soup.select("span.sds-comps-profile-info-title-text")
+    # 템플릿이 살짝 바뀌어도 깨지지 않도록 선택자를 조금 더 느슨하게 잡는다:
+    # - 제목 링크: 새 컴포넌트(data-heatmap-target)뿐 아니라 구버전 class(a.news_tit)도 같이 본다.
+    # - 언론사명: 정확한 전체 class명 대신 "profile-info-title-text"를 포함하는 class를
+    #   찾는다([class*=...]) — 네이버가 해시 접미사만 살짝 바꿔도 안 깨지게.
+    title_anchors = soup.select('a[data-heatmap-target=".tit"], a.news_tit')
+    press_spans = soup.select('[class*="profile-info-title-text"]')
     body_anchors = soup.select('a[data-heatmap-target=".body"]')
 
     if not title_anchors:
-        # 선택자가 지금 네이버 페이지 구조와 안 맞거나, 봇 탐지로 다른 페이지를 받은 경우.
-        # 실제로 뭘 받았는지 다음 실행 로그에서 바로 보이도록 진단 정보를 남긴다.
-        body_snippet = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))[:200]
+        # 선택자가 지금 네이버 페이지 구조와 안 맞거나, 봇 탐지로 다른 페이지를 받은 경우,
+        # 아니면 정말로 그 검색어에 뉴스 결과가 하나도 없는 경우(이것도 정상적인 상황)다.
+        # 예전엔 본문 앞 200자만 잘라서 남겨서, 그게 메뉴/탭 이름에서 바로 끊겨버리면
+        # "진짜 결과 없음"인지 "선택자가 깨짐"인지 구분이 안 됐다. 그래서 네이버가 실제로
+        # 쓰는 "검색결과가 없습니다" 안내문구가 있는지부터 명시적으로 확인하고, 본문
+        # 스니펫도 800자로 늘려서 더 뒤쪽(진짜 본문이 있다면 그 부분)까지 보이게 한다.
+        full_text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+        no_result_phrases = ["에 대한 검색결과가 없습니다", "검색결과가 없습니다", "다른 검색어로 찾아보세요"]
+        genuinely_empty = any(p in full_text for p in no_result_phrases)
+        body_snippet = full_text[:800]
         title_tag = soup.title.get_text(strip=True) if soup.title else "(없음)"
         print(
-            f"    [검색진단] 네이버: 제목링크 0개 / 최종URL={resp.url} / "
-            f"응답길이={len(resp.text)}자 / <title>={title_tag} / 본문일부=\"{body_snippet}\"",
+            f"    [검색진단] 네이버: 제목링크 0개 / 진짜결과없음={genuinely_empty} / "
+            f"최종URL={resp.url} / 응답길이={len(resp.text)}자 / <title>={title_tag} / "
+            f"본문일부=\"{body_snippet}\"",
             file=sys.stderr,
         )
 
@@ -321,30 +438,65 @@ def _naver_news_search(query: str):
     return out
 
 
-def find_media_coverage(title: str):
+def _is_photo_article(link: str) -> bool:
+    """연합뉴스 포토(사진) 기사는 캡션 위주라 제목이 짧고 보도자료 제목과 거의
+    안 겹쳐서 글자쌍 유사도로는 거의 매칭되지 않지만, 혹시라도 우연히 기준을
+    넘겨 잘못 매칭되는 걸 막기 위해 후보에서 아예 제외한다.
+    연합뉴스 포토 기사 링크는 /view/PYH... 형태(사진·그래픽 전용 기사 ID 접두어)."""
+    return "/view/PYH" in link
+
+
+def find_media_coverage(title: str, agency: str = "", summary: str = ""):
     """연합뉴스 > 뉴시스 > 뉴스1 순서로 실제 보도 기사를 찾는다.
-    네이버 뉴스 검색을 한 번만 호출해서(검색어 1개로 모든 언론사 결과가 같이 나오므로)
-    그 안에서 매체명으로 걸러 우선순위대로 확인하고, 제목 유사도가 기준
-    (_MATCH_THRESHOLD)에 못 미치면 '이 매체엔 없음'으로 보고 다음 매체로 넘어간다."""
-    query = _clean_query(title)
-    results = _naver_news_search(query)
-    time.sleep(1.0)  # 검색엔진 부담/차단 방지
-    if results is None:
-        print("    - 네이버 검색 실패(차단/오류)")
+    검색어를 여러 단계로 시도한다: 요약문/제목 속 따옴표·전각괄호 핵심어 → 제목
+    끝부분 → 기관명+제목 첫 구절(사람이 실제로 검색하는 방식과 비슷) → 정제된
+    전체 제목(_build_queries 참고). 검색 결과를 합쳐서 그 안에서 매체명으로 걸러
+    우선순위대로 확인하고, 제목 유사도가 기준(_MATCH_THRESHOLD)에 못 미치면
+    '이 매체엔 없음'으로 보고 다음 매체로 넘어간다."""
+    queries = _build_queries(title, agency, summary)
+    seen_links = set()
+    merged = []
+    any_ok = False
+    for q in queries:
+        results = _naver_news_search(q)
+        time.sleep(random.uniform(2.0, 3.5))  # 검색엔진 부담/차단 방지 (간격을 넓히고 매번 랜덤화해 더 자연스럽게)
+        if results is None:
+            print(f"    - 네이버 검색 실패(차단/오류) [검색어: {q}]")
+            continue
+        if not results:
+            print(f"    - 네이버 검색결과 없음 [검색어: {q}]")
+            continue
+        any_ok = True
+        for r in results:
+            if _is_photo_article(r[2]) or r[2] in seen_links:
+                continue
+            seen_links.add(r[2])
+            merged.append(r)
+
+    if not any_ok:
         return None
-    if not results:
-        print("    - 네이버 검색결과 없음")
+    if not merged:
+        print("    - 검색은 됐지만 쓸만한 후보가 없음 (포토 기사 제외 후 0건)")
         return None
 
     for press_name in MEDIA_PRIORITY:
-        candidates = [r for r in results if press_name in r[0]]
+        candidates = [r for r in merged if press_name in r[0]]
         if not candidates:
             print(f"    - {press_name}: 검색결과 없음")
             continue
         best = max(candidates, key=lambda r: _match_score(title, r[1] + " " + r[3]))
-        score = _match_score(title, best[1] + " " + best[3])
-        print(f"    - {press_name}: 후보 {len(candidates)}건, 최고 유사도 {score:.2f}")
-        if score >= _MATCH_THRESHOLD:
+        title_only_score = _match_score(title, best[1])
+        combined_score = _match_score(title, best[1] + " " + best[3])
+        print(
+            f"    - {press_name}: 후보 {len(candidates)}건, "
+            f"제목단독유사도 {title_only_score:.2f} / 제목+미리보기유사도 {combined_score:.2f}"
+        )
+        # 미리보기 문구(desc)는 날짜·조사 같은 짧은 공통 조각만으로도 우연히
+        # 겹칠 수 있어서(실제로 "주한외교단, 강원의 매력에 빠지다"가 전혀
+        # 무관한 중동 뉴스와 매칭된 사례가 있었음), 제목만 비교한 유사도가
+        # 최소한 어느 정도는 있어야(=실제로 같은 사안을 가리켜야) 인정한다.
+        # 제목 자체는 전혀 안 겹치는데 미리보기 문구만으로 기준을 넘는 경우를 막는 게 목적.
+        if combined_score >= _MATCH_THRESHOLD and title_only_score >= _MATCH_TITLE_MIN:
             return {"press": press_name, "title": best[1][:200], "link": best[2]}
     return None
 
@@ -356,7 +508,7 @@ def enrich_with_media(items):
     같은 항목을 재검색하지 않도록 한다."""
     now_iso = datetime.now(KST).isoformat()
     for it in items:
-        media = find_media_coverage(it["title"])
+        media = find_media_coverage(it["title"], it.get("agency", ""), it.get("summary", ""))
         it["media_checked_at"] = now_iso
         if media:
             it["media_press"] = media["press"]
@@ -373,7 +525,7 @@ def enrich_with_media(items):
 # 그래서 한 번 매칭에 실패했다고 끝내지 않고, 최근 며칠치를 주기적으로 다시 확인한다.
 RECHECK_WINDOW_DAYS = 3        # 오늘 포함, 최근 며칠치까지 재확인 대상으로 볼지
 RECHECK_MIN_INTERVAL_HOURS = 3  # 같은 항목을 다시 확인하기까지 최소 대기 시간
-RECHECK_BATCH_LIMIT = 8         # 한 번 실행(5분)에서 재확인할 최대 건수 (검색엔진 부하 제한)
+RECHECK_BATCH_LIMIT = 4         # 한 번 실행(5분)에서 재확인할 최대 건수 (검색엔진 부하 제한, 짧은 시간에 몰아서 쏘지 않도록 축소)
 
 
 def recheck_pending_media(current_date: str) -> bool:
@@ -418,7 +570,7 @@ def recheck_pending_media(current_date: str) -> bool:
     for d, idx in picked:
         it = day_items[d][idx]
         print(f"  - ({d}) {it['title'][:40]}")
-        media = find_media_coverage(it["title"])
+        media = find_media_coverage(it["title"], it.get("agency", ""), it.get("summary", ""))
         it["media_checked_at"] = now.isoformat()
         if media:
             it["media_press"] = media["press"]
