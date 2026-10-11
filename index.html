@@ -56,6 +56,9 @@
   .media-link { display:inline-block; margin-top:10px; font-size:12.5px; font-weight:600; color:#fff; background:var(--accent);
     padding:6px 12px; border-radius:8px; text-decoration:none; }
   .media-link:hover { background:#1d4ed8; }
+  .media-preview { margin-top:8px; font-size:14px; font-weight:700; color:var(--text-primary); display:flex; gap:6px; align-items:flex-start; }
+  .media-preview .mp-press { flex:0 0 auto; color:var(--accent); }
+  .media-preview .mp-title { flex:1; }
   .latest-list { display:flex; flex-direction:column; gap:12px; }
   .view-toggle { display:inline-flex; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:#fff; }
   .view-btn { border:none; background:#fff; padding:5px 12px; font-size:12.5px; cursor:pointer; color:var(--text-secondary); }
@@ -76,6 +79,51 @@
   .zero-row { display:flex; justify-content:space-between; padding:9px 14px; background:var(--card-bg);
     border:1px dashed var(--border); border-radius:var(--radius); margin-bottom:6px; font-size:13px; color:var(--text-secondary); }
   footer { max-width:720px; margin:24px auto 0; padding:0 16px; font-size:12px; color:var(--text-secondary); text-align:center; line-height:1.7; }
+
+  /* 기사 등록/수정 버튼 (각 보도자료 카드) */
+  .match-btn { margin-top:10px; margin-left:8px; font-size:12.5px; font-weight:600; padding:6px 12px;
+    border-radius:8px; border:1px solid var(--border); background:#fff; color:var(--text-secondary); cursor:pointer; }
+  .match-btn.has-media { color:var(--accent); border-color:#bfdbfe; }
+  .match-btn.no-media { color:#b45309; border-color:#fde68a; background:#fffbeb; }
+
+  /* 기사후보 섹션 (하단) */
+  #candidate-section { max-width:720px; margin:28px auto 0; padding:0 16px; }
+  #candidate-section h2 { font-size:15px; margin:0 0 8px; }
+  .candidate-list { display:flex; flex-direction:column; gap:6px; }
+  .candidate-row { display:flex; align-items:center; gap:8px; background:var(--card-bg); border:1px solid var(--border);
+    border-radius:8px; padding:8px 12px; font-size:13px; }
+  .candidate-row .c-title { flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .candidate-row .c-media { color:var(--text-secondary); font-size:12px; flex:0 0 auto; }
+  .candidate-row .c-status { flex:0 0 auto; font-size:11.5px; padding:2px 8px; border-radius:999px; }
+  .candidate-row .c-status.used { background:#dcfce7; color:#15803d; }
+  .candidate-row .c-status.unused { background:#f3f4f6; color:var(--text-secondary); }
+
+  /* 매칭 모달 */
+  #match-modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:100;
+    align-items:flex-end; justify-content:center; }
+  #match-modal-overlay.open { display:flex; }
+  #match-modal { background:#fff; width:100%; max-width:720px; max-height:80vh; border-radius:16px 16px 0 0;
+    padding:18px 18px 24px; overflow-y:auto; }
+  #match-modal h3 { font-size:14px; margin:0 0 4px; color:var(--text-secondary); font-weight:500; }
+  #match-modal .modal-pr-title { font-size:16px; font-weight:600; margin:0 0 14px; }
+  .match-option { display:flex; align-items:center; gap:10px; padding:10px 12px; border:1px solid var(--border);
+    border-radius:10px; margin-bottom:8px; cursor:pointer; }
+  .match-option:hover { border-color:var(--accent); background:var(--accent-bg); }
+  .match-option .score { flex:0 0 auto; font-size:12px; font-weight:700; color:var(--accent);
+    background:var(--accent-bg); padding:3px 8px; border-radius:999px; min-width:42px; text-align:center; }
+  .match-option .opt-body { flex:1; min-width:0; }
+  .match-option .opt-title { font-size:13.5px; font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .match-option .opt-media { font-size:11.5px; color:var(--text-secondary); }
+  .match-option.disabled { opacity:.4; pointer-events:none; }
+  #match-modal-empty { text-align:center; color:var(--text-secondary); font-size:13px; padding:24px 0; }
+  .manual-entry-divider { text-align:center; font-size:12px; color:var(--text-secondary); margin:16px 0 10px;
+    display:flex; align-items:center; gap:8px; }
+  .manual-entry-divider::before, .manual-entry-divider::after { content:""; flex:1; height:1px; background:var(--border); }
+  .manual-entry-form { display:flex; flex-direction:column; gap:8px; margin-bottom:4px; }
+  .manual-entry-form input { padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:14px; }
+  .modal-actions { display:flex; gap:8px; margin-top:12px; }
+  .modal-actions button { flex:1; padding:10px; border-radius:10px; border:1px solid var(--border); background:#fff; font-size:13.5px; cursor:pointer; }
+  .modal-actions .clear-btn { color:var(--danger); border-color:#fecaca; }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
 </head>
@@ -110,6 +158,12 @@
       <input type="text" id="search-input" placeholder="키워드 검색">
       <select id="ministry-select"><option value="">전체 부처</option></select>
     </div>
+    <div class="controls" style="margin-top:8px; align-items:center;">
+      <button class="ghost-btn" id="manual-match-btn" style="font-size:12px; padding:7px 12px; flex:0 0 auto;">기사 업로드</button>
+      <input type="file" id="manual-match-file" accept=".xlsx,.xls" style="display:none">
+      <button class="ghost-btn" id="export-json-btn" style="font-size:12px; padding:7px 12px; flex:0 0 auto;">변경사항 다운로드</button>
+      <span class="meta" id="manual-match-status" style="margin:0; flex:1; min-width:160px;"></span>
+    </div>
   </div>
 </header>
 
@@ -133,6 +187,33 @@
   <div id="results"><div class="empty-state">불러오는 중...</div></div>
   <div id="zero-wrap"></div>
 </main>
+
+<section id="candidate-section" style="display:none;">
+  <h2>기사후보 (<span id="candidate-count">0</span>건)</h2>
+  <div class="candidate-list" id="candidate-list"></div>
+</section>
+
+<div id="match-modal-overlay">
+  <div id="match-modal">
+    <h3>이 보도자료에 연결할 기사를 고르세요</h3>
+    <p class="modal-pr-title" id="match-modal-pr-title"></p>
+    <div id="match-modal-options"></div>
+    <div id="match-modal-empty" style="display:none;">연결할 수 있는 기사후보가 없습니다. 아래에서 직접 입력해 주세요.</div>
+
+    <div class="manual-entry-divider">또는 직접 입력</div>
+    <div class="manual-entry-form">
+      <input type="text" id="manual-entry-press" placeholder="매체명 (예: 연합뉴스)">
+      <input type="text" id="manual-entry-title" placeholder="기사 제목">
+      <input type="text" id="manual-entry-url" placeholder="기사 URL (https://...)">
+      <button id="manual-entry-submit" class="primary-btn" style="width:100%;">이 내용으로 등록</button>
+    </div>
+
+    <div class="modal-actions">
+      <button id="match-modal-clear" class="clear-btn">매칭 해제</button>
+      <button id="match-modal-cancel">닫기</button>
+    </div>
+  </div>
+</div>
 
 <footer>
   이 페이지는 매일 자동 수집된 data/latest.json을 읽어옵니다 (GitHub Actions 기준 KST 09:10 갱신).<br>
@@ -169,6 +250,223 @@
     return DEFAULT_KEYWORDS.slice();
   }
   function saveWatch() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(watchKeywords)); } catch (e) {} }
+
+  // --- 기사 업로드 (수동으로 찾은 기사 엑셀 → 기사후보 목록 → 보도자료마다 직접 골라서 매칭) ---
+  // 이 브라우저(기기)에만 저장되고, GitHub 저장소에는 반영되지 않는다. 실제로
+  // 다른 사람들이 보는 사이트에 반영하려면 "변경사항 다운로드"로 받은 JSON을
+  // 작업자가 직접 GitHub의 data/*.json 파일에 붙여넣어 커밋해야 한다.
+  const MANUAL_KEY = 'pr_manual_media_v1';     // 보도자료 link -> {press, title, link} 매칭 결과 (또는 {cleared:true})
+  const CANDIDATES_KEY = 'pr_candidate_articles_v1'; // 업로드된 기사후보 목록
+  function loadManual() { try { const r = localStorage.getItem(MANUAL_KEY); if (r) return JSON.parse(r); } catch (e) {} return {}; }
+  function saveManual(m) { try { localStorage.setItem(MANUAL_KEY, JSON.stringify(m)); } catch (e) {} }
+  function loadCandidates() { try { const r = localStorage.getItem(CANDIDATES_KEY); if (r) return JSON.parse(r); } catch (e) {} return []; }
+  function saveCandidates(c) { try { localStorage.setItem(CANDIDATES_KEY, JSON.stringify(c)); } catch (e) {} }
+  let manualMedia = loadManual();
+  let candidateArticles = loadCandidates();
+
+  // manualMedia는 원래 JSON에 있던 매칭 결과(옳든 틀리든)도 덮어쓸 수 있어야
+  // "잘못 매칭된 기사 고치기"가 된다. {cleared:true}면 매칭 없음 상태로 되돌린다.
+  function applyManualOverrides(items) {
+    items.forEach(r => {
+      const o = manualMedia[r.link];
+      if (!o) return;
+      if (o.cleared) { r.media_press = ''; r.media_title = ''; r.media_link = ''; }
+      else { r.media_press = o.press || '기타'; r.media_title = o.title || ''; r.media_link = o.link || ''; }
+    });
+    return items;
+  }
+
+  // 이 기사후보가 이미 어느 보도자료에 연결되어 쓰이고 있는지 찾는다 (link로 식별).
+  function candidateUsedByTitle(c) {
+    for (const link in manualMedia) {
+      const o = manualMedia[link];
+      if (!o.cleared && o.link === c.link) {
+        const item = currentItems.find(r => r.link === link);
+        if (item) return item.title;
+      }
+    }
+    return null;
+  }
+
+  function renderCandidateList() {
+    const section = $('candidate-section');
+    $('candidate-count').textContent = candidateArticles.length;
+    if (!candidateArticles.length) { section.style.display = 'none'; return; }
+    section.style.display = 'block';
+    $('candidate-list').innerHTML = candidateArticles.map(c => {
+      const usedTitle = candidateUsedByTitle(c);
+      const statusHtml = usedTitle
+        ? `<span class="c-status used" title="${escapeHtml(usedTitle)}">사용됨</span>`
+        : `<span class="c-status unused">미사용</span>`;
+      return `<div class="candidate-row">
+        <span class="c-title">${escapeHtml(c.title)}</span>
+        <span class="c-media">${escapeHtml(c.media || '')}</span>
+        ${statusHtml}
+      </div>`;
+    }).join('');
+  }
+  // 제목 글자쌍(bigram) 겹침 비율로 유사도 계산 (collect.py의 매칭 로직과 동일한 방식).
+  // 보도자료 제목과 실제 뉴스 기사 제목은 표현이 달라도, 핵심 단어가 겹치면 꽤 높게 나온다.
+  function bigrams(s) {
+    const t = String(s || '').normalize('NFC').replace(/[^0-9A-Za-z가-힣]/g, '');
+    const r = new Set();
+    for (let i = 0; i < t.length - 1; i++) r.add(t.slice(i, i + 2));
+    return r;
+  }
+  function matchScore(govTitle, articleTitle) {
+    const g = bigrams(govTitle);
+    if (!g.size) return 0;
+    const a = bigrams(articleTitle);
+    let n = 0; g.forEach(k => { if (a.has(k)) n++; });
+    return n / g.size;
+  }
+  const MANUAL_MATCH_THRESHOLD = 0.2;
+
+  function cellText(v) {
+    if (v == null) return '';
+    if (typeof v === 'object') {
+      if (v.text != null) return String(v.text).trim();
+      if (v.richText) return v.richText.map(x => x.text || '').join('').trim();
+      if (v.result != null) return String(v.result).trim();
+      return '';
+    }
+    return String(v).trim();
+  }
+  function cellLink(v) {
+    if (v && typeof v === 'object') {
+      if (v.hyperlink) return String(v.hyperlink).trim();
+      if (v.text && /^https?:\/\//i.test(v.text)) return String(v.text).trim();
+    }
+    if (typeof v === 'string' && /^https?:\/\//i.test(v)) return v.trim();
+    return '';
+  }
+  async function parseManualExcel(file) {
+    if (typeof ExcelJS === 'undefined') throw new Error('엑셀 도구를 불러오지 못했습니다');
+    const buf = await file.arrayBuffer();
+    const wb = new ExcelJS.Workbook();
+    await wb.xlsx.load(buf);
+    const ws = wb.worksheets[0];
+    const rawRows = [];
+    ws.eachRow({ includeEmpty: true }, row => rawRows.push(row.values.slice(1)));
+    if (!rawRows.length) return [];
+    const header = rawRows[0].map(cellText);
+    const findCol = re => header.findIndex(h => re.test(h));
+    let tIdx = findCol(/제목/), mIdx = findCol(/매체/), uIdx = findCol(/url|링크|주소/i);
+    const hasHeader = tIdx >= 0 || mIdx >= 0 || uIdx >= 0;
+    if (tIdx < 0) tIdx = 0; if (mIdx < 0) mIdx = 1; if (uIdx < 0) uIdx = 2;
+    const dataRows = hasHeader ? rawRows.slice(1) : rawRows;
+    const out = [];
+    dataRows.forEach(r => {
+      const title = cellText(r[tIdx]);
+      if (!title) return;
+      const media = cellText(r[mIdx]);
+      const link = cellLink(r[uIdx]) || cellText(r[uIdx]);
+      out.push({ title, media, link });
+    });
+    return out;
+  }
+  $('manual-match-btn').addEventListener('click', () => $('manual-match-file').click());
+  $('manual-match-file').addEventListener('change', async e => {
+    const file = e.target.files[0]; e.target.value = '';
+    if (!file) return;
+    const statusEl = $('manual-match-status');
+    statusEl.textContent = '엑셀을 읽는 중…';
+    try {
+      const rows = await parseManualExcel(file);
+      if (!rows.length) { statusEl.textContent = '엑셀에서 읽을 행을 찾지 못했습니다 (제목 열을 확인해 주세요).'; return; }
+      // 자동으로 매칭하지 않고, 일단 "기사후보" 목록에 쌓아두기만 한다.
+      // 중복 업로드 방지를 위해 link가 같으면 덮어쓴다.
+      rows.forEach(row => {
+        const idx = candidateArticles.findIndex(c => c.link && c.link === row.link);
+        if (idx >= 0) candidateArticles[idx] = row; else candidateArticles.push(row);
+      });
+      saveCandidates(candidateArticles);
+      renderCandidateList();
+      statusEl.textContent = `기사후보 ${rows.length}건 업로드 완료 (총 ${candidateArticles.length}건). 각 보도자료의 "기사 등록" 버튼에서 골라 매칭하세요.`;
+    } catch (err) {
+      statusEl.textContent = '엑셀을 읽지 못했습니다: ' + (err && err.message || err);
+    }
+  });
+
+  // --- 매칭 모달: 보도자료 카드의 "기사 등록/수정" 버튼을 누르면 뜬다 ---
+  let matchModalItemLink = null;
+  function openMatchModal(itemLink) {
+    const item = currentItems.find(r => r.link === itemLink);
+    if (!item) return;
+    matchModalItemLink = itemLink;
+    $('match-modal-pr-title').textContent = item.title;
+    $('match-modal-clear').style.display = item.media_press ? 'block' : 'none';
+
+    const options = candidateArticles
+      .map(c => ({ c, usedTitle: candidateUsedByTitle(c), score: matchScore(item.title, c.title) }))
+      .filter(o => !o.usedTitle || o.usedTitle === item.title) // 이미 다른 보도자료에 쓰인 후보는 숨김
+      .sort((a, b) => b.score - a.score);
+
+    if (!options.length) {
+      $('match-modal-options').innerHTML = '';
+      $('match-modal-empty').style.display = 'block';
+    } else {
+      $('match-modal-empty').style.display = 'none';
+      $('match-modal-options').innerHTML = options.map((o, i) => `
+        <div class="match-option" data-idx="${i}">
+          <span class="score">${Math.round(o.score * 100)}%</span>
+          <div class="opt-body">
+            <div class="opt-title">${escapeHtml(o.c.title)}</div>
+            <div class="opt-media">${escapeHtml(o.c.media || '매체명 미상')}</div>
+          </div>
+        </div>`).join('');
+      $('match-modal-options').dataset._options = JSON.stringify(options.map(o => o.c));
+    }
+    // 직접 입력 칸은 이전 보도자료에서 입력하던 내용이 남아있지 않도록 매번 비운다.
+    // 이미 매칭된 기사를 고치는 거면(기사 수정), 지금 값으로 미리 채워줘서 바로 수정하기 편하게 한다.
+    $('manual-entry-press').value = item.media_press || '';
+    $('manual-entry-title').value = item.media_title || '';
+    $('manual-entry-url').value = item.media_link || '';
+    $('match-modal-overlay').classList.add('open');
+  }
+  function closeMatchModal() { $('match-modal-overlay').classList.remove('open'); matchModalItemLink = null; }
+
+  $('match-modal-options').addEventListener('click', e => {
+    const row = e.target.closest('.match-option');
+    if (!row || !matchModalItemLink) return;
+    const opts = JSON.parse($('match-modal-options').dataset._options || '[]');
+    const c = opts[Number(row.dataset.idx)];
+    if (!c) return;
+    const entry = { press: c.media || '기타', title: c.title, link: c.link };
+    manualMedia[matchModalItemLink] = entry;
+    saveManual(manualMedia);
+    const item = currentItems.find(r => r.link === matchModalItemLink);
+    if (item) { item.media_press = entry.press; item.media_title = entry.title; item.media_link = entry.link; }
+    closeMatchModal();
+    render();
+  });
+  $('match-modal-clear').addEventListener('click', () => {
+    if (!matchModalItemLink) return;
+    manualMedia[matchModalItemLink] = { cleared: true };
+    saveManual(manualMedia);
+    const item = currentItems.find(r => r.link === matchModalItemLink);
+    if (item) { item.media_press = ''; item.media_title = ''; item.media_link = ''; }
+    closeMatchModal();
+    render();
+  });
+  $('manual-entry-submit').addEventListener('click', () => {
+    if (!matchModalItemLink) return;
+    const press = $('manual-entry-press').value.trim();
+    const mtitle = $('manual-entry-title').value.trim();
+    const url = $('manual-entry-url').value.trim();
+    if (!mtitle || !url) { alert('기사 제목과 URL은 꼭 입력해 주세요.'); return; }
+    if (!/^https?:\/\//i.test(url)) { alert('URL은 http(s)://로 시작해야 해요.'); return; }
+    const entry = { press: press || '기타', title: mtitle, link: url };
+    manualMedia[matchModalItemLink] = entry;
+    saveManual(manualMedia);
+    const item = currentItems.find(r => r.link === matchModalItemLink);
+    if (item) { item.media_press = entry.press; item.media_title = entry.title; item.media_link = entry.link; }
+    closeMatchModal();
+    render();
+  });
+  $('match-modal-cancel').addEventListener('click', closeMatchModal);
+  $('match-modal-overlay').addEventListener('click', e => { if (e.target.id === 'match-modal-overlay') closeMatchModal(); });
+
   function decodeEntities(s) { const t = document.createElement('textarea'); t.innerHTML = s || ''; return t.value; }
   function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
   function highlight(text, q) {
@@ -201,21 +499,31 @@
     catch (e) { availableDates = []; }
   }
 
+  // "변경사항 다운로드"용: 오늘(최신)자인지, 그리고 latest.json의 원본 collected_at/agencies를
+  // 기억해둔다 (오늘자는 data/latest.json과 data/<오늘날짜>.json 두 파일이 서로 내용을
+  // 거울처럼 복제하고 있어서, 내보낼 때도 둘 다 맞춰줘야 한다).
+  let currentIsLatest = false;
+  let currentExportMeta = { collected_at: null, agencies: null };
+
   async function loadForDate(dateStr) {
     resultsEl.innerHTML = '<div class="empty-state">불러오는 중...</div>';
     try {
       let payload;
-      if (!dateStr || (availableDates.length && dateStr === availableDates[0])) {
+      currentIsLatest = !dateStr || (availableDates.length && dateStr === availableDates[0]);
+      if (currentIsLatest) {
         payload = await fetchJson('data/latest.json');
         dateStr = payload.date;
         dateInput.value = dateStr;
+        currentExportMeta = { collected_at: payload.collected_at, agencies: payload.agencies || AGENCIES };
       } else {
         const items = await fetchJson(`data/${dateStr}.json`);
         payload = { date: dateStr, collected_at: null, items };
+        currentExportMeta = { collected_at: null, agencies: null };
       }
       currentItems = (payload.items || []).map(r => ({
         ...r, title: decodeEntities(r.title), summary: decodeEntities(r.summary), media_title: decodeEntities(r.media_title)
       }));
+      applyManualOverrides(currentItems);
       selectedLinks = new Set(currentItems.map(r => r.link));
       $('collected-at').textContent = payload.collected_at
         ? new Date(payload.collected_at).toLocaleString('ko-KR') : '-';
@@ -294,7 +602,13 @@
           <p class="card-title">${highlight(r.title, q)}</p>
         </div>
         ${r.summary ? `<p class="card-summary">${highlight(r.summary, q)}</p>` : ''}
-        ${r.media_link ? `<a class="media-link" href="${escapeHtml(r.media_link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">뉴스 바로가기<span class="media-name">(${escapeHtml(r.media_press)})</span> ↗</a>` : ''}
+        ${r.media_link ? `
+          <div class="media-preview">
+            <span class="mp-press">[${escapeHtml(r.media_press)}]</span>
+            <span class="mp-title">${escapeHtml(r.media_title)}</span>
+          </div>
+          <a class="media-link" href="${escapeHtml(r.media_link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">뉴스 바로가기 ↗</a>` : ''}
+        <button class="match-btn ${r.media_press ? 'has-media' : 'no-media'}" data-match-link="${escapeHtml(r.link)}">${r.media_press ? '기사 수정' : '기사 등록'}</button>
       </div>`;
 
     if (!filtered.length) {
@@ -332,6 +646,7 @@
       </details>`;
 
     renderWatchTags();
+    renderCandidateList();
 
     const selectAllCb = $('select-all-checkbox');
     if (filtered.length === 0) {
@@ -359,6 +674,10 @@
   clearFilterBtn.addEventListener('click', () => { searchInput.value=''; ministrySelect.value=''; activeWatchKeyword=null; render(); });
 
   resultsEl.addEventListener('click', e => {
+    if (e.target.classList.contains('match-btn')) {
+      openMatchModal(e.target.dataset.matchLink);
+      return;
+    }
     if (e.target.classList.contains('select-checkbox')) {
       const key = e.target.dataset.key;
       if (e.target.checked) selectedLinks.add(key); else selectedLinks.delete(key);
@@ -467,6 +786,37 @@
     link.click();
     link.remove();
     URL.revokeObjectURL(url);
+  });
+
+  // "변경사항 다운로드": 지금 화면에 반영된 매칭(원래 자동매칭 + 기사 등록/수정으로
+  // 직접 고친 것)을 GitHub에 그대로 붙여넣을 수 있는 JSON 파일로 내려받는다.
+  // - 과거 날짜를 보고 있으면: data/<날짜>.json 파일 1개 (배열 형태)
+  // - 오늘(최신)을 보고 있으면: data/<날짜>.json(배열)과 data/latest.json(객체) 2개
+  //   → 두 파일 다 collect.py가 매번 같이 갱신하는 거라, 둘 다 똑같이 바꿔줘야
+  //   index.html이 "오늘"을 볼 때와 날짜 지정해서 볼 때 결과가 안 어긋난다.
+  function downloadJson(obj, filename) {
+    const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+  }
+  $('export-json-btn').addEventListener('click', () => {
+    if (!currentItems.length) { alert('내보낼 데이터가 없습니다.'); return; }
+    const dateStr = $('date-label').textContent;
+    downloadJson(currentItems, `${dateStr}.json`);
+    if (currentIsLatest) {
+      downloadJson({
+        date: dateStr,
+        collected_at: currentExportMeta.collected_at,
+        agencies: currentExportMeta.agencies || AGENCIES,
+        items: currentItems
+      }, 'latest.json');
+    }
+    $('manual-match-status').textContent = currentIsLatest
+      ? `${dateStr}.json 과 latest.json 두 파일을 받았어요. GitHub의 data/${dateStr}.json과 data/latest.json 둘 다 이 내용으로 바꿔주세요.`
+      : `${dateStr}.json을 받았어요. GitHub의 data/${dateStr}.json 파일을 이 내용으로 바꿔주세요.`;
   });
 
   function shiftDate(str, days) {
