@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "collected_at": "2026-10-12T07:58:41.093273+09:00",
+  "collected_at": "2026-10-12T08:19:03.404388+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,54 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-12",
+      "agency": "문화체육관광부",
+      "title": "김진환 ㈜학지사 대표이사,  출판문화 발전 유공 은관문화훈장 수훈",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784793",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+    },
+    {
+      "date": "2026-10-12",
+      "agency": "문화체육관광부",
+      "title": "한국인 어머니와 주한 외국인이 한 팀,  한식 집밥 경연 <코리안 쿡오프> 방송 시작",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784792",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+    },
+    {
+      "date": "2026-10-12",
+      "agency": "문화체육관광부",
+      "title": "한글과 한국어의 다음 100년을 논하다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784791",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+    },
+    {
+      "date": "2026-10-12",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 국제인증표준품 분양 개시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784790",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+    },
     {
       "date": "2026-10-12",
       "agency": "중소벤처기업부",
