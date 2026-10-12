@@ -414,18 +414,25 @@ _AGENCY_ABBREVIATIONS = {
 }
 
 
-def _extract_org_terms(title: str, agency: str):
+def _extract_org_terms(title: str, agency: str, summary: str = ""):
     """보도자료 제목과 기관명에서, 실제 기사에 등장할 법한 '기관명 후보' 문자열
-    집합을 뽑는다. 빈 집합이면(뽑을 게 없으면) 호출하는 쪽에서 필터를 건너뛴다."""
+    집합을 뽑는다. 빈 집합이면(뽑을 게 없으면) 호출하는 쪽에서 필터를 건너뛴다.
+
+    제목만 보면 안 되는 이유: 보도자료 제목은 "~한다/~나선다" 같은 홍보성 문구만
+    있고, 실제로 그 일을 하는 구체적인 기관명(예: "노사발전재단", "공무원연금공단")은
+    summary(본문 요약) 쪽에만 적혀있는 경우가 많다. 실제 뉴스 기사는 보통 그 구체적인
+    기관명으로 쓰이지, 상위 부처(agency) 이름만 쓰는 게 아니라서, 제목만 보고 뽑으면
+    진짜 멀쩡한 매칭까지 "기관명이 안 보인다"며 걸러버리는 문제가 있었다."""
     terms = set()
     if agency:
         terms.add(agency)
         terms.update(_AGENCY_ABBREVIATIONS.get(agency, set()))
-    for m in _ORG_NAME_PATTERN.finditer(title or ""):
-        token = m.group()
-        if token in _ORG_NAME_BLOCKLIST:
-            continue
-        terms.add(token)
+    for text in (title or "", summary or ""):
+        for m in _ORG_NAME_PATTERN.finditer(text):
+            token = m.group()
+            if token in _ORG_NAME_BLOCKLIST:
+                continue
+            terms.add(token)
     return terms
 
 
@@ -725,7 +732,7 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
         except ValueError:
             pr_date_obj = None
 
-    org_terms = _extract_org_terms(title, agency)
+    org_terms = _extract_org_terms(title, agency, summary)
 
     for press_name in MEDIA_PRIORITY:
         candidates = [r for r in merged if press_name in r[0]]
