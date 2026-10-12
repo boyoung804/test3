@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "collected_at": "2026-10-12T15:25:52.859147+09:00",
+  "collected_at": "2026-10-12T15:58:50.929255+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,42 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-12",
+      "agency": "외교부",
+      "title": "이태우 극지협력대표,  2026 북극서클총회 참석",
+      "summary": "이태우 외교부 극지협력대표는 10.8.(목)-10.10.(토) 간 아이슬란드 레이캬비크에서 개최된 2026 북극서클총회(Arctic Circle Assembly)* 에 참석**하였다. 이 대표는 북극항로 해상운송, 북극 기후변화 대응에 관한 패널 토의에 참석하여 우리 정부의 정책과 활동 등에 대해 설명하였다. 아울러, 동 총회 참석 계기에 북극이사회 회원국 정부 대표 등과 면담하여 최근 북극과 관련한 주요 사안에 대해 의견을 교환하고 향후 협력 방안에 대해 논의하였다.  * 2013년 이래 매년 아이슬란드 레이캬비크에서 개최되는 북",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784875",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-12T15:58:17.974293+09:00"
+    },
+    {
+      "date": "2026-10-12",
+      "agency": "국방부",
+      "title": "국방부, 첫 번째 「국방 AX 거점」 개소식 개최",
+      "summary": "국방부는 10월 12일(월) 오후 판교 테크노밸리에서 강신철 국방부장관 주관으로 국방 AX 거점 개소식을 개최했습니다.ㅇ개소식에는 과학기술정보통신부, 산업통상자원부, 중소벤처기업부, 국가인공지능전략위원회 등 민·관·군 관계자 150여 명이 참석하여 국방 AX 거점의 출범을 축하하고, 국방 AI 발전 방향을 공유했습니다.□ 국방 AX거점의 첫 번째 개소 장소인 육군 판교 AX 거점은 '피지컬 AI' 기술 특화 거점으로 운영됩니다.ㅇ​판교 AX 거점은 세계 최고 수준의 국방 피지컬 AI(Physical AI) 허브를 목표로 피지컬 AI",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784873",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "'민·군 합동으로 AI 연구'…첫 '국방 AX 거점' 판교에 개소",
+      "media_link": "https://www.yna.co.kr/view/AKR20261012130000504?input=1195m",
+      "media_checked_at": "2026-10-12T15:58:17.974293+09:00"
+    },
+    {
+      "date": "2026-10-12",
+      "agency": "통일부",
+      "title": "고위공무원 인사발령(2026.10.12.자)",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784877",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-12T15:58:17.974293+09:00"
+    },
     {
       "date": "2026-10-12",
       "agency": "외교부",
