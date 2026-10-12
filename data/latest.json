@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "collected_at": "2026-10-12T09:00:18.310487+09:00",
+  "collected_at": "2026-10-12T09:15:26.345082+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-12",
+      "agency": "행정안전부",
+      "title": "지방소멸대응기금 광역지원계정, 평가 기반 차등 배분 도입으로 성과 높인다",
+      "summary": "행안부, 시·도의 광역 차원 지방소멸 대응 역량 강화 위해 투자계획 평가 실시\n시·도 맞춤형 사업 발굴 촉진… 500억 원 투자계획 평가 기반 배분",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784796",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "지방소멸 기금 광역 계정 500억원 첫 차등배분…강원·충남 최우수",
+      "media_link": "https://www.yna.co.kr/view/AKR20261008195700530?input=1195m",
+      "media_checked_at": "2026-10-12T09:14:57.002030+09:00"
+    },
     {
       "date": "2026-10-12",
       "agency": "재정경제부",
@@ -144,10 +156,10 @@
       "summary": "「전세사기피해자법」 제정('23.6.1.) 이후 피해자등 누적 41,559건 결정",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784785",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-12T06:11:44.052517+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "9월 전세사기 피해자 623건 추가 인정…누적 4만1천559건",
+      "media_link": "https://www.yna.co.kr/view/AKR20261011029300003?input=1195m",
+      "media_checked_at": "2026-10-12T09:15:12.183617+09:00"
     }
   ]
 }
