@@ -289,10 +289,13 @@
   }
 
   // 현재 보고 있는 날짜에 업로드된 기사후보만 보여준다.
-  // forDate가 없는(예전에 업로드된) 후보는 날짜 구분 없이 계속 보이게 둔다(하위 호환).
+  // (예전 버전에서 날짜 구분 없이 저장된 후보가 브라우저에 남아있으면 날짜와
+  // 상관없이 계속 섞여 보이는 문제가 있어서, forDate가 없는 것도 더 이상
+  // "모든 날짜"로 봐주지 않고 숨긴다. 그런 예전 데이터는 해당 날짜에서 엑셀을
+  // 다시 업로드하면 날짜가 제대로 찍혀서 다시 보인다.)
   function candidatesForCurrentDate() {
     const curDate = $('date-label').textContent;
-    return candidateArticles.filter(c => !c.forDate || c.forDate === curDate);
+    return candidateArticles.filter(c => c.forDate === curDate);
   }
 
   function renderCandidateList() {
