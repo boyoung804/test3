@@ -236,6 +236,9 @@ _SEARCH_HEADERS = {
 
 _MATCH_TITLE_MIN = 0.08  # 제목만 비교했을 때 최소 이 정도는 겹쳐야 검증 단계로 넘어감 (완전 무관한 후보를 1차로 거름)
 _MATCH_BODY_MIN = 0.12   # 기사 원문(본문)까지 가져와서 보도자료 제목+요약문과 비교한 유사도 기준 (주 판정 기준)
+_MATCH_BODY_MIN_OVERLAP = 6  # 위 비율 기준과 별도로, 실제로 겹친 글자쌍 최소 개수. 제목이 짧으면
+                              # 전체 글자쌍 수가 적어 우연히 몇 개만 겹쳐도 비율 기준을 넘기 쉬워서,
+                              # "최소 이 정도는 겹쳐야 한다"는 절대 기준도 같이 둔다.
 _MATCH_THRESHOLD = 0.18  # 기사 원문을 못 가져왔을 때(차단/오류)만 쓰는 대체 기준 — 제목+미리보기 문구만으로 판단
 # (제목만 비교하면 "출범 1년" vs "후보부지 내년 공모"처럼 같은 사안인데 기자가 전혀
 # 다른 포인트로 제목을 뽑아 유사도가 9.7%까지 떨어지는 경우를 놓치고, 반대로 네이버
@@ -249,21 +252,78 @@ _MATCH_THRESHOLD = 0.18  # 기사 원문을 못 가져왔을 때(차단/오류)�
 # 대체 판단한다.)
 
 
-def _fetch_article_text(link: str, timeout: int = 8) -> str:
-    """기사 원문 페이지를 가져와 본문 비교용 텍스트를 뽑는다. meta description(또는
-    og:description)과 본문 앞쪽 문단 몇 개를 합쳐서 쓴다 — 언론사마다 본문 class가
-    달라서 정교하게 긁기보다, 이 정도면 보도자료 요약문과 비교하기에 충분하다.
-    접속 실패/차단이면 빈 문자열을 돌려주고, 호출하는 쪽에서 기존 방식으로 대체한다."""
+_ARTICLE_DATE_META_ATTRS = [
+    {"property": "article:published_time"},
+    {"property": "og:article:published_time"},
+    {"name": "article:published_time"},
+    {"property": "og:regDate"},
+    {"name": "regDate"},
+    {"name": "PUBLISH_DATETIME"},  # 연합뉴스가 실제로 쓰는 meta 중 하나
+]
+_ARTICLE_DATE_TEXT_PATTERNS = [
+    # "입력 2026.09.13. 15:30", "송고시간 2026-09-13 15:30:00" 등 기사 상단에
+    # 흔히 쓰는 표기. 연도-월-일 사이 구분자(.  또는 -)와 끝맺는 마침표 유무가
+    # 언론사마다 달라서 폭넓게 잡는다.
+    re.compile(r"(?:입력|송고)[^0-9]{0,6}(\d{4})[.\-](\d{1,2})[.\-](\d{1,2})"),
+]
+
+
+def _extract_article_page_date(soup, resp_text: str):
+    """기사 원문 페이지 자체에서 실제 게재 날짜를 뽑는다. 네이버 검색결과 페이지의
+    "N일 전" 같은 표시(_extract_result_date)보다 훨씬 믿을 만하다 — 검색결과
+    스니펫은 선택자가 살짝만 어긋나도 날짜를 통째로 못 읽어오지만, 기사 원문
+    페이지에는 거의 항상 meta 태그나 "입력/송고" 날짜 표기가 박혀있기 때문이다.
+    1) <meta property="article:published_time"> 등 표준/언론사별 meta 태그
+    2) JSON-LD(application/ld+json)의 "datePublished"
+    3) 본문 텍스트 속 "입력 YYYY.MM.DD." / "송고 YYYY-MM-DD" 패턴
+    순서로 시도하고, 다 실패하면 None을 돌려준다(호출하는 쪽에서 '모른다'로 처리)."""
+    for attrs in _ARTICLE_DATE_META_ATTRS:
+        tag = soup.find("meta", attrs=attrs)
+        if tag and tag.get("content"):
+            content = tag["content"]
+            m = re.search(r"(\d{4})[-.]?(\d{2})[-.]?(\d{2})", content)
+            if m:
+                try:
+                    return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
+                except ValueError:
+                    pass
+
+    for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        text = script.string or script.get_text() or ""
+        m = re.search(r'"datePublished"\s*:\s*"(\d{4})-(\d{2})-(\d{2})', text)
+        if m:
+            try:
+                return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
+            except ValueError:
+                pass
+
+    body_text = soup.get_text(" ", strip=True)
+    for pat in _ARTICLE_DATE_TEXT_PATTERNS:
+        m = pat.search(body_text)
+        if m:
+            try:
+                return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
+            except ValueError:
+                continue
+    return None
+
+
+def _fetch_article_text(link: str, timeout: int = 8):
+    """기사 원문 페이지를 가져와 (본문 비교용 텍스트, 실제 게재 날짜)를 뽑는다.
+    텍스트는 meta description(또는 og:description)과 본문 앞쪽 문단 몇 개를
+    합쳐서 쓴다 — 언론사마다 본문 class가 달라서 정교하게 긁기보다, 이 정도면
+    보도자료 요약문과 비교하기에 충분하다. 날짜는 _extract_article_page_date 참고.
+    접속 실패/차단이면 ("", None)을 돌려주고, 호출하는 쪽에서 기존 방식으로 대체한다."""
     try:
         resp = requests.get(link, headers=_SEARCH_HEADERS, timeout=timeout)
     except requests.RequestException:
-        return ""
+        return "", None
     if resp.status_code != 200:
-        return ""
+        return "", None
     try:
         soup = BeautifulSoup(resp.text, "html.parser")
     except Exception:
-        return ""
+        return "", None
     parts = []
     for attrs in ({"name": "description"}, {"property": "og:description"}):
         tag = soup.find("meta", attrs=attrs)
@@ -271,7 +331,9 @@ def _fetch_article_text(link: str, timeout: int = 8) -> str:
             parts.append(tag["content"])
     paragraphs = soup.find_all("p")
     parts.append(" ".join(p.get_text(" ", strip=True) for p in paragraphs[:15]))
-    return re.sub(r"\s+", " ", " ".join(parts)).strip()[:1500]
+    text = re.sub(r"\s+", " ", " ".join(parts)).strip()[:1500]
+    article_date = _extract_article_page_date(soup, resp.text)
+    return text, article_date
 
 
 def _bigrams(text: str):
@@ -285,6 +347,22 @@ def _match_score(gov_title: str, result_text: str) -> float:
     if not g:
         return 0.0
     return len(g & _bigrams(result_text)) / len(g)
+
+
+def _match_score_with_overlap(gov_title: str, result_text: str):
+    """_match_score와 같은 비율(ratio)에 더해, 실제로 겹친 글자쌍 개수(overlap)도
+    같이 돌려준다. 보도자료 제목이 짧으면(예: 요약문이 비어있고 제목도 짧은 경우)
+    전체 글자쌍 수 자체가 적어서, 우연히 2~3개만 겹쳐도 비율이 쉽게 기준을 넘는
+    문제가 있다 — 실제 사례: "적극행정 우수공무원 시상"처럼 짧은 제목이, 완전히
+    무관한 기사 본문(긴 텍스트라 글자쌍 종류가 많음)과 우연한 글자쌍 몇 개만
+    겹쳤는데도 비율 기준(_MATCH_BODY_MIN)을 넘겨버렸다. 비율뿐 아니라 "최소 이만큼은
+    겹쳐야 한다"는 절대 개수 기준도 같이 둬서, 짧은 제목에서 비율만으로 통과되는
+    걸 막는다."""
+    g = _bigrams(gov_title)
+    if not g:
+        return 0.0, 0
+    overlap = len(g & _bigrams(result_text))
+    return overlap / len(g), overlap
 
 
 def _clean_query(title: str) -> str:
@@ -608,12 +686,19 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
             print(f"    - {press_name}: 제목단독유사도 기준 미달로 제외")
             continue
 
-        article_text = _fetch_article_text(best[2])
+        article_text, article_date = _fetch_article_text(best[2])
         time.sleep(random.uniform(1.0, 2.0))  # 언론사 사이트에도 예의상 간격을 둔다
         if article_text:
-            body_score = _match_score(title + " " + summary, best[1] + " " + article_text)
-            print(f"    - {press_name}: 기사원문 확인함, 본문비교유사도 {body_score:.2f}")
-            if body_score >= _MATCH_BODY_MIN:
+            # 기사 원문 페이지 자체에서 읽은 날짜는 검색결과 스니펫보다 훨씬 믿을
+            # 만하므로, 여기서도 한 번 더 날짜를 확인한다. 검색결과 단계
+            # (위 pr_date_obj 필터)에서 날짜를 못 읽어 걸러지지 않고 넘어온 후보라도,
+            # 원문을 실제로 열어보면 날짜를 읽을 수 있는 경우가 많다.
+            if pr_date_obj and article_date and article_date != pr_date_obj:
+                print(f"    - {press_name}: 기사원문 날짜({article_date}) 보도자료 날짜({pr_date_obj})와 달라 제외")
+                continue
+            body_score, body_overlap = _match_score_with_overlap(title + " " + summary, best[1] + " " + article_text)
+            print(f"    - {press_name}: 기사원문 확인함, 본문비교유사도 {body_score:.2f} (겹친 글자쌍 {body_overlap}개)")
+            if body_score >= _MATCH_BODY_MIN and body_overlap >= _MATCH_BODY_MIN_OVERLAP:
                 return {"press": press_name, "title": best[1][:200], "link": best[2]}
             print(f"    - {press_name}: 본문비교 기준 미달로 보류")
         else:
