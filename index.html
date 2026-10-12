@@ -676,7 +676,20 @@
         <button class="match-btn ${r.media_press ? 'has-media' : 'no-media'}" data-match-link="${escapeHtml(r.link)}">${r.media_press ? '기사 수정' : '기사 등록'}</button>
       </div>`;
 
-    if (!filtered.length) {
+    const have = new Set(currentItems.map(r => r.agency));
+    const zero = AGENCIES.filter(a => !have.has(a) && (!mf || mf === a));
+
+    if (viewMode === 'uncollected') {
+      // 감시 대상 기관 중, 오늘 날짜에 아직 보도자료가 하나도 안 걸린 곳만 모아서 보여준다.
+      resultCountTextEl.textContent = `미수집 ${zero.length}곳`;
+      resultsEl.innerHTML = zero.length
+        ? `<div class="latest-list">${zero.map(a => `
+          <div class="card" style="cursor:default;">
+            <div class="card-top"><span class="badge">${escapeHtml(a)}</span></div>
+            <p class="card-summary" style="margin:0;">아직 이 기관의 보도자료가 수집되지 않았습니다.</p>
+          </div>`).join('')}</div>`
+        : '<div class="empty-state">미수집 기관이 없습니다. 감시 대상 기관 모두 보도자료가 수집됐어요.</div>';
+    } else if (!filtered.length) {
       resultsEl.innerHTML = '<div class="empty-state">검색 결과가 없습니다.</div>';
     } else if (viewMode === 'latest') {
       // 최신순: 부처 구분 없이 저장된 순서(맨 앞이 가장 최근)대로
@@ -700,9 +713,7 @@
       resultsEl.innerHTML = html;
     }
 
-    const have = new Set(currentItems.map(r => r.agency));
-    const zero = AGENCIES.filter(a => !have.has(a) && (!mf || mf === a));
-    zeroWrap.innerHTML = (!mf && zero.length === 0) ? '' : `
+    zeroWrap.innerHTML = (viewMode === 'uncollected' || (!mf && zero.length === 0)) ? '' : `
       <details style="margin-top:16px;">
         <summary style="cursor:pointer;font-size:13px;color:var(--text-secondary);font-weight:600;">
           자료 없는 기관 (${zero.length}곳)
@@ -732,10 +743,12 @@
     viewMode = mode;
     $('view-agency').classList.toggle('active', mode === 'agency');
     $('view-latest').classList.toggle('active', mode === 'latest');
+    $('view-uncollected').classList.toggle('active', mode === 'uncollected');
     render();
   }
   $('view-agency').addEventListener('click', () => setView('agency'));
   $('view-latest').addEventListener('click', () => setView('latest'));
+  $('view-uncollected').addEventListener('click', () => setView('uncollected'));
   clearFilterBtn.addEventListener('click', () => { searchInput.value=''; ministrySelect.value=''; activeWatchKeyword=null; render(); });
 
   resultsEl.addEventListener('click', e => {
