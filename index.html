@@ -288,12 +288,20 @@
     return null;
   }
 
+  // 현재 보고 있는 날짜에 업로드된 기사후보만 보여준다.
+  // forDate가 없는(예전에 업로드된) 후보는 날짜 구분 없이 계속 보이게 둔다(하위 호환).
+  function candidatesForCurrentDate() {
+    const curDate = $('date-label').textContent;
+    return candidateArticles.filter(c => !c.forDate || c.forDate === curDate);
+  }
+
   function renderCandidateList() {
     const section = $('candidate-section');
-    $('candidate-count').textContent = candidateArticles.length;
-    if (!candidateArticles.length) { section.style.display = 'none'; return; }
+    const visible = candidatesForCurrentDate();
+    $('candidate-count').textContent = visible.length;
+    if (!visible.length) { section.style.display = 'none'; return; }
     section.style.display = 'block';
-    $('candidate-list').innerHTML = candidateArticles.map(c => {
+    $('candidate-list').innerHTML = visible.map(c => {
       const usedTitle = candidateUsedByTitle(c);
       const statusHtml = usedTitle
         ? `<span class="c-status used" title="${escapeHtml(usedTitle)}">사용됨</span>`
@@ -375,14 +383,19 @@
       const rows = await parseManualExcel(file);
       if (!rows.length) { statusEl.textContent = '엑셀에서 읽을 행을 찾지 못했습니다 (제목 열을 확인해 주세요).'; return; }
       // 자동으로 매칭하지 않고, 일단 "기사후보" 목록에 쌓아두기만 한다.
+      // 지금 보고 있는 날짜(forDate)를 같이 저장해서, 다른 날짜를 볼 때는
+      // 이 후보들이 섞여 보이지 않도록 한다.
       // 중복 업로드 방지를 위해 link가 같으면 덮어쓴다.
+      const curDate = $('date-label').textContent;
       rows.forEach(row => {
+        row.forDate = curDate;
         const idx = candidateArticles.findIndex(c => c.link && c.link === row.link);
         if (idx >= 0) candidateArticles[idx] = row; else candidateArticles.push(row);
       });
       saveCandidates(candidateArticles);
       renderCandidateList();
-      statusEl.textContent = `기사후보 ${rows.length}건 업로드 완료 (총 ${candidateArticles.length}건). 각 보도자료의 "기사 등록" 버튼에서 골라 매칭하세요.`;
+      const visibleCount = candidatesForCurrentDate().length;
+      statusEl.textContent = `${curDate}자 기사후보 ${rows.length}건 업로드 완료 (이 날짜 총 ${visibleCount}건). 각 보도자료의 "기사 등록" 버튼에서 골라 매칭하세요.`;
     } catch (err) {
       statusEl.textContent = '엑셀을 읽지 못했습니다: ' + (err && err.message || err);
     }
@@ -397,7 +410,7 @@
     $('match-modal-pr-title').textContent = item.title;
     $('match-modal-clear').style.display = item.media_press ? 'block' : 'none';
 
-    const options = candidateArticles
+    const options = candidatesForCurrentDate()
       .map(c => ({ c, usedTitle: candidateUsedByTitle(c), score: matchScore(item.title, c.title) }))
       .filter(o => !o.usedTitle || o.usedTitle === item.title) // 이미 다른 보도자료에 쓰인 후보는 숨김
       .sort((a, b) => b.score - a.score);
