@@ -365,6 +365,70 @@ def _match_score_with_overlap(gov_title: str, result_text: str):
     return overlap / len(g), overlap
 
 
+# 기관명/소속기관명 필터: 정부 보도자료를 다룬 기사라면 보통 그 부처나 소속기관
+# 이름이 어딘가에 등장한다. 반대로 기관명이 전혀 안 나오는 기사는 아예 다른 사안을
+# 다룬 기사일 가능성이 높다. 완전히 무관한 기사(예: "적극행정 우수공무원 시상"
+# 보도자료에 "빅테크 거물 할리우드 악당 캐릭터" 기사가 매칭된 사례)를 걸러내는
+# 추가 안전장치로 쓴다.
+#
+# "agency" 필드(예: 고용노동부)는 보도자료를 낸 상위 부처인데, 실제 보도자료는
+# 소속기관(예: 근로복지공단) 이름으로 다뤄지는 경우가 많아서, agency 하나만으로
+# 걸러내면 오히려 멀쩡한 매칭까지 막을 수 있다. 그래서 제목 안에서 "~부/~처/~청/
+# ~공단/~공사/~진흥원/~연구원/~위원회/~재단/~센터/~협회/~본부" 등으로 끝나는
+# 기관명 같은 단어도 같이 뽑아서 후보 집합에 넣는다.
+#
+# "공무원", "병원", "학원"처럼 기관명이 아닌데 우연히 같은 접미사로 끝나는 흔한
+# 단어가 섞이면 필터가 오히려 느슨해지므로(이 단어들은 아무 기사에나 나올 수
+# 있어서), 알려진 오탐 단어는 블록리스트로 제외한다.
+_ORG_NAME_PATTERN = re.compile(
+    r"[가-힣]{2,10}(?:부|처|청|원|공단|공사|진흥원|연구원|위원회|재단|센터|협회|본부|관리단|협의회|조합)"
+)
+_ORG_NAME_BLOCKLIST = {
+    "공무원", "병원", "학원", "내부", "외부", "정원", "지원", "자원", "원인", "원래",
+    "경우", "지난해", "올해", "전부", "일부", "전체", "자체", "구체", "대부분",
+}
+
+# 기사 제목은 보통 부처 정식명칭을 다 쓰지 않고 언론에서 통용되는 약칭을 쓴다
+# (예: "문화체육관광부" 대신 "문체부"). agency 필드는 항상 정식명칭이라, 정식명칭만
+# 기준으로 필터링하면 약칭을 쓴 멀쩡한 기사까지 "기관명이 안 보인다"며 걸러질 수
+# 있어서, 실제로 언론이 쓰는 약칭을 같이 등록해둔다. 약칭이 따로 없는 부처(예:
+# 외교부, 법무부처럼 이미 짧은 경우)는 정식명칭 하나로도 충분해서 목록에 없다.
+_AGENCY_ABBREVIATIONS = {
+    "국무조정실": {"국조실"},
+    "재정경제부": {"재경부"},
+    "과학기술정보통신부": {"과기정통부", "과기부"},
+    "행정안전부": {"행안부"},
+    "국가보훈부": {"보훈부"},
+    "문화체육관광부": {"문체부"},
+    "농림축산식품부": {"농식품부"},
+    "산업통상부": {"산업부", "산통부"},
+    "보건복지부": {"복지부"},
+    "기후에너지환경부": {"기후부", "환경부"},
+    "고용노동부": {"고용부", "노동부"},
+    "성평등가족부": {"여가부", "성가부"},
+    "국토교통부": {"국토부"},
+    "해양수산부": {"해수부"},
+    "중소벤처기업부": {"중기부"},
+    "인사혁신처": {"인사처"},
+    "식품의약품안전처": {"식약처"},
+}
+
+
+def _extract_org_terms(title: str, agency: str):
+    """보도자료 제목과 기관명에서, 실제 기사에 등장할 법한 '기관명 후보' 문자열
+    집합을 뽑는다. 빈 집합이면(뽑을 게 없으면) 호출하는 쪽에서 필터를 건너뛴다."""
+    terms = set()
+    if agency:
+        terms.add(agency)
+        terms.update(_AGENCY_ABBREVIATIONS.get(agency, set()))
+    for m in _ORG_NAME_PATTERN.finditer(title or ""):
+        token = m.group()
+        if token in _ORG_NAME_BLOCKLIST:
+            continue
+        terms.add(token)
+    return terms
+
+
 def _clean_query(title: str) -> str:
     q = re.sub(r"[\[\(][^\]\)]{0,15}[\]\)]", " ", title)   # [보도자료], (참고) 같은 꼬리표 제거
     q = re.sub(r"[「」『』“”\"'‘’]", " ", q)
@@ -661,6 +725,8 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
         except ValueError:
             pr_date_obj = None
 
+    org_terms = _extract_org_terms(title, agency)
+
     for press_name in MEDIA_PRIORITY:
         candidates = [r for r in merged if press_name in r[0]]
         if not candidates:
@@ -699,6 +765,9 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
             body_score, body_overlap = _match_score_with_overlap(title + " " + summary, best[1] + " " + article_text)
             print(f"    - {press_name}: 기사원문 확인함, 본문비교유사도 {body_score:.2f} (겹친 글자쌍 {body_overlap}개)")
             if body_score >= _MATCH_BODY_MIN and body_overlap >= _MATCH_BODY_MIN_OVERLAP:
+                if org_terms and not any(t in (best[1] + " " + article_text) for t in org_terms):
+                    print(f"    - {press_name}: 기관명({', '.join(sorted(org_terms))}) 기사에 안 보여 제외")
+                    continue
                 return {"press": press_name, "title": best[1][:200], "link": best[2]}
             print(f"    - {press_name}: 본문비교 기준 미달로 보류")
         else:
@@ -706,6 +775,9 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
             combined_score = _match_score(title, best[1] + " " + best[3])
             print(f"    - {press_name}: 기사원문 확인 실패 → 제목+미리보기유사도 {combined_score:.2f}로 대체 판단")
             if combined_score >= _MATCH_THRESHOLD:
+                if org_terms and not any(t in (best[1] + " " + best[3]) for t in org_terms):
+                    print(f"    - {press_name}: 기관명({', '.join(sorted(org_terms))}) 기사에 안 보여 제외")
+                    continue
                 return {"press": press_name, "title": best[1][:200], "link": best[2]}
     return None
 
