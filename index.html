@@ -97,6 +97,9 @@
   .candidate-row .c-status { flex:0 0 auto; font-size:11.5px; padding:2px 8px; border-radius:999px; }
   .candidate-row .c-status.used { background:#dcfce7; color:#15803d; }
   .candidate-row .c-status.unused { background:#f3f4f6; color:var(--text-secondary); }
+  .candidate-row .c-delete { flex:0 0 auto; width:22px; height:22px; border:none; background:none; color:var(--text-secondary);
+    cursor:pointer; font-size:15px; border-radius:50%; line-height:1; }
+  .candidate-row .c-delete:hover { background:#fee2e2; color:var(--danger); }
 
   /* 매칭 모달 */
   #match-modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:100;
@@ -174,6 +177,7 @@
       <span class="view-toggle">
         <button id="view-agency" class="view-btn active">부처별</button>
         <button id="view-latest" class="view-btn">최신순</button>
+        <button id="view-uncollected" class="view-btn">미수집</button>
       </span>
     </span>
     <span style="display:flex; gap:10px; align-items:center;">
@@ -189,7 +193,10 @@
 </main>
 
 <section id="candidate-section" style="display:none;">
-  <h2>기사후보 (<span id="candidate-count">0</span>건)</h2>
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+    <h2 style="margin:0;">기사후보 (<span id="candidate-count">0</span>건)</h2>
+    <button id="delete-unused-candidates-btn" class="ghost-btn" style="font-size:12px; padding:5px 10px; color:var(--danger); border-color:#fecaca;">미사용 전체삭제</button>
+  </div>
   <div class="candidate-list" id="candidate-list"></div>
 </section>
 
@@ -270,7 +277,14 @@
     items.forEach(r => {
       const o = manualMedia[r.link];
       if (!o) return;
-      if (o.cleared) { r.media_press = ''; r.media_title = ''; r.media_link = ''; }
+      if (o.cleared) {
+        r.media_press = ''; r.media_title = ''; r.media_link = '';
+        // media_checked_at도 같이 비워야, "변경사항 다운로드"로 받은 JSON을
+        // GitHub에 올렸을 때 collect.py의 재확인 쿨다운(3시간)에 안 걸리고
+        // 바로 다음 5분 주기에 새로 검색된다. 안 지우면 예전 확인 시각이
+        // 그대로 남아있어서 최대 3시간을 기다려야 한다.
+        r.media_checked_at = '';
+      }
       else { r.media_press = o.press || '기타'; r.media_title = o.title || ''; r.media_link = o.link || ''; }
     });
     return items;
@@ -298,6 +312,17 @@
     return candidateArticles.filter(c => c.forDate === curDate);
   }
 
+  function genCandidateId() {
+    return 'c_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 8);
+  }
+
+  // 엑셀 10건 올려도 실제로 쓰는 건 1건일 수 있어서, 안 쓴 나머지를 지울 수 있게 한다.
+  function deleteCandidateById(id) {
+    candidateArticles = candidateArticles.filter(c => c.id !== id);
+    saveCandidates(candidateArticles);
+    renderCandidateList();
+  }
+
   function renderCandidateList() {
     const section = $('candidate-section');
     const visible = candidatesForCurrentDate();
@@ -313,9 +338,30 @@
         <span class="c-title">${escapeHtml(c.title)}</span>
         <span class="c-media">${escapeHtml(c.media || '')}</span>
         ${statusHtml}
+        <button class="c-delete" data-del-id="${escapeHtml(c.id || '')}" title="이 후보 삭제">✕</button>
       </div>`;
     }).join('');
   }
+
+  $('candidate-list').addEventListener('click', e => {
+    const btn = e.target.closest('.c-delete');
+    if (!btn) return;
+    const id = btn.dataset.delId;
+    if (!id) return;
+    if (!confirm('이 기사후보를 목록에서 삭제할까요?')) return;
+    deleteCandidateById(id);
+  });
+
+  $('delete-unused-candidates-btn').addEventListener('click', () => {
+    const visible = candidatesForCurrentDate();
+    const unusedIds = visible.filter(c => !candidateUsedByTitle(c)).map(c => c.id);
+    if (!unusedIds.length) { alert('지금 날짜에 미사용 기사후보가 없습니다.'); return; }
+    if (!confirm(`미사용 기사후보 ${unusedIds.length}건을 모두 삭제할까요?`)) return;
+    const idSet = new Set(unusedIds);
+    candidateArticles = candidateArticles.filter(c => !idSet.has(c.id));
+    saveCandidates(candidateArticles);
+    renderCandidateList();
+  });
   // 제목 글자쌍(bigram) 겹침 비율로 유사도 계산 (collect.py의 매칭 로직과 동일한 방식).
   // 보도자료 제목과 실제 뉴스 기사 제목은 표현이 달라도, 핵심 단어가 겹치면 꽤 높게 나온다.
   function bigrams(s) {
@@ -393,7 +439,8 @@
       rows.forEach(row => {
         row.forDate = curDate;
         const idx = candidateArticles.findIndex(c => c.link && c.link === row.link);
-        if (idx >= 0) candidateArticles[idx] = row; else candidateArticles.push(row);
+        if (idx >= 0) { row.id = candidateArticles[idx].id || genCandidateId(); candidateArticles[idx] = row; }
+        else { row.id = genCandidateId(); candidateArticles.push(row); }
       });
       saveCandidates(candidateArticles);
       renderCandidateList();
@@ -461,7 +508,9 @@
     manualMedia[matchModalItemLink] = { cleared: true };
     saveManual(manualMedia);
     const item = currentItems.find(r => r.link === matchModalItemLink);
-    if (item) { item.media_press = ''; item.media_title = ''; item.media_link = ''; }
+    // media_checked_at도 같이 비워서, GitHub에 올렸을 때 collect.py가 3시간
+    // 쿨다운 없이 바로 다음 재확인 주기(5분)에 새로 검색하도록 한다.
+    if (item) { item.media_press = ''; item.media_title = ''; item.media_link = ''; item.media_checked_at = ''; }
     closeMatchModal();
     render();
   });
