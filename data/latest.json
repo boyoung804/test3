@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "collected_at": "2026-10-12T15:58:50.929255+09:00",
+  "collected_at": "2026-10-12T16:25:40.348915+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-12",
+      "agency": "보건복지부",
+      "title": "자살예방정책위원회, 제6차 자살예방기본계획 확정, 중앙부처·지방정부 자살예방 책임강화로 실제 자살사망자 감소에 총력",
+      "summary": "한성숙 국무총리 주재 제11차 자살예방정책위원회 개최\n기존 9대 분야 대책 통합조정보완한 「제6차 자살예방기본계획」 심의확정",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784886",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "올해 자살 사망자 12.3% 감소…2030년까지 3분의1 줄인다",
+      "media_link": "https://www.newsis.com/view/NISX20261012_0003821766",
+      "media_checked_at": "2026-10-12T16:24:46.556080+09:00"
+    },
+    {
+      "date": "2026-10-12",
+      "agency": "행정안전부",
+      "title": "(보도참고자료) 행정안전부 장관, 광주지방중대범죄수사청장 대상 감찰 지시",
+      "summary": "중대범죄수사청의 안정적 정착을 위해 엄격한 공직기강 확립 강조",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784884",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "중수청, 임은정 광주 청장 대상 감찰지시 접수…출범후 '1호 감찰 '",
+      "media_link": "https://www.yna.co.kr/view/AKR20261012114851004?input=1195m",
+      "media_checked_at": "2026-10-12T16:24:46.556080+09:00"
+    },
     {
       "date": "2026-10-12",
       "agency": "외교부",
@@ -147,7 +171,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-12T13:05:31.278282+09:00"
+      "media_checked_at": "2026-10-12T16:25:17.019798+09:00"
     },
     {
       "date": "2026-10-12",
@@ -423,7 +447,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-12T13:05:43.540181+09:00"
+      "media_checked_at": "2026-10-12T16:25:17.019798+09:00"
     },
     {
       "date": "2026-10-12",
