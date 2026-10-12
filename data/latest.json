@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "collected_at": "2026-10-12T11:16:52.612375+09:00",
+  "collected_at": "2026-10-12T11:40:46.921118+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-12",
+      "agency": "산업통상부",
+      "title": "복잡한 의류·화장품 中 인증 궁금증 푼다… 산업통상부, 상하이서 설명회 개최",
+      "summary": "中 관계당국, 시험·기준부터 사후관리·단속 절차까지 상세 안내\n산업통상부(장관 김정관, 이하 산업부)는 10.12(월) 14:00 중국 상하이에서 상하이시 시장감독관리국과 함께 「중국 국가표준(GB)* 설명회」를 개최하였다. 우리나라 대한무역투자진흥공사(KOTRA)와 중국 외상투자협회가 공동 주관한 이번 설명회에는 상하이시 시장감독관리국, 패션의류·화장품 등 대중(對中) 수출기업, 시험·인증기관 관계자 등 100여 명이 참석하였다. * 국가표준(國家標準, Guojia Biaozhun의 약칭): 중국 내 유통 제품의 품질·안전 요건 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784834",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "산업 부, 상하이서 중국 국가표준 설명회 …소비재 수출 지원",
+      "media_link": "https://www.yna.co.kr/view/AKR20261012054200003?input=1195m",
+      "media_checked_at": "2026-10-12T11:39:34.289480+09:00"
+    },
     {
       "date": "2026-10-12",
       "agency": "해양수산부",
@@ -204,10 +216,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784793",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "김진환 학지사 대표, '책의 날 기념식'서 은관문화훈장(종합)",
+      "media_link": "https://www.yna.co.kr/view/AKR20261012018051005?input=1195m",
+      "media_checked_at": "2026-10-12T11:39:49.263902+09:00"
     },
     {
       "date": "2026-10-12",
@@ -216,10 +228,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784792",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+      "media_press": "뉴스1",
+      "media_title": "한국 어머니와 외국인들 집밥 경연한다…'코리안 쿡오프'",
+      "media_link": "https://www.news1.kr/life-culture/general-cultural/6316154",
+      "media_checked_at": "2026-10-12T11:39:49.263902+09:00"
     },
     {
       "date": "2026-10-12",
@@ -228,10 +240,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784791",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "한글 · 한국어의 다음 100년은… 한글 날 100주년 학술대회",
+      "media_link": "https://www.yna.co.kr/view/AKR20261012016000005?input=1195m",
+      "media_checked_at": "2026-10-12T11:39:49.263902+09:00"
     },
     {
       "date": "2026-10-12",
@@ -240,10 +252,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784790",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-12T08:18:55.858415+09:00"
+      "media_press": "뉴시스",
+      "media_title": "식약처 \" 국제인증표준품 관련 종합안내서 발간\"",
+      "media_link": "https://www.newsis.com/view/NISX20261012_0003821551",
+      "media_checked_at": "2026-10-12T11:39:49.263902+09:00"
     },
     {
       "date": "2026-10-12",
