@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T07:44:09.664112+09:00",
+  "collected_at": "2026-10-14T08:09:16.267837+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "식품의약품안전처",
+      "title": "가을 신학기 학교 급식시설·학교 주변 식품 취급업체 점검 결과…14곳 적발",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785049",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-14T08:08:46.958854+09:00"
+    },
+    {
+      "date": "2026-10-14",
+      "agency": "재정경제부",
+      "title": "「AI·융복합 K-뷰티 서비스 지원방안」 발표",
+      "summary": "정부는 '26.10.14(목), 이형일 부총리 겸 재정경제부 장관 주재로 개최된 경제관계장관회의 겸 서비스산업발전 TF에서「AI·융복합 K-뷰티 서비스 지원방안」을 발표하였다.   ※ 자세한 내용은 첨부파일을 참고하여 주시기 바랍니다.문의. 재정경제부 정책조정관 서비스경제과 박상현 (044-215-4612)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785048",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "정부, AI 접목 K-뷰티 에 250억 펀드…화장품 기업 대출 문턱은↓",
+      "media_link": "https://www.newsis.com/view/NISX20261013_0003824506",
+      "media_checked_at": "2026-10-14T08:08:46.958854+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "기후에너지환경부",
