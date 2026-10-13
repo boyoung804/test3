@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T08:09:16.267837+09:00",
+  "collected_at": "2026-10-14T08:38:12.292260+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "재정경제부",
+      "title": "비상경제본부 회의, 경제관계장관회의 겸 서비스산업발전 TF 개최",
+      "summary": "이형일 부총리 겸 재정경제부장관은 10.14일(수) 07:40 정부서울청사에서 비상경제본부 회의, 경제관계장관회의 겸 서비스산업발전 TF를 주재하였습니다.   ※ 자세한 내용은 별도 첨부자료를 참고하여 주시기 바랍니다. 문의. 재정경제부 정책조정관 정책조정총괄과 임강빈 (044-215-4513)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785051",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "이형일 \" 서비스산업 육성해 성장·민생 두마리 토끼 잡을 것\"",
+      "media_link": "https://www.newsis.com/view/NISX20261014_0003824876",
+      "media_checked_at": "2026-10-14T08:37:44.309399+09:00"
+    },
+    {
+      "date": "2026-10-14",
+      "agency": "문화체육관광부",
+      "title": "2034년 준공 목표 스포츠·공연 복합형 돔구장 건립 후보지 공모 실시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785050",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "스포츠·공연 복합 돔구장 어디에…12월 8일까지 후보지 공모",
+      "media_link": "https://www.yna.co.kr/view/AKR20261014019500005?input=1195m",
+      "media_checked_at": "2026-10-14T08:37:44.309399+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "식품의약품안전처",
