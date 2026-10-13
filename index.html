@@ -177,7 +177,7 @@
       <span class="view-toggle">
         <button id="view-agency" class="view-btn active">부처별</button>
         <button id="view-latest" class="view-btn">최신순</button>
-        <button id="view-uncollected" class="view-btn">미수집</button>
+        <button id="view-uncollected" class="view-btn">미매칭</button>
       </span>
     </span>
     <span style="display:flex; gap:10px; align-items:center;">
@@ -680,15 +680,13 @@
     const zero = AGENCIES.filter(a => !have.has(a) && (!mf || mf === a));
 
     if (viewMode === 'uncollected') {
-      // 감시 대상 기관 중, 오늘 날짜에 아직 보도자료가 하나도 안 걸린 곳만 모아서 보여준다.
-      resultCountTextEl.textContent = `미수집 ${zero.length}곳`;
-      resultsEl.innerHTML = zero.length
-        ? `<div class="latest-list">${zero.map(a => `
-          <div class="card" style="cursor:default;">
-            <div class="card-top"><span class="badge">${escapeHtml(a)}</span></div>
-            <p class="card-summary" style="margin:0;">아직 이 기관의 보도자료가 수집되지 않았습니다.</p>
-          </div>`).join('')}</div>`
-        : '<div class="empty-state">미수집 기관이 없습니다. 감시 대상 기관 모두 보도자료가 수집됐어요.</div>';
+      // "미수집" = 보도자료는 수집됐지만 아직 기사 매칭이 안 된 것들만 모아서 보여준다.
+      // (기관 자체에 보도자료가 하나도 없는 것과는 다른 개념 — 그건 하단 "자료 없는 기관"에서 확인)
+      const unmatched = filtered.filter(r => !r.media_press);
+      resultCountTextEl.textContent = `미매칭 ${unmatched.length}건`;
+      resultsEl.innerHTML = unmatched.length
+        ? `<div class="latest-list">${unmatched.map(r => cardHtml(r, true)).join('')}</div>`
+        : '<div class="empty-state">미매칭 보도자료가 없습니다. 전부 기사 매칭이 됐어요.</div>';
     } else if (!filtered.length) {
       resultsEl.innerHTML = '<div class="empty-state">검색 결과가 없습니다.</div>';
     } else if (viewMode === 'latest') {
