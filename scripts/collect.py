@@ -678,6 +678,33 @@ def _naver_news_search(query: str):
     return out
 
 
+# ---- 매칭 진단 로그를 파일로도 남기기 ----
+# Actions 로그는 5분마다 새 실행(run)이 생겨서 원하는 항목을 찾으려면 여러 실행을
+# 일일이 열어봐야 한다. 그 대신 매칭 판단 과정을 data/debug_log.json에도 같이
+# 저장해서, 레포를 보는 사람이 Actions 로그를 뒤지지 않고 이 파일 하나만 보면
+# "왜 이 보도자료가 매칭이 안 됐는지"를 바로 확인할 수 있게 한다.
+DEBUG_LOG_PATH = DATA_DIR / "debug_log.json"
+DEBUG_LOG_MAX_ENTRIES = 300  # 무한정 커지지 않도록 최근 N건만 보관(오래된 건 자동으로 밀려남)
+
+
+def _log(msg: str, log_lines: list = None) -> None:
+    """콘솔(Actions 로그)과 log_lines 리스트(파일 저장용) 양쪽에 같은 줄을 남긴다."""
+    print(msg)
+    if log_lines is not None:
+        log_lines.append(msg)
+
+
+def _append_debug_entries(entries: list) -> None:
+    """이번 실행에서 새로 처리한 항목들의 진단 로그를 data/debug_log.json에 추가한다."""
+    if not entries:
+        return
+    log = load_json(DEBUG_LOG_PATH, [])
+    log.extend(entries)
+    if len(log) > DEBUG_LOG_MAX_ENTRIES:
+        log = log[-DEBUG_LOG_MAX_ENTRIES:]
+    DEBUG_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def _is_photo_article(link: str) -> bool:
     """사진(포토) 전용 기사는 캡션 한두 줄짜리라 보도자료와 실제 내용이 겹치는지
     판단할 근거가 거의 없는데도, 같은 행사 사진이면 "행사명/인물명"이 겹쳐서
@@ -690,7 +717,7 @@ def _is_photo_article(link: str) -> bool:
     return "/view/PYH" in link or "/view/NISI" in link
 
 
-def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date: str = ""):
+def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date: str = "", log_lines: list = None):
     """연합뉴스 > 뉴시스 > 뉴스1 순서로 실제 보도 기사를 찾는다.
     검색어를 여러 단계로 시도한다: 요약문/제목 속 따옴표·전각괄호 핵심어 → 제목
     끝부분 → 기관명+제목 첫 구절(사람이 실제로 검색하는 방식과 비슷) → 정제된
@@ -711,10 +738,10 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
         results = _naver_news_search(q)
         time.sleep(random.uniform(2.0, 3.5))  # 검색엔진 부담/차단 방지 (간격을 넓히고 매번 랜덤화해 더 자연스럽게)
         if results is None:
-            print(f"    - 네이버 검색 실패(차단/오류) [검색어: {q}]")
+            _log(f"    - 네이버 검색 실패(차단/오류) [검색어: {q}]", log_lines)
             continue
         if not results:
-            print(f"    - 네이버 검색결과 없음 [검색어: {q}]")
+            _log(f"    - 네이버 검색결과 없음 [검색어: {q}]", log_lines)
             continue
         any_ok = True
         for r in results:
@@ -726,7 +753,7 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
     if not any_ok:
         return None
     if not merged:
-        print("    - 검색은 됐지만 쓸만한 후보가 없음 (포토 기사 제외 후 0건)")
+        _log("    - 검색은 됐지만 쓸만한 후보가 없음 (포토 기사 제외 후 0건)", log_lines)
         return None
 
     pr_date_obj = None
@@ -741,7 +768,7 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
     for press_name in MEDIA_PRIORITY:
         candidates = [r for r in merged if press_name in r[0]]
         if not candidates:
-            print(f"    - {press_name}: 검색결과 없음")
+            _log(f"    - {press_name}: 검색결과 없음", log_lines)
             continue
         if pr_date_obj:
             before = len(candidates)
@@ -750,17 +777,17 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
             candidates = [r for r in candidates if r[4] is None or r[4] == pr_date_obj]
             dropped = before - len(candidates)
             if dropped:
-                print(f"    - {press_name}: 날짜 불일치로 {dropped}건 제외")
+                _log(f"    - {press_name}: 날짜 불일치로 {dropped}건 제외", log_lines)
             if not candidates:
-                print(f"    - {press_name}: 날짜 일치 후보 없음")
+                _log(f"    - {press_name}: 날짜 일치 후보 없음", log_lines)
                 continue
         best = max(candidates, key=lambda r: _match_score(title, r[1] + " " + r[3]))
         title_only_score = _match_score(title, best[1])
-        print(f"    - {press_name}: 후보 {len(candidates)}건, 제목단독유사도 {title_only_score:.2f}")
+        _log(f"    - {press_name}: 후보 {len(candidates)}건, 제목단독유사도 {title_only_score:.2f}", log_lines)
         # 1차 관문: 제목끼리 아예 무관하면(예: 주한외교단↔중동뉴스, 0.0) 본문까지
         # 가져올 필요도 없이 바로 걸러낸다.
         if title_only_score < _MATCH_TITLE_MIN:
-            print(f"    - {press_name}: 제목단독유사도 기준 미달로 제외")
+            _log(f"    - {press_name}: 제목단독유사도 기준 미달로 제외", log_lines)
             continue
 
         article_text, article_date = _fetch_article_text(best[2])
@@ -771,23 +798,23 @@ def find_media_coverage(title: str, agency: str = "", summary: str = "", pr_date
             # (위 pr_date_obj 필터)에서 날짜를 못 읽어 걸러지지 않고 넘어온 후보라도,
             # 원문을 실제로 열어보면 날짜를 읽을 수 있는 경우가 많다.
             if pr_date_obj and article_date and article_date != pr_date_obj:
-                print(f"    - {press_name}: 기사원문 날짜({article_date}) 보도자료 날짜({pr_date_obj})와 달라 제외")
+                _log(f"    - {press_name}: 기사원문 날짜({article_date}) 보도자료 날짜({pr_date_obj})와 달라 제외", log_lines)
                 continue
             body_score, body_overlap = _match_score_with_overlap(title + " " + summary, best[1] + " " + article_text)
-            print(f"    - {press_name}: 기사원문 확인함, 본문비교유사도 {body_score:.2f} (겹친 글자쌍 {body_overlap}개)")
+            _log(f"    - {press_name}: 기사원문 확인함, 본문비교유사도 {body_score:.2f} (겹친 글자쌍 {body_overlap}개)", log_lines)
             if body_score >= _MATCH_BODY_MIN and body_overlap >= _MATCH_BODY_MIN_OVERLAP:
                 if org_terms and not any(t in (best[1] + " " + article_text) for t in org_terms):
-                    print(f"    - {press_name}: 기관명({', '.join(sorted(org_terms))}) 기사에 안 보여 제외")
+                    _log(f"    - {press_name}: 기관명({', '.join(sorted(org_terms))}) 기사에 안 보여 제외", log_lines)
                     continue
                 return {"press": press_name, "title": best[1][:200], "link": best[2]}
-            print(f"    - {press_name}: 본문비교 기준 미달로 보류")
+            _log(f"    - {press_name}: 본문비교 기준 미달로 보류", log_lines)
         else:
             # 기사 원문에 못 들어갔으면(차단/오류) 어쩔 수 없이 기존 방식(제목+미리보기)으로 대체 판단.
             combined_score = _match_score(title, best[1] + " " + best[3])
-            print(f"    - {press_name}: 기사원문 확인 실패 → 제목+미리보기유사도 {combined_score:.2f}로 대체 판단")
+            _log(f"    - {press_name}: 기사원문 확인 실패 → 제목+미리보기유사도 {combined_score:.2f}로 대체 판단", log_lines)
             if combined_score >= _MATCH_THRESHOLD:
                 if org_terms and not any(t in (best[1] + " " + best[3]) for t in org_terms):
-                    print(f"    - {press_name}: 기관명({', '.join(sorted(org_terms))}) 기사에 안 보여 제외")
+                    _log(f"    - {press_name}: 기관명({', '.join(sorted(org_terms))}) 기사에 안 보여 제외", log_lines)
                     continue
                 return {"press": press_name, "title": best[1][:200], "link": best[2]}
     return None
@@ -799,8 +826,13 @@ def enrich_with_media(items):
     media_checked_at을 남겨서, 이후 recheck_pending_media()가 너무 자주
     같은 항목을 재검색하지 않도록 한다."""
     now_iso = datetime.now(KST).isoformat()
+    debug_entries = []
     for it in items:
-        media = find_media_coverage(it["title"], it.get("agency", ""), it.get("summary", ""), it.get("date", ""))
+        log_lines = []
+        media = find_media_coverage(
+            it["title"], it.get("agency", ""), it.get("summary", ""), it.get("date", ""),
+            log_lines=log_lines,
+        )
         it["media_checked_at"] = now_iso
         if media:
             it["media_press"] = media["press"]
@@ -810,6 +842,16 @@ def enrich_with_media(items):
             it["media_press"] = ""
             it["media_title"] = ""
             it["media_link"] = ""
+        debug_entries.append({
+            "when": now_iso,
+            "stage": "신규수집",
+            "date": it.get("date", ""),
+            "agency": it.get("agency", ""),
+            "title": it["title"],
+            "result": f"매칭됨:{media['press']}" if media else "매칭안됨",
+            "lines": log_lines,
+        })
+    _append_debug_entries(debug_entries)
     return items
 
 
@@ -859,10 +901,15 @@ def recheck_pending_media(current_date: str) -> bool:
           f"중 {len(picked)}건 재검색...")
 
     touched_dates = set()
+    debug_entries = []
     for d, idx in picked:
         it = day_items[d][idx]
         print(f"  - ({d}) {it['title'][:40]}")
-        media = find_media_coverage(it["title"], it.get("agency", ""), it.get("summary", ""), it.get("date", ""))
+        log_lines = []
+        media = find_media_coverage(
+            it["title"], it.get("agency", ""), it.get("summary", ""), it.get("date", ""),
+            log_lines=log_lines,
+        )
         it["media_checked_at"] = now.isoformat()
         if media:
             it["media_press"] = media["press"]
@@ -870,6 +917,16 @@ def recheck_pending_media(current_date: str) -> bool:
             it["media_link"] = media["link"]
             print(f"    -> 매칭됨: {media['press']}")
         touched_dates.add(d)
+        debug_entries.append({
+            "when": now.isoformat(),
+            "stage": "재확인",
+            "date": d,
+            "agency": it.get("agency", ""),
+            "title": it["title"],
+            "result": f"매칭됨:{media['press']}" if media else "매칭안됨",
+            "lines": log_lines,
+        })
+    _append_debug_entries(debug_entries)
 
     for d in touched_dates:
         path = DATA_DIR / f"{d}.json"
