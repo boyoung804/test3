@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "collected_at": "2026-10-13T14:48:59.894818+09:00",
+  "collected_at": "2026-10-13T15:04:06.346699+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-13",
+      "agency": "과학기술정보통신부",
+      "title": "배경훈 부총리, 피지컬 AI 얼라이언스와  현장 중심의 실질적 성과 창출 가속화",
+      "summary": "피지컬 AI 얼라이언스 간담회를 통해 산업 현장 애로 및 정책 수요 청취\nK-피지컬 AI 풀스택·산업별 실증·데이터·표준 등 추진성과 및 실행과제 점검",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784992",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[AI픽] 배경훈 \"피지컬 AI 글로벌 1강 도약…이젠 성과 보여줄 때\"",
+      "media_link": "https://www.yna.co.kr/view/AKR20261013053800017?input=1195m",
+      "media_checked_at": "2026-10-13T15:03:49.590653+09:00"
+    },
     {
       "date": "2026-10-13",
       "agency": "문화체육관광부",
