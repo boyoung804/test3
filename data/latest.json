@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "collected_at": "2026-10-13T15:04:06.346699+09:00",
+  "collected_at": "2026-10-13T15:35:16.013179+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,42 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-13",
+      "agency": "보건복지부",
+      "title": "유휴 어린이집, 어르신 '주거-돌봄 연계' 공간으로 탈바꿈... 이동 줄이고 돌봄 효율 높여",
+      "summary": "현수엽 제1차관, 주거-돌봄 연계 시범사업 현장방문, 전국확산 가능성 점검",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784994",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-13T15:34:32.431238+09:00"
+    },
+    {
+      "date": "2026-10-13",
+      "agency": "산업통상부",
+      "title": "M.AX 확산 위한 규제 빗장 푼다",
+      "summary": "제6차 산업융합 규제특례심의위원회' 개최\nAI·로봇 등 특례부여, M.AX 확산을 위한 규제·제도 개선 본격 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784996",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "AI 조선소 등대공장 구축 및 지역 조선업 AX 확산 위한 MOU",
+      "media_link": "https://www.news1.kr/photos/8154504",
+      "media_checked_at": "2026-10-13T15:34:32.431238+09:00"
+    },
+    {
+      "date": "2026-10-13",
+      "agency": "해양수산부",
+      "title": "대한민국, 북극항로 시대를 열다! 첫 컨테이너선 시범운항을 마치고 부산으로",
+      "summary": "10.13. 부산 한국해양과학기술원에서 선원과 공로자 격려를 위한 행사 개최\n시범운항 의의 공유 및 국가 장기 과제로서 지속적인 준비 의지 표명【관련 국정과제】 56. 북극항로 시대를 주도하는 K-해양강국 건설   해양수산부(장관 황종우)는 10월 13일(화) 오후 3시 한국해양과학기술원에서 북극항로 왕복 시범운항을 마친 팬스타 아크로호의 귀항을 기념하고, 선원과 관계자들의 노고를 격려하기 위한 '북극항로 시범운항 환영 행사'를 개최한다고 밝혔다.  팬스타 아크로호는 지난 8월 22일 21시경 부산항 신항을 출항해 북동항로를 거쳐 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784993",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "북극항로 시범운항 성공했지만 이제 첫걸음…상업화 과제 산적",
+      "media_link": "https://www.yna.co.kr/view/AKR20261012173800051?input=1195m",
+      "media_checked_at": "2026-10-13T15:34:32.431238+09:00"
+    },
     {
       "date": "2026-10-13",
       "agency": "과학기술정보통신부",
