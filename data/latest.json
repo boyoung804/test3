@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T12:19:28.578452+09:00",
+  "collected_at": "2026-10-14T12:55:54.481683+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "과학기술정보통신부",
+      "title": "과기정통부, 국제 학술지 네이처(Nature)와  미래 로보틱스 발전 방향 논의",
+      "summary": "「2026 네이처 컨퍼런스」 계기 네이처 편집위원 및 KAIST 관계자와 간담회\nK-문샷으로 추진 중인 휴머노이드 기술 경쟁력 강화 방안 논의",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785110",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "정부, 국제 학술지 네이처와 미래 로봇 발전 방향 논의",
+      "media_link": "https://www.news1.kr/it-science/general-science/6319436",
+      "media_checked_at": "2026-10-14T12:55:41.753533+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "교육부",
