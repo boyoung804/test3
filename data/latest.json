@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T21:06:18.003720+09:00",
+  "collected_at": "2026-10-14T21:47:32.213000+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "국토교통부",
+      "title": "[설명] '전세계약 5건 중 1건이 보증금 먹튀·바가지 의심'이라고 보는 것은 적절하지 않습니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785228",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-14T21:46:11.346226+09:00"
+    },
+    {
+      "date": "2026-10-14",
+      "agency": "외교부",
+      "title": "박윤주 외교부 제1차관, 제2차 한-태국 전략대화 개최",
+      "summary": "박윤주 외교부 제1차관은 10.14.(수) 태국 방콕에서 엑시리 핀타루치(Eksiri Pintaruchi) 태국 외교부 사무차관과 「제2차 한-태국 전략대화」를 개최하였다.  ※ 한국과 태국은 양국 간 실질 협력 증진 및 지역·국제 문제에 대한 전략적 소통을 강화하기 위해 2023년 제4차 정책협의회를 계기로 기존 정책협의회를 전략대화로 격상하기로 합의하였으며, 2025.11월 서울에서 제1차 전략대화 개최 양 차관은 지난해 제1차 전략대화 이후 양국 정상 간 통화(4.7.), 외교장관회담(7.22.) 등 고위급 교류를 비롯 양국 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785227",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "박윤주 외교1차관, 한-태국 전략대화 …CEPA 조속 타결 공감",
+      "media_link": "https://www.news1.kr/diplomacy/defense-diplomacy/6320420",
+      "media_checked_at": "2026-10-14T21:46:11.346226+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "외교부",
@@ -567,7 +591,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-14T18:15:56.582775+09:00"
+      "media_checked_at": "2026-10-14T21:46:39.330941+09:00"
     },
     {
       "date": "2026-10-14",
@@ -603,7 +627,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-14T18:15:56.582775+09:00"
+      "media_checked_at": "2026-10-14T21:46:39.330941+09:00"
     },
     {
       "date": "2026-10-14",
