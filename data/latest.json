@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T14:36:35.310865+09:00",
+  "collected_at": "2026-10-14T15:06:02.036909+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "국토교통부",
+      "title": "정비사업 조합 위법행위 특별현장점검 실시",
+      "summary": "공사비 산정·증액 과정의 적정성과 투명성 확보 및 법령 이행여부 확인 목적",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785139",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "공사비 부풀리기 잡는다…국토부, 정비사업 조합 16곳 특별점검",
+      "media_link": "https://www.newsis.com/view/NISX20261014_0003825266",
+      "media_checked_at": "2026-10-14T15:04:59.819930+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "고용노동부",
@@ -228,10 +240,10 @@
       "summary": "「2026년 세계 표준의 날」 기념 표준화 및 기술규제 대응 유공자 포상 산업통상부(장관 김정관)는 10월 14일(수) 대한상공회의소에서 「2026년 세계 표준의 날｣ 기념식을 개최하고, 국내외 표준화 및 기술규제 대응·개선 활동으로 국내 산업 발전과 국가경쟁력 강화에 기여한 유공자와 단체에 총 50점의 포상*을 수여하였다. * 산업훈장 1점(동탑), 산업포장 1점, 대통령 표창 4점, 국무총리 표창 4점, 장관 표창 38점, 국표원장 표창 2점 「세계 표준의 날」은 표준의 중요성을 알리고 국제표준화 활동을 촉진하기 위해 국제표준화",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785091",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-14T11:51:33.716561+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "[테크스냅] 마키나락스, 118억원 규모 제조AI 국책과제 참여",
+      "media_link": "https://www.yna.co.kr/view/AKR20261014055700017?input=1195m",
+      "media_checked_at": "2026-10-14T15:05:13.897961+09:00"
     },
     {
       "date": "2026-10-14",
