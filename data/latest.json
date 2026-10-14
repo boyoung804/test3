@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "collected_at": "2026-10-15T08:01:16.090884+09:00",
+  "collected_at": "2026-10-15T08:31:07.037261+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,66 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-10-15",
+      "agency": "문화체육관광부",
+      "title": "대한민국 스포츠 기록과 감동을 한자리에, '국립스포츠박물관' 개관",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785234",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T08:30:01.332476+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "문화체육관광부",
+      "title": "10월 15일은 '스포츠의 날',  일상 속 스포츠의 즐거움을 만끽하세요",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785233",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T08:30:01.332476+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "문화체육관광부",
+      "title": "기업의 기억과 지역의 일상을 연결한 복합문화공간  '유한양행 윌로우하우스', '2026 대한민국 공간문화대상' 대상 수상",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785232",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T08:30:01.332476+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 의약품 허가 신청을 위한 최신 전자공통기술문서(eCTD v4.0) 서비스 개시",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785231",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T08:30:01.332476+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] '해외직구 식품 올바로 웹앱' 국민이 직접 써보고 완성도 높인다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785230",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T08:30:01.332476+09:00"
+    }
+  ]
 }
