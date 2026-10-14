@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T16:30:08.684712+09:00",
+  "collected_at": "2026-10-14T17:08:50.971004+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,54 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 잔류농약 기준 초과 검출된 '고춧가루' 회수 조치",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785183",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+    },
+    {
+      "date": "2026-10-14",
+      "agency": "국무조정실",
+      "title": "[보도자료] 생명지킴추진본부, 부산지역 천명지킴 현장소통 간담회 개최",
+      "summary": "범정부 생명지킴추진본부, 부산 민관생명지킴 현장 방문",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785176",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+    },
+    {
+      "date": "2026-10-14",
+      "agency": "문화체육관광부",
+      "title": "웹툰 산업계와 2027년 정부 예산안 논의",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785177",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+    },
+    {
+      "date": "2026-10-14",
+      "agency": "농림축산식품부",
+      "title": "농식품부 장관, 가을철 사과 수확 현장 점검",
+      "summary": "송미령 농림축산식품부(이하 '농식품부') 장관은 10월 14일(수), 가을철 본격적인 수확기를 맞아 경남 함양군의 사과 재배 농가를 방문하여, 홍로·후지 등 주요 사과 품종의 작황 점검과 함께 농업인들의 애로사항을 청취하였다.   이날 현장 방문은 올한해 안정적 사과 생산을 위해 애쓰신 농가의 노고를 격려하고, 가을철 사과 수급 상황 및 품질을 직접 확인하기 위해 마련되었다.  송미령 장관은 사과 수확 작업을 거들면서, \"올해 봄철 이상저온과 여름철 고온·가뭄 등 어려운 여건 속에서도 농가 여러분의 정성 어린 노력 덕분에 고품질의 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785170",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[동정] 농식품부 장관 , 수확기 맞아 사과 재배 농가 방문",
+      "media_link": "https://www.yna.co.kr/view/AKR20261014059400030?input=1195m",
+      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "국무조정실",
@@ -471,7 +519,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-14T14:01:28.221775+09:00"
+      "media_checked_at": "2026-10-14T17:08:01.633968+09:00"
     },
     {
       "date": "2026-10-14",
