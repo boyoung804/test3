@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T19:59:34.509305+09:00",
+  "collected_at": "2026-10-14T20:33:14.320581+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -132,10 +132,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785183",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "식약처, ' 잔류농약 기준 초과' 고춧가루 회수",
+      "media_link": "https://www.yna.co.kr/view/AKR20261014161400017?input=1195m",
+      "media_checked_at": "2026-10-14T20:32:26.875088+09:00"
     },
     {
       "date": "2026-10-14",
@@ -147,7 +147,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+      "media_checked_at": "2026-10-14T20:32:26.875088+09:00"
     },
     {
       "date": "2026-10-14",
@@ -156,10 +156,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785177",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-14T17:07:12.486396+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "최휘영 \"내년 웹툰 예산 327억원…프리랜서 사회안전망 확충\"",
+      "media_link": "https://www.yna.co.kr/view/AKR20261014174700005?input=1195m",
+      "media_checked_at": "2026-10-14T20:32:26.875088+09:00"
     },
     {
       "date": "2026-10-14",
@@ -615,7 +615,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-14T17:08:01.633968+09:00"
+      "media_checked_at": "2026-10-14T20:32:26.875088+09:00"
     },
     {
       "date": "2026-10-14",
