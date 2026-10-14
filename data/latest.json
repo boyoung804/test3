@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T08:38:12.292260+09:00",
+  "collected_at": "2026-10-14T09:02:18.570847+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-14",
+      "agency": "과학기술정보통신부",
+      "title": "성능·전력 한계 넘는 차세대 반도체 개발 도전",
+      "summary": "K-문샷 12대 임무(미션) 중 반도체 분야 운영위원회, 기술위원회 출범",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785053",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "AI 반도체 성능·전력 한계 넘는다…'K-문샷' 위원회 출범",
+      "media_link": "https://www.yna.co.kr/view/AKR20261013169500017?input=1195m",
+      "media_checked_at": "2026-10-14T09:02:03.976049+09:00"
+    },
     {
       "date": "2026-10-14",
       "agency": "재정경제부",
