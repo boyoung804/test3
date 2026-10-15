@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "collected_at": "2026-10-16T07:26:55.627457+09:00",
+  "collected_at": "2026-10-16T07:55:51.944785+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-16",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 특발성 폐섬유증 치료 희귀의약품 허가",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785386",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "\"굳어가는 폐 잡는다\"… 식약처, 특발성 폐섬유증 신약 허가 새 창 열림",
+      "media_link": "https://www.news1.kr/bio/pharmaceutical-bio/6321764",
+      "media_checked_at": "2026-10-16T07:55:32.118395+09:00"
+    },
     {
       "date": "2026-10-16",
       "agency": "해양수산부",
