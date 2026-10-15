@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "collected_at": "2026-10-16T07:55:51.944785+09:00",
+  "collected_at": "2026-10-16T08:21:00.937189+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,54 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-16",
+      "agency": "문화체육관광부",
+      "title": "'아름다운 우리 한복 바르게 입기'에 동참해 주세요",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785390",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "알고 입어야 아름다운 한복…19일 경복궁서 '바르게 입기' 캠페인 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261016020200005?input=1195m",
+      "media_checked_at": "2026-10-16T08:20:07.593294+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "문화체육관광부",
+      "title": "'제3차 지역문화진흥기본계획' 권역별 설명회 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785389",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T08:20:07.593294+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "문화체육관광부",
+      "title": "'제107회 전국체육대회', 10월 16일 제주에서 개막",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785388",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "[오늘의 주요일정] 문화체육관광부 ( 10월16일 금요일) 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261015_0003827616",
+      "media_checked_at": "2026-10-16T08:20:07.593294+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "국가데이터처",
+      "title": "26년 9월 고용동향",
+      "summary": "[2026년 9월 고용동향]▣ 15~64세 고용률(OECD 비교기준)은 70.6%로 전년동월대비 0.2%p 상승▣ 실업률은 2.0%로 전년동월대비 0.1%p 하락   ○ 실업자는 600천명으로 전년동월대비 3만4천명(-5.4%) 감소   ○ 청년층 실업률은 5.4%로 전년동월대비 0.6%p 상승   ○ 계절조정 실업률은 2.6%로 전월대비 0.1%p 하락▣ 2026년 8월 취업자는 29,266천명으로 전년동월대비 11만 3천명(0.4%) 증가** 자세한 내용은 첨부파일을 참고하시기 바랍니다 **  (ssec2609(통합): 보도자료",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785387",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T08:20:07.593294+09:00"
+    },
     {
       "date": "2026-10-16",
       "agency": "식품의약품안전처",
