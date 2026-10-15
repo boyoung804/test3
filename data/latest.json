@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "collected_at": "2026-10-15T14:24:03.447660+09:00",
+  "collected_at": "2026-10-15T14:57:42.047339+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-15",
+      "agency": "국토교통부",
+      "title": "[설명] 도시재생사업을 통해 조성된 거점시설의 사후관리 및 지원을 강화해 나가겠습니다.",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785320",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T14:56:32.323674+09:00"
+    },
     {
       "date": "2026-10-15",
       "agency": "보건복지부",
@@ -147,7 +159,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-15T11:45:08.211216+09:00"
+      "media_checked_at": "2026-10-15T14:56:43.666247+09:00"
     },
     {
       "date": "2026-10-15",
@@ -399,7 +411,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-15T11:45:37.827230+09:00"
+      "media_checked_at": "2026-10-15T14:56:43.666247+09:00"
     },
     {
       "date": "2026-10-15",
