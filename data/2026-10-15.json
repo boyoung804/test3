@@ -1,6 +1,78 @@
 [
   {
     "date": "2026-10-15",
+    "agency": "보건복지부",
+    "title": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
+    "summary": "국가종합건강검진 수검자에서 국민 누구나 참여 가능하도록 기준 완화\n정은경 복지부 장관, 하정우 국가 AI 전략위원회 부위원장 등 보건의료·인공지능 분야 정책 관계자 40명과 생체 자료 기증 동참",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785266",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "누구나 생체자료 기증 가능 … 국가 바이오빅데이터 내달 첫 개방",
+    "media_link": "https://www.yna.co.kr/view/AKR20261014156400530?input=1195m",
+    "media_checked_at": "2026-10-15T10:08:03.443101+09:00"
+  },
+  {
+    "date": "2026-10-15",
+    "agency": "과학기술정보통신부",
+    "title": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
+    "summary": "",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785264",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "누구나 생체자료 기증 가능 … 국가 바이오빅데이터 내달 첫 개방",
+    "media_link": "https://www.yna.co.kr/view/AKR20261014156400530?input=1195m",
+    "media_checked_at": "2026-10-15T10:08:03.443101+09:00"
+  },
+  {
+    "date": "2026-10-15",
+    "agency": "국가보훈부",
+    "title": "강윤진 차관， 미국 전직 연방의원단과 서울현충원 참배",
+    "summary": "261015 보도자료(강윤진 차관， 미국 전직 연방의원단과 서울현충원 참배)최종",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785263",
+    "unverified": false,
+    "media_press": "",
+    "media_title": "",
+    "media_link": "",
+    "media_checked_at": "2026-10-15T10:08:03.443101+09:00"
+  },
+  {
+    "date": "2026-10-15",
+    "agency": "국가보훈부",
+    "title": "제60회 전국상이군경체육대회 수원서 개최",
+    "summary": "261015 보도자료(제60회 전국상이군경체육대회 수원서 개최)최종",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785262",
+    "unverified": false,
+    "media_press": "뉴스1",
+    "media_title": "제60회 전국상이군경체육대회 수원서 개막…2000여 명 참가",
+    "media_link": "https://www.news1.kr/diplomacy/defense-diplomacy/6320640",
+    "media_checked_at": "2026-10-15T10:08:03.443101+09:00"
+  },
+  {
+    "date": "2026-10-15",
+    "agency": "고용노동부",
+    "title": "고용노동부, 형이 확정된 중대산업재해 발생 사업장 37개소 공표",
+    "summary": "고용노동부(장관 김영훈)는 10월 15일(목), 중대재해 처벌 등에 관한 법률(이하, '중대재해처벌법')에 따라 중대산업재해 발생 사실을 관보(고용노동부 공고 제2026-475호)와 고용노동부 누리집*을 통해 공표했다.     * 고용노동부 누리집(www.moel.go.kr)\n뉴스·소식",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785250",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "올 상반기 중대재해사업장 37곳…경영책임자 1명 징역 3년 확정",
+    "media_link": "https://www.yna.co.kr/view/AKR20261014135100530?input=1195m",
+    "media_checked_at": "2026-10-15T10:08:03.443101+09:00"
+  },
+  {
+    "date": "2026-10-15",
+    "agency": "산업통상부",
+    "title": "제17차 한-중 자유무역협정(FTA)  서비스·투자 후속협상 개최",
+    "summary": "ㅊ제17차 한-중 자유무역협정(FTA)서비스·투자 후속협상 개최\n10.12(월)~16(금), 서울 개최… 협상 진전으로 경제협력기반 강화",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785251",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "한중 FTA 서비스 ·투자 협상 속도 낸다…서울서 17차 협상",
+    "media_link": "https://www.yna.co.kr/view/AKR20261014167600003?input=1195m",
+    "media_checked_at": "2026-10-15T10:08:03.443101+09:00"
+  },
+  {
+    "date": "2026-10-15",
     "agency": "산업통상부",
     "title": "민관 원팀, EU 산업가속화법 대응 총력",
     "summary": "EU 산업가속화법(IAA) 대응 민관합동 TF 출범, 공동대응 체계 본격 가동\nEU이사회·유럽의회 대상 집중 아웃리치, 우리 기업에 대한 차별 방지 총력",
