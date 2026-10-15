@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "collected_at": "2026-10-15T16:22:12.474778+09:00",
+  "collected_at": "2026-10-15T17:00:21.423131+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,54 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-15",
+      "agency": "외교부",
+      "title": "국제사이버협력대사, 제11차 싱가포르 국제사이버주간(SICW) 참석 결과",
+      "summary": "박영효 외교부 국제사이버협력대사는 싱가포르 사이버안보청(Cyber Security Agency of Singapore, CSA)이 개최한 제11차 싱가포르 국제사이버주간(Singapore International Cyber Week, 10.13.-15.)에 참석하였다.  ※ 싱가포르 국제사이버주간(SICW) : 정부, 산업계, 학계 등 사이버 관련 다양한 이해관계자들을 초청하여 사이버안보 제 분야를 논의하는 싱가포르 주최 연례 국제행사(2016년 최초 개최)  금년 사이버주간에서는 \"사이버공간의 전환기 : 새로운 사이버 질서의 모색",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785348",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T16:59:24.648015+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "국토교통부",
+      "title": "[장관동정] 홍지선 장관, 3대 메가프로젝트 이행을 위한 호남권 반도체 첨단 국가산단 현장점검",
+      "summary": "기업 시간표에 맞춰 적기에 부지 제공, 교통·정주 개선도 동시에 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785349",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "최태원 이어 산업·국방·국토 장관 군공항행…호남 반도체 점검 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261015151000054?input=1195m",
+      "media_checked_at": "2026-10-15T16:59:24.648015+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "농림축산식품부",
+      "title": "신선농산물 최초 '포도 수출 1억 달러' 시대 연다",
+      "summary": "농림축산식품부(장관 송미령, 이하 '농식품부')와 경상북도(도지사 이철우)는 10월 15일(목) 오후, 대한민국 대표 포도 주산지인 경북 상주시 소재 포도 농장(도영농원)에서 '포도 수출 1억 달러 도약 현장 결의 행사'를 공동 개최했다.   이번 행사는 우리 신선농산물 역사상 최초로 단일 품목 '수출 1억 달러' 돌파라는 대기록을 달성하고, 포도 성출하기를 맞아 생산자-수출기업-지방정부-중앙정부 등 전 주체가 하나로 뭉쳐 현장 중심의 세부 추진 전략을 모색하기 위해 마련되었다.  1. 생산자-수출업체 간 '상생 표준거래계약서' 첫",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785342",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "농 식품부 , 포도 수출 1억달러 달성 추진… 표준 계약서 도입 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261015108800030?input=1195m",
+      "media_checked_at": "2026-10-15T16:59:24.648015+09:00"
+    },
+    {
+      "date": "2026-10-15",
+      "agency": "외교부",
+      "title": "조현 장관, 대체불가 대한민국이 그리는 한미동맹의 미래 제시",
+      "summary": "조현 외교부 장관은 10.15.(목) 제36차 한미 재계회의(Korea-U.S. Business Council) 총회 오찬에 참석하여 기조연설을 통해, 경제, 기술, 안보를 아우르는 '대체불가 한미동맹'을 더욱 발전시켜 나가겠다는 우리 정부의 의지를 강조하였다.   * 한미 재계회의(KUSBC) : 한미 경제교류 강화를 위해 1988년 출범한 민간 차원 협의체로, 한국경제인협회(FKI)와 미국 상공회의소(U.S. Chamber of Commerce) 공동 운영 중\n올해 제36차 총회는 '글로벌 정책 전환기의 新 한·미 협력'을 주제",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785347",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-15T16:59:24.648015+09:00"
+    },
     {
       "date": "2026-10-15",
       "agency": "문화체육관광부",
