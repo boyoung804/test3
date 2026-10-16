@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "collected_at": "2026-10-16T09:47:02.855267+09:00",
+  "collected_at": "2026-10-16T10:20:19.020539+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,42 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-16",
+      "agency": "국무조정실",
+      "title": "[보도자료] 한성숙 국무총리, 경기 부천시 공장화재 관련 긴급지시",
+      "summary": "한성숙 국무총리, 경기 부천시 공장화재 관련 긴급지시□ 한성숙 국무총리는 10월 16일(금), 경기 부천시 공장화재 관련하여 아래와 같이 긴급 지시했다.ㅇ 소방청은 가용 소방력과 장비를 총 동원하여 소방공무원 고립대원 인명구조 및 화재진압에 최선을 다할 것ㅇ 소방청,경찰청, 지방정부 등 관계기관은 가용인력과 장비를 총동원하여 인명구조와 화재진압에 총력을 다할 것ㅇ 현장에서 화재 진압 중인 소방공무원의 현장 활동 시 2차 사고 발생 방지 등 안전에 유의할 것…",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785416",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[속보] 한 총리 , '부천 공장화재' 구조 총력 긴급지시 새 창 열림",
+      "media_link": "http://www.yonhapnewstv.co.kr/news/MYH2026101610144086z",
+      "media_checked_at": "2026-10-16T10:19:35.266552+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "국가보훈부",
+      "title": "인빅터스 게임 대전 2029 개최 선포식， 17일 대전서 열린다",
+      "summary": "261016 보도자료(인빅터스 게임 대전 2029 개최 선포식， 17일 대전서 열린다)최종",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785415",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "내일 한밭수목원서 ' 인빅터스 게임 대전 2029' 개최 선포식 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261016025900504?input=1195m",
+      "media_checked_at": "2026-10-16T10:19:35.266552+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "행정안전부",
+      "title": "행정안전부, 15일 전국서 자동차세 등 상습 체납 차량 합동단속 실시",
+      "summary": "지방정부·경찰청·한국도로공사 협력, 전국 주요 고속도로 톨게이트 9곳 및 전국 도심서 동시 실시\n자동차세 2회 이상 체납 차량 2,023대 적발, 번호판 1,946개 영치, 체납액 현장 납부 유도",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785419",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "행안부, 상습 체납차량 2023대 적발…번호판 1946개 영치 새 창 열림",
+      "media_link": "https://www.news1.kr/local/moi/6321918",
+      "media_checked_at": "2026-10-16T10:19:35.266552+09:00"
+    },
     {
       "date": "2026-10-16",
       "agency": "재정경제부",
