@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "collected_at": "2026-10-16T15:55:45.230892+09:00",
+  "collected_at": "2026-10-16T16:30:45.710116+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,42 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-16",
+      "agency": "외교부",
+      "title": "제1차 한-뉴질랜드 전략대화(10.16.) 개최",
+      "summary": "정의혜 외교부 차관보는 10.16.(금) 뉴질랜드 웰링턴에서 그레이엄 모튼(Grahame Morton) 뉴질랜드 외교통상부 아주·미주 차관보와 제1차 한-뉴질랜드 전략대화를 개최하고, △양자관계 △국방·방산 협력 △무역 및 경제안보 협력 △국제·지역 정세 등에 대해 폭넓게 논의하였다.  양 차관보는 지난해 10월 양국 간 「포괄적 전략 동반자(CSP) 관계」 격상 이후 양국 관계가 새로운 발전 단계에 진입하였으며, 앞으로도 양국 간 고위급 교류를 강화할 뿐만 아니라, 다양한 분야 내 실질 협력을 더욱 확대해 나가야 한다는 점에 대해",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785507",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T16:29:17.873752+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "국토교통부",
+      "title": "\"내 집 어디에, 언제 공급되나\" 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
+      "summary": "「주택공급 정례 브리핑」 본격 가동…공급실적·전망과 사업별 추진상황 공개",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785505",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T16:29:17.873752+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "농림축산식품부",
+      "title": "'Bloom Together'... 도심 숲에서 만나는 '2026 양재 플라워 페스타'",
+      "summary": "농림축산식품부(장관 송미령, 이하 '농식품부') 박정훈 식량정책실장은 10월 16일(금) 오후 2시 서울 서초구 매헌시민의숲에서 열린 '2026 양재 플라워 페스타' 개막식에 참석하였다.   올해 행사는 'Bloom Together(함께 피어나)'를 주제로 10월 16일부터 18일까지 사흘간 양재 매헌시민의숲과 한국농수산식품유통공사(이하, 'aT') 화훼공판장 전시장에서 열리며, 기존 실내 관람 행사에서 벗어나 실내·외 행사로 진행된다.   농식품부와 aT가 함께하는 양재 플라워 페스타는 2019년 처음 시작해 올해로 8회째를 맞이",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785504",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "꽃 구경에 소품 만들기까지…' 양재 플라워 페스타 ' 18일까지 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261016_0003828248",
+      "media_checked_at": "2026-10-16T16:29:17.873752+09:00"
+    },
     {
       "date": "2026-10-16",
       "agency": "외교부",
@@ -123,7 +159,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T13:01:10.177298+09:00"
+      "media_checked_at": "2026-10-16T16:29:56.019924+09:00"
     },
     {
       "date": "2026-10-16",
@@ -231,7 +267,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T13:01:29.589138+09:00"
+      "media_checked_at": "2026-10-16T16:29:56.019924+09:00"
     },
     {
       "date": "2026-10-16",
@@ -243,7 +279,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T13:01:29.589138+09:00"
+      "media_checked_at": "2026-10-16T16:29:56.019924+09:00"
     },
     {
       "date": "2026-10-16",
@@ -255,7 +291,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T13:01:29.589138+09:00"
+      "media_checked_at": "2026-10-16T16:29:56.019924+09:00"
     },
     {
       "date": "2026-10-16",
