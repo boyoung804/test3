@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "collected_at": "2026-10-16T10:52:23.951596+09:00",
+  "collected_at": "2026-10-16T11:21:35.692365+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-16",
+      "agency": "보건복지부",
+      "title": "내 마음의 소리에 귀 기울이는 시간... 국립나주병원, 정신건강의 날 기념 공감 콘서트 개최",
+      "summary": "10월 23일 국립아시아문화전당서 개최, 특강·회복 이야기·음악 공연으로 구성\n문화예술 통해 정신건강에 대한 긍정적 인식 확산 및 이해 도모",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785425",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T11:20:29.441224+09:00"
+    },
     {
       "date": "2026-10-16",
       "agency": "국무조정실",
@@ -144,10 +156,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785389",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-16T08:20:07.593294+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "문체부, ' 제3차 지역문화진흥기본계획 ' 권역별 설명회 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261016022500005?input=1195m",
+      "media_checked_at": "2026-10-16T11:20:42.530008+09:00"
     },
     {
       "date": "2026-10-16",
@@ -171,7 +183,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T08:20:07.593294+09:00"
+      "media_checked_at": "2026-10-16T11:20:42.530008+09:00"
     },
     {
       "date": "2026-10-16",
