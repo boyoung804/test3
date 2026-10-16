@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "collected_at": "2026-10-16T17:09:31.985282+09:00",
+  "collected_at": "2026-10-16T17:45:07.522369+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,42 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-16",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 위장관기질종양 치료 희귀의약품 허가",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785523",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T17:43:37.343891+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 소비기한 미표시 소스 회수 조치",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785522",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T17:43:37.343891+09:00"
+    },
+    {
+      "date": "2026-10-16",
+      "agency": "중소벤처기업부",
+      "title": "1만 개의 아이디어, 창업의 첫발을 내딛다 2차 '모두의 창업' 1라운드 진출자 선발",
+      "summary": "중소벤처기업부(장관 이소영, 이하 중기부)는 9만 3천여 명의 도전자가 몰린 2차 '모두의 창업' 프로젝트(이하 모두의 창업)의 1라운드 진출자 1만 명(일반·기술 8천 명, 로컬 2천 명)을 선발했다고 밝혔다. 이번 2차 '모두의 창업'은 1차(5천 명)보다 선발 규모를 2배로 늘렸음에도 9.3대 1의 높은 경쟁률을 기록했다. 1라운드 선정자 중 39세 이하 청년층은 65.3%, 비수도권 선정자는 74.0%을 차지했다. 창업 분야별로는 일반·기술 트랙에서 IT(28%), 라이프스타일(19%), 교육(10%) 순으로 비중이 높았으며",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785521",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-16T17:43:37.343891+09:00"
+    },
     {
       "date": "2026-10-16",
       "agency": "농림축산식품부",
@@ -255,7 +291,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T14:37:47.813012+09:00"
+      "media_checked_at": "2026-10-16T17:44:20.143294+09:00"
     },
     {
       "date": "2026-10-16",
@@ -399,7 +435,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-16T14:37:47.813012+09:00"
+      "media_checked_at": "2026-10-16T17:44:20.143294+09:00"
     },
     {
       "date": "2026-10-16",
