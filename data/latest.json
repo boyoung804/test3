@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "collected_at": "2026-10-17T21:34:35.706164+09:00",
+  "collected_at": "2026-10-17T22:10:11.320517+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,18 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-17",
+      "agency": "문화체육관광부",
+      "title": "문체부와 전남광주통합특별시, 문화·체육·관광 정책 협력 방안 논의",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785541",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "전남광주 시장 만난 최휘영 \"'관광객 3천만' 중심 역할 해달라\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261017041700005?input=1195m",
+      "media_checked_at": "2026-10-17T22:09:55.345691+09:00"
+    },
     {
       "date": "2026-10-17",
       "agency": "외교부",
