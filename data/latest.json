@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-17",
-  "collected_at": "2026-10-17T22:39:45.495009+09:00",
+  "date": "2026-10-18",
+  "collected_at": "2026-10-18T01:39:33.816578+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,42 +28,5 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": [
-    {
-      "date": "2026-10-17",
-      "agency": "문화체육관광부",
-      "title": "문체부와 전남광주통합특별시, 문화·체육·관광 정책 협력 방안 논의",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785541",
-      "unverified": false,
-      "media_press": "연합뉴스",
-      "media_title": "전남광주 시장 만난 최휘영 \"'관광객 3천만' 중심 역할 해달라\" 새 창 열림",
-      "media_link": "https://www.yna.co.kr/view/AKR20261017041700005?input=1195m",
-      "media_checked_at": "2026-10-17T22:09:55.345691+09:00"
-    },
-    {
-      "date": "2026-10-17",
-      "agency": "외교부",
-      "title": "야스쿠니 신사 공물 봉납 및 참배에 대한 외교부 대변인 논평",
-      "summary": "정부는 일본의 과거 침략전쟁을 미화하고 전쟁범죄자를 합사한 야스쿠니 신사에 일본의 책임 있는 지도급 인사들이 또다시 공물을 봉납하거나 참배를 되풀이한 데 대해 다시 한 번 깊은 실망과 유감을 표한다.   우리 정부는 일본의 책임 있는 지도자들이 역사를 직시하고 과거사에 대한 겸허한 성찰과 진정한 반성을 행동으로 보여줄 것을 촉구하는 바이며, 이는 국가 간, 국민 간 신뢰에 기반한 미래지향적 한일관계를 구축해 나가기 위한 중요한 토대라는 점을 재차 강조한다.  끝.",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785540",
-      "unverified": false,
-      "media_press": "연합뉴스",
-      "media_title": "정부, 日다카이치 야스쿠니 공물 봉납에 \"실망과 유감\" 새 창 열림",
-      "media_link": "https://www.yna.co.kr/view/AKR20261017030000504?input=1195m",
-      "media_checked_at": "2026-10-17T14:19:45.219329+09:00"
-    },
-    {
-      "date": "2026-10-17",
-      "agency": "문화체육관광부",
-      "title": "여수 밤바다에서 10월 '문화의 달' 항해 시작한다",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785531",
-      "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-10-17T21:01:26.650906+09:00"
-    }
-  ]
+  "items": []
 }
