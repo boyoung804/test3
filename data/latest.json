@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "collected_at": "2026-10-24T10:01:40.070549+09:00",
+  "collected_at": "2026-10-24T14:43:20.460217+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-24",
+      "agency": "과학기술정보통신부",
+      "title": "아이들의 상상력이 인공지능을 만나는 첫 경험! 「전 국민 인공지능 경진대회」,  인공지능 창작대회 본선 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786340",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "'AI로 동화·웹툰 만들어요'…전국 어린이 AI 창작대회 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261023163900017?input=1195m",
+      "media_checked_at": "2026-10-24T14:42:51.909260+09:00"
+    },
+    {
+      "date": "2026-10-24",
+      "agency": "과학기술정보통신부",
+      "title": "한국, 아시아태평양경제협력체(APEC) 정보통신실무그룹(TEL)  의장단에 연이어 진출",
+      "summary": "장주동 국립전파연구원 연구사, 적합성평가·상호운용성 운영그룹 간사 선출\n박정은 정보통신정책연구원 연구원, 개발·정책 운영그룹 부간사 선출",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786331",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "한국, APEC 정보통신실무그룹 의장단에 연이어 진출 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261023166100017?input=1195m",
+      "media_checked_at": "2026-10-24T14:42:51.909260+09:00"
+    },
     {
       "date": "2026-10-24",
       "agency": "외교부",
