@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "collected_at": "2026-10-25T08:47:18.795593+09:00",
+  "collected_at": "2026-10-25T10:48:10.676497+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,30 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-10-25",
+      "agency": "문화체육관광부",
+      "title": "2026 아이치-나고야 아시안패러게임 대한민국 선수단 귀국 환영",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786343",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-25T10:47:38.886016+09:00"
+    },
+    {
+      "date": "2026-10-25",
+      "agency": "교육부",
+      "title": "인공지능 시대, '인문학은 질문합니다.'",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786342",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "' 인공지능 시대 , 질문하는 인문학'…제21회 인문주간 개최 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261023165600530?input=1195m",
+      "media_checked_at": "2026-10-25T10:47:38.886016+09:00"
+    }
+  ]
 }
