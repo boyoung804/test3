@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "collected_at": "2026-10-27T06:22:11.455880+09:00",
+  "collected_at": "2026-10-27T09:41:32.181009+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -31,6 +31,54 @@
   "items": [
     {
       "date": "2026-10-27",
+      "agency": "국방부",
+      "title": "강신철 국방부장관, 제13차 아세안 확대 국방장관회의(ADMM-Plus) 참가",
+      "summary": "강신철 국방부장관은 10월 29일(목) 필리핀에서 개최되는 제13차 아세안 확대 국방장관회의(ADMM-Plus:ASEAN Defense Ministers' Meeting-Plus)에 참석하기 위해 10월 27일(화) 출국할 예정입니다.□ 이번 회의에는 아세안 11개국을 비롯한 한국, 미국, 일본 등 역내 주요국 국방장관들이 참석하여 역내 안보환경을 평가하고, 평화와 안정을 위한 국방협력방안을 논의할 계획입니다.□ 강신철 장관은 본회의에서 역내 평화유지를 위한 국제사회의 협력 필요성을 강조하는 한편, 한·아세안 간 실질적인 국방협력 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786587",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "강신철 , 아세안 국방 장관 회의 참석…美헤그세스와 첫 회동 조율 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261027039500504?input=1195m",
+      "media_checked_at": "2026-10-27T09:39:36.559051+09:00"
+    },
+    {
+      "date": "2026-10-27",
+      "agency": "문화체육관광부",
+      "title": "국악방송과 전통공연예술진흥재단 통합 추진으로  국악·전통예술 진흥의 탄탄한 기반 마련",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786582",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "문체부, 국악방송 - 전통공연예술진흥재단 통합 추진 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261027022700005?input=1195m",
+      "media_checked_at": "2026-10-27T09:39:36.559051+09:00"
+    },
+    {
+      "date": "2026-10-27",
+      "agency": "문화체육관광부",
+      "title": "「문화예술진흥법」 개정 논의, 예술 현장 목소리 듣는다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786580",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "문화예술진흥법 개정 방안 모색…28일 문체부 정책토론회 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261027023200005?input=1195m",
+      "media_checked_at": "2026-10-27T09:39:36.559051+09:00"
+    },
+    {
+      "date": "2026-10-27",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 개인용 의료기기, '더 쉽고', '더 안전하게' 사용하는 방법 알려드려요",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786581",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "\"가정용 의료기기 안전하게\"…식약처, 가이드 제정 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261027_0003842341",
+      "media_checked_at": "2026-10-27T09:39:36.559051+09:00"
+    },
+    {
+      "date": "2026-10-27",
       "agency": "국토교통부",
       "title": "'26년 노후 산업단지 재생사업 공모 착수",
       "summary": "균형성장 지원, 재생에너지 시설 확충 및 근로환경 개선 도모",
@@ -39,7 +87,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-27T06:21:58.055313+09:00"
+      "media_checked_at": "2026-10-27T09:40:41.094029+09:00"
     }
   ]
 }
