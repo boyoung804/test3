@@ -1,6 +1,150 @@
 [
   {
     "date": "2026-10-27",
+    "agency": "국무조정실",
+    "title": "[보도자료] 한성숙 국무총리 주재 제4차 범부처 주택 신속공급 점검회의",
+    "summary": "한 총리, \"연말까지 남은 두 달, 금년도 공급 목표 달성하도록 책임있게 챙길 것\"\n계획을 넘어 국민이 체감하는 성과로",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786726",
+    "unverified": false,
+    "media_press": "뉴시스",
+    "media_title": "한 총리 \"주택공급, 관련 부처·기관 혼연일체로 최선…전례 없는 노력... 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261027_0003843391",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "재정경제부",
+    "title": "(보도설명) 정부는 감사원이 지적한 세수추계 모형을 이미 개선하였으며, 세수추계 신뢰성을 높이기 위해 지속 노력하고 있습니다.",
+    "summary": "",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786725",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "정부 세수 추계, 2021년부터 4년간 연평균 51조원 오차 새 창 열림",
+    "media_link": "https://www.yna.co.kr/view/AKR20261027029900001?input=1195m",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "농림축산식품부",
+    "title": "농식품부 장관, 보은군 방문하여 농어촌 기본소득으로 나타난 지역사회 변화 확인",
+    "summary": "송미령 농림축산식품부(이하 '농식품부') 장관은 10월 27일(화) 오후, 농어촌 기본소득 시범사업(이하 '기본소득') 시행 지역인 보은군을 찾아 현장 간담회를 개최하여 보은군 기본소득 추진현황을 점검하고, 지역사회에 나타난 변화를 확인하는 시간을 가졌다.   간담회는 보은다락협동조합*이 운영 중인 '카페 머문'에서 개최되었다. 이번 간담회에는 송미령 농식품부 장관과 박덕흠 국회의원, 최재형 보은군수, 지역주민·상인 등이 참석하여 보은군의 기본소득 추진상황을 점검하였다.     * 지역 상권 활성화와 지역특화상품 개발을 위해 '24",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786698",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "송미령 농식품 장관 \"기본소득과 함께 사회연대경제 활성화\" 새 창 열림",
+    "media_link": "https://www.yna.co.kr/view/AKR20261027168100030?input=1195m",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "중소벤처기업부",
+    "title": "자동차·가전부터 한우·수산물까지...최대 50% 할인 정부, 「제2회 코리아 그랜드 페스티벌」 시작(10.29~11.15)",
+    "summary": "정부는 내수 활성화와 지역 상권에 활력을 불어넣기 위해 10월 29일(목)부터 11월 15일(일)까지 18일간 제2회 「코리아 그랜드 페스티벌(Korea Grand Festival)」을 개최한다고 밝혔다. 관련 내용은 10월 27일(화) 국무회의에서 보고됐다. 코리아 그랜드 페스티벌(이하 '코그페')은 부처별로 추진하던 할인행사를 하나로 통합한 국가 단위의 대규모 소비축제다. 지난해 처음 개최한 행사에서는 할인행사 기간을 통합하고 혜택을 연계해 개별 행사로 진행했을 때보다 소매업계 전반의 매출 상승 폭이 2.3%p 확대되는 등 행사",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786694",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "정부, 29일부터 '그랜드 페스티벌'… 한우·수산물 최대 50% 할인 새 창 열림",
+    "media_link": "https://www.yna.co.kr/view/AKR20261027023700030?input=1195m",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "국무조정실",
+    "title": "[보도자료] 국무조정실장 주재 2026년 공직복무관리유공 포상 수여식",
+    "summary": "공직기강 바로 세운 공직복무관리 유공자 30명 포상\n적극적인 공직복무관리로 안전사고 예방에 기여한 승강기안전공단 박영준 실장 국민훈장(석류장) 수상 영예",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786695",
+    "unverified": false,
+    "media_press": "",
+    "media_title": "",
+    "media_link": "",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "외교부",
+    "title": "\"이번 특강을 통해 우리 ODA의 미래 비전에 대해 알게 되었습니다.\"  2026년 외교부 무상원조 정책 특강 성료",
+    "summary": "외교부는 10월 27일 고려대학교에서의 특강을 끝으로, 2026년 대학생 대상 무상원조 정책 특강을 마무리하였다. 지방과 수도권의 11개 대학에서 진행된 금번 특강은, 향후 5년간 우리 무상원조 정책 방향을 담은 「제4차 무상분야 기본계획(무상원조 통합·혁신 방안)」이 지난 1월 21일 발표됨에 따라 무상원조 추진 방향에 대한 우리 청년들의 관심을 확대하고자 추진되었다. 외교부는 각 학교들의 수요*를 바탕으로 ▴남서울대학교 ▴연세대학교 미래캠퍼스 ▴대구대학교 ▴한남대학교 ▴강원대학교(비대면) ▴신한대학교 ▴전북대학교 ▴수원대학교 ▴",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786691",
+    "unverified": false,
+    "media_press": "",
+    "media_title": "",
+    "media_link": "",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "국무조정실",
+    "title": "[보도자료] 한성숙 국무총리, 서울 강남구 구룡마을 화재 관련 긴급지시",
+    "summary": "한성숙 국무총리, 서울 강남구 구룡마을 화재 관련 긴급지시□ 한성숙 국무총리는 10월 27일(화), 서울 강남구 구룡마을 화재 관련하여 아래와 같이 긴급 지시했다.ㅇ 소방청은 가용 소방력과 장비를 총동원하여 화재진압에 최선을 다할 것ㅇ 행정안전부, 경찰청, 지방정부 등 관계기관은 화재로 인한 주민대피 및 구호조치에 만전을 기할 것ㅇ 현장에서 화재 진압 중인 소방공무원의 현장 활동 시 2차 사고 발생 방지 등 안전에 유의할 것…",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786686",
+    "unverified": false,
+    "media_press": "",
+    "media_title": "",
+    "media_link": "",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "국토교통부",
+    "title": "고흥 '우주발사체' 국가산업단지  조성 속도",
+    "summary": "",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786677",
+    "unverified": false,
+    "media_press": "뉴시스",
+    "media_title": "'우주산업 거점' 고흥 우주발사체 국가산단 조성 속도 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261027_0003842102",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "행정안전부",
+    "title": "인공지능 시대,  공무원 교육의 미래를 함께 그리다",
+    "summary": "지방자치인재개발원, 8개국 교육훈련기관장 초청 ｢LOGODI 글로벌 포럼 2026｣ 개최\nAI 시대 필요한 역량과 교육훈련의 변화를 논의하고 국제 협력을 통한 해법 모색    행정안전부 지방자치인재개발원(원장 직무대리 박대민)은 10월 27일(화) 전북 전주시 국립무형유산원에서 8개국 교육훈련기관장과 국내 시도 인재개발원장 등이 참석한 가운데「LOGODI 글로벌 포럼 2026」을 개최했다.  올해로 8회째를 맞는 포럼은 한국과 각국의 공무원 교육훈련 경험과 우수 사례를 공유하고, 변화하는 행정 환경에 필요한 공공인재 양성과 교육훈련",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786683",
+    "unverified": false,
+    "media_press": "",
+    "media_title": "",
+    "media_link": "",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "문화체육관광부",
+    "title": "방한 외국인 관광객 수, 역대 최고치 기록 두 달 앞당겨 경신",
+    "summary": "",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786671",
+    "unverified": false,
+    "media_press": "연합뉴스",
+    "media_title": "방한 외국인 종전 최대치 1,894만명 돌파…'2천만' 가시화 새 창 열림",
+    "media_link": "http://www.yonhapnewstv.co.kr/news/AKR20261027163523fjU",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "행정안전부",
+    "title": "행정안전부 장관, 서울 강남구 구룡마을 화재 관련 긴급 지시",
+    "summary": "모든 가용 인력 및 장비를 총동원하여 화재진압에 총력\n인근 주민 신속 대피와 소방대원 안전확보, 현장 주변 통제에 만전 윤호중 행정안전부 장관은 오늘(10.27., 15:49경) 서울 강남구 구룡마을에서 발생한 화재와 관련하여,○ 소방청, 경찰청, 서울시, 강남구 등 관련기관은 가용인력과 장비를총동원하여 인명구조와 화재진압에 총력을 다해 줄 것○ 인명피해가 발생하지 않도록 인근 주민 신속 대피와 화재진압 과정에서 소방대원 안전사고가 발생하지 않도록 최선을 다해 줄 것○ 또한 경찰에서는 화재 현장 주변 통제에 만전을 기할 것을 긴급 ",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786685",
+    "unverified": false,
+    "media_press": "뉴시스",
+    "media_title": "행안 장관 , 구룡마을 화재에 \"진화 총력…소방대원 안전 최선\" 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261027_0003843376",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
+    "agency": "국가데이터처",
+    "title": "2025년 기준 경제총조사 최우수 응답사업체 현판 전달",
+    "summary": "국가데이터처, 2025년 기준 경제총조사 최우수 응답사업체 하나은행에 감사현판 전달\n전 지점 조사표의 모든 조사항목을 본사에서 일괄적으로 성실하게 응답하여 최우수 응답사업체로 선정",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786676",
+    "unverified": false,
+    "media_press": "뉴시스",
+    "media_title": "데이터처 , 경제총조사 최우수 응답 하나은행에 감사 현판 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261027_0003843189",
+    "media_checked_at": "2026-10-27T20:01:02.317181+09:00"
+  },
+  {
+    "date": "2026-10-27",
     "agency": "국토교통부",
     "title": "'26년 3분기 전국 지가 0.62% 상승",
     "summary": "",
@@ -33,7 +177,7 @@
     "media_press": "",
     "media_title": "",
     "media_link": "",
-    "media_checked_at": "2026-10-27T14:41:35.970147+09:00"
+    "media_checked_at": "2026-10-27T20:03:42.576643+09:00"
   },
   {
     "date": "2026-10-27",
@@ -45,7 +189,7 @@
     "media_press": "",
     "media_title": "",
     "media_link": "",
-    "media_checked_at": "2026-10-27T14:41:35.970147+09:00"
+    "media_checked_at": "2026-10-27T20:03:42.576643+09:00"
   },
   {
     "date": "2026-10-27",
@@ -81,7 +225,7 @@
     "media_press": "",
     "media_title": "",
     "media_link": "",
-    "media_checked_at": "2026-10-27T14:41:35.970147+09:00"
+    "media_checked_at": "2026-10-27T20:03:42.576643+09:00"
   },
   {
     "date": "2026-10-27",
@@ -165,7 +309,7 @@
     "media_press": "",
     "media_title": "",
     "media_link": "",
-    "media_checked_at": "2026-10-27T14:41:35.970147+09:00"
+    "media_checked_at": "2026-10-27T20:03:42.576643+09:00"
   },
   {
     "date": "2026-10-27",
