@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "collected_at": "2026-10-28T05:52:28.019835+09:00",
+  "collected_at": "2026-10-28T09:13:55.504938+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,42 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-10-28",
+      "agency": "문화체육관광부",
+      "title": "문체부 장관, 대중음악 전문 공연장 '서울아레나' 건설 현장 방문",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786732",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "최휘영 장관, '패노메논' 열릴 서울아레나 건설현장 점검 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261028019900005?input=1195m",
+      "media_checked_at": "2026-10-28T09:13:09.173878+09:00"
+    },
+    {
+      "date": "2026-10-28",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786731",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-28T09:13:09.173878+09:00"
+    },
+    {
+      "date": "2026-10-28",
+      "agency": "기후에너지환경부",
+      "title": "기후위기 극복할 지역 맞춤형 해법… 2027년 물순환 촉진구역 지정 공모 착수",
+      "summary": "올해 첫 지정(4곳)에 이어 내년 2곳 지정, 10월 28일부터 약 3개월간 진행▷ 지정되면 종합계획 수립(기후부), 지역 맞춤형 물순환 촉진 사업 추진기후에너지환경부(장관 김성환)는 물순환 취약지역의 복합적인 물 문제를 개선하기 위해 전국 지방정부를 대상으로 '2027년 물순환 촉진구역 지정 공모'를 10월 28일부터 약 3개월간 진행한다고 밝혔다.물순환 촉진구역은 '물순환 촉진 및 지원에 관한 법률(이하 물순환촉진법)'에 따라 물순환 촉진이 시급하거나 촉진에 따른 파급효과가 큰 지역을 뜻한다. 기후에너지환경부는 이러한 지역을 촉",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786728",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "침수·물 부족 지역 맞춤형 관리… 물순환 취약지역 2곳 추가 선정 새 창 열림",
+      "media_link": "https://www.news1.kr/economy/env-policy/6333749",
+      "media_checked_at": "2026-10-28T09:13:09.173878+09:00"
+    }
+  ]
 }
