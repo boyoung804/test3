@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "collected_at": "2026-10-30T12:11:01.848934+09:00",
+  "collected_at": "2026-10-30T19:03:30.192394+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,318 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-30",
+      "agency": "국무조정실",
+      "title": "[보도자료] 한성숙 국무총리, 제8차 주택공급 현장점검(은평구 불광동)",
+      "summary": "민간재개발이 어려운 노후 도심,공공이 주도하여 주택공급 속도 높인다\n한 총리, 도심복합사업 현장 방문",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787387",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "산업통상부",
+      "title": "(참고자료)EU, 수입 하이브리드 자동차에 대한 글로벌 세이프가드 조사 개시",
+      "summary": "EU, 수입 하이브리드 자동차에 대한 글로벌 세이프가드 조사 개시\n정부, 우리 자동차 업계의 EU 시장접근 보장을 위해 적극 대응 산업통상부(장관 김정관, 이하 산업부)는 EU 집행위원회가 10월 30일 전 세계에서 수입되는 하이브리드 자동차를 대상으로 WTO 세이프가드 협정에 따른 글로벌 세이프가드 조사를 개시한다고 발표하였다고 밝혔다. 세이프가드 조치는 특정 상품의 수입 증가로 국내산업에 심각한 피해가 발생하거나 발생할 우려가 있는 경우, 관세 인상이나 수입물량 제한 등을 통해 자국 산업을 일시적으로 보호할 수 있도록 허용하는 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787386",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "EU, 하이브리드차 세이프가드 조사 개시…정부 \"국내 영향 점검\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030171700003?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 카드뮴 기준 초과 검출된 '기타 수산물가공품' 회수 조치",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787382",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "행정안전부",
+      "title": "윤호중 행안부 장관, 핼러윈 대비 인파밀집 예상지역 현장점검",
+      "summary": "지난해 핼러윈 전국 최대 인파(약 10만 5천 명) 몰린 홍대 관광특구 방문, 기관별 안전관리 대책 점검\n인파 안전관리, 교통관리대책, 응급구조대책, 인파밀집 분석시스템 등 확인   윤호중 행정안전부 장관은 핼러윈을 하루 앞둔 10월 30일(금), 인파 밀집이 예상되는 서울 홍대 관광특구를 방문해 핼러윈 대비 인파 안전관리 상황을 점검했다.  올해 핼러윈(10.31.)은 주말과 겹쳐 전국 주요 번화가에 많은 인파가 몰릴 것으로 예상됨에 따라, 인파사고 예방을 위한 철저한 안전관리가 요구된다. 이에 행정안전부는 10월 23일(금)부터",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787385",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "행안장관, 핼러윈 하루 앞 홍대거리 점검…\"안전관리 만전\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030052600530?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "산업통상부",
+      "title": "제1회 '공학인의 날' 개최… 공학인의 도전과 미래를 응원한다",
+      "summary": "제1회 '공학인의 날' 개최\n대한민국 산업발전 이끈 공학인에 감사와 존경… 정부포상 등 13점 수여",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787381",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "제1회 공학인의 날 …한화오션 홍태민 동탑 산업 훈장 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030098300003?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "문화체육관광부",
+      "title": "고(故) 최불암 배우 금관문화훈장 추서",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787380",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "故 최불암 에 금관문화훈장 추서…\"국민 곁을 지켜 온 배우\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030137100005?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 소비기한 이중 표시 '과·채가공품' 회수 조치",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787379",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "외교부",
+      "title": "한-해양동남아 협력기금, 역내 지속 가능한 발전과 포용적 상생을 위한 실질적 기여 지속",
+      "summary": "제7차 한-해양동남아 고위관리회의*가 권재환 외교부 아세안국장과 주니카 모하메드 말레이시아 경제부 차관보의 공동 주재로 10.30.(금) 오전 서울에서 개최되었다. 이번 회의에서 한국을 비롯한 고위관리회의 대표**들은 1차-5차 한-해양동남아 협력기금(BIMP-EAGA-ROK Cooperation Fund, BKCF) 사업 이행현황 및 주요 성과를 점검하고 신규 사업을 승인하였다. * BIMP-EAGA*-ROK Senior Officials' Meeting\n동아세안 성장지대(BIMP-EAGA : Brunei Darussalam-In",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787376",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "한국· 동남아 4개국, 협력기금 신규 사업 9건 승인 새 창 열림",
+      "media_link": "https://www.news1.kr/diplomacy/defense-diplomacy/6338332",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "보건복지부",
+      "title": "중증 어르신 재가 돌봄 월 이용 한도액 최대 37만 원 인상… \"살던 집에서 더 충분하게\"",
+      "summary": "장기요양보험료율 2026년 0.9448%에서 2027년 0.9994%로 세대당 월평균 1,100원 인상\n중증 재가급여 월 한도액 인상, 재택의료 확대 등 의료·요양 연계 강화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787374",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "외교부",
+      "title": "한-몽골 황금시대에 걸맞는 전략적･호혜적 실질협력 강화 방안 논의",
+      "summary": "김진아 외교부 제2차관은 10.30.(금) 서울에서 바트투무르 엥흐바야르(Battumur ENKHBAYAR) 몽골 내각사무처 장관과 제10차 한-몽골 공동위원회를 개최하고, 지난 7월 한-몽골 정상회담 후속조치 및 경제협력, 사회·문화, 인적교류 등 분야 실질협력 강화 방안에 대해 논의하였다. ※ 한-몽골 공동위원회는 2015년부터 정례 개최되는 양국 간 포괄적 고위급 협의체로, 제9차 공동위는 25.11월 몽골 울란바타르에서 개최 양측은 올해 7월 이재명 대통령의 몽골 국빈 방문을 통해 한-몽골 황금시대 개막을 위한 동력이 마련된",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787364",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "국무조정실",
+      "title": "[보도자료] 국토대전환 두 번째 현장랩(나주) 개최",
+      "summary": "국토대전환 두 번째 「현장랩(나주)」 개최\n공공기관 이전으로 형성된 공공기관·대학·기업 간 협력체계를 바탕으로 지역산업의 지속 성장 가능성 확인□ 국무조정실 국토공간대전환추진단(이하 '추진단')은 10월 30일(금) 전남 나주혁신도시를 방문하여 공공기관 이전을 계기로 형성된 지역산업 생태계의 성과를 살펴보고, 혁신도시의 지속가능한 발전방향을 논의하였다.ㅇ 이번 방문은 지난 5월 포항에 이은 두번째 「국토대전환 현장랩(Lab)」 일정으로 지역의 우수한 성장사례를 발굴하고 확산하기 위해 마련하였다.ㅇ 첫 방문지인 포항에서는 앵커기업과 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787365",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "보건복지부",
+      "title": "정은경 장관, 대한소아응급의학회와 만나 의견 청취",
+      "summary": "보건복지부(장관 정은경)는 10월 30일(금) 서울역 인근 회의실에서 대한소아응급의학회(회장 류정민)와 필수의료분야 수사와 관련된 의견을 청취하는 시간을 가졌다고 밝혔다.  대한소아응급의학회는 이번 아주대병원 소아전문응급의료센터 압수수색과 관련하여, 응급실 등 필수의료분야 의료시설 압수수색 자제 및 자발적 자료우선 제출 요구 등 수사 원칙과 환자안전과 진료연속성 보호를 위한 수사 절차에 대한 의견을 제안했다. 정은경 장관은 이에 깊이 공감하고 필수의료현장에 적용될 수 있는 지침(가이드라인)이 신속히 마련될 수 있도록 경찰청과 협의해",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787362",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[동정] 정은경 복지 장관 , 청년 사회복지사와 소통 간담회 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030045400530?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "법무부",
+      "title": "범죄피해자의 권리 보장부터 일상회복까지  국가가 함께합니다.",
+      "summary": "법무부, 향후 5년간 범죄피해자 보호·지원정책의 청사진, 「제5차 범죄피해자 보호·지원 기본계획」 수립\n형사절차상 권리 강화부터 통합지원·피해회복·안전보호·피해배상까지 5대 정책영역 추진법무부(장관 직무대행 차관 이진수)는 향후 5년간 범죄피해자 보호·지원정책의 기본방향과 중장기 추진과제를 담은「제5차 범죄피해자 보호·지원 기본계획(2027~2031)」을 수립하였습니다.[※ 상세내용 첨부파일 참조]",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787338",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "법무부, 범죄피해자 보호 강화… 피해자 에 형사절차 진행상황 공유 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030158300004?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "기후에너지환경부",
+      "title": "고준위위원회, 고준위 방사성폐기물 관리시설 부적합지역 배제기준 확정",
+      "summary": "제9차 고준위위원회 개최, 관리시설 부적합지역 배제기준 심의·의결▷ 올해 유치지역 등 잠정 지원방안 마련, 내년 기본조사 대상부지 공모 착수고준위방사성폐기물관리위원회(위원장 김현권, 이하 고준위위원회)는 10월 30일 오후 석탄회관(서울 종로구 소재)에서 제9차 위원회 회의를 개최하여 '고준위 방사성폐기물 관리시설 부적합지역 배제기준(안)'을 의결하고, '관리시설 유치지역 등 지원방향(안)'과 '기본조사 대상부지 공모방안 검토계획(안)'을 논의했다고 밝혔다.첫 번째 안건인 '관리시설 부적합지역 배제기준'은 고준위 방사성폐기물을 장기",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787339",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "문화체육관광부",
+      "title": "시각 예술 전문가와 2027년 정부 예산안 논의",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787327",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "\"문체부 예산은 늘었는데 마이스는 줄었다\"…업계, 국회서 지원 확대 촉... 새 창 열림",
+      "media_link": "https://www.news1.kr/industry/hotel-tourism/6325233",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "국무조정실",
+      "title": "[보도자료] 개발협력주간 사전행사 운영",
+      "summary": "'K-ODA와 함께 여는 상생의 미래'광화문광장에서 국민과 함께 연다\n2026 개발협력주간 사전행사로 '개발협력 홍보존'과 '사진전' 개최",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787325",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[게시판] 국조실, 개발협력 홍보존·사진전 운영 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030139600001?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "국무조정실",
+      "title": "[보도자료] 한성숙 국무총리 주재 민생침해범죄 유공 격려 오찬간담회",
+      "summary": "\"국민 일상을 지키는 든든한 방파제\"한 총리, 민생침해범죄 대응 주역들에 감사\n민생침해범죄, 일상을 위협하고 사회 근간을 흔드는 뿌리 뽑아야 할 범죄",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787324",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 디지털융합의약품.. '원스톱 통합심사 체계' 마련",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787323",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "고용노동부",
+      "title": "'HRDK 국민성장추진위원회' 성과 도약의 기반 다지는 마무리 회의 개최",
+      "summary": "지난 8월 출범 이후, 총 7차 정례회의를 통해 공단 혁신 방향 설정 및 대국민 체감 성과 창출 도모\nHRDK 미래 대응 전략, AX(인공지능전환)·DX(디지털전환) 전환, 국가자격 신뢰 회복 등 주요 현안 점검",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787315",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "산업인력공단, 국민성장추진 위 활동 종료…내년 AI 일자리 지원 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030069100530?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "보건복지부",
+      "title": "\"청년 사회복지사의 든든한 울타리 되겠다\", 정은경 장관, 청년 사회복지사 소통의 장 마련",
+      "summary": "취업 초기 청년 사회복지사 및 예비 사회복지사 12명과 만나 응원과 현실적인 고민 청취",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787313",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[동정] 정은경 복지장관, 청년 사회복지사 와 소통 간담회 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030045400530?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "과학기술정보통신부",
+      "title": "과기정통부, 통신재난 대응 강화로 국민 일상 보호",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787312",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "드론 공격에 통신 마비된다면…범정부 ' 통신 재난 ' 대응 훈련 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030043300017?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "재정경제부",
+      "title": "권대영 1차관, 「주요 국책과제 이행점검」 TF 개최",
+      "summary": "권대영 재정경제부 제1차관은 10.30(금) 14:00 관계부처 차관 등*과 함께 ｢주요 국책과제 이행점검 TF｣ 킥오프 회의를 개최하였다.     * 고용노동부 차관, 금융위원회 부위원장, 국가데이터처 처장, 기후에너지환경부 기후에너지정책실장, 과학기술정보통신부 과학기술정책국장 등｢주요 국책과제 이행점검 TF(재경부 1차관 주재)｣는 주요 국책과제 중 국민 파급효과가 크고, 전 부처의 협업이 필요한 ①한국형 녹색대전환(K-GX), ②7대 SEED, ③3대 민생 프로젝트(주거·일자리·서민금융) 등 3개 주요 국책과제의 이행계획을 구",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787314",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "정부, '1000조 투자' K-GX 과제 점검 …\"모두 정상 추진\" 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261030_0003848748",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "법무부",
+      "title": "서울출입국·외국인청 문정동 신청사에서 36년 만에 새출발",
+      "summary": "-10월 30일 개청식... 대기시간 단축·질높은 서비스 제공으로 민원 편의 높인다-법무부(장관 직무대행 차관 이진수)는 10월 30일 서울 송파구 문정동 법조타운 내 서울출입국·외국인청(이하 '서울청') 신축 청사에서 개청식을 열었다. [※ 상세내용 첨부파일 참조]",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787311",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "서울출입국·외국인청 문정동 신청사 문열어…민원공간 확장 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261030121000004?input=1195m",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "보건복지부",
+      "title": "생애말 의료·돌봄 공론화 위한 두 번째 의료혁신 시민패널 토론회 준비 최종 점검",
+      "summary": "제19차 시민패널 운영위원회 개최(10.30)\n11.7.~11.8. 연명의료결정제도 포함한 '생애 말 의료와 돌봄' 주제로 시민패널 숙의토론 예정",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787293",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "보건복지부",
+      "title": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다",
+      "summary": "2026년 하반기 보건의료데이터 활용 정기교육 개최\n가이드라인 개정 방향 안내 및 AI 기반 연구 사례 교육으로 연구자 실무 역량 강화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787292",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
+    {
+      "date": "2026-10-30",
+      "agency": "보건복지부",
+      "title": "대한민국-몽골 보건의료협력, 디지털 전환과 K-의료 인재양성 새 지평 연다",
+      "summary": "제7차 한-몽 보건의료협의체 개최로 보건의료협력 고도화\n몽골 의료인 팀 기반 다학제 연수 도입으로 의료역량 강화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787290",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-30T18:56:59.155672+09:00"
+    },
     {
       "date": "2026-10-30",
       "agency": "과학기술정보통신부",
@@ -87,7 +399,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-30T12:03:58.425600+09:00"
+      "media_checked_at": "2026-10-30T19:02:47.716315+09:00"
     },
     {
       "date": "2026-10-30",
@@ -99,7 +411,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-30T12:03:58.425600+09:00"
+      "media_checked_at": "2026-10-30T19:02:47.716315+09:00"
     },
     {
       "date": "2026-10-30",
@@ -123,7 +435,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-30T12:03:58.425600+09:00"
+      "media_checked_at": "2026-10-30T19:02:47.716315+09:00"
     },
     {
       "date": "2026-10-30",
@@ -231,7 +543,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-10-30T12:03:58.425600+09:00"
+      "media_checked_at": "2026-10-30T19:02:47.716315+09:00"
     },
     {
       "date": "2026-10-30",
