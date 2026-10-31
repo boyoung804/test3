@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "collected_at": "2026-10-31T09:41:44.429079+09:00",
+  "collected_at": "2026-10-31T15:20:56.729353+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,30 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-10-31",
+      "agency": "외교부",
+      "title": "외교부 2030 청년자문단 3기 역량강화 연수 개최",
+      "summary": "외교부는 10.30.(금)부터 10.31.(토)까지 서울 및 부산 일원에서 「외교부 2030청년자문단 3기 역량강화 연수」를 개최하였다.  이번 연수는 외교부 2030청년자문단의 공공외교에 대한 이해를 바탕으로 한-아세안 협력 분야의 주요 현안을 살펴보고, 기후․식량 분야의 국제협력 방향을 청년의 시각에서 논의하고자 마련되었다.  연수 1일차에는 임상우 외교부 공공외교대사의 특별 강연을 통해 우리나라 공공외교의 체계를 살펴보고, 국제사회와의 소통 및 상호 이해 증진을 위한 공공외교의 다양한 역할에 대해 의견을 나누는 시간을 가졌다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787394",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-10-31T15:20:28.544362+09:00"
+    },
+    {
+      "date": "2026-10-31",
+      "agency": "외교부",
+      "title": "우리나라 주도 '군사분야 AI' 유엔 결의 3년 연속 채택",
+      "summary": "제81차 유엔총회 1위원회에서 우리나라와 네덜란드가 공동으로 상정한 「군사분야 인공지능과 국제 평화 및 안보에 대한 함의(Artificial Intelligence in the Military Domain and its Implications for International Peace and Security)」 결의가 10.30.(금) 171개 유엔 회원국들의 광범위한 지지로 채택되었다.   ※ 유엔총회 1위원회에서 채택된 결의는 12월 개최되는 유엔총회 본회의에 상정되며, 본회의 채택을 통해 최종 확정  2024년 이후 3년 연속",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787393",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "韓 주도 ' 군사분야 AI ’ 유엔 결의 채택 … 3년 연속 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261031_0003849257",
+      "media_checked_at": "2026-10-31T15:20:28.544362+09:00"
+    },
     {
       "date": "2026-10-31",
       "agency": "외교부",
