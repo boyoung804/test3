@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "collected_at": "2026-11-01T11:42:01.334697+09:00",
+  "collected_at": "2026-11-01T18:48:06.625452+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,66 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-11-01",
+      "agency": "과학기술정보통신부",
+      "title": "[연구행정 혁신+-⑨] \"협력의 문은 넓게, 기술주권 수호는 확실하게\"",
+      "summary": "국가과학기술자문회의 제89회 운영위원회에서 「국제공동연구 관리 체계화 방안(안)」 심의·의결 … 글로벌 R&D 제도적 완결성 확보",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787418",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-01T18:46:04.074057+09:00"
+    },
+    {
+      "date": "2026-11-01",
+      "agency": "과학기술정보통신부",
+      "title": "[연구행정 혁신+-⑧] \"해외 논문 성과등록 논문 고유번호만 넣으면 끝!\"범부처 통합연구지원시스템, 연구자 눈높이로 대폭 변신",
+      "summary": "해외 논문DB(Web of Science)와 직접 연결해 논문 고유번호(DOI)만 입력하면 제목·저자·학술지 등 서지정보 자동 완성\n이동 중에도 간편하게… 과제 현황·실적 조회 등 24종 모바일 서비스 신설",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787417",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-01T18:46:04.074057+09:00"
+    },
+    {
+      "date": "2026-11-01",
+      "agency": "과학기술정보통신부",
+      "title": "국민AI서비스혁신추진단장 김세웅 단장 취임",
+      "summary": "카카오 AI 시너지 성과리더(부사장) 출신, 11.2일부터 출근\n국민이 체감하는 공공분야 AI서비스의 신속한 개발･제공 본격 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787416",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "대 국민 AI 서비스 추진단장 에 김세웅 전 카카오 부사장 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261101015800017?input=1195m",
+      "media_checked_at": "2026-11-01T18:46:04.074057+09:00"
+    },
+    {
+      "date": "2026-11-01",
+      "agency": "기후에너지환경부",
+      "title": "야생동물 질병 전문인력 양성, 연구성과 공유의 장 마련",
+      "summary": "국립야생동물질병관리원, 특성화대학원 학술 토론회 개최▷ 학술 연구 성과 공유로 야생동물 질병 대응 역량 강화기후에너지환경부 소속 국립야생동물질병관리원(원장 이창규)은 11월 2일 대전라마다호텔(대전 유성구 소재)에서 '야생동물 질병 전문인력양성 특성화대학원 지원사업'의 일환으로 학술 토론회(세미나)를 개최한다고 밝혔다.이번 행사는 특성화대학원에 참여하는 대학원생의 연구 성과를 공유하고 관련 분야 전문가와의 학술 교류를 통해 야생동물 질병 분야의 미래 전문인력을 양성하기 위해 마련됐다.이날 행사에서는 국립야생동물질병관리원, 국립생물자",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787420",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "야생동물 질병 전문인력 양성…감염병 연구성과 공유 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261101_0003849503",
+      "media_checked_at": "2026-11-01T18:46:04.074057+09:00"
+    },
+    {
+      "date": "2026-11-01",
+      "agency": "기후에너지환경부",
+      "title": "국립공원공단, 가을 산불 총력 대응 나선다",
+      "summary": "11월 1일부터 45일간 가을철 산불조심 기간 운영, 11월 15일부터 31일간 일부 탐방로 통제 기후에너지환경부 산하 국립공원공단(이사장 주대영)은 11월 1일부터 12월 15일까지 45일간을 '가을철 산불조심 기간'으로 정하고, 국립공원 산불 예방과 초기 대응을 강화한다고 밝혔다. 가을철은 낙엽이 쌓이고 대기가 건조해져 작은 불씨도 대형 산불로 확산될 우려가 있으며, 국립공원 탐방객이 연중 가장 몰리는 시기이기 때문에 빈틈없는 산불 관리가 필요하다. 국립공원공단은 산불 예방을 위해 11월 15일부터 12월 15일까지 31일간 산",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787419",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "국립공원 탐방로 148곳 통제…가을 산불 예방··대응 강화 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261101_0003849514",
+      "media_checked_at": "2026-11-01T18:46:04.074057+09:00"
+    },
     {
       "date": "2026-11-01",
       "agency": "해양수산부",
@@ -72,10 +132,10 @@
       "summary": "수출 2개월 연속 1,100억 달러 상회, 무역흑자 2개월 연속 400억 달러 상회\n20대 주요 품목 중 18개 품목 증가",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787411",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-01T11:40:31.740275+09:00"
+      "media_press": "뉴스1",
+      "media_title": "韓수출, 연간 '1조 달러' 이달 달성 확실…미·중·독 이어 세계 4번째(... 새 창 열림",
+      "media_link": "https://www.news1.kr/economy/idustry-trade/6338904",
+      "media_checked_at": "2026-11-01T18:47:09.661727+09:00"
     },
     {
       "date": "2026-11-01",
@@ -99,7 +159,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-01T11:40:31.740275+09:00"
+      "media_checked_at": "2026-11-01T18:47:09.661727+09:00"
     },
     {
       "date": "2026-11-01",
@@ -108,10 +168,10 @@
       "summary": "조현 외교장관은 10.30.(금)-10.31.(토) 간 미국 애틀랜타에서 개최된 G20 외교장관회의에 참석하여, △지정학적 긴장(1세션) △에너지(2세션) △공급망(3세션) 등 국제사회가 직면한 주요 과제에 대해 G20 차원의 협력 방안을 논의하였다. 마르코 루비오(Marco Rubio) 미국 국무장관이 주재한 이번 회의에는 G20 회원국 및 초청국(폴란드) 외교장관 등*이 참석하였다.  * 중국 외교부 상무부부장(차관급) 외 전 G20 회원국 외교장관 참석 조 장관은 지정학적 갈등이 세계 경제에 미치는 영향을 조명하고, 특히 호르",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787408",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-01T08:46:25.363408+09:00"
+      "media_press": "뉴시스",
+      "media_title": "조현 , G20 계기 EU·영국·인도·멕시코 외교 장관 만나 안보·경제협력 ... 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261101_0003849582",
+      "media_checked_at": "2026-11-01T18:47:09.661727+09:00"
     },
     {
       "date": "2026-11-01",
@@ -120,10 +180,10 @@
       "summary": "G20 외교장관회의 참석차 미국 애틀랜타를 방문 중인 조현 외교장관은 10.31.(토) 수브라마냠 자이샨카르(Subrahmanyam Jaishankar) 인도 외교장관과 회담을 개최하고, 금년 4월 우리 대통령의 인도 국빈 방문 계기에 합의된 성과사업 이행 현황을 비롯한 양자 현안과 G20, UN 등 다자 현안에 대해 의견을 교환하였다.  조 장관은 한-인도간 활발한 고위급 교류*를 통해 전략적 소통을 강화해 나가고 있음을 평가하고, 지난 4월 이재명 대통령의 인도 국빈 방문 이후 한-인도 외교장관이 양국 관계의 진일보를 위해 함께",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787407",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-01T08:46:25.363408+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "조현, G20 계기 EU·영국· 인도 ·멕시코와 연쇄 회담 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261101013000504?input=1195m",
+      "media_checked_at": "2026-11-01T18:47:09.661727+09:00"
     },
     {
       "date": "2026-11-01",
