@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "collected_at": "2026-11-03T12:55:49.150044+09:00",
+  "collected_at": "2026-11-03T20:34:15.845651+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,390 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-11-03",
+      "agency": "문화체육관광부",
+      "title": "최휘영 장관, 전북도지사 만나 '2036 하계올림픽' 유치 현안 논의",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787813",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "전북지사 만난 최휘영 \"올림픽 유치 서울시와 조속히 합의하길\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103146500005?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "보건복지부",
+      "title": "응급실 등 필수의료분야 수사 가이드라인 마련 추진",
+      "summary": "경찰청(청장 직무대행 김종철)은 보건복지부(장관 정은경)와 논의를 통하여 필수 의료 분야 의료사고 시 적용할 수사 가이드라인을 마련하고 있으며, 전국 수사 현장에서 조속히 시행할 예정이라고 밝혔다.  경찰청은 아주대병원 소아전문응급ㅡ젝202의료센터에 대한 압수수색 이후 오늘 11월 3일 보건복지부와 기관장 회의를 통해 필수의료분야 의료사고 수사에 대한 지침 마련의 필요성에 대해 의견을 같이하였다. 이에 따라, 의료계와 현장 수사관의 의견을 수렴하여 응급실 등 필수의료분야 수사 지침(가이드라인)을 마련하고 신속히 일선 현장에 안내하여",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787811",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "응급실 등 필수의료 수사지침 조속 시행…압수수색 자제 방침 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103176100530?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "외교부",
+      "title": "제7차 한-스위스 정책협의회 개최(11.3.)",
+      "summary": "정의혜 차관보는 11.3.(화) 서울에서 마르쿠스 라이트너(Markus Leitner) 스위스 외교부 차관보와 제7차 한-스위스 정책협의회를 개최하고 ▴양국관계 ▴실질협력 ▴지역정세 ▴국제무대 협력 등 상호 관심사에 대해 논의했다.  정 차관보는 작년에 이어 올해에도 한-스위스 정책협의회가 개최된 것을 기쁘게 생각한다고 하고, 양국이 1963년 수교 이후 우호·협력 관계를 지속 발전시켜 왔음을 평가하면서 앞으로도 고위급 교류 및 정책협의회 등을 통해 양국 간 교류·협력을 확대하여 나가자고 하였다.  라이트너 차관보는 정 차관보가 스",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787812",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "한-스위스 정책협의회 개최…방북 이어 한반도 정세 논의 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103177400504?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "고용노동부",
+      "title": "상습체불사업주 777명,  1년간 신용제재 받는다",
+      "summary": "11.3(화) 임금체불정보심의위원회 개최\n체불로 인한 유죄 확정 전이라도 상습체불이 명확한 경우 신용제재 등 조치  고용노동부(장관 김영훈)는 11월 3일 임금체불정보심의위원회(위원장: 고용노동부 차관)를 개최하여 체불을 상습적으로 반복한 상습체불사업주 777명에게 신용제재를 결정했다고 밝혔다.   상습체불사업주 제재 제도는 임금체불은 절도 범죄라는 인식하에 기존의 체불사업주 명단공개, 신용제재 등 제재 제도에 더하여 2025년 10월부터 시행되었다. 기존 명단공개, 신용제재는 체불로 유죄가 확정된 사업주*를 대상으로 한 제재로써 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787810",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "상습체불 사업주 777명 , 1년간 신용제재…대출·국가사업 제한 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103176800530?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "법무부",
+      "title": "정부, 여수·순천 10·19사건 희생자 고(故)박찬길 검사 유족 제기 국가배상소송 항소 포기",
+      "summary": "법무부(장관 직무대행 차관 이진수)는 여수·순천 10·19사건(소위 '여순사건') 당시 좌익혐의로 희생되었던 고(故)박찬길 검사의 유족에게 국가배상책임을 인정한 1심 판결*에 대하여 항소를 포기하기로 결정하였습니다. * 광주지방법원 순천지원은 2026. 10. 29. 고(故)박찬길 검사의 유족에게 고인과 가족들의 위자료로 총 6억 9,000만원의 국가배상판결을 선고하였음[※ 상세내용 첨부파일 참조]",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787809",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "1948년 ' 여순사건 ' 희생자 故박찬길 검사에 국가배상 확정 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103172800004?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 새로운 IgA 신병증 희귀 치료제 허가",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787808",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "식약처 , 신장질환 치료 희귀 의약품 '반라피아' 허가 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103171100017?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "국무조정실",
+      "title": "[보도자료] 위기채무자 지원 강화를 위한 업무협약 체결식",
+      "summary": "위기채무자 지원 강화에 한마음 한뜻,신용회복위-법률구조공단-정부 업무협약 체결\n총리실, 개인회생·파산 업무 관련 신용회복위-법률구조공단 간 연계 구체화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787806",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "정부 ' 위기채무자 지원 강화' 협약…서류 일괄발급 등 간편화 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103166000001?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "외교부",
+      "title": "김진아 2차관, 국제해양법재판소(ITLOS) 소장 접견(11.3.)",
+      "summary": "김진아 외교부 2차관은 11.3.(화) 모리스 K. 캄가(Maurice K. Kamga) 국제해양법재판소(International Tribunal for the Law of the Sea, ITLOS) 소장을 접견하고, ITLOS 설립 30주년을 평가하고 국제법·해양법 발전을 위한 전문가 양성 및 ITLOS와의 협력 방안 등에 관해 의견을 교환하였다. 이번 접견에는 이자형 재판관(한국)과 히데히사 호리노우치(Hidehisa Horinouchi) 재판관(일본)이 동석하였다.    김 차관은 캄가 소장의 ITLOS 소장 선출을 축하하고",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787805",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "외교 2차관 , 국제해양법재판소장 접견…협력 확대 논의 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103173000504?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "국방부",
+      "title": "고 안성호 이등중사 호국의 영웅 귀환 행사",
+      "summary": "백마고지 유해발굴 재개 1년 만에 첫 신원확인, 74년 기다린 외동딸 품으로 귀환□ 유해가 발굴된 지 불과 2개월 만에 신원확인 된 호국영웅이 11월 3일(화) 가족의 품으로 돌아왔다.ㅇ국방부 유해발굴감식단(이하 국유단, 단장 전병희)은 올해 7월 강원도 철원군 백마고지 일대에서 발굴한 유해의 신원을 국군 제9사단 소속의 고(故) 안성호 이등중사(현 계급 병장)로 확인하고, 경기 이천시에서 '호국의 영웅 귀환행사'를 거행했다.ㅇ고인은 올해 국유단이 열다섯 번째로 신원을 확인한 호국영웅이며, 2000년 4월 유해발굴사업 개시 이래 가",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787800",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "6·25 당시 백마고지서 전사한 안성호 이등중사…74년 만에 딸 품으로 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261103_0003853029",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "국무조정실",
+      "title": "[보도자료] 모듈러주택 산업 현장소통을 위한 규제합리화 현장캠프 개최",
+      "summary": "국내 최대 모듈러주택 현장 찾아 규제 개선 과제 논의\n규제합리화위원회, 세종 모듈러주택 건설현장서 현장캠프 개최",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787791",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "과학기술정보통신부",
+      "title": "휴머노이드가 '일하는 법' 배우는  데이터 생산기지 문 연다",
+      "summary": "공공 개방형 'AI 휴머노이드 데이터 팩토리' 개소\n국산 휴머노이드 'KAIROS' 개발 연계… 2027년 말 산학연 개방 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787790",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "휴머노이드 로봇 가르치는 ' 데이터 팩토리 ' 문 연다 새 창 열림",
+      "media_link": "https://www.news1.kr/it-science/internet-platform/6341444",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "산업통상부",
+      "title": "대한민국 제조업 판 바꾼다... 산업부, 제조AI 4단계 확산전략 가동",
+      "summary": "산업부, 11.3일 「AI 팩토리 전략회의」 개최 및 AI 팩토리 확산전략 발표그간의 개별 공정 단위 제조AI 혁신, 공급망·산단 등 생태계 전체로 확장245개 AI팩토리·541개 AI모델 정밀 분석…우수 AI기업 발굴·전문기업 육성 개별 공정 단위에 머물러온 제조AI 혁신 성과를 국가 산업 전반으로 확대하기 위한 청사진이 공개되었다. 산업통상부(장관 김정관, 이하 산업부)는 11월 3일(화) 서울 프레스센터에서 현대모비스 이규석 대표이사, HD한국조선해양 김형관 사장, LS엠트론 신재호 대표, 서울대 김영오 공대학장 등 기업인과 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787789",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "공정별 AI 성과, 산업 전반 확산… 산업 부, 4단계 전략 가동 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103075800003?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "보건복지부",
+      "title": "생활공간에서 의료서비스 받는다, 전국 최초 의료집중형 장애인거주시설 대전 '로뎀' 개소",
+      "summary": "장애인거주시설 내 중증장애인에 대한 전문적 의료·돌봄서비스 제공 확대\n간호·생활지원 인력 보강 및 의료장비 확충 통해 중증장애인 맞춤형 건강관리 강화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787787",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "전국 최초 ' 의료 집중형 ' 장애인 거주시설 , 대전 서 개소 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103123400530?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "중소벤처기업부",
+      "title": "소비자생활협동조합 지원과 육성을 위한 ｢소비자생활협동조합법 시행령 개정안｣ 국무회의 통과",
+      "summary": "공정거래위원회에서 중소벤처기업부로 소관부처 변경 (11.13 시행)\n중소벤처기업부(장관 이소영, 이하 중기부)와 공정거래위원회(위원장 주병기, 이하 공정위)는 소비자생활협동조합(이하 '소비자생협')의 소관부처가 공정위에서 중기부로 변경됨에 따른 내용을 반영하기 위해 ｢소비자생활협동조합법 시행령｣ 일부개정안을 11월 3일(화) 국무회의에서 의결했다고 밝혔다. 이번 시행령 개정은 지난 5월 12일(화) 개정된 ｢소비자생활협동조합법｣ 시행을 위해 사무 처리기관 명칭 등을 정비*하는 내용이다. 이를 통해 소비자생협 연합회와 전국연합회의 설",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787785",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "소비자 생협 소관부처 공정위→중기부로 바뀐다…13일 시행 새 창 열림",
+      "media_link": "https://www.news1.kr/industry/sb-founded/6340805",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "고용노동부",
+      "title": "\"예술 활동이 멈춘 때에도,  고용보험이 힘이 됩니다\" 근로복지공단, 방송 연기자 축제 찾아 예술인 고용·산재보험 안내",
+      "summary": "연기자·성우 등 1,500여 명 참여 행사에서 체험형 홍보, 1:1 현장 상담\n구직급여·출산전후급여부터 보험료 지원까지, 예술인에게 필요한 혜택 전달근로복지공단(이사장 박승흡)은 11월 3일 경기 고양종합운동장 보조경기장에서 열린 한국방송연기자노동조합 '한마당 축제'를 찾아 예술인 고용·산재보험의 가입 방법과 주요 혜택을 안내했다고 밝혔다. 예술인 고용보험은 문화예술용역 계약을 맺고 일하는 예술인이 실직하거나 출산으로 일을 쉬는 동안 생활 안정을 돕는 제도다. 일정 요건을 충족하면 실직 시 최대 270일간 구직급여를, 출산 시 90",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787784",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "보건복지부",
+      "title": "민관이 함께 자살예방·생명존중 위해 협력",
+      "summary": "민관이 함께 자살예방과 생명존중 협력 논의\n제9차 민관협의회 개최, 정부 6개 부처와 사회 각계 43개 기관 참여",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787780",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "자살 사망자 11개월 연속 감소…정부 \" 민관 협력 강화\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103041000530?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "과학기술정보통신부",
+      "title": "말하기 어려웠던 연구 현장의 목소리, 익명의 문자 한 통(1551-1441)으로 듣는다",
+      "summary": "과기정통부, 익명 소통 플랫폼, ｢R&D 대나무숲｣ 운영 착수\n본인 인증 없이 문자 한 통으로 어떤 의견이든 손쉽게 전송 가능",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787779",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "과학기술정보통신부",
+      "title": "과학 탐구의 결실 한자리에, 제72회 전국과학전람회 시상식 개최",
+      "summary": "대통령상·국무총리상 등 수상자 시상, 참가자들의 탐구 노력 격려\n지역대회부터 전국대회까지 이어진 한 해의 과학 탐구 여정 마무리",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787778",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "인사혁신처",
+      "title": "공무원미술전·공직문학상 수상자 한자리에",
+      "summary": "2026 공무원미술전 및 공직문학상 시상식 개최, 22일까지 미술작품 전시\n공직 경험과 일상 속 감성을 예술작품으로 표현하고, 창작 활동을 통해 공직사회에 활력을 더하기 위한 공무원미술전 및 공직문학상 시상식이 개최됐다. 인사혁신처(처장 최동석)와 공무원연금공단(이사장 김우호)은 3일 세종시립도서관 대강당에서 '2026년 공무원미술전 및 공직문학상' 시상식을 열었다고 밝혔다. 이날 행사는 '공무원미술전' 수상작 전시회 개막식과 시상식에 이어 '공직문학상' 시상식 순으로 진행됐으며, 공직문학상 수상자 47명과 공무원미술전 수상자 49",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787781",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "교육부",
+      "title": "지역 교육의 새로운 도약, 43개 교육혁신선도지역 시동",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787782",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "교육 혁신 선도 지역 선정에 대구·경북 '희비 교차' 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103101500053?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "고용노동부",
+      "title": "안전한 대불산단, 실천으로 이뤄낸다",
+      "summary": "산업안전보건본부장 중대재해 재발 방지를 위한 빈틈없는 안전관리 당부고용노동부 류현철 산업안전보건본부장은 11월 3일(화) 전남광주특별시 영암군 대불산단을 찾아 불시 현장점검을 한 뒤, 이어서 노·사 및 시민단체를 만나 안전한 대불산단을 만들기 위해 소통과 협력에 기반하여 꾸준히 실천해 나갈 것을 당부했다.대불산단은 조선 기자재 및 선박 블록 제조업체가 밀집해 있어 고위험 작업이 많은 특성상 산재사고가 지속적으로 발생하였다. 이에 이번 간담회는 유사·반복 사고를 방지할 수 있도록 현장 전반의 안전관리체계를 점검하고 중대재해 예방을 위",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787775",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "대불산단 조선업체 안전 난간·통로 미설치…노동부, 개선 요구 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261103_0003852697",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "고용노동부",
+      "title": "(참고) 산업안전보건본부장, 대불산단 불시점검",
+      "summary": "-고위험 작업현장에서의 안전조치 이행여부 집중 점검-일시적 시정조치 방지 및 사후관리를 통한 현장의 실질적 변화 강조고용노동부 류현철 산업안전보건본부장은 11월 3일(화) 오전 10시 반 대불산업단지에 위치한 조선업 사업장을 불시에 찾아 고소작업이나 화기작업 등 사고 발생 위험이 높은 작업시에 안전관리수칙을 제대로 준수하고 있는지 직접 점검했다.그 결과 단부 안전난간 및 작업발판 미설치, 승강용 사다리 등 안전통로 미설치, 용접기 배선의 절연피복 손상, 고소작업대 작업시 작업지휘자·유도자 미배치, 보행통로와 차량 운행구역 미구분 및",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787761",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "산업통상부",
+      "title": "외국인투자기업,  한국 산업의 든든한 동반자",
+      "summary": "2026 외국기업의 날 개최, 금탑산업훈장 등 외국인 투자유치 유공자 포상산업통상부(이하 산업부)는 외국인투자 유치에 기여한 외국인투자기업과 유관기관 관계자를 격려하기 위해 「2026 외국기업의 날」 기념식을 3일(화) 개최했다. 올해 26회째를 맞는 이번 행사는 박정성 통상교섭본부장이 참석해 지난해 역대 최대 외국인직접투자 실적 달성에 기여한 유공자들을 축하하고, 외국인투자기업의 투자 확대를 당부했다. 이날 행사에서 총 45점*의 훈·포장, 대통령·국무총리·장관 표창이 수여됐다.금탑산업훈장은 반도체 공정용 가스의 안정적 공급에 기",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787764",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "외국기업 날 …박일용 에어리퀴드코리아 의장 금탑 산업 훈장 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103028400003?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "고용노동부",
+      "title": "「고용상 연령차별금지 및 고령자고용촉진에 관한 법률 시행령」 및 「남녀고용평등과 일·가정 양립 지원에 관한 법률 시행령」 개정안 국무회의 심의·의결",
+      "summary": "정부는 11월 3일(화) 국무회의에서 고용노동부 소관 법령인 「고용상 연령차별금지 및 고령자고용촉진에 관한 법률 시행령」(약칭 고령자고용법 시행령) 개정안 및 「남녀고용평등과 일·가정 양립 지원에 관한 법률 시행령」(약칭 남녀고평법 시행령) 개정안을 심의의결했다. -고용상 연령차별금지 및 고령자고용촉진에 관한 법률 시행령 *시행일: '27.7.1.-소관 부서: 고령사회인력정책과(044-202-7514)* (재취업지원서비스 제도) 일정 규모 이상 사업주가 50세 이상 비자발적 이직예정자에 진로설계, 취업알선 등 재취업에 필요한 서비스",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787760",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "고용노동부",
+      "title": "폴리텍대학, 정규수업으로  '한국인정기구 합격증'까지 챙긴다",
+      "summary": "국가 공인기관 1,340여 곳의 필수 인력 교육을 캠퍼스에서 이수수업 한 번에 학점과 KOLAS 합격증까지…전국 캠퍼스 규모 확대 예정한국폴리텍대학(이사장 이철수)은 지난해 교정·시험 공통 2개 과정에 이어 지난 9월 길이·전기 분야 '정밀측정 기술교육' 2개 과정을 한국인정기구(KOLAS)로부터 추가 인정받아, 교정·시험 분야 총 4개 KOLAS* 인정 교육과정을 정규 교과목으로 운영한다고 밝혔다. 특히 전기 분야는 국내 대학 중 최초 인정이다.* 한국인정기구(KOLAS): Korea Laboratory Accreditation ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787759",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "국무조정실",
+      "title": "[보도자료] 행정규제기본법 시행령 개정안 국무회의 의결",
+      "summary": "'국민 생명·안전'은 한층 두텁게 보호, '철 지난 규제'는 보다 과감히 개선",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787762",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "국토교통부",
+      "title": "11월 12일부터 다세대·다가구주택  면적 제한 1,000㎡로 완화",
+      "summary": "다가구주택 층수도 3층에서 4층으로… 「건축법」 시행령 개정안 국무회의 의결",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787763",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "다세대·다가구주택 면적 제한 1천㎡로 완화 새 창 열림",
+      "media_link": "http://www.yonhapnewstv.co.kr/news/AKR20261103162408ro1",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "보건복지부",
+      "title": "보행 불편한 장애아동·어르신 주차 편의 높인다, 「장애인 등 편의증진법 시행령」 개정안 국무회의 의결",
+      "summary": "장애인전용주차구역 주차표지 발급 대상 확대\n시설 특성에 맞지 않는 편의시설 설치 의무 완화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787757",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "위탁부모·주야간보호시설차도 장애인 주차구역 이용 가능 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261103_0003852823",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "산업통상부",
+      "title": "해외 생산제품과 달라도 기술·기능 유사하면 국내복귀 인정",
+      "summary": "「해외진출기업의 국내복귀 지원에 관한 법률 시행령」 개정\n해외-국내사업장 간 업종 동일성 요건 등 국내복귀 인정요건 완화「해외진출기업의 국내복귀 지원에 관한 법률 시행령」 개정안이 11.3.(화) 국무회의에서 의결됐다. 이번 개정은 지난 5.29. 발표한 「유턴(국내복귀) 재정립 및 촉진방안」의 후속 조치로 국내복귀기업 인정요건을 완화해첨단산업·공급망 분야의 국내복귀를 촉진하기 위해 추진됐다. 우선, 해외사업장과 국내사업장에서 생산하는 제품·서비스가 같거나 유사해야 하는 요건*(동일성 요건)을 완화했다. 기존에는 소재·부품 및 생산",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787751",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "해외 생산 품과 달라도 기술·기능 유사하면 '유턴기업' 인정 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103087400003?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "산업통상부",
+      "title": "건축내화재 KS, 현장 제품 특성 반영과 안전성 강화 추진",
+      "summary": "지역별 기온 특성을 반영한 두께 다양화 및 화재 안전성 강화! 산업통상부 국가기술표준원(이하 국표원)은 건축내화재 KS 표준을 유통·사용되는 건축자재의 특성을 반영하고 화재안전을 강화하기 위해 석고보드·샌드위치패널 관련 국가표준(KS) 3종*을 11월 4일 개정하였다. * (샌드위치 패널) : KS F 4724(건축용 철강제 벽판), KS F 4731(건축용 철강제 지붕판)(석고보드) : KS F 3504 (석고보드 제품) 국표원은 한국내화건축자재협회의 국가표준(KS) 개정 요청에 따라 소관 전문위원회를 통한 전문가 검토와 건축업계",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787750",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "국표원, 건축내화재 KS 표준 안정성 강화 추진 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261103_0003852042",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "산업통상부",
+      "title": "K-수출스타 참여기업 수출액 34% 증가 '모두의 수출'  성과 확산",
+      "summary": "첨단 53%, 소비재 37%, 주력 17% 성장, 전 분야 수출액 증가\n내년도 지원 확대, 지역·업종·부처 간 연계 강화",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787748",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "' K-수출스타 ' 참여기업 수출액 34% 증가…내년도 지원 확대 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103041600003?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
+    {
+      "date": "2026-11-03",
+      "agency": "인사혁신처",
+      "title": "적극행정 공무원 보호 강화...'보호지원단' 신설",
+      "summary": "법률 상담 등 법적 대응 지원·적극행정위 활용도 강화, 「적극행정 운영규정」 개정안 국무회의 의결\n공무원이 수사·소송 등의 법적 부담을 덜고 적극행정을 추진할 수 있도록 법률 상담부터 대응까지 체계적으로 보호·지원하는 '적극행정 보호지원단'이 신설된다. 인사혁신처(처장 최동석)는 이 같은 내용을 담은「적극행정 운영규정」 개정안이 국무회의에서 의결됐다고 3일 밝혔다. 적극행정 공무원을 보호하고 적극행정위원회 활용을 강화하기 위한 이번 개정안은 오는 10일 시행된다. 먼저, 소송 비용 지원 절차를 간소화해 적극행정 공무원이 법적 부담 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787753",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "적극행정 공무원 보호 강화… 지원단 신설 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261103027200001?input=1195m",
+      "media_checked_at": "2026-11-03T20:26:14.966443+09:00"
+    },
     {
       "date": "2026-11-03",
       "agency": "교육부",
@@ -159,7 +543,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-03T12:45:46.465384+09:00"
+      "media_checked_at": "2026-11-03T20:33:28.703672+09:00"
     },
     {
       "date": "2026-11-03",
@@ -195,7 +579,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-03T12:45:46.465384+09:00"
+      "media_checked_at": "2026-11-03T20:33:28.703672+09:00"
     },
     {
       "date": "2026-11-03",
@@ -243,7 +627,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-03T12:45:46.465384+09:00"
+      "media_checked_at": "2026-11-03T20:33:28.703672+09:00"
     },
     {
       "date": "2026-11-03",
@@ -291,7 +675,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-03T12:45:46.465384+09:00"
+      "media_checked_at": "2026-11-03T20:33:28.703672+09:00"
     },
     {
       "date": "2026-11-03",
