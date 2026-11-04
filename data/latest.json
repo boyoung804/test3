@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "collected_at": "2026-11-05T03:41:36.259053+09:00",
+  "collected_at": "2026-11-05T08:58:40.649184+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,78 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-11-05",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 산·학·관 협력으로 임상시험 통계 전문성 높인다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788010",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "\" 산·학·관 협력해 전문성↑\"…임상통계 콘퍼런스 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261105_0003855630",
+      "media_checked_at": "2026-11-05T08:57:09.211011+09:00"
+    },
+    {
+      "date": "2026-11-05",
+      "agency": "문화체육관광부",
+      "title": "신임 국립장애인도서관 관장에 전영환 씨 임명",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788009",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "국립장애인도서관 장에 전영환씨 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261105025400005?input=1195m",
+      "media_checked_at": "2026-11-05T08:57:09.211011+09:00"
+    },
+    {
+      "date": "2026-11-05",
+      "agency": "문화체육관광부",
+      "title": "민관이 함께 '케이-콘텐츠' 해외 침해 대응 방안 모색",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788008",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "민관이 함께 K-콘텐츠 수호…'제10차 해외지식재산보호협의체' 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261104175300005?input=1195m",
+      "media_checked_at": "2026-11-05T08:57:09.211011+09:00"
+    },
+    {
+      "date": "2026-11-05",
+      "agency": "문화체육관광부",
+      "title": "한-아세안, '문화 지식재산'으로 지속 가능한 문화협력 모색",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788007",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "지속 가능한 문화 IP 협력 논의…'2026 한-아세안 문화 혁신 포럼' 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261104176600005?input=1195m",
+      "media_checked_at": "2026-11-05T08:57:09.211011+09:00"
+    },
+    {
+      "date": "2026-11-05",
+      "agency": "국토교통부",
+      "title": "고속철도 통합 60일, 하루 32.2만 명 이용 … 예매·객실 서비스 개선 이어간다",
+      "summary": "일평균 이용객 전년 동기 대비 12.6% 증가…수서 축은 29.5% 늘어",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787999",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "고속철도 통합 60일, 하루 32만명 이용…수서발 이용객 30%↑ 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261104145800003?input=1195m",
+      "media_checked_at": "2026-11-05T08:57:09.211011+09:00"
+    },
+    {
+      "date": "2026-11-05",
+      "agency": "기후에너지환경부",
+      "title": "한중일 환경과학원장 한자리에, 동북아 환경협력 강화한다",
+      "summary": "제22차 한중일 환경과학원장회의 참가, 동북아시아 환경질 개선 논의▷ 해양 생태계 통합 관리 및 대기질 개선 등 실질적 협력 방안 모색기후에너지환경부 소속 국립환경과학원(원장 김영우)은 11월 5일부터 이틀간 중국 광저우 생태환경과학센터에서 열리는 '제22차 한중일 환경과학원장회의'에 김영우 국립환경과학원장이 참석한다고 밝혔다.한중일 환경과학원장회의는 동북아시아의 주요 환경 현안에 3국이 공동으로 대응하기 위해 2004년부터 매년 열리고 있는 국제회의로 황사, 초미세먼지 등 동북아 환경문제 해결을 위한 연구 협력의 토대를 제공해 왔",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788000",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "한중일 환경과학원장 한자리에…동북아 환경 협력 강화 논의 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261104_0003855014",
+      "media_checked_at": "2026-11-05T08:57:09.211011+09:00"
+    },
     {
       "date": "2026-11-05",
       "agency": "인사혁신처",
