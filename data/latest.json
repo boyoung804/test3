@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "collected_at": "2026-11-08T17:00:55.557685+09:00",
+  "collected_at": "2026-11-08T23:56:06.806600+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -31,15 +31,27 @@
   "items": [
     {
       "date": "2026-11-08",
+      "agency": "산업통상부",
+      "title": "한류 열기 타고 K-소비재,  대양주 시장 공략한다",
+      "summary": "대양주 최초 「2026 멜버른 한류박람회」 개최\n국내 101개사, 바이어 144개사 참여, 18백만불 규모 MOU・계약 체결",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788333",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "K-소비재, 대양주 공략…호주 한류박람회 서 1천800만달러 계약 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261108014500003?input=1195m",
+      "media_checked_at": "2026-11-08T23:54:53.114854+09:00"
+    },
+    {
+      "date": "2026-11-08",
       "agency": "고용노동부",
       "title": "고용보험 부정수급, 지금 신고하세요! 자진신고하면 추가징수 면제",
       "summary": "고용노동부, 11.9.~12.31. 고용보험 부정수급 집중신고기간 운영\n실업급여 반복수급해외체류 중 의심사례 특별점검 병행  고용노동부는 11월 9일부터 12월 31일까지 '2026년 하반기 고용보험 부정수급 집중신고기간'을 운영한다고 밝혔다.  이번 집중신고기간은 실업급여, 육아휴직급여 등 모성보호급여와 고용장려금, 직업능력개발사업 등 고용보험사업 전반의 부정수급에 대한 자진신고와 국민 제보를 활성화하기 위해 운영된다. 부정수급 사실을 자진신고하면 추가징수를 면제받을 수 있고, 부정수급을 제보하면 신고포상금을 받을 수 있다.  자",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788331",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-08T16:57:51.722995+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "고용보험 부정수급 자진 신고 하면 추가징수 면제…제보시 포상금 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261106164300530?input=1195m",
+      "media_checked_at": "2026-11-08T23:55:07.761182+09:00"
     },
     {
       "date": "2026-11-08",
@@ -48,10 +60,10 @@
       "summary": "11월 9일부터 20일까지 튀르키예 안탈리아에서 유엔기후협약 당사국총회 개최▷ 튀르키예(의장국)-호주(협상의장국) 새로운 협력체계 아래, 지구온도 상승 1.5℃ 제한 목표 초과 최소화와 파리협정의 실질적 이행 가속화 논의▷ 지구적 전기화 확대와 함께 온실가스 감축 협력 방안, 기후적응 지표 구체화, 정의로운 전환 지원체계 및 기후재원 확대방안 등 논의 전망기후에너지환경부(장관 김성환)는 제31차 유엔기후변화협약 당사국총회(UNFCCC COP31)가 11월 9일부터 20일까지 튀르키예 안탈리아*에서 개최된다고 밝혔다.* 튀르키예 남부",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788330",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-08T16:57:51.722995+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "31차 유엔기후변화협약 총회 9일 개막 …작은 기대 속 성과 낼까 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261107054100530?input=1195m",
+      "media_checked_at": "2026-11-08T23:55:07.761182+09:00"
     },
     {
       "date": "2026-11-08",
@@ -60,10 +72,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788329",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-08T16:57:51.722995+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "청년 의견 이 정책부서로…국토부, 청년자문단·온라인패널 모집 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261108015300003?input=1195m",
+      "media_checked_at": "2026-11-08T23:55:07.761182+09:00"
     },
     {
       "date": "2026-11-08",
@@ -72,10 +84,10 @@
       "summary": "",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788328",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-08T16:57:51.722995+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "\"미래 철도 망 그림 국민과 함께\"…정부, 13일 의견수렴 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261108025000003?input=1195m",
+      "media_checked_at": "2026-11-08T23:55:07.761182+09:00"
     },
     {
       "date": "2026-11-08",
