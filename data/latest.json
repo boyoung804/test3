@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "collected_at": "2026-11-09T11:44:25.766572+09:00",
+  "collected_at": "2026-11-09T19:25:33.131468+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -29,6 +29,246 @@
     "식품의약품안전처"
   ],
   "items": [
+    {
+      "date": "2026-11-09",
+      "agency": "외교부",
+      "title": "2차관, 국제수로기구(IHO) 사무총장 접견",
+      "summary": "김진아 외교부 2차관은 방한 중인 루이지 시나피(Luigi Sinapi) 국제수로기구(IHO) 사무총장을 11.9.(월) 서울 외교부 청사에서 접견하고, 부산에 설립되는 IHO 인프라센터 및 향후 한-IHO 간 협력 증진 방안 등에 대해 논의했다.  김 차관은 당일 오전 진행된 IHO 인프라센터 설립협정 서명을 축하하고, 100년 넘는 역사를 지닌 IHO의 최초의 역외 조직이 대한민국에 설립된다는 것은 우리나라의 수로 분야 역량 및 기여가 국제사회로부터 인정받았다는 점에서 의미 있다고 평가하였다.  아울러, 김 차관은 우리 정부가 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788476",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "산업통상부",
+      "title": "헝가리 진출 배터리 기업,  친환경 파트너쉽 강화",
+      "summary": "통상교섭본부장, 11.9일 헝가리 부총리, 경제에너지부·지역개발부 장관 면담\n우리 기업 애로 해소 및 안정적 투자환경 조성 당부",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788475",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "통상본부장, 헝가리 부총리 면담…배터리 기업 지원사격 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109097200003?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "과학기술정보통신부",
+      "title": "배경훈 부총리, 국제전기통신연합 전권회의에서 국제 디지털 협력 강화",
+      "summary": "고위급 정책연설 등을 통해 한국의 인공지능·디지털 정책 미래상 공유\n국제전기통신연합 이사국, 전파규칙위원회 위원 선거 출마, 국제 정보통신기술 협력 확대 추진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788469",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "배경훈 부총리 , ITU 전권회의 참석…이사국 10선 연임 도전 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003860283",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "외교부",
+      "title": "강금실 글로벌기후환경대사, 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의에 대통령 특사로 참석",
+      "summary": "강금실 글로벌기후환경대사는 2026.11.11.(수)~12.(목) 튀르키예 안탈리아에서 개최되는 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의에 대통령 특사로 참석할 예정이다.     ※ 정상회의 공식명칭 : 「Antalya Leaders Summit」    금번 정상회의에는 튀르키예, 호주, 영국, 브라질 등 약 80여 개국의 정상급 인사가 참석할 예정이다. COP31 정상회의는 각국 지도자들이 기후변화 대응을 위한 정치적 의지를 표명하고 국제사회의 협력 의지를 결집함으로써, 기후행동의 실질적 이행을 촉진하고 다자 기후",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788468",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "강금실 기후환경대사 , 유엔 기후 총회에 대통령특사로 참석 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109134000504?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "국토교통부",
+      "title": "전남광주 어르신, 카드 한 장으로 도시철도 무료·교통비 환급",
+      "summary": "'전남광주어르신교통 모두의카드 하나 체크카드', 12월 7일부터 발급 가능",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788462",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "전남광주 어르신 카드 한 장으로 도시철도 무료· 교통 비 환급 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003859890",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "고용노동부",
+      "title": "(참고) 고용노동부 서산지청,  부당노동행위 혐의  압수·수색 실시",
+      "summary": "충남 서산시 소재 자동차 제조업체 원하청 대상 실시고용노동부 서산지청(지청장 김경민)은 11.9.(월) 오전 9시경부터 노동감독관 20여 명을 투입하여 충남 서산시 소재 자동자 제조업체인 원청업체 A사와 하청업체 3개 사에 대해 압수수색 중이라고 밝혔다.이번 압수수색은 지난 6월에 실시한 수시근로감독 과정에서 노동조합 활동에 지배개입(노조 탈퇴 강요)한 부당노동행위 혐의가 일부 확인되어 노동조합 및 노동관계조정법 위반 여부 입증을 위한 추가 증거 확보를 위해 실시하는 것이다.고용노동부 서산지청은 압수수색을 통해 확보되는 자료 등을 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788456",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "노동부 서산지청 , 부당노동행위 혐의 자동차 제조업체 압수수색(종합) 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109105351063?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "보건복지부",
+      "title": "환자 안전과 인권 보호 위해 연말까지 정신의료기관 운영실태 릴레이 합동점검",
+      "summary": "입원환자 사망사건이 잇따라 발생한 인천 원병원 시작으로 연말까지 집중점검\n의료인력 배치 및 부당 격리·강박 여부 등 확인… 부당청구 적발 시 환수 조치 병행",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788452",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "복지부 , 연말까지 정신의료기관 릴레이 합동 점검 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003860554",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "과학기술정보통신부",
+      "title": "국산 NPU, 엔비디아 시스템과 연계해 글로벌 AI 인프라 시장 진출 길 연다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788455",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[AI픽] 국산 NPU , 엔비디아와 손잡고 글로벌 AI 시장 공략 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109045800017?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "과학기술정보통신부",
+      "title": "과기정통부, 전직급 인공지능 대화형 코딩으로 행정혁신 앞당긴다",
+      "summary": "관리자부터 실무자까지 대화형 코딩 실습 교육으로 인공지능 활용 역량 제고\n국산 인공지능 모델을 활용해 소프트웨어 개발 및 업무방식 변화 직접 체험",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788451",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "실·국장도 AI 바이브코딩 배운다… 과기정통부 전 직급 교육 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109075600017?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "교육부",
+      "title": "스마트 안경 관련 내신평가 부정행위 전수조사 결과",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788440",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "중·고교 내신시험도 뚫렸다…' 스마트안경 커닝' 올해 4건 적발 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109073700530?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "교육부",
+      "title": "수능 수험생 여러분, 전자기기 가져오지 마세요!",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788439",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "교육부",
+      "title": "교육부-일본 문부과학성, 교육행정 교류로 상호이해와 협력 강화",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788438",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "교육부 , 일본 문부과학성 과 AI교육 등 협력 논의 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109043000530?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "교육부",
+      "title": "교육부, 맞춤형 현장 자문으로 학생 마음건강 안전망 강화",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788437",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "학생 마음건강 안전망 강화… 교육부, 기관 9곳에 맞춤형 자문 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109076300530?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "보건복지부",
+      "title": "\"중독 예방·치료·회복, 함께 만드는 변화\" '2026 중독예방·치료·회복 주간' 운영",
+      "summary": "「중독예방·치료·회복 주간」 최초 추진, 국립정신건강센터 중독 심포지엄 등 행사 개최\n11월 10일부터 13일까지 국립정신건강센터 등 전문기관 협력, 예방부터 회복까지 통합 대응 체계 모색",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788434",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "\" 중독 치료 는 '반복 훈련'…규칙·약속 실천해야 회복 \" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109044800530?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "과학기술정보통신부",
+      "title": "'26년 11월 '대한민국 엔지니어 상' 수상자 선정",
+      "summary": "선박 부식 방지 및 해양생물 부착 방지 도료 개발, 삼성중공업㈜ 황향안 그룹장",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788461",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "행정안전부",
+      "title": "행정안전부, '2027년 생활권 보행환경 종합정비사업' 대상지 5곳 선정",
+      "summary": "전국 11개 시·도 18개 지구 신청, 단계별 심사를 거쳐 최종 5개 지구 선정\n보행안전시설 정비와 가로환경 개선으로 안전하고 쾌적한 보행환경 조성    행정안전부(장관 윤호중)는 보행자의 안전과 편의를 높이고 쾌적한 보행환경을 조성하기 위한 '2027년 생활권 보행환경 종합정비사업' 대상지 5개 지구를 최종 선정했다고 밝혔다. ※ 선정지구: 대구 수성구, 경기 파주시, 충북 음성군, 충남 아산시, 전북 김제시  이번 공모에는 전국 11개 시·도에서 총 18개 지구가 신청했으며, 서면심사를 통과한 11개 지구를 대상으로 현장실사와 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788444",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "대구수성·파주·음성·아산·김제, 보행환경 개선에 최대 60억 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109058700530?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "행정안전부",
+      "title": "'차세대 지방행정공통시스템 구축 통합사업 설명회' 개최",
+      "summary": "11월 13일(금) 한국지역정보개발원서 개최, 국내 우수 IT 및 솔루션 기업 대상 주요 내용 안내\nAI 민주정부 대규모 정보화 사업, 관심 있는 IT 및 솔루션 기업의 참여 기회 마련",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788442",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "' 차세대 지방행정 시스템 구축' 사업설명회…청년개발자 기회독려 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109052700530?input=1195m",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "기후에너지환경부",
+      "title": "국립공원 자원봉사자 구슬땀 결실… 경북 안동서 참여자 교류 행사",
+      "summary": "제21회 전국 국립공원 자원봉사자 대회 개최, 800여 명 참여 우수 봉사자 포상  기후에너지환경부 산하 국립공원공단(이사장 주대영)은 전국 국립공원 현장에서 활동한 자원봉사자의 헌신을 기리고, 국립공원별 활동 성과와 우수 사례를 공유하기 위해 11월 10일 안동국제컨벤션센터(경북 안동시 소재)에서 제21회 국립공원 자원봉사자 대회를 개최한다고 밝혔다.올해 21회째를 맞이한 국립공원 자원봉사자 대회는 2002년부터 이어져 온 행사다. 전국의 국립공원 자원봉사자가 함께 소통하고 공감하며 지속적으로 자원봉사에 참여할 수 있는 기반을 확",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788435",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "국립공원 지킴이 800명 안동에…10일 ' 국립공원 자원봉사자 대회' 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003859995",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "기후에너지환경부",
+      "title": "고농도 초미세먼지 발생… 실전처럼 훈련하고 빈틈없이 대응한다",
+      "summary": "기후부, 11월 10~11일 관계부처·16개 지방정부와 합동 모의훈련 실시▷ 고농도 초미세먼지 발생 상황을 가정하여 위기경보 발령부터 비상저감조치까지 실전 대응역량 점검기후에너지환경부(장관 김성환)는 고농도 초미세먼지(PM-2.5) 발생에 대비해 11월 10일부터 11일까지 관계부처, 16개 지방정부와 함께 '2026년 초미세먼지 재난대응 모의훈련'을 실시한다고 밝혔다.이번 훈련은 겨울철 고농도 초미세먼지 발생 가능성에 대비해 관계기관의 신속한 대응체계를 점검하고, 실제 재난상황에서 국민의 건강 피해를 최소화하기 위해 실시한다.초미",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788436",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "고농도 초미세먼지 발생하면… 기후 부, 관계부처·지자체와 대응 점검 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003859824",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
+    {
+      "date": "2026-11-09",
+      "agency": "통일부",
+      "title": "「한반도 평화관광협력 국제세미나」 개최",
+      "summary": "분단을 넘어선 세계의 경험에서한반도 평화관광의 길을 찾는다\n「한반도 평화관광협력 국제세미나」 11월 10일 개최",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788454",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "10일 ' 한반도 평화관광협력 국제세미나 '… 국제 협력 모색 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003860324",
+      "media_checked_at": "2026-11-09T19:19:41.676658+09:00"
+    },
     {
       "date": "2026-11-09",
       "agency": "재정경제부",
@@ -192,10 +432,10 @@
       "summary": "-2026년 국민내일배움카드 우수사례 공모전 시상식 개최...장관상 7점 포함 우수사례 30점 선정-직업훈련 만족도 10점 만점에 9.2점...응답자 89.9% \"수강한 훈련과정 추천하고 싶다\"고용노동부(장관 김영훈)는 11월 9일(월) 2026년 국민내일배움카드 우수사례 공모전 시상식을 개최했다. 국민내일배움카드는 취업과 직무능력 향상에 필요한 직업훈련 비용을 지원하는 제도다.이번 공모전은 국민내일배움카드를 활용해 새로운 직무 역량을 쌓고 취업·창업에 성공한 사례를 발굴하여, 직업훈련을 통한 도전과 성취의 경험을 알리기 위해 마련",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788405",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-09T11:36:56.306445+09:00"
+      "media_press": "뉴시스",
+      "media_title": "6년 군 복무 후 취업난…내일배움카드로 '합격률 4%' 뚫었다 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261109_0003859849",
+      "media_checked_at": "2026-11-09T19:24:39.356906+09:00"
     },
     {
       "date": "2026-11-09",
@@ -207,7 +447,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-09T11:36:56.306445+09:00"
+      "media_checked_at": "2026-11-09T19:24:39.356906+09:00"
     },
     {
       "date": "2026-11-09",
@@ -216,10 +456,10 @@
       "summary": "감독 결과, 92건 위반 13건 사법처리, 과태료 8천 6백만원 등\n컨베이어 끼임 방지조치 미실시, 체인 덮개 미설치 등 끼임 사고 예방조치 미흡",
       "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788403",
       "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-09T11:36:56.306445+09:00"
+      "media_press": "연합뉴스",
+      "media_title": "노동자 2명 숨진 아워홈 , 안전 조치 미흡·불법파견 등 92건 적발 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261109045400530?input=1195m",
+      "media_checked_at": "2026-11-09T19:24:39.356906+09:00"
     },
     {
       "date": "2026-11-09",
@@ -267,7 +507,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-09T11:36:56.306445+09:00"
+      "media_checked_at": "2026-11-09T19:24:39.356906+09:00"
     },
     {
       "date": "2026-11-09",
