@@ -1,6 +1,6 @@
 {
   "date": "2026-11-12",
-  "collected_at": "2026-11-12T03:23:16.278552+09:00",
+  "collected_at": "2026-11-12T10:02:01.719219+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -31,6 +31,210 @@
   "items": [
     {
       "date": "2026-11-12",
+      "agency": "법무부",
+      "title": "겨울철 대비 계절근로자 숙소 문제, 1345로 신고하세요",
+      "summary": "법무부, 계절근로자의 주거환경 보호 조치 강화\n법무부(장관 직무대행 차관 이진수)는 겨울철을 앞두고 외국인 계절근로자의 안전한 주거환경 확보 및 숙소기준 위반으로 인한 인권침해를 예방하기 위해 '1345 외국인종합안내센터'를 통해 계절근로자 숙소기준 위반 신고를 본격 접수한다고 밝혔습니다.[※ 상세내용 첨부파일 참조]",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788865",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "국무조정실",
+      "title": "[보도자료] 2026 지속가능발전 국제 심포지엄 개최",
+      "summary": "남은 4년이 '2030 이후'를 결정한다2026 지속가능발전 국제심포지엄 개최",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788857",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "고용노동부",
+      "title": "고용노동부, 금년 마지막 5회차외국인노동자(E-9) 고용허가 접수 안내",
+      "summary": "신규 고용허가 신청·접수(11.23.~11.27.)\n고용노동부(장관 김영훈)은 11월 23일부터 11월 27일까지 전국 지방고용노동관서를 통해 2026년도 마지막인 5회차 외국인노동자(E-9) 신규 고용허가 신청을 받는다.5회차 신규 고용허가 규모는 전체 6,699명(제조업 4,510명, 농·축산업 954명, 어업 897명, 건설업 198명, 서비스업 140명)이며, 업종별 초과 수요가 있을 경우 탄력배정분(1만명)을 적극 활용할 예정이다.이번 5회차부터는 한국산업인력공단에서 실시하는 인권보호 및 핵심 기초노동법 집합교육을 이수하는",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788842",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "노동부 , 23∼27일 올해 마지막 외국인노동자 고용 허가 접수 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261111148100530?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "고용노동부",
+      "title": "위기 앞에서도 빛난 노사 신뢰! 2026년 노사문화대상 10개 사 선정",
+      "summary": "-삼양화성(주) 전주공장, 노조가 먼저 손 내민 상생을 통해 위기 극복-에스케이트리켐(주), 대형 화재의 아픔을 노사 합심으로 이겨냄 고용노동부(장관 김영훈)는 노사 간 두터운 신뢰와 협력을 바탕으로 상생의 일터를 만들어 위기를 극복해 낸 우수기업 10개 사를「2026년 노사문화대상」 수상기업으로 선정했다고 밝혔다. 이번 노사문화대상은 최근 3년간 '노사문화 우수기업'으로 인증받은 기업들의 신청을 받아 서류심사와 현지실사, 사례 발표 심사를 거쳐 선정되었다. 대통령상은 삼양화성㈜ 전주공장과 에스케이트리켐㈜, 국무총리상은 한국농수산식",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788841",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "산업통상부",
+      "title": "유럽연합 탄소국경조정제도(CBAM)  국내 첫 검증기관 인정",
+      "summary": "국내 검증기관 1곳, 유럽연합 회원국 인정기구로부터 국내 최초 탄소국경조정제도 검증기관 인정…산업부-기후부 협업 성과\n수출기업, 해외 의존 없이 국내에서 배출량 검증하여 비용 절감 및 생산정보 유출 우려 해소…검증기관 추가 인정되도록 정부 지원 지속 산업통상부(장관 김정관)와 기후에너지환경부(장관 김성환)는 국내 검증기관 1곳(한국표준협회)이 11.5.(목) 이탈리아 국가인정기구(Accredia)로부터 국내 최초로 유럽연합(EU) 탄소국경조정제도(CBAM)* 검증기관 인정을 받았다고 밝혔다. * 유럽연합으로 수출되는 탄소집약적 제품",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788844",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "EU 탄소국경조정제도 국내 첫 검증기관 인정…수출기업 부담 완화 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261111_0003864230",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "보건복지부",
+      "title": "양극화 대응 TF 총괄반 1차 회의 개최 모두의 성장으로 대전환을 위해 전 부처 역량 결집",
+      "summary": "양극화 대응 추진방향 발표 직후 TF 총괄반 즉시 가동(재경부·복지부차관 공동팀장)",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788838",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "양극화 완화 TF 가동…\"재정·세제·금융·규제개선 등에 집중\" 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112030700002?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "문화체육관광부",
+      "title": "대중문화예술 작품 뒤 숨은 주역 10명(팀),  무대 위 주인공으로",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788837",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "문화체육관광부",
+      "title": "문화진흥 4개 기관 통합 추진으로  국민 문화 향유 혁신 기반 마련한다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788836",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "문체부, 문화진흥 관련 기관 통합…한국 문화진흥 원 설립 추진 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112021000005?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "문화체육관광부",
+      "title": "공개토론회로 「관광진흥법」 시행규칙 개정안 의견 수렴",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788835",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "'쇼핑점-단체여행사 적정 수수료 비율은'…문체부, 내일 토론회 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112030600030?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "문화체육관광부",
+      "title": "'2026 오늘전통축제' 개막, 전통문화를 오늘의 즐거움으로",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788834",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "일상 속 즐거움이 된 전통문화…12∼15일 ' 2026 오늘전통축제 ' 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112027400005?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "문화체육관광부",
+      "title": "인공지능과 저작권의 상생 모델 모색",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788833",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "LG AI연구원, AI로 저작권 침해 위험 분석…국가지식재산위원장상 새 창 열림",
+      "media_link": "https://www.news1.kr/industry/general-industry/6342197",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 한국-유럽 의료기기 규제정보 공유로 해외시장 진출 지원",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788832",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "제약바이오협회·코트라, 의약품 해외 규제 대응 지원 강화 새 창 열림",
+      "media_link": "https://www.news1.kr/bio/pharmaceutical-bio/6319843",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 유럽 주요 위해평가기관과 식품안전협력 강화",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788831",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "식품의약품안전처",
+      "title": "식약처, PICS 평가국 참여 글로벌 의약품 규제 위상 강화",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788830",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 필수 항암·항생제 3품목 주문 제조로 국내 안정공급 강화",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788829",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "식약처, 항암제·항생제 3종 국내 주문 제조…연내 공급 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112027700017?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "국토교통부",
+      "title": "전세사기피해자등 480건 추가 결정",
+      "summary": "「전세사기피해자법」 제정('23.6.1.) 이후 피해자등 누적 42,039건 결정",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788827",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "전세사기 피해자 누적 4만2천39명…피해주택 매입 1만1천542호 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112013600003?input=1195m",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
+      "agency": "기후에너지환경부",
+      "title": "유럽연합 탄소국경조정제도(CBAM) 국내 첫 검증기관 인정",
+      "summary": "국내 검증기관 1곳, 유럽연합 회원국 인정기구로부터 국내 최초 탄소국경조정제도 검증기관 인정…기후부-산업부 협업 성과▷ 수출기업, 해외 의존 없이 국내에서 배출량 검증하여 비용 절감 및 생산정보 유출 우려 해소… 검증기관 추가 인정되도록 정부 지원 지속기후에너지환경부(장관 김성환)와 산업통상부(장관 김정관)는 국내 검증기관 1곳(한국표준협회)이 11월 5일자로 이탈리아 국가인정기구(Accredia)로부터 국내 최초로 유럽연합(EU) 탄소국경조정제도(CBAM)* 검증기관 인정을 받았다고 밝혔다. * 유럽연합으로 수출되는 탄소집약적 제",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788828",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "EU 탄소국경조정제도 국내 첫 검증기관 인정…수출기업 부담 완화 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261111_0003864230",
+      "media_checked_at": "2026-11-12T09:57:05.119103+09:00"
+    },
+    {
+      "date": "2026-11-12",
       "agency": "과학기술정보통신부",
       "title": "얇은 렌즈로 밝은 야외에서도 뚜렷하게, 일상 속 증강현실 안경에 한 걸음",
       "summary": "포항공대·삼성리서치 연구팀, 두께 1.5mm 증강현실 광학계 구현...네이처 게재",
@@ -39,7 +243,7 @@
       "media_press": "",
       "media_title": "",
       "media_link": "",
-      "media_checked_at": "2026-11-12T03:23:04.304522+09:00"
+      "media_checked_at": "2026-11-12T10:01:11.691820+09:00"
     }
   ]
 }
