@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "collected_at": "2026-11-13T01:46:12.100985+09:00",
+  "collected_at": "2026-11-13T07:29:28.392952+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,54 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-11-13",
+      "agency": "과학기술정보통신부",
+      "title": "제27차 한·불 원자력 공동조정위원회 개최",
+      "summary": "한·불 정상회담 후속조치로 원자력공동조정위원회 수석대표 격상\n원자력 연구개발, 안전, 산업 등 3개 분야 21개 의제 협의",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789073",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "韓·佛 원자력공동위 개최…차세대 원전 SMR·핵주기 협력 확대 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261112_0003865759",
+      "media_checked_at": "2026-11-13T07:28:22.655323+09:00"
+    },
+    {
+      "date": "2026-11-13",
+      "agency": "기후에너지환경부",
+      "title": "제27차 한·불 원자력공동조정위원회 개최",
+      "summary": "한·불 정상회담 후속조치로 원자력공동조정위원회 수석대표 격상▷ 원자력 연구개발, 안전, 산업 등 3개 분야 21개 의제 협의  【관련 국정과제】 26-4. 전략적 과학기술 국제협력으로 기술 주권 확보과학기술정보통신부(부총리 겸 장관 배경훈, 이하 '과기정통부')와 기후에너지환경부(장관 김성환, 이하 '기후부')는 프랑스 원자력·대체에너지청(CEA)과 공동으로 11월 12일(목)부터 11월 13일(금)까지 양일간 프랑스 사클레에서 제27차 한·불 원자력공동조정위원회(이하 '공동위')를 개최하였다고 밝혔다.'81년 「한·불 원자력 협력",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789074",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "韓·佛 원자력공동위 개최…차세대 원전 SMR·핵주기 협력 확대 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261112_0003865759",
+      "media_checked_at": "2026-11-13T07:28:22.655323+09:00"
+    },
+    {
+      "date": "2026-11-13",
+      "agency": "국토교통부",
+      "title": "물류기업과 기술기업이 만나는  '협업의 장' 열린다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789071",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "국토부, 물류 · 기술기업 '협업의 장' 연다…1대1 매칭도 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261112156400003?input=1195m",
+      "media_checked_at": "2026-11-13T07:28:22.655323+09:00"
+    },
+    {
+      "date": "2026-11-13",
+      "agency": "기후에너지환경부",
+      "title": "땅속 깊은 곳까지 더 안전하게… 지하수 조사 표준 마련",
+      "summary": "시추공 기반 심부 지질환경의 수리지질특성화 절차 국가표준 2종 제정기후에너지환경부 소속 국립환경과학원(원장 김영우)은 시추공 기반으로 땅속 깊은 곳의 지하수 특성을 조사하는 수리지질특성화 절차에 관한 고유표준 2건*을 개발하여 11월 13일에 국가표준(KS)으로 제정·고시한다고 밝혔다.* KS I 0957-1 「시추공 기반 심부 지질환경의 수리지질특성화  제1부: 개요」, KS I 0957-2 「시추공 기반 심부 지질환경의 수리지질특성화  제2부: 시추공 설계」이번 국가표준 제정은 지하 연구시설, 방사성 폐기물 처분시설, 석유 비축",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789072",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "국립 환경 과학원, 심부 지하수 조사 절차 국가표준 2종 마련 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261112_0003866084",
+      "media_checked_at": "2026-11-13T07:28:22.655323+09:00"
+    }
+  ]
 }
