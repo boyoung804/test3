@@ -1,6 +1,6 @@
 {
   "date": "2026-11-15",
-  "collected_at": "2026-11-15T05:58:47.267344+09:00",
+  "collected_at": "2026-11-15T09:58:22.234116+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,42 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-11-15",
+      "agency": "교육부",
+      "title": "데이터로 읽는 우리 교육 제18호 발간",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789247",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-15T09:57:40.376749+09:00"
+    },
+    {
+      "date": "2026-11-15",
+      "agency": "교육부",
+      "title": "의과대학 교육의 새로운 변화, 우수사례 8편 선정",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789246",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "교육 부, 의대 교육 혁신 우수사례 8편 선정 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261113134800530?input=1195m",
+      "media_checked_at": "2026-11-15T09:57:40.376749+09:00"
+    },
+    {
+      "date": "2026-11-15",
+      "agency": "외교부",
+      "title": "한-투르크메니스탄 세관상호지원협정 발효",
+      "summary": "한-투르크메니스탄 정상회담(2026.9.15.) 계기에 서명된 ｢대한민국 정부와 투르크메니스탄 정부 간의 세관 분야에서의 협력 및 상호 지원에 관한 협정(한-투르크메니스탄 세관상호지원협정)｣이…",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789245",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "한-투르크메니스탄 세관상호지원협정 발효…정보교환 협력 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261115014200504?input=1195m",
+      "media_checked_at": "2026-11-15T09:57:40.376749+09:00"
+    }
+  ]
 }
