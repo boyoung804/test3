@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "collected_at": "2026-11-16T05:18:38.544772+09:00",
+  "collected_at": "2026-11-16T09:05:54.329035+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,138 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-11-16",
+      "agency": "문화체육관광부",
+      "title": "고속철도 통합한 국토교통부, 청소년 사이버도박 자진신고 독려한 경찰청, 국민이 정책 소통 혁신 사례로 뽑아",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789284",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "정책 소통 최우수 사례에 국토교통부 'KTX·SRT 통합 홍보' 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261116015000005?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "문화체육관광부",
+      "title": "'제4회 문화·체육·관광 디지털혁신 포럼', 인공지능으로 새로운 문화 만나다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789283",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "AI가 만드는 문화·체육·관광 변화…문체부 '디지털혁신 포럼' 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261116017300005?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 혁신의료기기 정책 포럼 2026 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789282",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "갤럭시워치, 수면 중 호흡 장애 3단계 분석… 식약처 허가 획득 새 창 열림",
+      "media_link": "https://www.news1.kr/it-science/mobile/6334258",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, GMO 완전표시제 시행 앞두고 업계 설명회 개최",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789281",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "\" GMO 완전표시제 코앞\"…권역별 설명회 개최 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261116_0003868978",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "식품의약품안전처",
+      "title": "식약처, 수능 대비 마약류 등 의약품 온라인 불법 판매·알선 점검…571건 적발",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789280",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "수능 앞두고 '집중력약' 둔갑한 마약류…불법게시물 571건 적발 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261116018900017?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "외교부",
+      "title": "강금실 대통령 특사, 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의 활동 성료",
+      "summary": "'제31차 유엔기후변화협약 당사국총회(COP31) 정상회의(11.11.(수)-12.(목), 튀르키예 안탈리아)'에 대통령 특사로 참석한 강금실 글로벌기후환경대사는 11.12.(목) 정상회의 연설을 통해 기후위기 대응을 위한 국제사회의 공동 행동을 촉구하는 한편, 한국의 녹색 대전환 의지를 표명하는 등 대통령 특사로서의 임무를 성공적으로 완수하였다.       ※ 정상회의 공식명칭 : 「Antalya Leaders Summit」 강 특사는 11.12.(목) 정상회의 국별 기후 메시지 발언을 통해 기후위기 대응을 위해서는 국제사회의 공",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789279",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "강금실 특사, COP31서 한국의 '녹색 대전환' 의지 표명 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261116012200504?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "교육부",
+      "title": "2027학년도 대학수학능력시험 문답지 전국 85개 시험지구에 배부 시작",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789278",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "수능 문제지·답안지, 전국 85개 시험지구 배부 시작 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261113136200530?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "국토교통부",
+      "title": "한파·폭설 대비 전국 건설현장 2,946곳 안전점검",
+      "summary": "16일부터 내달 24일까지 국토교통부·산하기관 등 12개 기관 2,946개 현장 점검",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789275",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "국토부, 한파·폭설 대비 전국 건설현장 3천여곳 안전점검 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261114042400003?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "해양수산부",
+      "title": "해수부, 어항 이용 여건 개선 등 공익적 수요 반영해 매립 기본계획 변경한다",
+      "summary": "제4차 공유수면매립 기본계획 변경, 4개 지구 신규 반영   해양수산부(장관 황종우)는 '제4차 공유수면매립 기본계획(2021~2031, 이하 '기본계획')'을 변경 고시했다고 밝혔다.  기본계획은 공유수면의 무분별한 매립을 방지하고, 매립 타당성과 환경 영향 등을 종합적으로 검토하여 공유수면을 계획적·체계적으로 관리하기 위해 10년 단위로 수립되는 법정계획이다. 기본계획에 반영된 매립 예정지에 한해 매립 면허 등 후속 절차를 거쳐 매립을 진행할 수 있다. 해양수산부는 현장의 수요와 여건 변화에 탄력적으로 대응하기 위해 연 2회 기",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789274",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "공유수면 매립 기본계획 변경…홍원항 등 4곳 매립 예정지 포함 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261113161000051?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "기후에너지환경부",
+      "title": "국립생물자원관, 아세안 4개국과 생물다양성 공동연구의 길 넓힌다",
+      "summary": "11월 16일부터 20일까지 제15차 해외 생물다양성 인력양성 교육 운영기후에너지환경부 소속 국립생물자원관(관장 유호)은 11월 16일부터 20일까지 캄보디아, 라오스, 미얀마, 필리핀 등 아세안 4개국의 생물다양성 분야 공무원 및 연구자 9명을 초청해 '제15차 해외 생물다양성 인력양성 교육'을 운영한다고 밝혔다.국립생물자원관은 2009년부터 개발도상국의 생물다양성 보전역량을 높이고 국제협력의 기반을 넓히기 위해 협력국 공무원과 연구자를 대상으로 생물다양성 인력양성 교육을 추진해 왔다. 지금까지 13개국 181명이 교육을 수료했으",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789277",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "아세안 4개국 연구자 초청… 생물 다양성 공동연구 기반 다진다 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261115_0003868367",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    },
+    {
+      "date": "2026-11-16",
+      "agency": "기후에너지환경부",
+      "title": "산업계 녹색화학 공모전 8개 기업 시상, '유해물질 원천 저감 노력' 산업계 확산 기대",
+      "summary": "저독성 대체물질·기술로 유해물질 사용을 원천 저감한 우수사례 8건 발굴▷ 최우수상 2곳·우수상 6곳 선정, 11월 16일 '화학안전주간'에 시상▷ 진공세척 기술의 진공플랜트, 인공지능 대체물질 탐색의 엘지전자 최우수상기후에너지환경부(장관 김성환)는 11월 16일 서울드래곤시티(서울 용산구 소재)에서 열리는 제7회 화학안전주간 개회식에서 '산업계 녹색화학 실천 우수사례 공모전' 수상기업을 시상하고, 같은 날 우수사례 발표회를 연다고 밝혔다.이번 공모전은 저독성 대체물질·기술을 개발하거나 도입해 유해물질 사용을 근본적으로 줄인 사례를 ",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789276",
+      "unverified": false,
+      "media_press": "연합뉴스",
+      "media_title": "[게시판] ' 산업계 녹색화학 실천 우수사례 공모전 ' 8개사 수상 새 창 열림",
+      "media_link": "https://www.yna.co.kr/view/AKR20261114044100530?input=1195m",
+      "media_checked_at": "2026-11-16T09:03:12.468674+09:00"
+    }
+  ]
 }
