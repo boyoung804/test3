@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "collected_at": "2026-11-18T02:32:31.871758+09:00",
+  "collected_at": "2026-11-18T08:59:01.414050+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,5 +28,102 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": []
+  "items": [
+    {
+      "date": "2026-11-18",
+      "agency": "외교부",
+      "title": "「제10차 한미 민관합동 경제포럼」 개최(11.17)",
+      "summary": "외교부는 11.17.(화) 워싱턴 D.C.에서 美 허드슨 연구소(Hudson Institue)와 공동으로  '한미 경제안보 및 산업 역량 강화(Advancing the U.S.-ROK Economic Security and Industrial Strength)'를 주제로 한미 양국의 정부인사 및 주요 기업, 싱크탱크 등 소속 전문가들이 참여한 가운데「제10차 한미 민관합동 경제포럼」을 개최하였다.  ※ 한미 민관합동 경제포럼은 17.6월 한미 정상회담시 '경제적 기회 증진을 모색해 나가는데 함께 노력하기로 공약'함에 따라 양국 정부",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789684",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "국무조정실",
+      "title": "[보도자료] 한성숙 국무총리, 충남 태안해역 위치소실 어선 관련 긴급지시",
+      "summary": "한성숙 국무총리, 충남 태안해역  위치소실 어선 관련 긴급지시□ 한성숙 국무총리는 11. 18.(수) 01시 09분경 충남 태안해역 격렬비열도 북서방 인근에서 발생한 위치소실 어선(해광호, 7.93톤, 승선원 7명) 상황을 보고받고 아래와 같이 긴급지시했다.ㅇ 해양수산부, 해양경찰청은 경비함정 및 주변 선박과 공조하여 위치소실 된 어선 수색에 가능한 모든 조치를 취할 것ㅇ 국방부, 충청남도 등 관계기관은 수색구조에 필요한 인력과 장비를 적극 지원하고, 현장 활동이 원활히 이루어질 수 있도록 적극 협조할 것□ 특히, 야간 해상수색 진",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789683",
+      "unverified": false,
+      "media_press": "뉴시스",
+      "media_title": "한 총리 , 태안해역 위치소실 어선 관련 \"주변 선박과 공조해 수색에 모... 새 창 열림",
+      "media_link": "https://www.newsis.com/view/NISX20261118_0003872351",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "문화체육관광부",
+      "title": "대한민국 관광기념품으로 가득한 '케이-굿즈마을'에  '산타 대감'이 찾아옵니다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789680",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 'AI로 여는 식품위해평가의 새로운 지평' 모색",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789681",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "문화체육관광부",
+      "title": "제9기 국가도서관위원회,  서울에서 제2차 도서관 현장 소통 이어간다",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789679",
+      "unverified": false,
+      "media_press": "뉴스1",
+      "media_title": "국가도서관위원회 , 서울 지역 도서관 협력방안 찾는다 새 창 열림",
+      "media_link": "https://www.news1.kr/life-culture/book/6357386",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 일본 정부에 글로벌 해썹 운영 현장 소개",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789678",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "식품의약품안전처",
+      "title": "[보도참고] 식약처, 생산단계 농산물 안전관리 기준 적용 확대",
+      "summary": "",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789677",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    },
+    {
+      "date": "2026-11-18",
+      "agency": "행정안전부",
+      "title": "행정안전부 장관, 충남 태안군 해역 인근 위치소실 어선 발생 관련 긴급지시",
+      "summary": "모든 가용 장비 및 인력 동원하여 인명구조에 총력 대응  윤호중 행정안전부장관은 오늘(18일) 충남 태안군 해상 인근 위치소실 어선(230해광호, 승선원 7명) 발생과 관련하여,  해양수산부, 해양경찰청, 충청남도, 태안군 등 관계기관은 가용한 모든 장비, 인력 등 자원을 즉시 투입해 어선의 위치파악에 가능한 모든 조치를 취하고 어선의 인명을 신속하고 안전하게 구조할 것과,  사고 해역의 기상, 해상 상태를 면밀히 점검하여 2차 사고가 발생하지 않도록 철저히 관리할 것을 긴급 지시하였고, 구조과정에서 구조대원의 안전에도 각별히 유의",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789675",
+      "unverified": false,
+      "media_press": "",
+      "media_title": "",
+      "media_link": "",
+      "media_checked_at": "2026-11-18T08:57:12.126670+09:00"
+    }
+  ]
 }
