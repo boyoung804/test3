@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-21",
-  "collected_at": "2026-11-21T16:21:25.792508+09:00",
+  "date": "2026-11-22",
+  "collected_at": "2026-11-22T00:28:45.191928+09:00",
   "agencies": [
     "대통령실",
     "국무조정실",
@@ -28,78 +28,5 @@
     "법제처",
     "식품의약품안전처"
   ],
-  "items": [
-    {
-      "date": "2026-11-21",
-      "agency": "국토교통부",
-      "title": "[차관동정] 정의경 제2차관, \"안전을 최우선으로 탈선 현장 복구 및 이용객 불편 최소화할 것\"",
-      "summary": "21일 오후 탈선사고 현장 점검 및 가용한 대체열차 투입 당부",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790153",
-      "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-21T16:20:33.062738+09:00"
-    },
-    {
-      "date": "2026-11-21",
-      "agency": "과학기술정보통신부",
-      "title": "우리 사회의 인공지능을 생각하고 토론하는 축제의 장, ｢AI 인사이트 페스티벌 시상식｣ 개최",
-      "summary": "인공지능 기술에 대한 비판적 사고와 창의적 관점을 높이기 위한 '토론대회'부터 '논문·아이디어 공모전', '우수도서 선정'까지 한자리에",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790152",
-      "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-21T16:20:33.062738+09:00"
-    },
-    {
-      "date": "2026-11-21",
-      "agency": "국토교통부",
-      "title": "[참고] 경부선 소정리역 화물열차 탈선 사고 대응에 만전을 기하고 있습니다.",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790144",
-      "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-21T16:20:33.062738+09:00"
-    },
-    {
-      "date": "2026-11-21",
-      "agency": "과학기술정보통신부",
-      "title": "미래의 피지컬 AI 전문가 발굴!  「2026 청소년 로보틱스 챌린지」 결선 개최",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790143",
-      "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-21T16:20:33.062738+09:00"
-    },
-    {
-      "date": "2026-11-21",
-      "agency": "고용노동부",
-      "title": "(참고)노동부 장관, 국가자격시험장 현장 살핀다",
-      "summary": "「국가자격 종합점검 및 대책수립 TF」 회의(11.19.) 이어 자격 시험장 현장 찾아\n장관, 인력공단에 과거 시험관리 방식에서 탈피, 감독관 교육 강화 등 지시  김영훈 노동부 장관은 11월 21일(토) 07:30 경비지도사 국가자격시험장인 서울 용산 소재 용산철도고등학교를 방문하여 시험장 준비 및 시험감독관 교육 등을 확인했다.   고용노동부는 최근 스마트기기를 활용한 세무사시험 부정행위를 계기로 한국산업인력공단 자격검정시스템의 종합적 점검을 위해 11.19.(목)「국가자격제도 종합점검 및 대책수립 TF」1차 회의를 개최하였다.",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790142",
-      "unverified": false,
-      "media_press": "",
-      "media_title": "",
-      "media_link": "",
-      "media_checked_at": "2026-11-21T16:20:33.062738+09:00"
-    },
-    {
-      "date": "2026-11-21",
-      "agency": "외교부",
-      "title": "외교부 공관장 인사",
-      "summary": "",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790141",
-      "unverified": false,
-      "media_press": "뉴스1",
-      "media_title": "외교부 , 메콩 5개국 공관장 회의…경제협력·온라인 스캠 대응 논의 새 창 열림",
-      "media_link": "https://www.news1.kr/diplomacy/defense-diplomacy/6343429",
-      "media_checked_at": "2026-11-21T09:13:22.988281+09:00"
-    }
-  ]
+  "items": []
 }
