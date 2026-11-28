@@ -1,15 +1,39 @@
 [
   {
     "date": "2026-11-28",
+    "agency": "국무조정실",
+    "title": "[보도자료] 제1차 청년미래콘서트(취·창업편)",
+    "summary": "한 총리, \"실패해도 다시 시작할 수 있는 든든한 힘이 될 것\"\n'청년미래콘서트'서 청년들과 취·창업 고민 나눠",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791262",
+    "unverified": false,
+    "media_press": "",
+    "media_title": "",
+    "media_link": "",
+    "media_checked_at": "2026-11-28T21:16:01.314772+09:00"
+  },
+  {
+    "date": "2026-11-28",
+    "agency": "과학기술정보통신부",
+    "title": "[보도참고] 초대형 사업 인공지능 데이터센터, 동해에서 떠오르다",
+    "summary": "동해 1.2GW급 GS 인공지능 데이터센터 착공식 개최\nGS, 동해 인공지능 데이터센터 구축 및 지역상생 계획 공개",
+    "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791260",
+    "unverified": false,
+    "media_press": "뉴시스",
+    "media_title": "李대통령, ' 동해 GS AI 데이터센터 ' 착공식 참석…\"강원, AI 핵심 거점 도... 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261128_0003887015",
+    "media_checked_at": "2026-11-28T21:16:01.314772+09:00"
+  },
+  {
+    "date": "2026-11-28",
     "agency": "보건복지부",
     "title": "정은경 장관, 국가시험 현장 점검, 첨단기기 부정행위 빈틈없이 차단 강조",
     "summary": "전파탐지기 활용 및 전신 가리개 도입 등 강화된 부정행위 관리 대책 이행 실태 확인\n보건복지부(장관 정은경)는 정은경 장관이 11월 28일(토) 7시 45분에 제54회 치과기공사 국가시험이 치러지는 서울 용산철도고등학교를 방문해 시험 준비 상황과 스마트기기 부정행위 관리 대책의 이행 실태를 점검했다고 밝혔다.  최근 주요 국가시험에서 스마트안경·초소형 카메라 등 첨단기기를 활용한 부정행위가 적발됨에 따라, 정은경 장관은 국민 생명과 건강에 직결되는 보건의료인 국가시험의 공정성을 확보하기 위해 현장을 직접 찾았다.   이날 전국 9개",
     "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791251",
     "unverified": false,
-    "media_press": "",
-    "media_title": "",
-    "media_link": "",
-    "media_checked_at": "2026-11-28T12:31:22.444141+09:00"
+    "media_press": "뉴시스",
+    "media_title": "정은경 , 치과기공사 국시 시험장 점검…\"부정행위 차단\" 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261128_0003887074",
+    "media_checked_at": "2026-11-28T21:16:28.796097+09:00"
   },
   {
     "date": "2026-11-28",
@@ -18,9 +42,9 @@
     "summary": "박형철 외교부 유럽국장은 한-독일 정상회담(10.29.) 후속 조치 점검을 위해 11.26.(목)~11.27.(금) 독일을 방문하여 ▴프랑크 하르트만(Frank Hartmann) 외교부 아태총국장, ▴니클라스 바그너(Niklas Wagner) 외교부 러시아·우크라이나 국장 및 ▴마르틴 셰퍼(Martin Schäfer) 국방부 정무총국장을 각각 면담하고, 양국 관계 증진 방안 및 주요 지역 정세 등에 대해 협의하였다.   먼저 박 국장은 최근 정상회담 계기에 양국 관계를 '강화된 전략적 동반자 관계'로 격상하고, AI, 반도체, 베터",
     "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791249",
     "unverified": false,
-    "media_press": "",
-    "media_title": "",
-    "media_link": "",
-    "media_checked_at": "2026-11-28T12:31:22.444141+09:00"
+    "media_press": "뉴시스",
+    "media_title": "외교부 유럽국장 독일 방문…\"산업가속화법, 韓도 EU 국가와 동등 대우... 새 창 열림",
+    "media_link": "https://www.newsis.com/view/NISX20261128_0003887042",
+    "media_checked_at": "2026-11-28T21:16:28.796097+09:00"
   }
 ]
